@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual do Usuário - Sistema Integrado de Orçamentos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link para o style.css dentro do diretório /ajuda -->
+</head>
+<body>
+<div class="container">
+    <!-- NOVO BOTÃO DE VOLTAR -->
+    <div style="margin-bottom: 20px;">
+        <a href="../" class="button is-link is-light"><span class="icon"><i class="fas fa-arrow-left"></i></span><span>Voltar ao Aplicativo</span></a>
+    </div>
+
+    <h1 class="title">Manual do Usuário: Sistema Integrado de Orçamentos para Grades Metálicas</h1>
+    <p class="has-text-centered is-italic">Bem-vindo ao sistema de orçamentos. Este manual irá guiá-lo por todas as funcionalidades, desde a configuração inicial até a geração de relatórios comerciais.</p>
+
+    <div class="columns" style="margin-top: 40px;">
+        <div class="column is-3">
+            <aside class="menu">
+                <p class="menu-label">Navegação</p>
+                <ul class="menu-list">
+                    <li><a href="#introducao"><i class="fas fa-info-circle mr-2"></i>Introdução</a></li>
+                    <li><a href="#gerenciamento-orcamentos"><i class="fas fa-file-invoice-dollar mr-2"></i>Gerenciamento de Orçamentos</a></li>
+                    <li><a href="#templates"><i class="fas fa-cogs mr-2"></i>Templates de Grades</a>
+                        <ul>
+                            <li><a href="#templates-criar-editar">Criar/Editar Template</a></li>
+                            <li><a href="#templates-degrau">Configurando Degraus</a></li>
+                            <li><a href="#templates-validacao">Validações Importantes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#precos"><i class="fas fa-dollar-sign mr-2"></i>Configuração de Preços</a>
+                        <ul>
+                            <li><a href="#precos-globais">Preços Globais</a></li>
+                            <li><a href="#precos-especificos">Preços Específicos por Material</a></li>
+                            <li><a href="#precos-calculo">Como os Preços Afetam os Custos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#itens-orcamento"><i class="fas fa-list mr-2"></i>Itens do Orçamento</a>
+                        <ul>
+                            <li><a href="#itens-adicionar">Adicionar/Editar Item</a></li>
+                            <li><a href="#itens-calculos-basicos">Cálculos Básicos do Item</a></li>
+                            <li><a href="#itens-resumo">Resumo do Orçamento</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#memoria-calculo"><i class="fas fa-calculator mr-2"></i>Memória de Cálculo</a></li>
+                    <li><a href="#relatorios"><i class="fas fa-chart-line mr-2"></i>Relatórios</a>
+                        <ul>
+                            <li><a href="#relatorios-individual">Relatório Detalhado por Item</a></li>
+                            <li><a href="#relatorios-consolidado">Consolidado e Plano de Corte</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#pricing"><i class="fas fa-percentage mr-2"></i>Configuração de Pricing</a>
+                        <ul>
+                            <li><a href="#pricing-aliquotas">Alíquotas de ICMS/MVA</a></li>
+                            <li><a href="#pricing-templates">Configuração por Template</a></li>
+                            <li><a href="#pricing-ipi">Regras de IPI</a></li>
+                            <li><a href="#pricing-calculo">Entendendo o Cálculo de Pricing</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#orcamento-final"><i class="fas fa-file-invoice mr-2"></i>Orçamento Comercial Final</a></li>
+                    <li><a href="#dicas-validacoes"><i class="fas fa-check-circle mr-2"></i>Dicas e Validações</a></li>
+                    <li><a href="#fluxo-completo"><i class="fas fa-project-diagram mr-2"></i>Fluxo de Uso Completo</a></li>
+                </ul>
+            </aside>
+        </div>
+        <div class="column is-9 content">
+
+            <section id="introducao">
+                <h2 class="title is-2">1. Introdução ao Sistema</h2>
+                <p>O Sistema Integrado de Orçamentos foi desenvolvido para simplificar e otimizar o processo de precificação de grades metálicas, oferecendo ferramentas para gerenciar templates, custos de materiais e serviços, e configurações de impostos e lucros.</p>
+                <p>O sistema é dividido em várias seções acessíveis através das abas de navegação principais:</p>
+                <ul>
+                    <li><i class="fas fa-cogs mr-2"></i> <strong>Templates:</strong> Para criar e gerenciar modelos de grades.</li>
+                    <li><i class="fas fa-dollar-sign mr-2"></i> <strong>Preços:</strong> Onde você define os custos de matéria-prima e serviços.</li>
+                    <li><i class="fas fa-list mr-2"></i> <strong>Itens:</strong> Para adicionar grades específicas ao seu orçamento usando os templates criados.</li>
+                    <li><i class="fas fa-calculator mr-2"></i> <strong>Memória:</strong> Exibe os cálculos detalhados de custos por template.</li>
+                    <li><i class="fas fa-chart-line mr-2"></i> <strong>Relatórios:</strong> Gera relatórios individuais e consolidados dos materiais e planos de corte.</li>
+                    <li><i class="fas fa-percentage mr-2"></i> <strong>Pricing:</strong> Permite configurar margens, despesas e impostos (incluindo IPI e ICMS) para chegar ao preço de venda.</li>
+                    <li><i class="fas fa-file-invoice mr-2"></i> <strong>Orçamento:</strong> Apresenta o orçamento comercial final com os preços calculados.</li>
+                </ul>
+                <p class="notification is-info is-light"><strong>Atenção:</strong> O sistema utiliza o armazenamento local do seu navegador. Não há um banco de dados externo, o que significa que seus dados são salvos diretamente no seu dispositivo. Faça backups regulares se necessário (funcionalidade de exportação em desenvolvimento na aba de orçamentos).</p>
+            </section>
+
+            <section id="gerenciamento-orcamentos">
+                <h2 class="title is-2">2. Gerenciamento de Orçamentos Múltiplos</h2>
+                <p>O sistema permite trabalhar com múltiplos orçamentos simultaneamente, cada um com seus próprios templates, itens e configurações de preços.</p>
+
+                <h3 class="title is-3">2.1. Criar um Novo Orçamento</h3>
+                <p>Para iniciar um novo orçamento:</p>
+                <ol>
+                    <li>Clique no botão <span class="tag is-success"><i class="fas fa-plus mr-1"></i> Novo Orçamento</span> localizado no cabeçalho.</li>
+                    <li>Um novo orçamento será criado com um nome padrão (ex: "Orçamento 2").</li>
+                    <li>O sistema automaticamente mudará para a aba do novo orçamento.</li>
+                </ol>
+
+                <h3 class="title is-3">2.2. Alternar entre Orçamentos</h3>
+                <p>Você pode alternar entre os orçamentos abertos no cabeçalho:</p>
+                <ol>
+                    <li>Clique na aba do orçamento desejado (ex: <span class="tag is-info">Orçamento 1</span>).</li>
+                    <li>O conteúdo da aplicação será atualizado para exibir os dados do orçamento selecionado.</li>
+                </ol>
+
+                <h3 class="title is-3">2.3. Renomear um Orçamento</h3>
+                <p>Para dar um nome mais descritivo ao seu orçamento:</p>
+                <ol>
+                    <li>Com o orçamento ativo, clique no botão <span class="tag is-info"><i class="fas fa-edit mr-1"></i> Renomear</span> ao lado do nome atual.</li>
+                    <li>Uma janela modal será aberta.</li>
+                    <li>Digite o novo nome desejado no campo "Nome do Orçamento".</li>
+                    <li>Clique em <span class="tag is-success"><i class="fas fa-save mr-1"></i> Salvar</span> para confirmar.</li>
+                </ol>
+
+                <h3 class="title is-3">2.4. Fechar um Orçamento</h3>
+                <p>Para remover um orçamento da sua lista:</p>
+                <ol>
+                    <li>Clique no botão <span class="tag is-danger"><i class="fas fa-times mr-1"></i></span> (X) na aba do orçamento que deseja fechar.</li>
+                    <li>Se o orçamento contiver dados, o sistema solicitará uma confirmação.</li>
+                    <li><strong>Atenção:</strong> Não é possível fechar o último orçamento. Você deve ter pelo menos um orçamento ativo.</li>
+                </ol>
+
+                <h3 class="title is-3">2.5. Duplicar Orçamento</h3>
+                <p>Para criar uma cópia exata de um orçamento existente:</p>
+                <ol>
+                    <li>Atualmente, a funcionalidade de duplicar orçamento não possui um botão direto na interface do usuário. No entanto, ela está implementada no código em <code>multiBudgetManager.duplicateBudget()</code>.</li>
+                    <li>Em uma futura atualização, esta opção estará disponível na interface.</li>
+                </ol>
+
+                <h3 class="title is-3">2.6. Exportar e Importar Orçamento</h3>
+                <p>Para fazer backup ou transferir orçamentos entre dispositivos:</p>
+                <ol>
+                    <li>Atualmente, as funcionalidades de exportar e importar orçamento não possuem botões diretos na interface do usuário. No entanto, elas estão implementadas no código em <code>multiBudgetManager.exportBudget()</code> e <code>multiBudgetManager.importBudget()</code>.</li>
+                    <li>Em uma futura atualização, estas opções estarão disponíveis na interface, provavelmente na aba de "Relatórios" ou em um menu de gerenciamento de orçamentos.</li>
+                </ol>
+                <p class="notification is-warning is-light"><strong>Nota:</strong> A exportação de dados está formatada como JSON e inclui metadados, templates, itens, preços e configurações de pricing.</p>
+            </section>
+
+            <section id="templates">
+                <h2 class="title is-2">3. Templates de Grades Metálicas</h2>
+                <p>A aba <i class="fas fa-cogs mr-2"></i> <strong>Templates</strong> é onde você define os modelos das grades que serão utilizadas nos orçamentos. Um template descreve as características físicas da grade.</p>
+
+                <h3 class="title is-3" id="templates-criar-editar">3.1. Criar ou Editar um Template</h3>
+                <p>Para criar um novo template:</p>
+                <ol>
+                    <li>Navegue até a aba <i class="fas fa-cogs mr-2"></i> <strong>Templates</strong>.</li>
+                    <li>Preencha os campos no formulário "Criar/Editar Template".</li>
+                    <li>Clique em <span class="tag is-primary"><i class="fas fa-save mr-1"></i> Salvar Template</span>.</li>
+                </ol>
+                <p>Para editar um template existente:</p>
+                <ol>
+                    <li>Na seção "Templates Salvos", clique no botão <span class="tag is-info"><i class="fas fa-edit mr-1"></i></span> (Editar) ao lado do template desejado.</li>
+                    <li>O formulário será preenchido com os dados do template selecionado.</li>
+                    <li>Faça as alterações necessárias e clique em <span class="tag is-warning"><i class="fas fa-save mr-1"></i> Atualizar Template</span>.</li>
+                </ol>
+
+                <h4>Campos do Template:</h4>
+                <ul>
+                    <li><strong>Nome do Template:</strong> Nome único para identificação.</li>
+                    <li><strong>Barras Portantes (Espessura e Largura):</strong> Dimensões das barras que suportam o peso.</li>
+                    <li><strong>Barras de Ligação (Diâmetro / Espessura Chata / Largura Chata):</strong>
+                        <ul>
+                            <li>Você deve preencher um tipo de barra de ligação. Se for redonda, informe o diâmetro. Se for chata, informe espessura e largura.</li>
+                            <li>Não é possível usar barra redonda e chata simultaneamente.</li>
+                        </ul>
+
+                    </li>
+                    <li><strong>Barras de Fechamento (Espessura e Largura):</strong> Dimensões das barras que fecham a grade.</li>
+                    <li><strong>Configuração da Malha (Malha Menor e Malha Maior):</strong> Distância entre as barras.</li>
+                    <li><strong>Parâmetros Gerais:</strong>
+                        <ul>
+                            <li><strong>Densidade (kg/m³):</strong> Densidade do material (padrão: 7850 kg/m³ para aço).</li>
+                            <li><strong>Margem de Segurança (%):</strong> Margem aplicada ao peso final para compensar perdas. (padrão: 2%).</li>
+                        </ul>
+
+                    </li>
+                    <li><strong>Usar preços customizados para este template:</strong> Marque esta opção para definir preços de Mão de Obra e Galvanização específicos para este template, sobrescrevendo os preços globais.</li>
+                </ul>
+
+                <h3 class="title is-3" id="templates-degrau">3.2. Configurando Templates como Degraus</h3>
+                <p>Para configurar um template como degrau, marque a opção <span class="tag is-warning"><i class="fas fa-check mr-1"></i> Configurar como Degrau</span>.</p>
+                <p>Ao marcar esta opção, campos adicionais serão exibidos:</p>
+                <ul>
+                    <li><strong>Chapa Lateral (Espessura e Largura):</strong>
+                        <ul>
+                            <li>A largura pode ser calculada automaticamente com base na "Largura Portante" e uma fórmula: <code>ARRED.PARA.CIMA((Larg.Portante + 37) / 5) * 5</code>.</li>
+                        </ul>
+
+                    </li>
+                    <li><strong>Chapa Xadrez (Opcional):</strong>
+                        <ul>
+                            <li>Marque <span class="tag is-warning"><i class="fas fa-check mr-1"></i> Incluir chapa xadrez</span> para adicionar campos de espessura, largura e ajuste de peso.</li>
+                            <li>A largura da chapa xadrez pode ser calculada automaticamente: <code>Larg.Portante + Malha Menor</code>.</li>
+                            <li>O Ajuste de Peso é um multiplicador para o peso da chapa xadrez (padrão: 1.05).</li>
+                        </ul>
+
+                    </li>
+                </ul>
+                <p class="notification is-info is-light"><strong>Nota:</strong> Templates configurados como degraus não possuem Barras de Fechamento Laterais, que são substituídas pela Chapa Lateral.</p>
+
+                <h3 class="title is-3" id="templates-validacao">3.3. Validações Importantes ao Criar/Editar Templates</h3>
+                <p>O sistema possui validações para garantir a consistência dos dados do template:</p>
+                <ul>
+                    <li>Nome do template é obrigatório e deve ter entre 1 e 50 caracteres.</li>
+                    <li>Espessura e Largura das Barras Portantes e de Fechamento devem ser maiores que 0.</li>
+                    <li>Malha Menor deve ser menor que Malha Maior.</li>
+                    <li>Espessura da barra portante não pode exceder 50% da malha menor.</li>
+                    <li>Espessura do fechamento deve ser maior ou igual à espessura da barra portante.</li>
+                    <li>Largura do fechamento deve ser maior ou igual à largura da barra portante.</li>
+                    <li>Espessura do fechamento não pode exceder 50% da malha menor.</li>
+                    <li>Diâmetro ou Espessura/Largura da Barra de Ligação devem ser definidos.</li>
+                    <li>Diâmetro da ligação não pode exceder 50% da malha maior.</li>
+                    <li>Espessura da ligação não pode exceder 50% da malha maior.</li>
+                    <li>Se usar barra redonda, espessura e largura chata devem ser 0.</li>
+                    <li>Se usar barra chata, diâmetro deve ser 0.</li>
+                    <li>Para barra chata, ambas as dimensões (espessura e largura) devem ser maiores ou iguais a 2mm.</li>
+                    <li>Se usar preços customizados, o campo "Mão de Obra (R$/kg)" é obrigatório.</li>
+                    <li>Para templates de degrau, a espessura e largura da chapa lateral são obrigatórias.</li>
+                    <li>Se incluir chapa xadrez, a espessura, largura e ajuste de peso da chapa xadrez são obrigatórios, e o ajuste de peso deve ser >= 1.</li>
+                </ul>
+            </section>
+
+            <section id="precos">
+                <h2 class="title is-2">4. Configuração de Preços</h2>
+                <p>A aba <i class="fas fa-dollar-sign mr-2"></i> <strong>Preços</strong> permite definir os custos de matéria-prima e serviços de forma global ou específica por dimensão de material.</p>
+
+                <h3 class="title is-3" id="precos-globais">4.1. Configuração Global de Preços</h3>
+                <p>Estes preços são aplicados a todos os cálculos, a menos que um template possua preços customizados.</p>
+                <p>Preencha os campos e clique em <span class="tag is-primary"><i class="fas fa-save mr-1"></i> Salvar Preços</span>.</p>
+                <h4>Campos:</h4>
+                <ul>
+                    <li><strong>Matéria Prima (R$/kg):</strong>
+                        <ul>
+                            <li>Barra Chata Padrão</li>
+                            <li>Barra Redonda Padrão</li>
+                            <li>Chapa Lateral Padrão</li>
+                            <li>Chapa Xadrez Padrão</li>
+                        </ul>
+
+                    </li>
+                    <li><strong>Serviços (R$/kg):</strong>
+                        <ul>
+                            <li>Corte Chapa Lateral (Serviço de corte para chapas laterais)</li>
+                            <li>Corte+Dobra Chapa Xadrez (Serviço de corte e dobra para chapas xadrez)</li>
+                        </ul>
+
+                    </li>
+                    <li><strong>Processos (R$/kg):</strong>
+                        <ul>
+                            <li>Mão de Obra (Aplicado no peso final das grades (com margem de segurança))</li>
+                            <li>Galvanização (Opcional - Aplicado no peso final das grades)</li>
+                        </ul>
+
+                    </li>
+                </ul>
+                <p>Você pode <span class="tag is-light"><i class="fas fa-undo mr-1"></i> Resetar</span> todos os preços globais para 0.</p>
+
+                <h3 class="title is-3" id="precos-especificos">4.2. Preços Específicos por Material</h3>
+                <p>É possível definir preços por kg para dimensões específicas de barras chatas, redondas e chapas, que terão precedência sobre os preços padrão globais.</p>
+                <p>Para adicionar um preço específico:</p>
+                <ol>
+                    <li>Clique em um dos botões: <span class="tag is-info"><i class="fas fa-plus mr-1"></i> Chata</span>, <span class="tag is-info"><i class="fas fa-plus mr-1"></i> Redonda</span>, <span class="tag is-warning"><i class="fas fa-plus mr-1"></i> Chapa Lateral</span>, ou <span class="tag is-warning"><i class="fas fa-plus mr-1"></i> Chapa Xadrez</span>.</li>
+                    <li>Uma janela modal será aberta.</li>
+                    <li>Informe as dimensões (Espessura/Largura para chata/chapa, Diâmetro para redonda) e o Preço (R$/kg).</li>
+                    <li>Clique em <span class="tag is-success"><i class="fas fa-save mr-1"></i> Salvar</span>.</li>
+                </ol>
+                <p>Para editar um preço específico, clique no botão <span class="tag is-warning"><i class="fas fa-edit mr-1"></i></span> (Editar) ao lado do item na lista.</p>
+                <p>Para remover um preço específico, clique no botão <span class="tag is-danger"><i class="fas fa-trash mr-1"></i></span> (Remover) ao lado do item.</p>
+
+                <h3 class="title is-3" id="precos-calculo">4.3. Como os Preços Afetam os Custos</h3>
+                <p>Os custos de material são calculados com base no peso dos materiais e nos preços definidos.</p>
+                <ul>
+                    <li><strong>Custo de Matéria Prima:</strong> É o peso bruto dos materiais (barras, chapas) multiplicado pelo preço por kg.</li>
+                    <li><strong>Custo de Mão de Obra:</strong> É o peso final das grades (já com a margem de segurança do template) multiplicado pelo preço de Mão de Obra por kg.</li>
+                    <li><strong>Custo de Galvanização:</strong> Similar à Mão de Obra, aplicado ao peso final com margem, se configurado.</li>
+                    <li><strong>Serviços de Chapas:</strong> Os serviços de corte e dobra para chapas laterais e xadrez são adicionados ao custo do material das chapas quando estas são utilizadas em templates de degrau.</li>
+                    <li><strong>Precedência de Preços:</strong> Se um preço específico for definido para uma dimensão de material, ele será usado no lugar do preço padrão global para aquele material. Se um template tiver "preços customizados", os valores de Mão de Obra e Galvanização desse template sobrescreverão os globais.</li>
+                </ul>
+            </section>
+
+            <section id="itens-orcamento">
+                <h2 class="title is-2">5. Itens do Orçamento</h2>
+                <p>A aba <i class="fas fa-list mr-2"></i> <strong>Itens</strong> permite adicionar grades específicas ao seu orçamento usando os templates configurados.</p>
+
+                <h3 class="title is-3" id="itens-adicionar">5.1. Adicionar ou Editar um Item</h3>
+                <p>Para adicionar um novo item ao orçamento:</p>
+                <ol>
+                    <li>Navegue até a aba <i class="fas fa-list mr-2"></i> <strong>Itens</strong>.</li>
+                    <li>No formulário "Adicionar Item ao Orçamento":
+                        <ul>
+                            <li><strong>Template:</strong> Selecione um dos templates criados previamente. Templates de degrau que já possuem um item no orçamento são desabilitados, pois aceitam apenas um item.</li>
+                            <li><strong>Quantidade:</strong> Número de grades a serem orçadas.</li>
+                            <li><strong>Largura (mm):</strong> Largura da grade em milímetros.</li>
+                            <li><strong>Comprimento (mm):</strong> Comprimento da grade em milímetros.</li>
+                            <li><strong>Descrição (Opcional):</strong> Uma descrição para o item (padrão: "Qtd grades LarguraxComprimento mm").</li>
+                        </ul>
+                    </li>
+                    <li>Clique em <span class="tag is-success"><i class="fas fa-plus mr-1"></i> Adicionar Item</span>.</li>
+                </ol>
+                <p>Para editar um item existente:</p>
+                <ol>
+                    <li>Na seção "Itens do Orçamento", clique no botão <span class="tag is-info"><i class="fas fa-edit mr-1"></i></span> (Editar) ao lado do item.</li>
+                    <li>O formulário será preenchido com os dados do item.</li>
+                    <li>Faça as alterações e clique em <span class="tag is-warning"><i class="fas fa-save mr-1"></i> Atualizar Item</span>.</li>
+                    <li>Você pode clicar em <span class="tag is-warning"><i class="fas fa-times mr-1"></i> Cancelar Edição</span> para descartar as alterações e retornar.</li>
+                </ol>
+                <p>Para remover um item, clique no botão <span class="tag is-danger"><i class="fas fa-trash mr-1"></i></span> (Remover) ao lado dele.</p>
+                <p>Para limpar todos os itens do orçamento atual, clique em <span class="tag is-light"><i class="fas fa-broom mr-1"></i> Limpar Orçamento</span>.</p>
+
+                <h3 class="title is-3" id="itens-calculos-basicos">5.2. Cálculos Básicos de um Item de Orçamento</h3>
+                <p>Ao adicionar um item, o sistema realiza os seguintes cálculos, exibidos na lista de itens:</p>
+                <ul>
+                    <li><strong>Área:</strong> Largura (m) × Comprimento (m) × Quantidade.</li>
+                    <li><strong>Peso (kg):</strong> Soma do peso de todas as barras e chapas necessárias para o item, antes da margem de segurança.</li>
+                    <li><strong>Peso c/ Margem (kg):</strong> Peso total multiplicado por (1 + Margem de Segurança do template / 100).</li>
+                    <li><strong>Custo Total:</strong> Soma dos custos de material, mão de obra, galvanização e serviços de chapas para o item.</li>
+                    <li><strong>Custo/unidade:</strong> Custo Total dividido pela Quantidade do item.</li>
+                </ul>
+                <p class="notification is-info is-light"><strong>Validações de Item:</strong> O sistema verifica se o template selecionado existe, se as dimensões (largura e comprimento) são no mínimo 100mm, se a largura é pelo menos 2x a malha maior do template e o comprimento 2x a malha menor. Para degraus, o comprimento mínimo é 200mm.</p>
+
+                <h3 class="title is-3" id="itens-resumo">5.3. Resumo do Orçamento</h3>
+                <p>No lado direito da aba <i class="fas fa-list mr-2"></i> <strong>Itens</strong>, há um painel de resumo que consolida os totais do orçamento atual:</p>
+                <ul>
+                    <li><strong>Total de Grades:</strong> Soma das quantidades de todos os itens.</li>
+                    <li><strong>Área Total:</strong> Soma das áreas de todas as grades em m².</li>
+                    <li><strong>Peso c/ Margem:</strong> Soma dos pesos com margem de todos os itens.</li>
+                    <li><strong>Custo Material:</strong> Custo total da matéria-prima (barras e chapas, incluindo serviços de corte/dobra de chapas).</li>
+                    <li><strong>TOTAL GERAL:</strong> Custo total de todos os itens, incluindo material, mão de obra e galvanização.</li>
+                    <li><strong>Consolidado de Materiais:</strong> Detalha o peso total por tipo de material (Ex: Barras Portantes, Barras Ligação, Chapa Lateral).</li>
+                </ul>
+            </section>
+
+            <section id="memoria-calculo">
+                <h2 class="title is-2">6. Memória de Cálculo Detalhada</h2>
+                <p>A aba <i class="fas fa-calculator mr-2"></i> <strong>Memória</strong> apresenta uma análise aprofundada de como os custos são calculados para cada template utilizado no orçamento.</p>
+                <p>Para cada template com itens adicionados, a memória de cálculo inclui:</p>
+                <ul>
+                    <li><strong>Visão Geral do Template:</strong> Nome, tipo (degrau, customizado), total de itens, área e peso com margem.</li>
+                    <li><strong>Itens do Template:</strong> Lista cada item que usa o template, com suas dimensões, peso e custo individual.</li>
+                    <li><strong>Barras Metálicas:</strong>
+                        <ul>
+                            <li>Lista detalhada das dimensões das barras (Espessura/Diâmetro, Largura).</li>
+                            <li>Número de barras necessárias (de 6 metros, padrão).</li>
+                            <li>Peso da matéria-prima (considerando a barra padrão de 6m).</li>
+                            <li>Preço por kg.</li>
+                            <li>Custo total de cada tipo de barra.</li>
+                        </ul>
+
+                    </li>
+                    <li><strong>Chapas para Degraus (se aplicável):</strong>
+                        <ul>
+                            <li>Detalhes da Chapa Lateral e Chapa Xadrez (se incluída).</li>
+                            <li>Dimensões, quantidade, peso e custo do material.</li>
+                            <li><strong>Nota:</strong> Esta seção mostra apenas o custo do material da chapa; os serviços de corte/dobra são detalhados na seção de Processos.</li>
+                        </ul>
+
+                    </li>
+                    <li><strong>Processos:</strong>
+                        <ul>
+                            <li><strong>Mão de Obra:</strong> Cálculo: Peso com Margem (kg) × Preço Mão de Obra (R$/kg).</li>
+                            <li><strong>Galvanização:</strong> Cálculo: Peso com Margem (kg) × Preço Galvanização (R$/kg).</li>
+                            <li><strong>Serviços de Chapas:</strong> Soma dos serviços de corte/dobra para chapas laterais e xadrez.</li>
+                            <li>Total de Processos.</li>
+                        </ul>
+
+                    </li>
+                    <li><strong>Total Geral:</strong> Custo total do template (material + processos).</li>
+                    <li><strong>Custo por m²:</strong> Custo total do template dividido pela área total dos itens que o utilizam.</li>
+                </ul>
+            </section>
+
+            <section id="relatorios">
+                <h2 class="title is-2">7. Relatórios</h2>
+                <p>A aba <i class="fas fa-chart-line mr-2"></i> <strong>Relatórios</strong> fornece diferentes visões dos dados do seu orçamento.</p>
+
+                <h3 class="title is-3" id="relatorios-individual">7.1. Relatório Detalhado por Item</h3>
+                <p>Este relatório lista cada item do orçamento com seus respectivos detalhes e custos.</p>
+                <ul>
+                    <li><strong>Header:</strong> Descrição do item, dimensões, template utilizado, peso e custo total. Clique no cabeçalho para expandir/recolher os detalhes.</li>
+                    <li><strong>Detalhes do Material:</strong> Tabela com tipo de material (ex: Portante, Ligação, Fechamento), espessura/diâmetro, largura, comprimento, quantidade e peso.</li>
+                    <li><strong>Custos Detalhados:</strong> Material, Mão de Obra, Galvanização, Custo TOTAL, Custo/unidade e Custo/m².</li>
+                </ul>
+
+                <h3 class="title is-3" id="relatorios-consolidado">7.2. Consolidado e Plano de Corte</h3>
+                <p>Este relatório consolida os materiais necessários e gera um plano de corte otimizado para as barras.</p>
+                <h4>Consolidado de Barras Metálicas:</h4>
+                <ul>
+                    <li>Exibe o total de peças e peso total por template, espessura/diâmetro, largura e comprimento.</li>
+                </ul>
+                <h4>Consolidado de Chapas para Degraus (se aplicável):</h4>
+                <ul>
+                    <li>Exibe o total de peças e peso total por template, tipo de chapa, espessura, largura e comprimento.</li>
+                </ul>
+                <h4>Plano de Corte:</h4>
+                <p>Detalha como otimizar o corte das barras padrão (6000mm) para minimizar o desperdício para cada tipo de barra.</p>
+                <ul>
+                    <li>Para cada dimensão de barra, mostra o número de barras padrão necessárias.</li>
+                    <li>Indica o percentual de desperdício (<span class="tag is-success">baixo</span>, <span class="tag is-warning">médio</span>, <span class="tag is-danger">alto</span>).</li>
+                    <li>Lista as peças a serem cortadas de cada barra.</li>
+                    <li><strong>Cálculo do Desperdício:</strong> É a soma das sobras de todas as barras dividida pelo comprimento total das barras utilizadas, expressa em percentual.</li>
+                </ul>
+            </section>
+
+            <section id="pricing">
+                <h2 class="title is-2">8. Configuração de Pricing</h2>
+                <p>A aba <i class="fas fa-percentage mr-2"></i> <strong>Pricing</strong> é crucial para transformar o custo de produção em preço de venda, aplicando margens, despesas e impostos.</p>
+
+                <h3 class="title is-3" id="pricing-aliquotas">8.1. Tabela de Alíquotas</h3>
+                <p>Esta seção permite visualizar e editar as alíquotas de ICMS (Alíquota Interna, Alíquota SP) e MVA (Margem de Valor Agregado para Grade, Grampo, Telas) por estado (UF).</p>
+                <p>Para editar, clique em <span class="tag is-light"><i class="fas fa-edit mr-1"></i> Editar Alíquotas</span>.</p>
+                <ul>
+                    <li><strong>UF:</strong> Unidade Federativa.</li>
+                    <li><strong>MVA Grade / Grampo / Telas:</strong> Margem de Valor Agregado para Substituição Tributária.</li>
+                    <li><strong>Aliq. Int.:</strong> Alíquota Interna de ICMS do estado.</li>
+                    <li><strong>Aliq. SP:</strong> Alíquota de ICMS para vendas para São Paulo.</li>
+                </ul>
+                <p>Após editar, clique em <span class="tag is-success"><i class="fas fa-save mr-1"></i> Salvar Alterações</span>.</p>
+                <p>Você pode restaurar as alíquotas de uma UF específica clicando no botão <span class="tag is-info"><i class="fas fa-undo mr-1"></i></span> (Restaurar) na linha da UF, ou restaurar todas as alíquotas para o padrão clicando em <span class="tag is-warning"><i class="fas fa-undo mr-1"></i> Restaurar Padrão</span>.</p>
+                <p class="notification is-warning is-light"><strong>Atenção:</strong> Alterações nas alíquotas afetam todos os cálculos de pricing. Use dados oficiais e atualizados.</p>
+
+                <h3 class="title is-3" id="pricing-templates">8.2. Configuração de Pricing por Template</h3>
+                <p>Cada template no seu orçamento pode ter sua própria configuração de pricing.</p>
+                <p>O painel superior (<span class="tag is-light">Toolbar de Pricing</span>) mostra um resumo dos templates: total, configurados, calculados e com itens.</p>
+                <p>Você pode copiar a configuração de um template já configurado para outros que ainda não possuem configuração, usando os campos "Copiar de..." e o botão <span class="tag is-info"><i class="fas fa-copy mr-1"></i> Copiar para Não Configurados</span>.</p>
+                <p>O botão <span class="tag is-primary"><i class="fas fa-calculator mr-1"></i> Calcular Todos</span> recalcula o pricing para todos os templates que têm itens no orçamento e estão configurados.</p>
+
+                <h4>Painel de Configuração Individual por Template:</h4>
+                <p>Cada "Template Pricing Card" representa um template e pode ser expandido/recolhido para configurar seus parâmetros de pricing.</p>
+                <ul>
+                    <li><strong>Status do Template:</strong>
+                        <ul>
+                            <li><span class="tag is-grey"><i class="fas fa-minus-circle mr-1"></i> Sem Itens</span>: O template não foi usado em nenhum item do orçamento.</li>
+                            <li><span class="tag is-warning"><i class="fas fa-exclamation-triangle mr-1"></i> Não Configurado</span>: O template possui itens, mas sua configuração de pricing ainda não foi salva.</li>
+                            <li><span class="tag is-info"><i class="fas fa-cog mr-1"></i> Configurado</span>: A configuração foi salva, mas o preço final ainda não foi calculado (ou está desatualizado).</li>
+                            <li><span class="tag is-success"><i class="fas fa-check-circle mr-1"></i> Calculado</span>: O preço final foi calculado com sucesso.</li>
+                        </ul>
+
+                    </li>
+                    <li><strong>Tipo de Configuração:</strong> Essencial para determinar como o ICMS será aplicado (Venda de Grade ST, Venda para Não Contribuinte, etc.).</li>
+                    <li><strong>UF de Destino:</strong> Estado para onde o produto será vendido, usado para buscar as alíquotas corretas.</li>
+                    <li><strong>Percentuais de Negócio:</strong>
+                        <ul>
+                            <li>Lucro Líquido (%), Despesas Fixas (%), Comissões Internas (%), Comissões Representantes (%), Despesas Financeiras (%), CSLL/IRPJ (%).</li>
+                        </ul>
+
+                    </li>
+                    <li><strong>ICMS Material (%):</strong> Alíquota de ICMS sobre a compra da matéria-prima.</li>
+                    <li><strong>Configuração de IPI:</strong> Esta é uma seção crítica com regras específicas.</li>
+                    <li><strong>Configuração de Frete:</strong> Frete Percentual (%) e Frete Valor Fixo (R$).</li>
+                    <li><strong>Substituição Tributária (ST Compra):</strong> Quantidade e Valor Unitário (R$) para cálculo de ST na compra.</li>
+                    <li><strong>Taxa de Energia:</strong> Quantidade e Valor Unitário (R$) para cálculo de taxa de energia.</li>
+                </ul>
+                <p>Após ajustar os parâmetros, clique em <span class="tag is-primary"><i class="fas fa-calculator mr-1"></i> Calcular Preço</span> dentro do card do template para obter o resultado.</p>
+                <p>O resultado do cálculo mostrará: Preço de Venda, Preço por m², Valor IPI e Valor com IPI+ST.</p>
+
+                <h3 class="title is-3" id="pricing-ipi">8.3. Regras de IPI (Imposto sobre Produtos Industrializados)</h3>
+                <p>A configuração do IPI é complexa e o sistema implementa validações rigorosas:</p>
+                <ul>
+                    <li>Se <strong>IPI Material > 0%</strong>:
+                        <ul>
+                            <li>IPI na Revenda <strong>deve ser 0%</strong>.</li>
+                            <li>IPI Venda Final <strong>deve ser > 0%</strong>.</li>
+                            <li>Esta configuração geralmente indica uma operação de <strong>INDUSTRIALIZAÇÃO</strong>.</li>
+                        </ul>
+                    </li>
+                    <li>Se <strong>IPI na Revenda > 0%</strong>:
+                        <ul>
+                            <li>IPI Material <strong>deve ser 0%</strong>.</li>
+                            <li>IPI Venda Final <strong>deve ser 0%</strong>.</li>
+                            <li>Esta configuração geralmente indica uma operação de <strong>REVENDA</strong>.</li>
+                        </ul>
+                    </li>
+                    <li>Todos os campos de IPI (Material, Revenda, Venda Final) podem ser 0% simultaneamente.</li>
+                </ul>
+                <p>O sistema exibirá mensagens de erro ou avisos se as regras não forem seguidas, destacando os campos com problemas.</p>
+
+                <h3 class="title is-3" id="pricing-calculo">8.4. Entendendo o Cálculo de Pricing (Motor de Cálculo)</h3>
+                <p>O motor de cálculo de pricing (<code>CalculationEngine.js</code>) realiza uma série de etapas para determinar o preço de venda, utilizando as configurações do template e as alíquotas da UF de destino.</p>
+                <h4>Principais Variáveis e Etapas do Cálculo:</h4>
+                <p>As variáveis são nomeadas com <code>B_</code> para facilitar a referência a uma possível planilha de cálculo.</p>
+                <ul>
+                    <li><strong><code>B1_custoMaterial</code>:</strong> Soma dos custos de material puro do template (sem serviços de chapas).</li>
+                    <li><strong><code>B3_ipiMaterial</code>:</strong> IPI sobre a compra de material.</li>
+                    <li><strong><code>B2_custoMaterialComIPI</code>:</strong> <code>B1_custoMaterial * (1 + B3_ipiMaterial)</code>.</li>
+                    <li><strong><code>B4_valorIPIMaterial</code>:</strong> Valor do IPI sobre material (pode ser 0 para venda para estaleiro ou exportação).</li>
+                    <li><strong><code>B5_icmsMaterial</code>:</strong> Alíquota de ICMS sobre material.</li>
+                    <li><strong><code>B6_valorICMSMaterial</code>:</strong> Valor do ICMS sobre material (pode ser 0 para venda para estaleiro ou exportação).</li>
+                    <li><strong><code>B7_ipiRevenda</code>:</strong> IPI na revenda.</li>
+                    <li><strong><code>B8_valorIPIRevenda</code>:</strong> Valor do IPI na revenda.</li>
+                    <li><strong><code>B11_somaServicos</code>:</strong> Soma da Mão de Obra, Galvanização e Serviços de Chapas.</li>
+                    <li><strong><code>B12_servicoTotal</code>:</strong> Considera <code>B11_somaServicos</code>.</li>
+                    <li><strong><code>B28_stCompraTotal</code>:</strong> Custo total da ST na compra.</li>
+                    <li><strong><code>B32_taxaEnergiaTotal</code>:</strong> Custo total da taxa de energia.</li>
+                    <li><strong><code>B34_custoLiquido</code>:</strong> Custo total líquido, incluindo material com IPI, serviços, ST compra e taxa de energia, menos IPI e ICMS de material (se aplicável).</li>
+                </ul>
+                <p><strong>Cálculo do Preço de Venda Base (<code>B94_valorMercadoria</code>):</strong></p>
+                <ul>
+                    <li>Este é um cálculo crucial, que "volta" o preço a partir do custo líquido e de todos os percentuais sobre a venda.</li>
+                    <li>Ele considera o Lucro Líquido, Despesas Fixas, Comissões, Despesas Financeiras, CSLL/IRPJ, ICMS de Operação Própria, COFINS, PIS e Frete Percentual.</li>
+                    <li><code>B92_percAntesMercadoria</code> = Soma de todos os percentuais sobre a venda (exceto frete fixo).</li>
+                    <li><code>B94_valorMercadoria = (B34_custoLiquido / (1 - B92_percAntesMercadoria)) + B91_freteValor</code> (Frete Valor Fixo).</li>
+                </ul>
+                <p><strong>Cálculo dos Impostos sobre a Venda:</strong></p>
+                <ul>
+                    <li><strong><code>B99_valorIPI</code>:</strong> IPI sobre a venda final (se <code>B98_ipiVenda > 0</code>). Não aplicado para venda para estaleiro ou exportação.</li>
+                    <li><strong><code>B35_baseICMSST</code>:</strong> Soma das MVAs de Grade, Grampo e Telas, se aplicável.</li>
+                    <li><strong><code>B36_baseICMSSTTotal</code>:</strong> Base de cálculo do ICMS ST (<code>(B94_valorMercadoria + B99_valorIPI) * B35_baseICMSST</code>).</li>
+                    <li><strong><code>B38_icmsSTBruto</code>:</strong> Soma das alíquotas internas para ST (Grade, Grampo, Telas).</li>
+                    <li><strong><code>B39_icmsSTBrutoTotal</code>:</strong> ICMS ST Bruto (<code>B36_baseICMSSTTotal * B38_icmsSTBruto</code>).</li>
+                    <li><strong><code>B82_icmsOpPropria</code>:</strong> Alíquota de ICMS de Operação Própria (Soma de Aliq. SP ou Aliq. Int. para não contribuinte/consumidor final/revenda normal).</li>
+                    <li><strong><code>B83_valorICMSOpPropria</code>:</strong> Valor do ICMS de Operação Própria.</li>
+                    <li><strong><code>B84_cofins</code> e <code>B86_pis</code>:</strong> Alíquotas de COFINS e PIS. Não aplicadas para venda para estaleiro ou exportação.</li>
+                    <li><strong><code>B85_valorCOFINS</code> e <code>B87_valorPIS</code>:</strong> Valores de COFINS e PIS (calculados sobre <code>B94_valorMercadoria - B83_valorICMSOpPropria</code>).</li>
+                    <li><strong><code>B95_difal</code>:</strong> Diferencial de Alíquota (DIFAL) para não contribuinte.</li>
+                    <li><strong><code>B96_valorDifal</code>:</strong> Valor do DIFAL.</li>
+                    <li><strong><code>B97_precoVendaComDifal</code>:</strong> <code>B94_valorMercadoria + B96_valorDifal</code>. Este é o <strong>Preço de Venda</strong> exibido.</li>
+                    <li><strong><code>B101_valorDifST</code>:</strong> Diferencial de ST (<code>B39_icmsSTBrutoTotal - B83_valorICMSOpPropria</code>).</li>
+                    <li><strong><code>B102_valorFinalComIPIST</code>:</strong> <code>B97_precoVendaComDifal + B99_valorIPI + B101_valorDifST</code>. Este é o <strong>Valor com IPI + ST</strong> exibido.</li>
+                </ul>
+                <p class="notification is-info is-light"><strong>Nota:</strong> O cálculo de pricing é complexo e simula um cenário tributário para grades metálicas. Consulte um especialista fiscal para validação dos dados em um cenário real. O sistema não trata cenários específicos como vendas para estaleiros ou exportação, onde algumas isenções podem ser aplicadas (B68 e B69).</p>
+            </section>
+
+            <section id="orcamento-final">
+                <h2 class="title is-2">9. Orçamento Comercial Final</h2>
+                <p>A aba <i class="fas fa-file-invoice mr-2"></i> <strong>Orçamento</strong> apresenta um resumo do orçamento comercial, utilizando os preços calculados na seção de Pricing.</p>
+                <p>Para que os valores sejam exibidos, você deve ter itens adicionados ao orçamento e ter executado o cálculo de pricing para os templates utilizados (botão <span class="tag is-primary"><i class="fas fa-calculator mr-1"></i> Calcular Preço</span> na aba Pricing ou <span class="tag is-primary"><i class="fas fa-calculator mr-1"></i> Calcular Todos</span>).</p>
+                <h4>Conteúdo do Relatório:</h4>
+                <ul>
+                    <li><strong>Resumo Superior:</strong> Total com DIFAL e Total com IPI+ST.</li>
+                    <li><strong>Tabela de Itens:</strong>
+                        <ul>
+                            <li>Item (Descrição e Template)</li>
+                            <li>Quantidade</li>
+                            <li>Dimensões</li>
+                            <li>Área (m²)</li>
+                            <li>Valor Unitário (calculado)</li>
+                            <li>Valor Total (calculado)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Totais Finais:</strong> Total com DIFAL e Total com IPI+ST novamente no rodapé da tabela.</li>
+                </ul>
+            </section>
+
+            <section id="dicas-validacoes">
+                <h2 class="title is-2">10. Dicas e Validações para Uso Correto</h2>
+                <ul>
+                    <li><strong>Campos Obrigatórios:</strong> Campos marcados com um asterisco (*) são obrigatórios.</li>
+                    <li><strong>Validação em Tempo Real:</strong> Muitos campos possuem validação em tempo real. Erros são indicados por uma borda vermelha e uma mensagem de ajuda em vermelho.</li>
+                    <li><strong>Mensagens de Notificação:</strong> O sistema exibirá mensagens no canto superior direito da tela para informar sobre o sucesso de operações, avisos ou erros.</li>
+                    <li><strong>Limpeza de Formulários:</strong> Utilize os botões "Limpar" para resetar os campos dos formulários.</li>
+                    <li><strong>Formato de Números:</strong> Insira valores numéricos. O sistema aceita vírgulas ou pontos como separador decimal e fará a conversão interna.</li>
+                    <li><strong>Backup de Dados:</strong> Como os dados são salvos localmente, considere exportar seus orçamentos periodicamente como backup.</li>
+                    <li><strong>Revisão de Validações:</strong> Sempre preste atenção às mensagens de erro e avisos, especialmente nas seções de Templates e Pricing, pois elas indicam problemas que podem afetar a precisão dos cálculos.</li>
+                    <li><strong>Unicidade de Degrau:</strong> Lembre-se que templates de degrau só aceitam um item no orçamento.</li>
+                    <li><strong>Ordem das Operações:</strong> A sequência lógica de uso é:
+                        <ol>
+                            <li>Configurar Templates.</li>
+                            <li>Configurar Preços Globais e/ou Específicos.</li>
+                            <li>Adicionar Itens ao Orçamento.</li>
+                            <li>Visualizar Memória de Cálculo e Relatórios (opcional, para conferência).</li>
+                            <li>Configurar Pricing por Template e Calcular os Preços.</li>
+                            <li>Gerar Orçamento Comercial Final.</li>
+                        </ol>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="fluxo-completo">
+                <h2 class="title is-2">11. Fluxo de Uso Completo - Exemplo Prático</h2>
+                <p>Vamos percorrer um cenário completo de uso do sistema:</p>
+
+                <h3 class="title is-3">Etapa 1: Preparar o Orçamento e Configurar Templates</h3>
+                <ol>
+                    <li><strong>Crie um Novo Orçamento (se necessário):</strong> No cabeçalho, clique em <span class="tag is-success"><i class="fas fa-plus mr-1"></i></span> para criar um novo orçamento. Você pode renomeá-lo para "Orçamento Cliente ABC".</li>
+                    <li><strong>Crie um Template de Grade Padrão:</strong>
+                        <ul>
+                            <li>Vá para a aba <i class="fas fa-cogs mr-2"></i> <strong>Templates</strong>.</li>
+                            <li>Preencha o formulário:
+                                <ul>
+                                    <li>Nome do Template: <code>Grade Padrão</code></li>
+                                    <li>Barras Portantes: Esp. <code>4.76</code>mm, Larg. <code>32</code>mm</li>
+                                    <li>Barras de Ligação: Diâmetro <code>6.35</code>mm (deixe Esp. Chata e Larg. Chata como 0)</li>
+                                    <li>Barras de Fechamento: Esp. <code>4.76</code>mm, Larg. <code>32</code>mm</li>
+                                    <li>Malha Menor: <code>33</code>mm, Malha Maior: <code>100</code>mm</li>
+                                    <li>Densidade: <code>7850</code>, Margem: <code>2</code></li>
+                                </ul>
+                            </li>
+                            <li>Clique em <span class="tag is-primary"><i class="fas fa-save mr-1"></i> Salvar Template</span>.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Crie um Template de Degrau:</strong>
+                        <ul>
+                            <li>Ainda na aba <i class="fas fa-cogs mr-2"></i> <strong>Templates</strong>, limpe o formulário (botão <span class="tag is-light"><i class="fas fa-broom mr-1"></i> Limpar</span>).</li>
+                            <li>Preencha:
+                                <ul>
+                                    <li>Nome do Template: <code>Degrau Padrão</code></li>
+                                    <li>Barras Portantes: Esp. <code>4.76</code>mm, Larg. <code>38</code>mm</li>
+                                    <li>Barras de Ligação: Diâmetro <code>6.35</code>mm</li>
+                                    <li>Barras de Fechamento: Esp. <code>4.76</code>mm, Larg. <code>38</code>mm</li>
+                                    <li>Malha Menor: <code>33</code>mm, Malha Maior: <code>100</code>mm</li>
+                                    <li>Marque <span class="tag is-warning"><i class="fas fa-check mr-1"></i> Configurar como Degrau</span>.</li>
+                                    <li>Chapa Lateral: Esp. <code>4.76</code>mm, Larg. <code>80</code>mm (largura calculada automaticamente).</li>
+                                    <li>Marque <span class="tag is-warning"><i class="fas fa-check mr-1"></i> Incluir chapa xadrez</span>.</li>
+                                    <li>Chapa Xadrez: Esp. <code>3.18</code>mm, Larg. <code>71</code>mm (largura calculada), Ajuste Peso: <code>1.05</code>.</li>
+                                </ul>
+                            </li>
+                            <li>Clique em <span class="tag is-primary"><i class="fas fa-save mr-1"></i> Salvar Template</span>.</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h3 class="title is-3">Etapa 2: Configurar Preços</h3>
+                <ol>
+                    <li>Vá para a aba <i class="fas fa-dollar-sign mr-2"></i> <strong>Preços</strong>.</li>
+                    <li><strong>Preços Globais:</strong>
+                        <ul>
+                            <li>Barra Chata Padrão: <code>12.00</code> R$/kg</li>
+                            <li>Barra Redonda Padrão: <code>13.00</code> R$/kg</li>
+                            <li>Chapa Lateral Padrão: <code>14.00</code> R$/kg</li>
+                            <li>Chapa Xadrez Padrão: <code>16.00</code> R$/kg</li>
+                            <li>Corte Chapa Lateral: <code>2.00</code> R$/kg</li>
+                            <li>Corte+Dobra Chapa Xadrez: <code>3.00</code> R$/kg</li>
+                            <li>Mão de Obra: <code>15.00</code> R$/kg</li>
+                            <li>Galvanização: <code>8.00</code> R$/kg</li>
+                            <li>Clique em <span class="tag is-primary"><i class="fas fa-save mr-1"></i> Salvar Preços</span>.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Preço Específico (Exemplo - Opcional):</strong>
+                        <ul>
+                            <li>Clique em <span class="tag is-info"><i class="fas fa-plus mr-1"></i> Chata</span>.</li>
+                            <li>Espessura: <code>4.76</code>, Largura: <code>32</code>, Preço: <code>12.50</code> R$/kg.</li>
+                            <li>Clique em <span class="tag is-success"><i class="fas fa-save mr-1"></i> Salvar</span>. Este preço será usado para barras chatas 4.76x32mm em vez dos 12.00 R$/kg padrão.</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h3 class="title is-3">Etapa 3: Adicionar Itens ao Orçamento</h3>
+                <ol>
+                    <li>Vá para a aba <i class="fas fa-list mr-2"></i> <strong>Itens</strong>.</li>
+                    <li><strong>Adicione um Item "Grade Padrão":</strong>
+                        <ul>
+                            <li>Template: <code>Grade Padrão</code></li>
+                            <li>Quantidade: <code>10</code></li>
+                            <li>Largura: <code>900</code>mm, Comprimento: <code>1200</code>mm</li>
+                            <li>Descrição: <code>Grades para plataforma</code></li>
+                            <li>Clique em <span class="tag is-success"><i class="fas fa-plus mr-1"></i> Adicionar Item</span>.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Adicione um Item "Degrau Padrão":</strong>
+                        <ul>
+                            <li>Template: <code>Degrau Padrão</code></li>
+                            <li>Quantidade: <code>20</code></li>
+                            <li>Largura: <code>300</code>mm, Comprimento: <code>800</code>mm</li>
+                            <li>Descrição: <code>Degraus para escada</code></li>
+                            <li>Clique em <span class="tag is-success"><i class="fas fa-plus mr-1"></i> Adicionar Item</span>.</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h3 class="title is-3">Etapa 4: Análise de Custos e Relatórios</h3>
+                <ol>
+                    <li><strong>Memória de Cálculo:</strong>
+                        <ul>
+                            <li>Vá para a aba <i class="fas fa-calculator mr-2"></i> <strong>Memória</strong>.</li>
+                            <li>Analise como os custos de material, mão de obra, galvanização e serviços de chapa são detalhados para cada template (Grade Padrão e Degrau Padrão).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Relatórios:</strong>
+                        <ul>
+                            <li>Vá para a aba <i class="fas fa-chart-line mr-2"></i> <strong>Relatórios</strong>.</li>
+                            <li>Examine o "Relatório Detalhado por Item" para ver os materiais e custos de cada grade individualmente.</li>
+                            <li>Verifique o "Consolidado e Plano de Corte" para o resumo dos materiais e a otimização de corte das barras.</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h3 class="title is-3">Etapa 5: Configurar Pricing e Gerar Orçamento Final</h3>
+                <ol>
+                    <li><strong>Configurar Alíquotas (se necessário):</strong>
+                        <ul>
+                            <li>Vá para a aba <i class="fas fa-percentage mr-2"></i> <strong>Pricing</strong>.</li>
+                            <li>Se sua UF não estiver correta, clique em <span class="tag is-light"><i class="fas fa-edit mr-1"></i> Editar Alíquotas</span>, ajuste e salve.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Configurar Pricing para o Template "Grade Padrão":</strong>
+                        <ul>
+                            <li>No card do "Grade Padrão", expanda-o (clique no cabeçalho).</li>
+                            <li>Tipo de Configuração: <code>Venda de Grade ST</code></li>
+                            <li>UF de Destino: <code>SP</code> (ou sua UF)</li>
+                            <li>Lucro Líquido: <code>20</code>%, Despesas Fixas: <code>9.5</code>%, Comissões Internas: <code>3.5</code>%, CSLL/IRPJ: <code>2.81</code>% (use os valores padrão se preferir).</li>
+                            <li>ICMS Material: <code>18</code>%, IPI Material: <code>3.25</code>%, IPI Venda Final: <code>3.25</code>% (deixe IPI Revenda como 0).</li>
+                            <li>Clique em <span class="tag is-primary"><i class="fas fa-calculator mr-1"></i> Calcular Preço</span> para este template.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Configurar Pricing para o Template "Degrau Padrão":</strong>
+                        <ul>
+                            <li>No card do "Degrau Padrão", expanda-o.</li>
+                            <li>Tipo de Configuração: <code>Venda de Grade ST</code> (ou o tipo adequado para degraus)</li>
+                            <li>UF de Destino: <code>SP</code> (ou sua UF)</li>
+                            <li>Ajuste os percentuais conforme necessário.</li>
+                            <li>Configure o IPI seguindo as regras (ex: IPI Material <code>3.25</code>%, IPI Venda Final <code>3.25</code>%).</li>
+                            <li>Clique em <span class="tag is-primary"><i class="fas fa-calculator mr-1"></i> Calcular Preço</span> para este template.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Gerar Orçamento Comercial Final:</strong>
+                        <ul>
+                            <li>Vá para a aba <i class="fas fa-file-invoice mr-2"></i> <strong>Orçamento</strong>.</li>
+                            <li>Você verá a tabela com os itens do seu orçamento, agora com os valores unitários e totais calculados com base no pricing.</li>
+                            <li>Os totais com DIFAL e com IPI+ST serão exibidos no topo e rodapé.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <p class="notification is-success">Parabéns! Você concluiu um fluxo completo de orçamento. Agora você pode explorar as funcionalidades para suas necessidades específicas.</p>
+            </section>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
