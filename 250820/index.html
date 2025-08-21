@@ -72,7 +72,7 @@
         <div class="tabs is-boxed is-large">
             <ul>
                 <li class="is-active" data-tab="templates">
-                    <a><span class="icon"><i class="fas fa-cogs"></i></span><span>Templates</span></a></li>
+                    <a><span class="icon"><i class="fas fa-cogs"></i></span><span>Modelos</span></a></li>
                 <li data-tab="precos"><a><span class="icon"><i class="fas fa-dollar-sign"></i></span><span>Preços</span></a>
                 </li>
                 <li data-tab="itens"><a><span class="icon"><i class="fas fa-list"></i></span><span>Itens</span></a></li>
@@ -96,10 +96,10 @@
             <div class="columns">
                 <div class="column is-8">
                     <div class="box">
-                        <h3 class="subtitle is-4">Criar/Editar Template</h3>
+                        <h3 class="subtitle is-4" id="template-form-title">Criar/Editar Modelo de Produto</h3>
 
                         <div class="field">
-                            <label class="label">Tipo de Template</label>
+                            <label class="label">Tipo de Modelo de Produto</label>
                             <div class="control" id="template-type-selector">
                                 <label class="radio">
                                     <input type="radio" name="template-type" value="grade" checked>
@@ -165,7 +165,7 @@
         </div>
         <div id="memoria-content" class="tab-content">
             <div class="box">
-                <h3 class="subtitle is-4">Memória de Cálculo por Template</h3>
+                <h3 class="subtitle is-4">Memória de Cálculo por Modelo</h3>
                 <calculation-memory id="calculation-memory-component"></calculation-memory>
             </div>
         </div>
@@ -316,6 +316,23 @@
         </footer>
     </div>
 </div>
+
+<div class="modal" id="modal-confirm-delete">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Confirmar Exclusão</p>
+            <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body" id="delete-modal-content">
+        </section>
+        <footer class="modal-card-foot">
+            <button class="button is-danger" id="delete-confirm-btn">Excluir</button>
+            <button class="button" id="delete-cancel-btn">Cancelar</button>
+        </footer>
+    </div>
+</div>
+
 <script>
     window.app = null;
     window.waitForApp = function (callback) {
