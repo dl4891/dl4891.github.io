@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="shared/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
 
     <script type="importmap">
         {
@@ -17,10 +16,14 @@
             "lit": "https://cdn.jsdelivr.net/npm/lit@3.1.4/index.js",
             "lit/": "https://cdn.jsdelivr.net/npm/lit@3.1.4/",
             "@lit/reactive-element": "https://cdn.jsdelivr.net/npm/@lit/reactive-element@2.0.4/reactive-element.js",
+            "@lit/reactive-element/": "https://cdn.jsdelivr.net/npm/@lit/reactive-element@2.0.4/",
             "lit-html": "https://cdn.jsdelivr.net/npm/lit-html@3.1.4/lit-html.js",
             "lit-html/": "https://cdn.jsdelivr.net/npm/lit-html@3.1.4/",
             "lit-element": "https://cdn.jsdelivr.net/npm/lit-element@4.0.5/lit-element.js",
-            "lit-element/": "https://cdn.jsdelivr.net/npm/lit-element@4.0.5/"
+            "lit-element/": "https://cdn.jsdelivr.net/npm/lit-element@4.0.5/",
+            "@lit-labs/virtualizer": "https://cdn.jsdelivr.net/npm/@lit-labs/virtualizer@2.0.14/lit-virtualizer.js",
+            "@lit-labs/virtualizer/": "https://cdn.jsdelivr.net/npm/@lit-labs/virtualizer@2.0.14/",
+            "tslib": "https://cdn.jsdelivr.net/npm/tslib@2.6.3/tslib.es6.js"
           }
         }
     </script>
@@ -69,7 +72,7 @@
         <div class="tabs is-boxed is-large">
             <ul>
                 <li class="is-active" data-tab="templates">
-                    <a><span class="icon"><i class="fas fa-cogs"></i></span><span>Templates</span></a></li>
+                    <a><span class="icon"><i class="fas fa-cogs"></i></span><span>Modelos</span></a></li>
                 <li data-tab="precos"><a><span class="icon"><i class="fas fa-dollar-sign"></i></span><span>Preços</span></a>
                 </li>
                 <li data-tab="itens"><a><span class="icon"><i class="fas fa-list"></i></span><span>Itens</span></a></li>
@@ -93,10 +96,10 @@
             <div class="columns">
                 <div class="column is-8">
                     <div class="box">
-                        <h3 class="subtitle is-4">Criar/Editar Template</h3>
+                        <h3 class="subtitle is-4" id="template-form-title">Criar/Editar Modelo de Produto</h3>
 
                         <div class="field">
-                            <label class="label">Tipo de Template</label>
+                            <label class="label">Tipo de Modelo de Produto</label>
                             <div class="control" id="template-type-selector">
                                 <label class="radio">
                                     <input type="radio" name="template-type" value="grade" checked>
@@ -162,7 +165,7 @@
         </div>
         <div id="memoria-content" class="tab-content">
             <div class="box">
-                <h3 class="subtitle is-4">Memória de Cálculo por Template</h3>
+                <h3 class="subtitle is-4">Memória de Cálculo por Modelo</h3>
                 <calculation-memory id="calculation-memory-component"></calculation-memory>
             </div>
         </div>
@@ -188,149 +191,7 @@
             </div>
         </div>
         <div id="proposta-content" class="tab-content">
-            <form id="proposta-form">
-                <div class="box form-section">
-                    <h6 class="subtitle is-6"><i class="fas fa-building mr-2"></i>Dados da Empresa (Cabeçalho da Proposta)</h6>
-                    <div class="columns">
-                        <div class="column">
-                            <div class="field">
-                                <label class="label">Linha 1 (Nome)</label>
-                                <div class="control">
-                                    <input id="proposta-header-line1" class="input" type="text">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="field">
-                                <label class="label">Linha 2 (Endereço)</label>
-                                <div class="control">
-                                    <input id="proposta-header-line2" class="input" type="text">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="field">
-                                <label class="label">Linha 3 (CNPJ, IE, etc)</label>
-                                <div class="control">
-                                    <input id="proposta-header-line3" class="input" type="text">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="box form-section">
-                    <h6 class="subtitle is-6"><i class="fas fa-image mr-2"></i>Logotipo da Empresa (para PDF)</h6>
-                    <div class="columns is-vcentered">
-                        <div class="column is-two-thirds">
-                            <div class="field">
-                                <div class="file has-name is-fullwidth">
-                                    <label class="file-label">
-                                        <input class="file-input" type="file" id="proposta-logo-input" accept="image/png">
-                                        <span class="file-cta">
-                                            <span class="file-icon"><i class="fas fa-upload"></i></span>
-                                            <span class="file-label">Escolher imagem PNG…</span>
-                                        </span>
-                                        <span class="file-name" id="proposta-logo-filename">Nenhuma imagem selecionada.</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div id="logo-preview-container" style="display: none;">
-                                <img id="logo-preview" src="" alt="Pré-visualização do Logotipo" style="max-height: 60px; border: 1px solid #ddd; padding: 5px; border-radius: 4px;">
-                                <button type="button" id="remove-logo-btn" class="button is-small is-danger is-light ml-2">Remover</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="box form-section">
-                    <h6 class="subtitle is-6"><i class="fas fa-info-circle mr-2"></i>Informações do Orçamento</h6>
-                    <div class="columns">
-                        <div class="column bar-column">
-                            <h6 class="subtitle is-6 has-text-grey-dark">Dados do Cliente</h6>
-                            <div class="field">
-                                <label class="label">Nome/Razão Social *</label>
-                                <div class="control">
-                                    <input id="proposta-client-name" class="input" type="text" placeholder="Ex: METASA S/A" required>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <label class="label">CNPJ / CPF</label>
-                                <div class="control">
-                                    <input id="proposta-client-identifier" class="input" type="text" placeholder="Ex: 88.416.482/0001-06">
-                                </div>
-                            </div>
-                            <div class="field">
-                                <label class="label">UF de Destino *</label>
-                                <div class="control">
-                                    <div class="select is-fullwidth">
-                                        <select id="proposta-client-uf" required></select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <h6 class="subtitle is-6 has-text-grey-dark">Dados do Orçamento</h6>
-                            <div class="field">
-                                <label class="label">Número do Orçamento *</label>
-                                <div class="control">
-                                    <input id="proposta-quote-number" class="input" type="text" placeholder="Ex: 7809" required>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <label class="label">Válido Até</label>
-                                <div class="control">
-                                    <input id="proposta-valid-until" class="input" type="date">
-                                </div>
-                            </div>
-                            <div class="field">
-                                <label class="label">Vendedor</label>
-                                <div class="control">
-                                    <input id="proposta-seller-name" class="input" type="text" placeholder="Ex: David David dos Santos">
-                                </div>
-                            </div>
-                            <div class="field">
-                                <label class="label">Contato do Vendedor</label>
-                                <div class="control">
-                                    <input id="proposta-seller-contact" class="input" type="text" placeholder="Ex: (11) 9 3759-4156">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="box form-section">
-                    <h6 class="subtitle is-6"><i class="fas fa-handshake mr-2"></i>Termos Comerciais</h6>
-                    <div class="columns">
-                        <div class="column bar-column">
-                            <div class="field">
-                                <label class="label">Prazo de Entrega</label>
-                                <div class="control">
-                                    <input id="proposta-delivery-time" class="input" type="text" placeholder="Ex: 15 a 18 dias úteis">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column bar-column">
-                            <div class="field">
-                                <label class="label">Condições de Pagamento</label>
-                                <div class="control">
-                                    <input id="proposta-payment-terms" class="input" type="text" placeholder="Ex: 30/45/60 DDL">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="field">
-                                <label class="label">Frete</label>
-                                <div class="control">
-                                    <input id="proposta-shipping-info" class="input" type="text" placeholder="Ex: FOB (Material a retirar)">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
+            <proposal-form id="proposal-form-component"></proposal-form>
         </div>
         <div id="pricing-content" class="tab-content">
             <pricing-accordion id="pricing-accordion-component"></pricing-accordion>
@@ -455,6 +316,23 @@
         </footer>
     </div>
 </div>
+
+<div class="modal" id="modal-confirm-delete">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Confirmar Exclusão</p>
+            <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body" id="delete-modal-content">
+        </section>
+        <footer class="modal-card-foot">
+            <button class="button is-danger" id="delete-confirm-btn">Excluir</button>
+            <button class="button" id="delete-cancel-btn">Cancelar</button>
+        </footer>
+    </div>
+</div>
+
 <script>
     window.app = null;
     window.waitForApp = function (callback) {
