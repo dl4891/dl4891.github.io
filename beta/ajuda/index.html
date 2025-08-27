@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Ajuda - Sistema Integrado de Orçamentos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="ajuda.css">
+</head>
+<body>
+<div class="container">
+    <div class="help-header">
+        <a href="../" class="button is-link is-light"><span class="icon"><i class="fas fa-arrow-left"></i></span><span>Voltar ao Aplicativo</span></a>
+        <h1 class="title">Central de Ajuda</h1>
+        <p class="subtitle">Como podemos ajudar?</p>
+    </div>
+
+    <div class="field">
+        <p class="control has-icons-left">
+            <input class="input is-large" type="text" id="help-search-bar" placeholder="Pesquise por termos como 'exportar', 'IPI', 'logotipo'...">
+            <span class="icon is-left is-large">
+                <i class="fas fa-search"></i>
+            </span>
+        </p>
+    </div>
+
+    <div class="accordion" id="help-accordion">
+        <div class="accordion-item card" data-topic-id="introducao" data-search-term="introdução sistema abas navegação modelos precios itens memória relatórios pricing orçamento proposta">
+            <header class="card-header accordion-header">
+                <p class="card-header-title"><span class="icon"><i class="fas fa-info-circle"></i></span>Introdução ao Sistema</p>
+                <a class="card-header-icon accordion-toggle"><span class="icon"><i class="fas fa-angle-down"></i></span></a>
+            </header>
+            <div class="accordion-content"></div>
+        </div>
+
+        <div class="accordion-item card" data-topic-id="gerenciamento" data-search-term="gerenciamento orçamentos múltiplos criar renomear duplicar exportar salvar importar abrir csv">
+            <header class="card-header accordion-header">
+                <p class="card-header-title"><span class="icon"><i class="fas fa-file-invoice-dollar"></i></span>Gerenciamento de Orçamentos Múltiplos</p>
+                <a class="card-header-icon accordion-toggle"><span class="icon"><i class="fas fa-angle-down"></i></span></a>
+            </header>
+            <div class="accordion-content"></div>
+        </div>
+
+        <div class="accordion-item card" data-topic-id="templates" data-search-term="modelos de produtos grades criar editar degrau chapa lateral xadrez validação barras portante ligação fechamento malha tipo interna centro a centro peso real teórico superficie lisa serrilhada">
+            <header class="card-header accordion-header">
+                <p class="card-header-title"><span class="icon"><i class="fas fa-cogs"></i></span>Modelos de Produtos (Grades e Grampos)</p>
+                <a class="card-header-icon accordion-toggle"><span class="icon"><i class="fas fa-angle-down"></i></span></a>
+            </header>
+            <div class="accordion-content"></div>
+        </div>
+        <div class="accordion-item card" data-topic-id="precos" data-search-term="preços configuração globais específicos matéria prima serviços processos custos tipo de material aço carbono inox arredondamento casas decimais método de cálculo">
+            <header class="card-header accordion-header">
+                <p class="card-header-title"><span class="icon"><i class="fas fa-dollar-sign"></i></span>Configuração de Preços</p>
+                <a class="card-header-icon accordion-toggle"><span class="icon"><i class="fas fa-angle-down"></i></span></a>
+            </header>
+            <div class="accordion-content"></div>
+        </div>
+        <div class="accordion-item card" data-topic-id="itens" data-search-term="itens orçamento adicionar editar cálculos área peso resumo reordenar arrastar mover drag drop numeração ordem posição">
+            <header class="card-header accordion-header">
+                <p class="card-header-title"><span class="icon"><i class="fas fa-list"></i></span>Itens do Orçamento</p>
+                <a class="card-header-icon accordion-toggle"><span class="icon"><i class="fas fa-angle-down"></i></span></a>
+            </header>
+            <div class="accordion-content"></div>
+        </div>
+
+        <div class="accordion-item card" data-topic-id="memoria" data-search-term="memória de cálculo detalhada custos barras chapas processos">
+            <header class="card-header accordion-header">
+                <p class="card-header-title"><span class="icon"><i class="fas fa-calculator"></i></span>Memória de Cálculo</p>
+                <a class="card-header-icon accordion-toggle"><span class="icon"><i class="fas fa-angle-down"></i></span></a>
+            </header>
+            <div class="accordion-content"></div>
+        </div>
+
+        <div class="accordion-item card" data-topic-id="relatorios" data-search-term="relatórios detalhado item consolidado plano de corte desperdício">
+            <header class="card-header accordion-header">
+                <p class="card-header-title"><span class="icon"><i class="fas fa-chart-line"></i></span>Relatórios</p>
+                <a class="card-header-icon accordion-toggle"><span class="icon"><i class="fas fa-angle-down"></i></span></a>
+            </header>
+            <div class="accordion-content"></div>
+        </div>
+
+        <div class="accordion-item card" data-topic-id="proposta" data-search-term="proposta comercial dados cliente empresa termos uf destino logotipo logo">
+            <header class="card-header accordion-header">
+                <p class="card-header-title"><span class="icon"><i class="fas fa-stamp"></i></span>Dados da Proposta Comercial</p>
+                <a class="card-header-icon accordion-toggle"><span class="icon"><i class="fas fa-angle-down"></i></span></a>
+            </header>
+            <div class="accordion-content"></div>
+        </div>
+
+        <div class="accordion-item card" data-topic-id="pricing" data-search-term="pricing lucro alíquotas icms mva modelo ipi industrialização revenda cálculo estaleiro exportação frete st energia copiar calcular todos">
+            <header class="card-header accordion-header">
+                <p class="card-header-title"><span class="icon"><i class="fas fa-percentage"></i></span>Configuração de Lucro (Pricing)</p>
+                <a class="card-header-icon accordion-toggle"><span class="icon"><i class="fas fa-angle-down"></i></span></a>
+            </header>
+            <div class="accordion-content"></div>
+        </div>
+
+        <div class="accordion-item card" data-topic-id="orcamento" data-search-term="orçamento comercial final proposta valor unitário total difal ipi st pdf exportar logotipo logo cabeçalho rodapé paginação acabamento galvanizado natural superficie serrilhada lisa">
+            <header class="card-header accordion-header">
+                <p class="card-header-title"><span class="icon"><i class="fas fa-file-invoice"></i></span>Orçamento Comercial Final e Exportação PDF</p>
+                <a class="card-header-icon accordion-toggle"><span class="icon"><i class="fas fa-angle-down"></i></span></a>
+            </header>
+            <div class="accordion-content"></div>
+        </div>
+
+        <div class="accordion-item card" data-topic-id="fluxo" data-search-term="dicas validações fluxo de uso completo exemplo prático ordem operações">
+            <header class="card-header accordion-header">
+                <p class="card-header-title"><span class="icon"><i class="fas fa-project-diagram"></i></span>Fluxo de Uso e Dicas</p>
+                <a class="card-header-icon accordion-toggle"><span class="icon"><i class="fas fa-angle-down"></i></span></a>
+            </header>
+            <div class="accordion-content"></div>
+        </div>
+    </div>
+
+    <div id="no-results-message" class="notification is-warning" style="display: none; margin-top: 20px;">
+        Nenhum tópico encontrado para sua busca. Tente um termo diferente.
+    </div>
+
+</div>
+
+<script src="ajuda.js" type="module"></script>
+</body>
+</html>
