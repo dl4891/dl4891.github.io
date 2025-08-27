@@ -1,1 +1,151 @@
-const voti_54_0x1106fb=voti_54_0x90db;(function(_0x396a81,_0x3dab1b){const _0x7d2879=voti_54_0x90db,_0x3e8093=_0x396a81();while(!![]){try{const _0x1d98d2=parseInt(_0x7d2879(0x15f))/0x1+-parseInt(_0x7d2879(0x186))/0x2+-parseInt(_0x7d2879(0x160))/0x3*(parseInt(_0x7d2879(0x181))/0x4)+parseInt(_0x7d2879(0x179))/0x5+-parseInt(_0x7d2879(0x16f))/0x6*(parseInt(_0x7d2879(0x15d))/0x7)+parseInt(_0x7d2879(0x180))/0x8+-parseInt(_0x7d2879(0x188))/0x9*(-parseInt(_0x7d2879(0x17f))/0xa);if(_0x1d98d2===_0x3dab1b)break;else _0x3e8093['push'](_0x3e8093['shift']());}catch(_0x497799){_0x3e8093['push'](_0x3e8093['shift']());}}}(voti_54_0x2c85,0x87b8b));export const COMPANY_INFO={'name':voti_54_0x1106fb(0x18d),'address':voti_54_0x1106fb(0x16a),'cnpj':voti_54_0x1106fb(0x18f),'ie':voti_54_0x1106fb(0x191),'phone':voti_54_0x1106fb(0x15b)};function voti_54_0x90db(_0x18b0ee,_0x285dc3){const _0x2c859f=voti_54_0x2c85();return voti_54_0x90db=function(_0x90dbfd,_0x4c49e2){_0x90dbfd=_0x90dbfd-0x159;let _0x1ac70c=_0x2c859f[_0x90dbfd];return _0x1ac70c;},voti_54_0x90db(_0x18b0ee,_0x285dc3);}export const CONFIG={'PRECISION':0x2,'MAX_ITEMS':0x64,'BARRA_PADRAO':0x1770,'DENSIDADE_ACO':0x1eaa,'MARGEM_PADRAO':0x5,'ANIMATION':{'DURATION_FAST':voti_54_0x1106fb(0x189),'DURATION_NORMAL':voti_54_0x1106fb(0x17a),'DURATION_SLOW':voti_54_0x1106fb(0x16e),'NOTIFICATION_DURATION':0xfa0},'VALIDATION':{'DELAY':0x12c,'MIN_MATERIALS':0x1,'MAX_DECIMALS':0x4},'PRICING':{'DEFAULTS':{'icmsMaterial':0x12,'ipiMaterial':3.25,'ipiRevenda':0x0,'ipiVendaFinal':3.25,'lucroLiquido':0x14,'despesasFixas':9.5,'comissoesRepres':0x0,'comissoesInternas':3.5,'despesasFinanceiras':0.26,'csllIrpj':2.81,'fretePerc':0x0,'freteValor':0x0,'stCompraQtde':0x0,'stCompraUnit':0x0,'taxaEnergiaQtde':0x0,'taxaEnergiaUnit':0x0,'tipoOperacao':voti_54_0x1106fb(0x166)},'IPI_RULES':{'MATERIAL_RULES':{'requires_revenda_zero':!0x0,'requires_venda_final_positive':!0x0},'REVENDA_RULES':{'requires_material_zero':!0x0,'requires_venda_final_zero':!0x0}},'TAXES':{'cofins':{'normal':0.03,'exportacao':0x0},'pis':{'normal':0.0065,'exportacao':0x0}}}};export const MESSAGES={'ERRORS':{'noTipoConfiguracao':voti_54_0x1106fb(0x164),'noUfDestino':voti_54_0x1106fb(0x184),'calculationError':'Erro\x20no\x20cálculo.\x20Verifique\x20os\x20dados\x20inseridos.','minMaterials':'Deve\x20haver\x20pelo\x20menos\x20um\x20material\x20na\x20lista.','fieldRequired':voti_54_0x1106fb(0x18b),'invalidNumber':'Valor\x20numérico\x20inválido','templateExists':voti_54_0x1106fb(0x172),'templateNotFound':voti_54_0x1106fb(0x16c),'dimensionExists':voti_54_0x1106fb(0x17e)},'CONFIRMATIONS':{'resetAliquotas':voti_54_0x1106fb(0x167),'resetTemplate':'Deseja\x20restaurar\x20os\x20valores\x20padrão?','deleteTemplate':voti_54_0x1106fb(0x161),'deleteItem':voti_54_0x1106fb(0x174),'clearBudget':voti_54_0x1106fb(0x195),'resetPrices':voti_54_0x1106fb(0x18e)},'SUCCESS':{'templateSaved':voti_54_0x1106fb(0x170),'templateUpdated':'Modelo\x20atualizado!','templateDeleted':voti_54_0x1106fb(0x162),'itemAdded':voti_54_0x1106fb(0x178),'itemUpdated':'Item\x20atualizado!','itemRemoved':voti_54_0x1106fb(0x173),'pricesSaved':voti_54_0x1106fb(0x163),'pricesReset':voti_54_0x1106fb(0x169),'aliquotasSaved':voti_54_0x1106fb(0x185),'calculationComplete':voti_54_0x1106fb(0x187)}};export const NOTIFICATION_TYPES={'SUCCESS':'success','WARNING':'warning','DANGER':voti_54_0x1106fb(0x15a),'INFO':'info'};function voti_54_0x2c85(){const _0x549f34=['Cálculo\x20realizado\x20com\x20sucesso!','1549161ETfvXb','0.1s','editing','Campo\x20obrigatório','template:saved','FUROEXPRESS\x20IND\x20E\x20COM\x20DE\x20CHAPAS\x20E\x20GRADES\x20LTDA','Resetar\x20todos\x20os\x20preços?','07.707.181/0001-30','smooth','123.240.611.115','prices:updated','expanded','Portante','Limpar\x20orçamento\x20com\x20{count}\x20item(s)?','Fechamento\x20Lateral','is-active','Chapa\x20Lateral','danger','(11)\x202055-8999','fade-in','35DFxxUC','template:deleted','42315LRtMqr','747eLcWoR','Excluir\x20modelo\x20\x22{name}\x22?','Modelo\x20excluído','Preços\x20salvos!','Por\x20favor,\x20selecione\x20o\x20tipo\x20de\x20configuração\x20de\x20venda.','item:added','venda','Deseja\x20restaurar\x20todas\x20as\x20alíquotas\x20para\x20os\x20valores\x20padrão?\x20Esta\x20ação\x20não\x20pode\x20ser\x20desfeita.','stringify','Preços\x20resetados','Rua\x20Serra\x20de\x20Santa\x20Marta,\x20303\x20-\x20Vila\x20Carmosina\x20-\x20São\x20Paulo\x20-\x20SP\x20-\x20CEP:\x2008290-420','resultado-final','Modelo\x20selecionado\x20não\x20existe','Barras\x20Ligação\x20Chata','0.3s','753090abfSWM','Modelo\x20salvo!','Barras\x20Ligação\x20Ø','Já\x20existe\x20um\x20modelo\x20com\x20este\x20nome','Item\x20removido','Remover\x20\x22{description}\x22?','destacado','rotated','item:removed','Item\x20adicionado!','3400455QKGHPQ','0.2s','is-loading','Fechamento\x20Terminal','Ligação\x20Ø','Já\x20existe\x20um\x20preço\x20para\x20esta\x20dimensão','60FjdxXn','7651504FaTkmd','16292ufHqJz','Barras\x20Portantes','Chapa\x20Xadrez','Por\x20favor,\x20selecione\x20a\x20UF\x20de\x20destino.','Alíquotas\x20salvas\x20com\x20sucesso!','1027902lFHQlu'];voti_54_0x2c85=function(){return _0x549f34;};return voti_54_0x2c85();}export const MATERIAL_NAMES={'portante':voti_54_0x1106fb(0x182),'ligacaoDiam':voti_54_0x1106fb(0x171),'ligacaoChata':voti_54_0x1106fb(0x16d),'fechTerminal':voti_54_0x1106fb(0x17c),'fechLateral':voti_54_0x1106fb(0x196),'chapaLateral':voti_54_0x1106fb(0x159),'chapaXadrez':'Chapa\x20Xadrez'};export const MATERIAL_SHORT_NAMES={'portante':voti_54_0x1106fb(0x194),'ligacaoDiam':voti_54_0x1106fb(0x17d),'ligacaoChata':'Ligação\x20Chata','fechTerminal':'Fech.\x20Terminal','fechLateral':'Fech.\x20Lateral','chapaLateral':voti_54_0x1106fb(0x159),'chapaXadrez':voti_54_0x1106fb(0x183)};export const UF_DATA={'AC':{'mva_grade':0x0,'aliq_int':0x13,'mva_grampo':0x0,'mva_telas':0x0,'aliq_sp':0x7},'AL':{'mva_grade':1.5765,'aliq_int':0x14,'mva_grampo':1.7554,'mva_telas':1.6159,'aliq_sp':0x7},'AP':{'mva_grade':1.5084,'aliq_int':0x12,'mva_grampo':1.5991,'mva_telas':1.5084,'aliq_sp':0x7},'AM':{'mva_grade':0x0,'aliq_int':0x14,'mva_grampo':0x0,'mva_telas':0x0,'aliq_sp':0x7},'BA':{'mva_grade':1.5311,'aliq_int':20.5,'mva_grampo':1.8132,'mva_telas':1.5792,'aliq_sp':0x7},'CE':{'mva_grade':0x0,'aliq_int':0x14,'mva_grampo':0x0,'mva_telas':0x0,'aliq_sp':0x7},'DF':{'mva_grade':1.5084,'aliq_int':0x14,'mva_grampo':1.6973,'mva_telas':1.5084,'aliq_sp':0x7},'ES':{'mva_grade':1.4902,'aliq_int':0x11,'mva_grampo':1.6359,'mva_telas':1.4902,'aliq_sp':0x7},'GO':{'mva_grade':1.4902,'aliq_int':0x11,'mva_grampo':0x0,'mva_telas':0x0,'aliq_sp':0x7},'MA':{'mva_grade':0x0,'aliq_int':0x16,'mva_grampo':0x0,'mva_telas':0x0,'aliq_sp':0x7},'MT':{'mva_grade':0x0,'aliq_int':0x11,'mva_grampo':0x0,'mva_telas':0x0,'aliq_sp':0x7},'MS':{'mva_grade':0x0,'aliq_int':0x11,'mva_grampo':0x0,'mva_telas':0x0,'aliq_sp':0x7},'MG':{'mva_grade':1.4488,'aliq_int':0x12,'mva_grampo':1.6098,'mva_telas':1.4488,'aliq_sp':0xc},'PA':{'mva_grade':1.4223,'aliq_int':0x13,'mva_grampo':0x0,'mva_telas':1.527,'aliq_sp':0x7},'PB':{'mva_grade':0x0,'aliq_int':0x14,'mva_grampo':0x0,'mva_telas':0x0,'aliq_sp':0x7},'PR':{'mva_grade':1.5195,'aliq_int':19.5,'mva_grampo':1.6398,'mva_telas':1.5195,'aliq_sp':0xc},'PE':{'mva_grade':1.5765,'aliq_int':20.5,'mva_grampo':1.7664,'mva_telas':1.626,'aliq_sp':0x7},'PI':{'mva_grade':0x0,'aliq_int':0x15,'mva_grampo':0x0,'mva_telas':0x0,'aliq_sp':0x7},'RJ':{'mva_grade':1.4223,'aliq_int':0xe,'mva_grampo':1.4735,'mva_telas':1.4223,'aliq_sp':0xc},'RN':{'mva_grade':0x0,'aliq_int':0x12,'mva_grampo':0x0,'mva_telas':0x0,'aliq_sp':0x7},'RS':{'mva_grade':1.5691,'aliq_int':0x11,'mva_grampo':1.7918,'mva_telas':1.5691,'aliq_sp':0xc},'RO':{'mva_grade':0x0,'aliq_int':19.5,'mva_grampo':0x0,'mva_telas':0x0,'aliq_sp':0x7},'RR':{'mva_grade':0x0,'aliq_int':0x14,'mva_grampo':0x0,'mva_telas':0x0,'aliq_sp':0x7},'SC':{'mva_grade':0x0,'aliq_int':0x11,'mva_grampo':0x0,'mva_telas':0x0,'aliq_sp':0xc},'SP':{'mva_grade':1.68,'aliq_int':0x12,'mva_grampo':0x0,'mva_telas':0x0,'aliq_sp':0x12},'SE':{'mva_grade':1.5084,'aliq_int':0x16,'mva_grampo':0x0,'mva_telas':1.5084,'aliq_sp':0x7},'TO':{'mva_grade':0x0,'aliq_int':0x14,'mva_grampo':0x0,'mva_telas':0x0,'aliq_sp':0x7}};export const UF_DATA_ORIGINAL=JSON['parse'](JSON[voti_54_0x1106fb(0x168)](UF_DATA));export const UI={'NOTIFICATION_CONTAINER_ID':'notification-container','AUTO_RECALCULATE':!0x0,'SHOW_MEMORIA_BY_DEFAULT':!0x1,'SCROLL_BEHAVIOR':voti_54_0x1106fb(0x190),'DEBOUNCE_DELAY':0x12c};export const CSS_CLASSES={'FIELD_ERROR':'field-error','IS_ACTIVE':voti_54_0x1106fb(0x197),'IS_LOADING':voti_54_0x1106fb(0x17b),'FADE_IN':voti_54_0x1106fb(0x15c),'EDITING':voti_54_0x1106fb(0x18a),'EXPANDED':voti_54_0x1106fb(0x193),'ROTATED':voti_54_0x1106fb(0x176),'DESTACADO':voti_54_0x1106fb(0x175),'RESULTADO_FINAL':voti_54_0x1106fb(0x16b)};export const EVENTS={'TEMPLATE_SAVED':voti_54_0x1106fb(0x18c),'TEMPLATE_DELETED':voti_54_0x1106fb(0x15e),'ITEM_ADDED':voti_54_0x1106fb(0x165),'ITEM_REMOVED':voti_54_0x1106fb(0x177),'PRICES_UPDATED':voti_54_0x1106fb(0x192),'CALCULATION_COMPLETE':'calculation:complete'};
+export const COMPANY_INFO = {
+    name: "FUROEXPRESS IND E COM DE CHAPAS E GRADES LTDA",
+    address: "Rua Serra de Santa Marta, 303 - Vila Carmosina - São Paulo - SP - CEP: 08290-420",
+    cnpj: "07.707.181/0001-30",
+    ie: "123.240.611.115",
+    phone: "(11) 2055-8999"
+};
+
+export const CONFIG = {
+    PRECISION: 2,
+    MAX_ITEMS: 100,
+    BARRA_PADRAO: 6e3,
+    DENSIDADE_ACO: 7850,
+    MARGEM_PADRAO: 5,
+    ANIMATION: {DURATION_FAST: "0.1s", DURATION_NORMAL: "0.2s", DURATION_SLOW: "0.3s", NOTIFICATION_DURATION: 4e3},
+    VALIDATION: {DELAY: 300, MIN_MATERIALS: 1, MAX_DECIMALS: 4},
+    PRICING: {
+        DEFAULTS: {
+            icmsMaterial: 18,
+            ipiMaterial: 3.25,
+            ipiRevenda: 0,
+            ipiVendaFinal: 3.25,
+            lucroLiquido: 20,
+            despesasFixas: 9.5,
+            comissoesRepres: 0,
+            comissoesInternas: 3.5,
+            despesasFinanceiras: .26,
+            csllIrpj: 2.81,
+            fretePerc: 0,
+            freteValor: 0,
+            stCompraQtde: 0,
+            stCompraUnit: 0,
+            taxaEnergiaQtde: 0,
+            taxaEnergiaUnit: 0,
+            tipoOperacao: "venda"
+        },
+        IPI_RULES: {
+            MATERIAL_RULES: {requires_revenda_zero: !0, requires_venda_final_positive: !0},
+            REVENDA_RULES: {requires_material_zero: !0, requires_venda_final_zero: !0}
+        },
+        TAXES: {cofins: {normal: .03, exportacao: 0}, pis: {normal: .0065, exportacao: 0}}
+    }
+};
+export const MESSAGES = {
+    ERRORS: {
+        noTipoConfiguracao: "Por favor, selecione o tipo de configuração de venda.",
+        noUfDestino: "Por favor, selecione a UF de destino.",
+        calculationError: "Erro no cálculo. Verifique os dados inseridos.",
+        minMaterials: "Deve haver pelo menos um material na lista.",
+        fieldRequired: "Campo obrigatório",
+        invalidNumber: "Valor numérico inválido",
+        templateExists: "Já existe um modelo com este nome",
+        templateNotFound: "Modelo selecionado não existe",
+        dimensionExists: "Já existe um preço para esta dimensão"
+    },
+    CONFIRMATIONS: {
+        resetAliquotas: "Deseja restaurar todas as alíquotas para os valores padrão? Esta ação não pode ser desfeita.",
+        resetTemplate: "Deseja restaurar os valores padrão?",
+        deleteTemplate: 'Excluir modelo "{name}"?',
+        deleteItem: 'Remover "{description}"?',
+        clearBudget: "Limpar orçamento com {count} item(s)?",
+        resetPrices: "Resetar todos os preços?"
+    },
+    SUCCESS: {
+        templateSaved: "Modelo salvo!",
+        templateUpdated: "Modelo atualizado!",
+        templateDeleted: "Modelo excluído",
+        itemAdded: "Item adicionado!",
+        itemUpdated: "Item atualizado!",
+        itemRemoved: "Item removido",
+        pricesSaved: "Preços salvos!",
+        pricesReset: "Preços resetados",
+        aliquotasSaved: "Alíquotas salvas com sucesso!",
+        calculationComplete: "Cálculo realizado com sucesso!"
+    }
+};
+export const NOTIFICATION_TYPES = {SUCCESS: "success", WARNING: "warning", DANGER: "danger", INFO: "info"};
+export const MATERIAL_NAMES = {
+    portante: "Barras Portantes",
+    ligacaoDiam: "Barras Ligação Ø",
+    ligacaoChata: "Barras Ligação Chata",
+    fechTerminal: "Fechamento Terminal",
+    fechLateral: "Fechamento Lateral",
+    chapaLateral: "Chapa Lateral",
+    chapaXadrez: "Chapa Xadrez"
+};
+export const MATERIAL_SHORT_NAMES = {
+    portante: "Portante",
+    ligacaoDiam: "Ligação Ø",
+    ligacaoChata: "Ligação Chata",
+    fechTerminal: "Fech. Terminal",
+    fechLateral: "Fech. Lateral",
+    chapaLateral: "Chapa Lateral",
+    chapaXadrez: "Chapa Xadrez"
+};
+export const UF_DATA = {
+    AC: {mva_grade: 0, aliq_int: 19, mva_grampo: 0, mva_telas: 0, aliq_sp: 7},
+    AL: {mva_grade: 1.5765, aliq_int: 20, mva_grampo: 1.7554, mva_telas: 1.6159, aliq_sp: 7},
+    AP: {mva_grade: 1.5084, aliq_int: 18, mva_grampo: 1.5991, mva_telas: 1.5084, aliq_sp: 7},
+    AM: {mva_grade: 0, aliq_int: 20, mva_grampo: 0, mva_telas: 0, aliq_sp: 7},
+    BA: {mva_grade: 1.5311, aliq_int: 20.5, mva_grampo: 1.8132, mva_telas: 1.5792, aliq_sp: 7},
+    CE: {mva_grade: 0, aliq_int: 20, mva_grampo: 0, mva_telas: 0, aliq_sp: 7},
+    DF: {mva_grade: 1.5084, aliq_int: 20, mva_grampo: 1.6973, mva_telas: 1.5084, aliq_sp: 7},
+    ES: {mva_grade: 1.4902, aliq_int: 17, mva_grampo: 1.6359, mva_telas: 1.4902, aliq_sp: 7},
+    GO: {mva_grade: 1.4902, aliq_int: 17, mva_grampo: 0, mva_telas: 0, aliq_sp: 7},
+    MA: {mva_grade: 0, aliq_int: 22, mva_grampo: 0, mva_telas: 0, aliq_sp: 7},
+    MT: {mva_grade: 0, aliq_int: 17, mva_grampo: 0, mva_telas: 0, aliq_sp: 7},
+    MS: {mva_grade: 0, aliq_int: 17, mva_grampo: 0, mva_telas: 0, aliq_sp: 7},
+    MG: {mva_grade: 1.4488, aliq_int: 18, mva_grampo: 1.6098, mva_telas: 1.4488, aliq_sp: 12},
+    PA: {mva_grade: 1.4223, aliq_int: 19, mva_grampo: 0, mva_telas: 1.527, aliq_sp: 7},
+    PB: {mva_grade: 0, aliq_int: 20, mva_grampo: 0, mva_telas: 0, aliq_sp: 7},
+    PR: {mva_grade: 1.5195, aliq_int: 19.5, mva_grampo: 1.6398, mva_telas: 1.5195, aliq_sp: 12},
+    PE: {mva_grade: 1.5765, aliq_int: 20.5, mva_grampo: 1.7664, mva_telas: 1.626, aliq_sp: 7},
+    PI: {mva_grade: 0, aliq_int: 21, mva_grampo: 0, mva_telas: 0, aliq_sp: 7},
+    RJ: {mva_grade: 1.4223, aliq_int: 14, mva_grampo: 1.4735, mva_telas: 1.4223, aliq_sp: 12},
+    RN: {mva_grade: 0, aliq_int: 18, mva_grampo: 0, mva_telas: 0, aliq_sp: 7},
+    RS: {mva_grade: 1.5691, aliq_int: 17, mva_grampo: 1.7918, mva_telas: 1.5691, aliq_sp: 12},
+    RO: {mva_grade: 0, aliq_int: 19.5, mva_grampo: 0, mva_telas: 0, aliq_sp: 7},
+    RR: {mva_grade: 0, aliq_int: 20, mva_grampo: 0, mva_telas: 0, aliq_sp: 7},
+    SC: {mva_grade: 0, aliq_int: 17, mva_grampo: 0, mva_telas: 0, aliq_sp: 12},
+    SP: {mva_grade: 1.68, aliq_int: 18, mva_grampo: 0, mva_telas: 0, aliq_sp: 18},
+    SE: {mva_grade: 1.5084, aliq_int: 22, mva_grampo: 0, mva_telas: 1.5084, aliq_sp: 7},
+    TO: {mva_grade: 0, aliq_int: 20, mva_grampo: 0, mva_telas: 0, aliq_sp: 7}
+};
+export const UF_DATA_ORIGINAL = JSON.parse(JSON.stringify(UF_DATA));
+export const UI = {
+    NOTIFICATION_CONTAINER_ID: "notification-container",
+    AUTO_RECALCULATE: !0,
+    SHOW_MEMORIA_BY_DEFAULT: !1,
+    SCROLL_BEHAVIOR: "smooth",
+    DEBOUNCE_DELAY: 300
+};
+export const CSS_CLASSES = {
+    FIELD_ERROR: "field-error",
+    IS_ACTIVE: "is-active",
+    IS_LOADING: "is-loading",
+    FADE_IN: "fade-in",
+    EDITING: "editing",
+    EXPANDED: "expanded",
+    ROTATED: "rotated",
+    DESTACADO: "destacado",
+    RESULTADO_FINAL: "resultado-final"
+};
+export const EVENTS = {
+    TEMPLATE_SAVED: "template:saved",
+    TEMPLATE_DELETED: "template:deleted",
+    ITEM_ADDED: "item:added",
+    ITEM_REMOVED: "item:removed",
+    PRICES_UPDATED: "prices:updated",
+    CALCULATION_COMPLETE: "calculation:complete"
+};

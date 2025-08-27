@@ -1,1 +1,218 @@
-const voti_16_0x4eb4a8=voti_16_0xa075;function voti_16_0xa075(_0xd866e4,_0x1bb0d0){const _0x420b74=voti_16_0x420b();return voti_16_0xa075=function(_0xa075a3,_0x120667){_0xa075a3=_0xa075a3-0x150;let _0x489274=_0x420b74[_0xa075a3];return _0x489274;},voti_16_0xa075(_0xd866e4,_0x1bb0d0);}(function(_0x90efa6,_0x55a8ea){const _0xcc2e43=voti_16_0xa075,_0x1cf782=_0x90efa6();while(!![]){try{const _0x1523d5=-parseInt(_0xcc2e43(0x17e))/0x1+-parseInt(_0xcc2e43(0x174))/0x2+parseInt(_0xcc2e43(0x182))/0x3+-parseInt(_0xcc2e43(0x16e))/0x4*(parseInt(_0xcc2e43(0x168))/0x5)+-parseInt(_0xcc2e43(0x16c))/0x6+parseInt(_0xcc2e43(0x161))/0x7*(-parseInt(_0xcc2e43(0x160))/0x8)+parseInt(_0xcc2e43(0x17a))/0x9;if(_0x1523d5===_0x55a8ea)break;else _0x1cf782['push'](_0x1cf782['shift']());}catch(_0x5be676){_0x1cf782['push'](_0x1cf782['shift']());}}}(voti_16_0x420b,0x2ea57));function voti_16_0x420b(){const _0x57a8a6=['370926kecbCA','detalhes','chapaLateralPadrao','esp','617202lfVeMN','entries','Chapa\x20Xadrez','comp','calcular','chata','pecas','diam','corteDobraChpaXadrez','includes','length','chapaLateral','forEach','maoObra','find','chapaXadrezPadrao','formatDimensionKey','getMaterialPrice','corteChpaLateral','DENSIDADE_ACO','calcularCustoPorTemplate','redonda','pesoComMargem','344HDpHbZ','4053lKiwqy','custo','BARRA_PADRAO','barras','chapa','getGlobalPrices','nome','91145CEfVbl','material','calcularCustoChapas','keys','2069292PFmlty','tipo','20nIoUdq','galvanizacao','peso','densidade','materiais','custoTotal','248380eRMuvb','getProcessPrices','getChapaLateralPrice','getSpecificPrices','qtd','isDegrau','8472321mxKFtn','larg','calcularCustoMaterialConsolidado','push'];voti_16_0x420b=function(){return _0x57a8a6;};return voti_16_0x420b();}import{CalculationService,CuttingOptimizer,separarMateriais}from'./CalculationService.js';import{FormattingService}from'./FormattingService.js';import{CONFIG}from'../../shared/config.js';export class CostCalculationService{static[voti_16_0x4eb4a8(0x186)](_0x1346ca,_0x238252,_0x3bd5c3){const _0x5b2904=voti_16_0x4eb4a8,_0x474bcf=CalculationService[_0x5b2904(0x186)](_0x1346ca,_0x238252,_0x3bd5c3),_0x27944f=_0x3bd5c3[_0x5b2904(0x175)](_0x238252),_0xe6da56=_0x474bcf[_0x5b2904(0x15f)]*_0x27944f[_0x5b2904(0x156)],_0xeb1ba4=_0x474bcf['pesoComMargem']*_0x27944f['galvanizacao'];return{..._0x474bcf,'custos':{'maoObra':_0xe6da56,'galvanizacao':_0xeb1ba4}};}static[voti_16_0x4eb4a8(0x17c)](_0x19b8e9,_0x15dc6c,_0x1b993f){const _0x39250d=voti_16_0x4eb4a8;let _0x524772=0x0;const _0x345d96={};return Object['entries'](_0x19b8e9)[_0x39250d(0x155)](([_0x3c35c0,_0x370d30])=>{const _0xb84336=_0x39250d,_0x3c9606=_0x1b993f['find'](_0x555849=>_0x555849['nome']===_0x3c35c0),_0x5a44a2=_0x3c9606?_0x3c9606[_0xb84336(0x171)]:CONFIG[_0xb84336(0x15c)];Object['entries'](_0x370d30)[_0xb84336(0x155)](([_0x4a9de6,_0x54755d])=>{const _0x3b4242=_0xb84336;if(_0x54755d[_0x3b4242(0x188)][_0x3b4242(0x153)]===0x0)return;const _0x50f17e=CuttingOptimizer['otimizar'](_0x54755d[_0x3b4242(0x188)]);let _0x23972f,_0x5ea8a0;if(_0x54755d[_0x3b4242(0x16d)]==='redonda'){const _0x117b0a=_0x54755d[_0x3b4242(0x150)]/0x3e8/0x2;_0x23972f=Math['PI']*_0x117b0a*_0x117b0a*(CONFIG[_0x3b4242(0x163)]/0x3e8)*_0x5a44a2*_0x50f17e[_0x3b4242(0x164)],_0x5ea8a0=_0x15dc6c[_0x3b4242(0x15a)](_0x3b4242(0x15e),0x0,0x0,_0x54755d[_0x3b4242(0x150)]);}else{_0x23972f=_0x54755d[_0x3b4242(0x181)]/0x3e8*(_0x54755d[_0x3b4242(0x17b)]/0x3e8)*(CONFIG[_0x3b4242(0x163)]/0x3e8)*_0x5a44a2*_0x50f17e[_0x3b4242(0x164)];if(_0x4a9de6['includes']('Chapa\x20Lateral'))_0x5ea8a0=_0x15dc6c[_0x3b4242(0x176)](_0x54755d[_0x3b4242(0x181)],_0x54755d[_0x3b4242(0x17b)]);else _0x4a9de6[_0x3b4242(0x152)](_0x3b4242(0x184))?_0x5ea8a0=_0x15dc6c['getChapaXadrezPrice'](_0x54755d[_0x3b4242(0x181)],_0x54755d[_0x3b4242(0x17b)]):_0x5ea8a0=_0x15dc6c[_0x3b4242(0x15a)](_0x3b4242(0x187),_0x54755d[_0x3b4242(0x181)],_0x54755d[_0x3b4242(0x17b)],0x0);}const _0x1386b5=_0x23972f*_0x5ea8a0;_0x524772+=_0x1386b5,_0x345d96[_0x3c35c0+'_'+_0x4a9de6]={'template':_0x3c35c0,'dimensao':_0x4a9de6,'numBarras':_0x50f17e[_0x3b4242(0x164)],'pesoMateriaPrima':_0x23972f,'precoKg':_0x5ea8a0,'custo':_0x1386b5,'densidade':_0x5a44a2};});}),{'total':_0x524772,'detalhes':_0x345d96};}static[voti_16_0x4eb4a8(0x16a)](_0x229dd5,_0x20643a,_0x2802e6){const _0x5c0870=voti_16_0x4eb4a8;let _0x1f454c=0x0,_0xda45fa=0x0;const _0x5598cf={};return Object[_0x5c0870(0x183)](_0x229dd5)['forEach'](([_0x389967,_0x484e8e])=>{const _0x7ebaef=_0x5c0870,_0x546bda=_0x2802e6[_0x7ebaef(0x157)](_0x8f4c30=>_0x8f4c30[_0x7ebaef(0x167)]===_0x389967);if(!_0x546bda)return;Object[_0x7ebaef(0x183)](_0x484e8e)[_0x7ebaef(0x155)](([_0x2968f4,_0x250943])=>{const _0x40920e=_0x7ebaef;if(_0x250943['peso']<=0x0)return;const _0x33bf58=_0x389967+'_'+_0x2968f4;let _0x2ad2b5=0x0,_0x2b46fb=0x0,_0x369d79=0x0,_0x2c398b=0x0;if(_0x2968f4===_0x40920e(0x154)){const _0x55d1ee='chapa_lateral_'+_0x250943[_0x40920e(0x181)]+'x'+_0x250943['larg'];_0x2ad2b5=_0x20643a['getSpecificPrices']()[_0x55d1ee]||_0x20643a[_0x40920e(0x166)]()[_0x40920e(0x180)],_0x2b46fb=_0x20643a[_0x40920e(0x166)]()[_0x40920e(0x15b)],_0x369d79=_0x250943[_0x40920e(0x170)]*_0x2ad2b5,_0x2c398b=_0x250943[_0x40920e(0x170)]*_0x2b46fb;}else{if(_0x2968f4==='chapaXadrez'){const _0x4200a3='chapa_xadrez_'+_0x250943[_0x40920e(0x181)]+'x'+_0x250943[_0x40920e(0x17b)];_0x2ad2b5=_0x20643a[_0x40920e(0x177)]()[_0x4200a3]||_0x20643a['getGlobalPrices']()[_0x40920e(0x158)],_0x2b46fb=_0x20643a[_0x40920e(0x166)]()[_0x40920e(0x151)],_0x369d79=_0x250943[_0x40920e(0x170)]*_0x2ad2b5,_0x2c398b=_0x250943[_0x40920e(0x170)]*_0x2b46fb;}}_0x1f454c+=_0x369d79,_0xda45fa+=_0x2c398b,_0x5598cf[_0x33bf58]={'template':_0x389967,'tipo':_0x2968f4,'peso':_0x250943[_0x40920e(0x170)],'precoMaterialKg':_0x2ad2b5,'precoServicoKg':_0x2b46fb,'custoMaterial':_0x369d79,'custoServico':_0x2c398b,'custoTotal':_0x369d79+_0x2c398b};});}),{'totalMaterial':_0x1f454c,'totalServico':_0xda45fa,'totalGeral':_0x1f454c+_0xda45fa,'detalhes':_0x5598cf};}static[voti_16_0x4eb4a8(0x15d)](_0x2510e6,_0x3218ea,_0x3f7e4a){const _0x2d21e7=voti_16_0x4eb4a8,_0xebca4={'material':{},'maoObra':{},'galvanizacao':{}},_0x3e9bd5={},_0x2e4221={},_0x235a65={},_0x5aa7a7={};_0x2510e6[_0x2d21e7(0x155)](_0x154684=>{const _0x53d543=_0x2d21e7,_0x3457d8=_0x3218ea[_0x53d543(0x157)](_0x17acca=>_0x17acca['id']===_0x154684['templateId']);if(!_0x3457d8)return;const _0x16c0c5=CalculationService[_0x53d543(0x186)](_0x154684,_0x3457d8,_0x3f7e4a);!_0x3e9bd5[_0x3457d8[_0x53d543(0x167)]]&&(_0x3e9bd5[_0x3457d8[_0x53d543(0x167)]]=0x0,_0x2e4221[_0x3457d8[_0x53d543(0x167)]]=0x0,_0x235a65[_0x3457d8[_0x53d543(0x167)]]={},_0x5aa7a7[_0x3457d8[_0x53d543(0x167)]]={},_0xebca4[_0x53d543(0x169)][_0x3457d8[_0x53d543(0x167)]]=0x0,_0xebca4[_0x53d543(0x156)][_0x3457d8[_0x53d543(0x167)]]=0x0,_0xebca4[_0x53d543(0x16f)][_0x3457d8[_0x53d543(0x167)]]=0x0);_0x3e9bd5[_0x3457d8[_0x53d543(0x167)]]+=_0x16c0c5['area'],_0x2e4221[_0x3457d8[_0x53d543(0x167)]]+=_0x16c0c5[_0x53d543(0x15f)];const {barras:_0x2babc0,chapas:_0x1ed008}=separarMateriais(_0x16c0c5[_0x53d543(0x172)],_0x3457d8[_0x53d543(0x179)]);Object[_0x53d543(0x183)](_0x2babc0)['forEach'](([_0x407b9e,_0x4ce8eb])=>{const _0x1962c5=_0x53d543;if(_0x4ce8eb['peso']>0x0){const _0x963564=FormattingService[_0x1962c5(0x159)](_0x4ce8eb[_0x1962c5(0x16d)],_0x4ce8eb[_0x1962c5(0x181)],_0x4ce8eb[_0x1962c5(0x17b)],_0x4ce8eb['diam']);!_0x235a65[_0x3457d8[_0x1962c5(0x167)]][_0x963564]&&(_0x235a65[_0x3457d8['nome']][_0x963564]={'esp':_0x4ce8eb[_0x1962c5(0x181)]||'-','larg':_0x4ce8eb[_0x1962c5(0x17b)]||'-','diam':_0x4ce8eb[_0x1962c5(0x150)]||0x0,'tipo':_0x4ce8eb[_0x1962c5(0x16d)],'qtd':0x0,'peso':0x0,'pecas':[]});const _0x3e7d9e=_0x235a65[_0x3457d8['nome']][_0x963564];_0x3e7d9e[_0x1962c5(0x178)]+=_0x4ce8eb[_0x1962c5(0x178)],_0x3e7d9e[_0x1962c5(0x170)]+=_0x4ce8eb[_0x1962c5(0x170)];for(let _0x570f54=0x0;_0x570f54<_0x4ce8eb['qtd'];_0x570f54++){_0x3e7d9e[_0x1962c5(0x188)][_0x1962c5(0x17d)](_0x4ce8eb[_0x1962c5(0x185)]);}}}),Object['entries'](_0x1ed008)['forEach'](([_0x4ef2bc,_0x3ea02a])=>{const _0x45b135=_0x53d543;if(_0x3ea02a[_0x45b135(0x170)]>0x0){!_0x5aa7a7[_0x3457d8['nome']][_0x4ef2bc]&&(_0x5aa7a7[_0x3457d8[_0x45b135(0x167)]][_0x4ef2bc]={'esp':_0x3ea02a['esp'],'larg':_0x3ea02a[_0x45b135(0x17b)],'tipo':_0x45b135(0x165),'qtd':0x0,'peso':0x0});const _0x442e7e=_0x5aa7a7[_0x3457d8[_0x45b135(0x167)]][_0x4ef2bc];_0x442e7e[_0x45b135(0x178)]+=_0x3ea02a['qtd'],_0x442e7e[_0x45b135(0x170)]+=_0x3ea02a[_0x45b135(0x170)];}});});const _0x14e874=this[_0x2d21e7(0x17c)](_0x235a65,_0x3f7e4a,_0x3218ea),_0x5c6331=this[_0x2d21e7(0x16a)](_0x5aa7a7,_0x3f7e4a,_0x3218ea);return Object[_0x2d21e7(0x16b)](_0x3e9bd5)[_0x2d21e7(0x155)](_0x1f57d2=>{const _0x157cd6=_0x2d21e7,_0x540cf9=_0x3218ea[_0x157cd6(0x157)](_0x22f73f=>_0x22f73f[_0x157cd6(0x167)]===_0x1f57d2);if(!_0x540cf9)return;const _0x160aea=_0x3e9bd5[_0x1f57d2],_0x55ede2=_0x2e4221[_0x1f57d2];if(_0x160aea>0x0){let _0x39ced1=0x0;Object['entries'](_0x235a65[_0x1f57d2])[_0x157cd6(0x155)](([_0x5ee7bc,_0x2bdc69])=>{const _0x43e202=_0x157cd6,_0xd68f23=_0x1f57d2+'_'+_0x5ee7bc;_0x14e874['detalhes'][_0xd68f23]&&(_0x39ced1+=_0x14e874[_0x43e202(0x17f)][_0xd68f23][_0x43e202(0x162)]);}),Object[_0x157cd6(0x183)](_0x5aa7a7[_0x1f57d2])[_0x157cd6(0x155)](([_0x389cd8,_0x3e2022])=>{const _0x36dbf6=_0x157cd6,_0x449997=_0x1f57d2+'_'+_0x389cd8;_0x5c6331['detalhes'][_0x449997]&&(_0x39ced1+=_0x5c6331[_0x36dbf6(0x17f)][_0x449997][_0x36dbf6(0x173)]);}),_0xebca4[_0x157cd6(0x169)][_0x1f57d2]=_0x39ced1/_0x160aea;const _0x2db6d8=_0x3f7e4a[_0x157cd6(0x175)](_0x540cf9);_0xebca4[_0x157cd6(0x156)][_0x1f57d2]=_0x55ede2*_0x2db6d8[_0x157cd6(0x156)]/_0x160aea,_0xebca4['galvanizacao'][_0x1f57d2]=_0x55ede2*_0x2db6d8[_0x157cd6(0x16f)]/_0x160aea;}}),_0xebca4;}}
+import { CalculationService, CuttingOptimizer, separarMateriais } from './CalculationService.js';
+import { FormattingService } from './FormattingService.js';
+import { CONFIG } from '../../shared/config.js';
+
+export class CostCalculationService {
+
+    static calcular(itemOrcamento, template, precosController) {
+        const resultadoCalculo = CalculationService.calcular(itemOrcamento, template, precosController);
+        const precosProcessos = precosController.getProcessPrices(template);
+
+        const custoMaoObra = resultadoCalculo.pesoComMargem * precosProcessos.maoObra;
+        const custoGalvanizacao = resultadoCalculo.pesoComMargem * precosProcessos.galvanizacao;
+
+        return {
+            ...resultadoCalculo,
+            custos: {
+                maoObra: custoMaoObra,
+                galvanizacao: custoGalvanizacao
+            }
+        };
+    }
+
+    static calcularCustoMaterialConsolidado(dadosBarras, precosController, todosTemplates) {
+        let custoTotal = 0;
+        const detalhesCusto = {};
+
+        Object.entries(dadosBarras).forEach(([nomeTemplate, materiais]) => {
+            const template = todosTemplates.find(t => t.nome === nomeTemplate);
+            const densidade = template ? template.densidade : CONFIG.DENSIDADE_ACO;
+
+            Object.entries(materiais).forEach(([dimensao, dadosMaterial]) => {
+                if (dadosMaterial.pecas.length === 0) return;
+
+                const planoCorte = CuttingOptimizer.otimizar(dadosMaterial.pecas);
+                let pesoMateriaPrima, precoKg;
+
+                if (dadosMaterial.tipo === 'redonda') {
+                    const raio = (dadosMaterial.diam / 1000) / 2;
+                    pesoMateriaPrima = Math.PI * raio * raio * (CONFIG.BARRA_PADRAO / 1000) * densidade * planoCorte.barras;
+                    precoKg = precosController.getMaterialPrice('redonda', 0, 0, dadosMaterial.diam);
+                } else { // Chata
+                    pesoMateriaPrima = (dadosMaterial.esp / 1000) * (dadosMaterial.larg / 1000) * (CONFIG.BARRA_PADRAO / 1000) * densidade * planoCorte.barras;
+                    if (dimensao.includes("Chapa Lateral")) {
+                        precoKg = precosController.getChapaLateralPrice(dadosMaterial.esp, dadosMaterial.larg);
+                    } else if (dimensao.includes("Chapa Xadrez")) {
+                        precoKg = precosController.getChapaXadrezPrice(dadosMaterial.esp, dadosMaterial.larg);
+                    } else {
+                        precoKg = precosController.getMaterialPrice('chata', dadosMaterial.esp, dadosMaterial.larg, 0);
+                    }
+                }
+
+                const custoMaterial = pesoMateriaPrima * precoKg;
+                custoTotal += custoMaterial;
+                detalhesCusto[`${nomeTemplate}_${dimensao}`] = {
+                    template: nomeTemplate,
+                    dimensao: dimensao,
+                    numBarras: planoCorte.barras,
+                    pesoMateriaPrima: pesoMateriaPrima,
+                    precoKg: precoKg,
+                    custo: custoMaterial,
+                    densidade: densidade
+                };
+            });
+        });
+
+        return { total: custoTotal, detalhes: detalhesCusto };
+    }
+
+    static calcularCustoChapas(dadosChapas, precosController, todosTemplates) {
+        let custoTotalMaterial = 0;
+        let custoTotalServico = 0;
+        const detalhesCusto = {};
+
+        Object.entries(dadosChapas).forEach(([nomeTemplate, chapas]) => {
+            const template = todosTemplates.find(t => t.nome === nomeTemplate);
+            if (!template) return;
+
+            Object.entries(chapas).forEach(([tipoChapa, dadosChapa]) => {
+                if (dadosChapa.peso <= 0) return;
+
+                const chaveDetalhe = `${nomeTemplate}_${tipoChapa}`;
+                let precoMaterialKg = 0, precoServicoKg = 0;
+                let custoMaterial = 0, custoServico = 0;
+
+                if (tipoChapa === 'chapaLateral') {
+                    const chavePreco = `chapa_lateral_${dadosChapa.esp}x${dadosChapa.larg}`;
+                    precoMaterialKg = precosController.getSpecificPrices()[chavePreco] || precosController.getGlobalPrices().chapaLateralPadrao;
+                    precoServicoKg = precosController.getGlobalPrices().corteChpaLateral;
+                    custoMaterial = dadosChapa.peso * precoMaterialKg;
+                    custoServico = dadosChapa.peso * precoServicoKg;
+                } else if (tipoChapa === 'chapaXadrez') {
+                    const chavePreco = `chapa_xadrez_${dadosChapa.esp}x${dadosChapa.larg}`;
+                    precoMaterialKg = precosController.getSpecificPrices()[chavePreco] || precosController.getGlobalPrices().chapaXadrezPadrao;
+                    precoServicoKg = precosController.getGlobalPrices().corteDobraChpaXadrez;
+                    custoMaterial = dadosChapa.peso * precoMaterialKg;
+                    custoServico = dadosChapa.peso * precoServicoKg;
+                }
+
+                custoTotalMaterial += custoMaterial;
+                custoTotalServico += custoServico;
+
+                detalhesCusto[chaveDetalhe] = {
+                    template: nomeTemplate,
+                    tipo: tipoChapa,
+                    peso: dadosChapa.peso,
+                    precoMaterialKg: precoMaterialKg,
+                    precoServicoKg: precoServicoKg,
+                    custoMaterial: custoMaterial,
+                    custoServico: custoServico,
+                    custoTotal: custoMaterial + custoServico
+                };
+            });
+        });
+
+        return {
+            totalMaterial: custoTotalMaterial,
+            totalServico: custoTotalServico,
+            totalGeral: custoTotalMaterial + custoTotalServico,
+            detalhes: detalhesCusto
+        };
+    }
+
+    static calcularCustoPorTemplate(itensOrcamento, todosTemplates, precosController) {
+        const custosPorM2 = { material: {}, maoObra: {}, galvanizacao: {} };
+        const totalAreaPorTemplate = {};
+        const totalPesoPorTemplate = {};
+        const consolidadoBarras = {};
+        const consolidadoChapas = {};
+
+        // 1. Consolidar dados por template
+        itensOrcamento.forEach(item => {
+            const template = todosTemplates.find(t => t.id === item.templateId);
+            if (!template) return;
+
+            const calculo = CalculationService.calcular(item, template, precosController);
+
+            if (!totalAreaPorTemplate[template.nome]) {
+                totalAreaPorTemplate[template.nome] = 0;
+                totalPesoPorTemplate[template.nome] = 0;
+                consolidadoBarras[template.nome] = {};
+                consolidadoChapas[template.nome] = {};
+                custosPorM2.material[template.nome] = 0;
+                custosPorM2.maoObra[template.nome] = 0;
+                custosPorM2.galvanizacao[template.nome] = 0;
+            }
+
+            totalAreaPorTemplate[template.nome] += calculo.area;
+            totalPesoPorTemplate[template.nome] += calculo.pesoComMargem;
+
+            const { barras, chapas } = separarMateriais(calculo.materiais, template.isDegrau);
+
+            Object.entries(barras).forEach(([nomeMaterial, dadosMaterial]) => {
+                if (dadosMaterial.peso > 0) {
+                    const chaveDimensao = FormattingService.formatDimensionKey(dadosMaterial.tipo, dadosMaterial.esp, dadosMaterial.larg, dadosMaterial.diam);
+                    if (!consolidadoBarras[template.nome][chaveDimensao]) {
+                        consolidadoBarras[template.nome][chaveDimensao] = { esp: dadosMaterial.esp || '-', larg: dadosMaterial.larg || '-', diam: dadosMaterial.diam || 0, tipo: dadosMaterial.tipo, qtd: 0, peso: 0, pecas: [] };
+                    }
+                    const material = consolidadoBarras[template.nome][chaveDimensao];
+                    material.qtd += dadosMaterial.qtd;
+                    material.peso += dadosMaterial.peso;
+                    for (let i = 0; i < dadosMaterial.qtd; i++) {
+                        material.pecas.push(dadosMaterial.comp);
+                    }
+                }
+            });
+
+            Object.entries(chapas).forEach(([nomeChapa, dadosChapa]) => {
+                if (dadosChapa.peso > 0) {
+                    if (!consolidadoChapas[template.nome][nomeChapa]) {
+                        consolidadoChapas[template.nome][nomeChapa] = { esp: dadosChapa.esp, larg: dadosChapa.larg, tipo: 'chapa', qtd: 0, peso: 0 };
+                    }
+                    const chapa = consolidadoChapas[template.nome][nomeChapa];
+                    chapa.qtd += dadosChapa.qtd;
+                    chapa.peso += dadosChapa.peso;
+                }
+            });
+        });
+
+        // 2. Calcular custos consolidados
+        const custoTotalBarras = this.calcularCustoMaterialConsolidado(consolidadoBarras, precosController, todosTemplates);
+        const custoTotalChapas = this.calcularCustoChapas(consolidadoChapas, precosController, todosTemplates);
+
+        // 3. Distribuir custos por template e calcular por m²
+        Object.keys(totalAreaPorTemplate).forEach(nomeTemplate => {
+            const template = todosTemplates.find(t => t.nome === nomeTemplate);
+            if (!template) return;
+
+            const areaTotal = totalAreaPorTemplate[nomeTemplate];
+            const pesoTotal = totalPesoPorTemplate[nomeTemplate];
+
+            if (areaTotal > 0) {
+                let custoMaterialTemplate = 0;
+                // Custo das barras para este template
+                Object.entries(consolidadoBarras[nomeTemplate]).forEach(([dimensao, _]) => {
+                    const chaveCusto = `${nomeTemplate}_${dimensao}`;
+                    if (custoTotalBarras.detalhes[chaveCusto]) {
+                        custoMaterialTemplate += custoTotalBarras.detalhes[chaveCusto].custo;
+                    }
+                });
+                // Custo das chapas para este template
+                Object.entries(consolidadoChapas[nomeTemplate]).forEach(([tipoChapa, _]) => {
+                    const chaveCusto = `${nomeTemplate}_${tipoChapa}`;
+                    if (custoTotalChapas.detalhes[chaveCusto]) {
+                        custoMaterialTemplate += custoTotalChapas.detalhes[chaveCusto].custoTotal;
+                    }
+                });
+
+                custosPorM2.material[nomeTemplate] = custoMaterialTemplate / areaTotal;
+
+                const precosProcessos = precosController.getProcessPrices(template);
+                custosPorM2.maoObra[nomeTemplate] = (pesoTotal * precosProcessos.maoObra) / areaTotal;
+                custosPorM2.galvanizacao[nomeTemplate] = (pesoTotal * precosProcessos.galvanizacao) / areaTotal;
+            }
+        });
+
+        return custosPorM2;
+    }
+}

@@ -1,1 +1,139 @@
-const voti_51_0x166267=voti_51_0x2a48;function voti_51_0x2a48(_0x45f28f,_0x5e38c9){const _0x163781=voti_51_0x1637();return voti_51_0x2a48=function(_0x2a48ba,_0x1668e0){_0x2a48ba=_0x2a48ba-0x162;let _0x419218=_0x163781[_0x2a48ba];return _0x419218;},voti_51_0x2a48(_0x45f28f,_0x5e38c9);}(function(_0x19e7e2,_0x158429){const _0x1d4aa1=voti_51_0x2a48,_0x3bc5f0=_0x19e7e2();while(!![]){try{const _0x181783=-parseInt(_0x1d4aa1(0x172))/0x1*(-parseInt(_0x1d4aa1(0x19c))/0x2)+-parseInt(_0x1d4aa1(0x186))/0x3+parseInt(_0x1d4aa1(0x197))/0x4+parseInt(_0x1d4aa1(0x19d))/0x5+-parseInt(_0x1d4aa1(0x1a2))/0x6+parseInt(_0x1d4aa1(0x16c))/0x7+-parseInt(_0x1d4aa1(0x177))/0x8;if(_0x181783===_0x158429)break;else _0x3bc5f0['push'](_0x3bc5f0['shift']());}catch(_0x6e93b4){_0x3bc5f0['push'](_0x3bc5f0['shift']());}}}(voti_51_0x1637,0xae3f9));import{UF_DATA,UF_DATA_ORIGINAL}from'../shared/config.js';import{PricingStorage}from'../shared/storage.js';function voti_51_0x1637(){const _0x19f2d6=['3767652MNfxsi','aliquotasChanged','.js-reset-uf-btn','<i\x20class=\x22fas\x20fa-check\x22></i>\x20Salvo!','mva_telas','saveAliquotasToStorage','mva_grampo','loadAliquotasFromStorage','style','Restaurar\x20Tudo','Restaurar','display','app','getElementById','forEach','stringify','saveAliquotas','success','block','3885833LmnGbk','createElement','add','Alíquotas\x20restauradas\x20para\x20valores\x20padrão!','show','<p>Deseja\x20restaurar\x20<strong>todas</strong>\x20as\x20alíquotas\x20para\x20os\x20valores\x20padrão?\x20Esta\x20ação\x20não\x20pode\x20ser\x20desfeita.</p>','312820kNnEMt','\x22\x20data-field=\x22aliq_int\x22></td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td><input\x20class=\x22input\x20is-small\x22\x20type=\x22number\x22\x20step=\x220.0001\x22\x20value=\x22','mva_grade','<i\x20class=\x22fas\x20fa-edit\x22></i>\x20Editar\x20Alíquotas','is-info','5538744IBYUlj','none','salvarAliquotas','\x22\x20data-field=\x22mva_telas\x22></td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td><input\x20class=\x22input\x20is-small\x22\x20type=\x22number\x22\x20step=\x220.01\x22\x20value=\x22','length','populateAliquotasTable','resetAliquotas','resetUF','is-success','<i\x20class=\x22fas\x20fa-eye-slash\x22></i>\x20Ocultar\x20Alíquotas','Alíquotas\x20salvas\x20com\x20sucesso!','click','showConfirmation','dispatchEvent','has-background-success-light','1494120KpJYuS','aliquotasTableBody','toggleAliquotas','Restaurar\x20','info','#aliquotasTableBody\x20input','appendChild','classList','dataset','field','\x22\x20data-uf=\x22','storage','value','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td><strong>','\x22\x20data-field=\x22mva_grampo\x22></td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td><input\x20class=\x22input\x20is-small\x22\x20type=\x22number\x22\x20step=\x220.0001\x22\x20value=\x22','aliq_sp','remove','362156cOJZGz','aliq_int','Nenhuma\x20alteração\x20detectada.','querySelectorAll','keys','6RerePH','4739640ElgOdS','parse','notifications','innerHTML','Restaurar\x20Alíquotas'];voti_51_0x1637=function(){return _0x19f2d6;};return voti_51_0x1637();}export class AliquotasController{constructor(_0x49ce73,_0x1ff625){const _0x324e4c=voti_51_0x2a48;this[_0x324e4c(0x19f)]=_0x49ce73,this['app']=_0x1ff625,this[_0x324e4c(0x191)]=new PricingStorage(),this['loadAliquotasFromStorage']();}[voti_51_0x166267(0x1a9)](){const _0x155e6b=voti_51_0x166267,_0x5e9d7f=this[_0x155e6b(0x191)]['loadAliquotas']();Object['keys'](_0x5e9d7f)[_0x155e6b(0x17b)]>0x0&&Object[_0x155e6b(0x19b)](_0x5e9d7f)['forEach'](_0x148fb0=>{UF_DATA[_0x148fb0]&&(UF_DATA[_0x148fb0]={...UF_DATA[_0x148fb0],..._0x5e9d7f[_0x148fb0]});});}[voti_51_0x166267(0x1a7)](){const _0x44eaac=voti_51_0x166267;this[_0x44eaac(0x191)][_0x44eaac(0x169)](UF_DATA);}[voti_51_0x166267(0x188)](){const _0x5d8ab0=voti_51_0x166267,_0x44d6aa=document[_0x5d8ab0(0x166)]('aliquotasContainer'),_0x231c5c=document['getElementById'](_0x5d8ab0(0x188));_0x44d6aa[_0x5d8ab0(0x1aa)]['display']===_0x5d8ab0(0x178)?(_0x44d6aa[_0x5d8ab0(0x1aa)]['display']=_0x5d8ab0(0x16b),_0x231c5c[_0x5d8ab0(0x1a0)]=_0x5d8ab0(0x180),this[_0x5d8ab0(0x17c)]()):(_0x44d6aa['style'][_0x5d8ab0(0x164)]='none',_0x231c5c[_0x5d8ab0(0x1a0)]=_0x5d8ab0(0x175));}['populateAliquotasTable'](){const _0xceed1f=voti_51_0x166267,_0x4fd5f6=document[_0xceed1f(0x166)](_0xceed1f(0x187));_0x4fd5f6['innerHTML']='',Object['entries'](UF_DATA)[_0xceed1f(0x167)](([_0x2f0818,_0x56a821])=>{const _0x90b1a4=_0xceed1f,_0x2db70f=document[_0x90b1a4(0x16d)]('tr');_0x2db70f[_0x90b1a4(0x1a0)]=_0x90b1a4(0x193)+_0x2f0818+'</strong></td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td><input\x20class=\x22input\x20is-small\x22\x20type=\x22number\x22\x20step=\x220.0001\x22\x20value=\x22'+_0x56a821[_0x90b1a4(0x174)]+'\x22\x20data-uf=\x22'+_0x2f0818+'\x22\x20data-field=\x22mva_grade\x22></td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td><input\x20class=\x22input\x20is-small\x22\x20type=\x22number\x22\x20step=\x220.01\x22\x20value=\x22'+_0x56a821[_0x90b1a4(0x198)]+_0x90b1a4(0x190)+_0x2f0818+_0x90b1a4(0x173)+_0x56a821[_0x90b1a4(0x1a8)]+'\x22\x20data-uf=\x22'+_0x2f0818+_0x90b1a4(0x194)+_0x56a821[_0x90b1a4(0x1a6)]+_0x90b1a4(0x190)+_0x2f0818+_0x90b1a4(0x17a)+_0x56a821[_0x90b1a4(0x195)]+_0x90b1a4(0x190)+_0x2f0818+'\x22\x20data-field=\x22aliq_sp\x22></td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td><button\x20class=\x22button\x20is-small\x20is-info\x20js-reset-uf-btn\x22\x20data-uf=\x22'+_0x2f0818+'\x22><i\x20class=\x22fas\x20fa-undo\x22></i></button></td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',_0x4fd5f6[_0x90b1a4(0x18c)](_0x2db70f);}),_0x4fd5f6[_0xceed1f(0x19a)](_0xceed1f(0x1a4))['forEach'](_0x51d19a=>{const _0x3d9afb=_0xceed1f;_0x51d19a['addEventListener'](_0x3d9afb(0x182),_0x4c37ce=>{const _0x15db6b=_0x3d9afb,_0x40aebb=_0x4c37ce['currentTarget'][_0x15db6b(0x18e)]['uf'];this[_0x15db6b(0x17e)](_0x40aebb);});});}[voti_51_0x166267(0x179)](){const _0x393157=voti_51_0x166267,_0x36858a=document[_0x393157(0x19a)](_0x393157(0x18b));let _0x3964c2=![];_0x36858a[_0x393157(0x167)](_0x225afc=>{const _0x113481=_0x393157,_0x227f89=_0x225afc[_0x113481(0x18e)]['uf'],_0x1a03f1=_0x225afc['dataset'][_0x113481(0x18f)],_0x358c83=parseFloat(_0x225afc[_0x113481(0x192)])||0x0;UF_DATA[_0x227f89][_0x1a03f1]!==_0x358c83&&(UF_DATA[_0x227f89][_0x1a03f1]=_0x358c83,_0x3964c2=!![],_0x225afc[_0x113481(0x18d)][_0x113481(0x16e)](_0x113481(0x185)),setTimeout(()=>_0x225afc[_0x113481(0x18d)]['remove']('has-background-success-light'),0x7d0));});if(_0x3964c2){this[_0x393157(0x1a7)](),document[_0x393157(0x184)](new CustomEvent(_0x393157(0x1a3))),this[_0x393157(0x19f)][_0x393157(0x170)](_0x393157(0x181),_0x393157(0x16a));const _0x1a9d1b=document[_0x393157(0x166)](_0x393157(0x179));if(_0x1a9d1b){const _0x1e75fe=_0x1a9d1b[_0x393157(0x1a0)];_0x1a9d1b['innerHTML']=_0x393157(0x1a5),_0x1a9d1b[_0x393157(0x18d)][_0x393157(0x196)](_0x393157(0x17f)),_0x1a9d1b['classList']['add']('is-info'),setTimeout(()=>{const _0x71947b=_0x393157;_0x1a9d1b['innerHTML']=_0x1e75fe,_0x1a9d1b[_0x71947b(0x18d)][_0x71947b(0x196)](_0x71947b(0x176)),_0x1a9d1b[_0x71947b(0x18d)][_0x71947b(0x16e)](_0x71947b(0x17f));},0x7d0);}}else this[_0x393157(0x19f)][_0x393157(0x170)](_0x393157(0x199),'info');}[voti_51_0x166267(0x17d)](){const _0x309c69=voti_51_0x166267;this[_0x309c69(0x165)][_0x309c69(0x183)](_0x309c69(0x1a1),_0x309c69(0x171),()=>{const _0x1ec71c=_0x309c69;Object[_0x1ec71c(0x19b)](UF_DATA)['forEach'](_0x562858=>{UF_DATA[_0x562858]=JSON['parse'](JSON['stringify'](UF_DATA_ORIGINAL[_0x562858]));}),this[_0x1ec71c(0x1a7)](),this[_0x1ec71c(0x17c)](),document[_0x1ec71c(0x184)](new CustomEvent(_0x1ec71c(0x1a3))),this['notifications'][_0x1ec71c(0x170)](_0x1ec71c(0x16f),_0x1ec71c(0x18a));},{'confirmText':_0x309c69(0x162),'type':'is-warning'});}['resetUF'](_0x45e892){const _0x6abb62=voti_51_0x166267;this[_0x6abb62(0x165)]['showConfirmation'](_0x6abb62(0x189)+_0x45e892,'<p>Deseja\x20restaurar\x20as\x20alíquotas\x20de\x20<strong>'+_0x45e892+'</strong>\x20para\x20os\x20valores\x20padrão?</p>',()=>{const _0x2f317b=_0x6abb62;UF_DATA[_0x45e892]=JSON[_0x2f317b(0x19e)](JSON[_0x2f317b(0x168)](UF_DATA_ORIGINAL[_0x45e892])),this['saveAliquotasToStorage'](),this[_0x2f317b(0x17c)](),document[_0x2f317b(0x184)](new CustomEvent('aliquotasChanged')),this[_0x2f317b(0x19f)][_0x2f317b(0x170)]('Alíquotas\x20de\x20'+_0x45e892+'\x20restauradas!',_0x2f317b(0x18a));},{'confirmText':_0x6abb62(0x163),'type':_0x6abb62(0x176)});}}
+import { UF_DATA, UF_DATA_ORIGINAL } from "../shared/config.js";
+import { PricingStorage } from "../shared/storage.js";
+
+export class AliquotasController {
+    constructor(notificationManager, appInstance) {
+        this.notifications = notificationManager;
+        this.app = appInstance; // Injeta a instância da aplicação
+        this.storage = new PricingStorage();
+        this.loadAliquotasFromStorage();
+    }
+
+    loadAliquotasFromStorage() {
+        const aliquotasSalvas = this.storage.loadAliquotas();
+        if (Object.keys(aliquotasSalvas).length > 0) {
+            Object.keys(aliquotasSalvas).forEach(uf => {
+                if (UF_DATA[uf]) {
+                    UF_DATA[uf] = { ...UF_DATA[uf], ...aliquotasSalvas[uf] };
+                }
+            });
+        }
+    }
+
+    saveAliquotasToStorage() {
+        this.storage.saveAliquotas(UF_DATA);
+    }
+
+    toggleAliquotas() {
+        const containerAliquotas = document.getElementById("aliquotasContainer");
+        const botaoToggle = document.getElementById("toggleAliquotas");
+
+        if (containerAliquotas.style.display === "none") {
+            containerAliquotas.style.display = "block";
+            botaoToggle.innerHTML = '<i class="fas fa-eye-slash"></i> Ocultar Alíquotas';
+            this.populateAliquotasTable();
+        } else {
+            containerAliquotas.style.display = "none";
+            botaoToggle.innerHTML = '<i class="fas fa-edit"></i> Editar Alíquotas';
+        }
+    }
+
+    populateAliquotasTable() {
+        const corpoTabela = document.getElementById("aliquotasTableBody");
+        corpoTabela.innerHTML = "";
+
+        Object.entries(UF_DATA).forEach(([uf, dados]) => {
+            const linha = document.createElement("tr");
+            linha.innerHTML = `
+                <td><strong>${uf}</strong></td>
+                <td><input class="input is-small" type="number" step="0.0001" value="${dados.mva_grade}" data-uf="${uf}" data-field="mva_grade"></td>
+                <td><input class="input is-small" type="number" step="0.01" value="${dados.aliq_int}" data-uf="${uf}" data-field="aliq_int"></td>
+                <td><input class="input is-small" type="number" step="0.0001" value="${dados.mva_grampo}" data-uf="${uf}" data-field="mva_grampo"></td>
+                <td><input class="input is-small" type="number" step="0.0001" value="${dados.mva_telas}" data-uf="${uf}" data-field="mva_telas"></td>
+                <td><input class="input is-small" type="number" step="0.01" value="${dados.aliq_sp}" data-uf="${uf}" data-field="aliq_sp"></td>
+                <td><button class="button is-small is-info js-reset-uf-btn" data-uf="${uf}"><i class="fas fa-undo"></i></button></td>
+            `;
+            corpoTabela.appendChild(linha);
+        });
+
+        // Adiciona event listeners aos novos botões
+        corpoTabela.querySelectorAll('.js-reset-uf-btn').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const ufToReset = e.currentTarget.dataset.uf;
+                this.resetUF(ufToReset);
+            });
+        });
+    }
+
+    salvarAliquotas() {
+        const camposInput = document.querySelectorAll("#aliquotasTableBody input");
+        let algumaAlteracao = false;
+
+        camposInput.forEach(input => {
+            const uf = input.dataset.uf;
+            const campo = input.dataset.field;
+            const valor = parseFloat(input.value) || 0;
+
+            if (UF_DATA[uf][campo] !== valor) {
+                UF_DATA[uf][campo] = valor;
+                algumaAlteracao = true;
+                input.classList.add("has-background-success-light");
+                setTimeout(() => input.classList.remove("has-background-success-light"), 2000);
+            }
+        });
+
+        if (algumaAlteracao) {
+            this.saveAliquotasToStorage();
+            document.dispatchEvent(new CustomEvent("aliquotasChanged"));
+            this.notifications.show("Alíquotas salvas com sucesso!", "success");
+
+            const botaoSalvar = document.getElementById("salvarAliquotas");
+            if (botaoSalvar) {
+                const conteudoOriginal = botaoSalvar.innerHTML;
+                botaoSalvar.innerHTML = '<i class="fas fa-check"></i> Salvo!';
+                botaoSalvar.classList.remove("is-success");
+                botaoSalvar.classList.add("is-info");
+
+                setTimeout(() => {
+                    botaoSalvar.innerHTML = conteudoOriginal;
+                    botaoSalvar.classList.remove("is-info");
+                    botaoSalvar.classList.add("is-success");
+                }, 2000);
+            }
+        } else {
+            this.notifications.show("Nenhuma alteração detectada.", "info");
+        }
+    }
+
+    resetAliquotas() {
+        this.app.showConfirmation(
+            'Restaurar Alíquotas',
+            '<p>Deseja restaurar <strong>todas</strong> as alíquotas para os valores padrão? Esta ação não pode ser desfeita.</p>',
+            () => {
+                Object.keys(UF_DATA).forEach(uf => {
+                    UF_DATA[uf] = JSON.parse(JSON.stringify(UF_DATA_ORIGINAL[uf]));
+                });
+                this.saveAliquotasToStorage();
+                this.populateAliquotasTable();
+                document.dispatchEvent(new CustomEvent("aliquotasChanged"));
+                this.notifications.show("Alíquotas restauradas para valores padrão!", "info");
+            },
+            { confirmText: 'Restaurar Tudo', type: 'is-warning' }
+        );
+    }
+
+    resetUF(uf) {
+        this.app.showConfirmation(
+            `Restaurar ${uf}`,
+            `<p>Deseja restaurar as alíquotas de <strong>${uf}</strong> para os valores padrão?</p>`,
+            () => {
+                UF_DATA[uf] = JSON.parse(JSON.stringify(UF_DATA_ORIGINAL[uf]));
+                this.saveAliquotasToStorage();
+                this.populateAliquotasTable();
+                document.dispatchEvent(new CustomEvent("aliquotasChanged"));
+                this.notifications.show(`Alíquotas de ${uf} restauradas!`, "info");
+            },
+            { confirmText: 'Restaurar', type: 'is-info' }
+        );
+    }
+}

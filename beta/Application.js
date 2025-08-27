@@ -1,1 +1,346 @@
-const voti_12_0x35bcb6=voti_12_0x4fdf;(function(_0x15e1b3,_0x4f8cc6){const _0x47eb54=voti_12_0x4fdf,_0x1cf2ff=_0x15e1b3();while(!![]){try{const _0x2334c9=-parseInt(_0x47eb54(0x21e))/0x1*(-parseInt(_0x47eb54(0x182))/0x2)+parseInt(_0x47eb54(0x206))/0x3+-parseInt(_0x47eb54(0x19b))/0x4+parseInt(_0x47eb54(0x17a))/0x5*(parseInt(_0x47eb54(0x209))/0x6)+parseInt(_0x47eb54(0x1c2))/0x7+-parseInt(_0x47eb54(0x1d4))/0x8+-parseInt(_0x47eb54(0x1c4))/0x9*(parseInt(_0x47eb54(0x17e))/0xa);if(_0x2334c9===_0x4f8cc6)break;else _0x1cf2ff['push'](_0x1cf2ff['shift']());}catch(_0x43916a){_0x1cf2ff['push'](_0x1cf2ff['shift']());}}}(voti_12_0x3eb2,0x2fa8f));import{BusinessValidator}from'./shared/validation.js';import{NOTIFICATION_TYPES,MESSAGES}from'./shared/config.js';import{TemplateController}from'./grades/TemplateController.js';import{BudgetController}from'./grades/BudgetController.js';import{PriceController}from'./grades/PriceController.js';import{PricingController}from'./pricing/PricingController.js';import{AliquotasController}from'./pricing/AliquotasController.js';import{NavigationController}from'./integrated/controllers/NavigationController.js';import{ReportController}from'./integrated/controllers/ReportController.js';import{BudgetTabsController}from'./integrated/controllers/BudgetTabsController.js';import{ModalController}from'./grades/modals.js';import{NotificationManager}from'./integrated/controllers/NotificationManager.js';import{ValidationManager}from'./integrated/controllers/ValidationManager.js';import{ModalManager}from'./integrated/controllers/ModalManager.js';import{BudgetStore}from'./store/BudgetStore.js';import'./integrated/components/TemplateItem.js';import'./integrated/components/BudgetItem.js';import'./integrated/components/SpecificPriceItem.js';import'./integrated/components/SpecificPriceForm.js';import'./integrated/components/BudgetItemForm.js';import'./integrated/components/TemplateItemForm.js';import'./integrated/components/ClampTemplateForm.js';import'./integrated/components/TemplateList.js';import'./integrated/components/GlobalPricesForm.js';import'./integrated/components/SpecificPricesPanel.js';import'./integrated/components/PricingAccordion.js';import'./integrated/components/PricingTemplatePanel.js';import'./integrated/components/BudgetSummary.js';import'./integrated/components/BudgetList.js';import'./integrated/components/CommercialBudget.js';import'./integrated/components/DetailedReport.js';import'./integrated/components/DetailedReportItem.js';import'./integrated/components/ConsolidatedReport.js';import'./integrated/components/CalculationMemory.js';function voti_12_0x3eb2(){const _0x2dc3e3=['budgetItems','isValid','global-prices-form-component','Configuração\x20copiada\x20para\x20','copyPricingConfig','getTemplateById','modalManager','detailedReportComponent','orderedIds','click','openRedondaModal','getCurrentTab','filter','<p>Excluir\x20o\x20modelo\x20<strong>\x22','getBudgetItemById','getTemplatesSortedByName','proposal-form-component','Todos\x20os\x20outros\x20modelos\x20com\x20itens\x20já\x20estão\x20configurados.','edit-specific-price','switchTab','itemFormComponent','setupStoreSubscription','ufDestino','init','1273268qYOuKv','updateBudgetListView','redonda','budget-list-component','templateListComponent','closeTemplateModal','edit-template','<br>','templatesWithStatus','cancelEdit','itemUpdated','showConfirm','bulk-copy','reduce','pricingController','show','initializeManagers','cancel-edit','resetPrices','hasItems','field','reportData','modalController','notifications','\x20modelo(s).','globalPrices','getPrices','calculateAllTemplatesPricing','content','totalWeightCalcMethod','budgetStore','budgetTabsController','reportController','priceController','clear-budget','consolidatedReportComponent','message','pricing-accordion-component','global','2417219jliPaR','updateTemplateViews','4383gqpBuy','specificPricesPanelComponent','isConfigured','specific-prices-panel-component','success','\x22</strong>?</p>','length','budgetListComponent','registerTabHandlers','app','templateId','update-commercial-data','updateSummaryView','value','save-global-prices','getEditingTemplateId','2554824FdSsjS','getBudgetItems','importItemsFromCSV','updateReportService','item-form-component','updateProposalForm','remove-item','consolidated-report-component','calculationMemoryComponent','openChapaXadrezModal','entries','editingItem','showConfirmation','summaryComponent','handleItemImport','setupPricesListEvents','updateTemplatesMap','navigationController','getTemplatesWithPricingStatus','updateCalculationMemory','setupBudgetListEvents','materialType','Confirmar\x20Exclusão','globalPricesFormComponent','remove','chapa_xadrez','manipuladoresAbas','update-logo','updateReports','reset-global-prices','isEditingBudget','editingTemplateId','getElementById','templates','calculate-all','memoryData','forEach','validator','especificos','nome','proposalFormComponent','onload','add-specific-price','delete','updateBudgetViews','\x20item(ns)\x20do\x20orçamento\x20que\x20usam\x20este\x20modelo\x20também\x20serão\x20removidos.</p></div>','updateAllViews','import-items','UF\x20alterada.\x20Cálculos\x20de\x20pricing\x20foram\x20invalidados.','map','867480zizpnE','setupFormEvents','toggleAliquotas','390OcwBrz','INFO','setEditingBudgetItem','setupEventListeners','updatePricesViews','commercialBudgetComponent','getTemplates','updateLogo','resetAliquotas','showDeleteConfirmationModal','edit-item','prices','Selecione\x20um\x20modelo\x20de\x20origem\x20para\x20copiar.','result','SUCCESS','getCommercialData','set','saveGlobalPrices','DANGER','templatesMap','import-templates-csv','80779vqEvcM','openChataModal','bindComponents','setupPricingEvents','delete-template','initializeServices','updateCommercialBudget','addEventListener','openChapaLateralModal','generateMemoriaCalculoData','aliquotasController','bulk-template-source','itemAdded','add','remove-specific-price','commercial-budget-component','openTemplateModal','itemId','getTemplatesSortedByDate','updatePricingInterface','clear','initializeControllers','WARNING','roundingConfig','open-template-modal','templateController','setupTemplateListEvents','updateCommercialData','budgetController','9475CPIYaH','validationManager','salvarAliquotas','join','5090VSeehJ','material-type-change','pricingAccordionComponent','detail','8ULooTm'];voti_12_0x3eb2=function(){return _0x2dc3e3;};return voti_12_0x3eb2();}import'./integrated/components/ProposalForm.js';function voti_12_0x4fdf(_0x494ab3,_0x1f9543){const _0x3eb280=voti_12_0x3eb2();return voti_12_0x4fdf=function(_0x4fdf46,_0xbcd087){_0x4fdf46=_0x4fdf46-0x160;let _0x41b641=_0x3eb280[_0x4fdf46];return _0x41b641;},voti_12_0x4fdf(_0x494ab3,_0x1f9543);}export class Application{constructor(){const _0x2aba60=voti_12_0x4fdf;window[_0x2aba60(0x1cd)]=this,this[_0x2aba60(0x21c)]=new Map(),this[_0x2aba60(0x162)](),this['initializeControllers'](),this[_0x2aba60(0x1ab)](),this[_0x2aba60(0x19a)]();}[voti_12_0x35bcb6(0x162)](){const _0x327505=voti_12_0x35bcb6;this['validator']=new BusinessValidator(),this[_0x327505(0x1b2)]=new NotificationManager(),this['budgetStore']=new BudgetStore(this[_0x327505(0x1f9)]),this[_0x327505(0x189)]=new ModalManager();}[voti_12_0x35bcb6(0x172)](){const _0x4560d1=voti_12_0x35bcb6;this[_0x4560d1(0x176)]=new TemplateController(this['budgetStore'],this['notifications'],this[_0x4560d1(0x1f9)]),this['budgetController']=new BudgetController(this[_0x4560d1(0x1b9)],this[_0x4560d1(0x1b2)],this),this['priceController']=new PriceController(this[_0x4560d1(0x1b9)],this['notifications']),this[_0x4560d1(0x1e5)]=new NavigationController(),this[_0x4560d1(0x1ba)]=new BudgetTabsController(this[_0x4560d1(0x1b9)],this['notifications']),this['reportController']=new ReportController(this,this['notifications']),this[_0x4560d1(0x1a9)]=new PricingController(this[_0x4560d1(0x1b9)],this[_0x4560d1(0x176)],this[_0x4560d1(0x179)],this[_0x4560d1(0x1bc)],this[_0x4560d1(0x1b2)]),this['aliquotasController']=new AliquotasController(this['notifications'],this),this[_0x4560d1(0x1b1)]=new ModalController(this,this[_0x4560d1(0x1bc)],this[_0x4560d1(0x1f9)],this[_0x4560d1(0x1b2)]);}[voti_12_0x35bcb6(0x1ab)](){const _0x36b00c=voti_12_0x35bcb6;this[_0x36b00c(0x17b)]=new ValidationManager(this[_0x36b00c(0x1f9)],this[_0x36b00c(0x1b2)]);}async['init'](){const _0x2e0dec=voti_12_0x35bcb6;this[_0x2e0dec(0x220)](),this[_0x2e0dec(0x198)](),this['setupEventListeners'](),this[_0x2e0dec(0x1b9)]['init'](),this[_0x2e0dec(0x1ba)]['initialize'](),this[_0x2e0dec(0x1e5)][_0x2e0dec(0x196)](_0x2e0dec(0x1f5));}[voti_12_0x35bcb6(0x198)](){const _0x3c6c1e=voti_12_0x35bcb6;this[_0x3c6c1e(0x1b9)]['subscribe'](()=>this[_0x3c6c1e(0x202)]());}[voti_12_0x35bcb6(0x20c)](){const _0x16b1d8=voti_12_0x35bcb6;this[_0x16b1d8(0x207)](),this[_0x16b1d8(0x177)](),this[_0x16b1d8(0x1e8)](),this[_0x16b1d8(0x1e3)](),this[_0x16b1d8(0x160)](),this[_0x16b1d8(0x1cc)]();const _0x2aec47=document['getElementById']('export-pdf-btn');_0x2aec47&&_0x2aec47[_0x16b1d8(0x164)](_0x16b1d8(0x18c),()=>this['reportController']['exportProposalAsPDF']());}[voti_12_0x35bcb6(0x202)](){const _0x282377=voti_12_0x35bcb6;this[_0x282377(0x1e4)](),this[_0x282377(0x1ba)]['updateUI']();const _0x58d7d4=this[_0x282377(0x1e5)][_0x282377(0x18e)](),_0xb1800b=this[_0x282377(0x1e5)][_0x282377(0x1ee)][_0x58d7d4];if(_0xb1800b)_0xb1800b();}['bindComponents'](){const _0x27e9b6=voti_12_0x35bcb6;this[_0x27e9b6(0x197)]=document['getElementById'](_0x27e9b6(0x1d8)),this[_0x27e9b6(0x19f)]=document[_0x27e9b6(0x1f4)]('template-list-component'),this['globalPricesFormComponent']=document[_0x27e9b6(0x1f4)](_0x27e9b6(0x185)),this['specificPricesPanelComponent']=document[_0x27e9b6(0x1f4)](_0x27e9b6(0x1c7)),this[_0x27e9b6(0x180)]=document[_0x27e9b6(0x1f4)](_0x27e9b6(0x1c0)),this[_0x27e9b6(0x1e1)]=document[_0x27e9b6(0x1f4)]('budget-summary-component'),this[_0x27e9b6(0x1cb)]=document[_0x27e9b6(0x1f4)](_0x27e9b6(0x19e)),this['commercialBudgetComponent']=document[_0x27e9b6(0x1f4)](_0x27e9b6(0x16c)),this[_0x27e9b6(0x18a)]=document[_0x27e9b6(0x1f4)]('detailed-report-component'),this[_0x27e9b6(0x1be)]=document[_0x27e9b6(0x1f4)](_0x27e9b6(0x1db)),this[_0x27e9b6(0x1dc)]=document[_0x27e9b6(0x1f4)]('calculation-memory-component'),this[_0x27e9b6(0x1fc)]=document['getElementById'](_0x27e9b6(0x193));}[voti_12_0x35bcb6(0x1e4)](){const _0x1167d2=voti_12_0x35bcb6;this['templatesMap'][_0x1167d2(0x171)](),this[_0x1167d2(0x1b9)][_0x1167d2(0x20f)]()[_0x1167d2(0x1f8)](_0x270561=>this['templatesMap'][_0x1167d2(0x219)](_0x270561['id'],_0x270561));}[voti_12_0x35bcb6(0x207)](){const _0x4b21d9=voti_12_0x35bcb6;this['itemFormComponent'][_0x4b21d9(0x164)]('save-item',_0x4afa26=>{const _0x1ccd8c=_0x4b21d9,_0x5162b6=this[_0x1ccd8c(0x179)][_0x1ccd8c(0x16a)](_0x4afa26['detail']);if(_0x5162b6[_0x1ccd8c(0x1c8)]){const _0x5167e8=this[_0x1ccd8c(0x1b9)][_0x1ccd8c(0x1f2)]()?MESSAGES[_0x1ccd8c(0x217)][_0x1ccd8c(0x1a5)]:MESSAGES[_0x1ccd8c(0x217)][_0x1ccd8c(0x169)];this[_0x1ccd8c(0x1b2)][_0x1ccd8c(0x1aa)](_0x5167e8,NOTIFICATION_TYPES[_0x1ccd8c(0x217)]),this['budgetController'][_0x1ccd8c(0x1a4)]();}else this[_0x1ccd8c(0x1b2)][_0x1ccd8c(0x1aa)](_0x5162b6['errors'][_0x1ccd8c(0x17d)](_0x1ccd8c(0x1a2)),NOTIFICATION_TYPES['WARNING']);}),this[_0x4b21d9(0x197)][_0x4b21d9(0x164)](_0x4b21d9(0x203),_0x34e1a5=>this[_0x4b21d9(0x1e2)](_0x34e1a5[_0x4b21d9(0x181)]['file'])),this['itemFormComponent']['addEventListener'](_0x4b21d9(0x1ac),()=>this[_0x4b21d9(0x179)]['cancelEdit']()),this['itemFormComponent'][_0x4b21d9(0x164)](_0x4b21d9(0x1bd),()=>this[_0x4b21d9(0x179)][_0x4b21d9(0x171)]()),this['globalPricesFormComponent'][_0x4b21d9(0x164)](_0x4b21d9(0x1d2),()=>this['priceController'][_0x4b21d9(0x21a)]()),this[_0x4b21d9(0x1eb)][_0x4b21d9(0x164)](_0x4b21d9(0x1f1),()=>this[_0x4b21d9(0x1bc)][_0x4b21d9(0x1ad)]()),this[_0x4b21d9(0x1eb)][_0x4b21d9(0x164)](_0x4b21d9(0x17f),_0x35df92=>{const _0x2e3bf6=_0x4b21d9;this[_0x2e3bf6(0x1b9)][_0x2e3bf6(0x178)](_0x2e3bf6(0x1e9),_0x35df92[_0x2e3bf6(0x181)][_0x2e3bf6(0x1e9)]),this[_0x2e3bf6(0x1b2)][_0x2e3bf6(0x1aa)]('Tipo\x20de\x20material\x20atualizado.',NOTIFICATION_TYPES[_0x2e3bf6(0x20a)]);}),this[_0x4b21d9(0x1fc)][_0x4b21d9(0x164)](_0x4b21d9(0x1cf),_0x3b647d=>{const _0x575fa3=_0x4b21d9;if(_0x3b647d[_0x575fa3(0x181)][_0x575fa3(0x1af)]===_0x575fa3(0x199)){const _0xa7eb10=this[_0x575fa3(0x1b9)][_0x575fa3(0x218)]()[_0x575fa3(0x199)];_0xa7eb10!==_0x3b647d[_0x575fa3(0x181)][_0x575fa3(0x1d1)]&&this['notifications'][_0x575fa3(0x1aa)](_0x575fa3(0x204),NOTIFICATION_TYPES[_0x575fa3(0x173)]);}this[_0x575fa3(0x1b9)]['updateCommercialData'](_0x3b647d[_0x575fa3(0x181)]['field'],_0x3b647d[_0x575fa3(0x181)][_0x575fa3(0x1d1)]);}),this[_0x4b21d9(0x1fc)][_0x4b21d9(0x164)](_0x4b21d9(0x1ef),async _0x1e781c=>{const _0x359eda=_0x4b21d9,{file:_0x4bea1e}=_0x1e781c[_0x359eda(0x181)];if(_0x4bea1e){const _0x7636d1=await this[_0x359eda(0x1f9)]['validateLogoFile'](_0x4bea1e);if(!_0x7636d1[_0x359eda(0x184)]){this[_0x359eda(0x1b2)]['show'](_0x7636d1[_0x359eda(0x1bf)],NOTIFICATION_TYPES[_0x359eda(0x21b)]);return;}}this[_0x359eda(0x1b9)][_0x359eda(0x210)](_0x4bea1e);});}[voti_12_0x35bcb6(0x1e2)](_0x4d6e30){const _0x21d49f=voti_12_0x35bcb6;if(_0x4d6e30){const _0x23487a=new FileReader();_0x23487a[_0x21d49f(0x1fd)]=_0x4a490e=>{const _0x4d3dea=_0x21d49f;this[_0x4d3dea(0x179)][_0x4d3dea(0x1d6)](_0x4a490e['target'][_0x4d3dea(0x216)]);},_0x23487a['readAsText'](_0x4d6e30);}}[voti_12_0x35bcb6(0x177)](){const _0x29cef9=voti_12_0x35bcb6;this[_0x29cef9(0x19f)][_0x29cef9(0x164)](_0x29cef9(0x175),()=>this[_0x29cef9(0x16d)]()),this[_0x29cef9(0x19f)][_0x29cef9(0x164)](_0x29cef9(0x1a1),_0x55661e=>this[_0x29cef9(0x16d)](_0x55661e[_0x29cef9(0x181)]['templateId'])),this[_0x29cef9(0x19f)][_0x29cef9(0x164)](_0x29cef9(0x161),_0x210775=>this[_0x29cef9(0x212)](_0x210775[_0x29cef9(0x181)][_0x29cef9(0x1ce)])),this[_0x29cef9(0x19f)]['addEventListener'](_0x29cef9(0x21d),_0x52c373=>{const _0x1e7ca6=_0x29cef9;_0x52c373[_0x1e7ca6(0x181)]['content']&&this['templateController']['importFromCSV'](_0x52c373['detail'][_0x1e7ca6(0x1b7)]);});}[voti_12_0x35bcb6(0x1e8)](){const _0x469043=voti_12_0x35bcb6;this[_0x469043(0x1cb)][_0x469043(0x164)](_0x469043(0x213),_0x11582e=>this[_0x469043(0x1b9)][_0x469043(0x20b)](_0x11582e[_0x469043(0x181)]['itemId'])),this[_0x469043(0x1cb)]['addEventListener'](_0x469043(0x1da),_0x25b75e=>this['budgetController'][_0x469043(0x1ec)](_0x25b75e['detail']['itemId'])),this[_0x469043(0x1cb)][_0x469043(0x164)]('reorder-items',_0x12f58a=>this['budgetStore']['updateItemsOrder'](_0x12f58a[_0x469043(0x181)][_0x469043(0x18b)])),this[_0x469043(0x1cb)]['addEventListener']('move-item',_0x41de28=>this[_0x469043(0x179)]['moveItemToPosition'](_0x41de28[_0x469043(0x181)][_0x469043(0x16e)],_0x41de28[_0x469043(0x181)]['newPosition']));}['setupPricesListEvents'](){const _0x52344f=voti_12_0x35bcb6,_0x3d5376=this[_0x52344f(0x1c5)];if(!_0x3d5376)return;_0x3d5376[_0x52344f(0x164)](_0x52344f(0x1fe),_0x59fef0=>{const _0x37d5be=_0x52344f,{type:_0x90cbcc}=_0x59fef0[_0x37d5be(0x181)];switch(_0x90cbcc){case'chata':this['modalController'][_0x37d5be(0x21f)]();break;case _0x37d5be(0x19d):this[_0x37d5be(0x1b1)][_0x37d5be(0x18d)]();break;case'chapa_lateral':this[_0x37d5be(0x1b1)][_0x37d5be(0x165)]();break;case _0x37d5be(0x1ed):this[_0x37d5be(0x1b1)][_0x37d5be(0x1dd)]();break;}}),_0x3d5376['addEventListener'](_0x52344f(0x195),_0x47dad2=>{const _0xb69f56=_0x52344f,{tipo:_0x2b8f02,dimensao:_0x843f8b,preco:_0x538de1}=_0x47dad2['detail'];this[_0xb69f56(0x1b1)]['editSpecificPrice'](_0x2b8f02,_0x843f8b,_0x538de1);}),_0x3d5376['addEventListener'](_0x52344f(0x16b),_0x4c5f37=>{const _0x414c9c=_0x52344f,{tipo:_0x4b7a8b,dimensao:_0x24060b}=_0x4c5f37[_0x414c9c(0x181)];this[_0x414c9c(0x1b1)]['removeSpecificPrice'](_0x4b7a8b,_0x24060b);});}[voti_12_0x35bcb6(0x160)](){const _0x31b76d=voti_12_0x35bcb6,_0x43e0d3=this[_0x31b76d(0x180)];_0x43e0d3&&(_0x43e0d3['addEventListener']('calculate-pricing',async _0x464a44=>{const _0x45e6a3=_0x31b76d,{templateId:_0x2fdd37,formData:_0x2a741e}=_0x464a44['detail'];await this[_0x45e6a3(0x1a9)]['calculateTemplatePricing'](_0x2fdd37,_0x2a741e);}),_0x43e0d3[_0x31b76d(0x164)](_0x31b76d(0x1a7),()=>{const _0x2247b9=_0x31b76d,_0x8ccfe8=_0x43e0d3['shadowRoot'][_0x2247b9(0x1f4)](_0x2247b9(0x168))[_0x2247b9(0x1d1)];if(!_0x8ccfe8){this[_0x2247b9(0x1b2)][_0x2247b9(0x1aa)](_0x2247b9(0x215),NOTIFICATION_TYPES[_0x2247b9(0x173)]);return;}const _0x6a8919=this['budgetStore'][_0x2247b9(0x1e6)]()[_0x2247b9(0x18f)](_0x3e0fa6=>!_0x3e0fa6[_0x2247b9(0x1c6)]&&_0x3e0fa6[_0x2247b9(0x1ae)])[_0x2247b9(0x205)](_0x38a6d9=>_0x38a6d9['id']);if(_0x6a8919[_0x2247b9(0x1ca)]===0x0){this[_0x2247b9(0x1b2)][_0x2247b9(0x1aa)](_0x2247b9(0x194),NOTIFICATION_TYPES['INFO']);return;}this[_0x2247b9(0x1b9)][_0x2247b9(0x187)](_0x8ccfe8,_0x6a8919),this['notifications']['show'](_0x2247b9(0x186)+_0x6a8919['length']+_0x2247b9(0x1b3),NOTIFICATION_TYPES[_0x2247b9(0x217)]);}),_0x43e0d3[_0x31b76d(0x164)](_0x31b76d(0x1f6),async()=>{const _0x9d2409=_0x31b76d;await this[_0x9d2409(0x1a9)][_0x9d2409(0x1b6)]();})),document['getElementById'](_0x31b76d(0x208))?.[_0x31b76d(0x164)](_0x31b76d(0x18c),()=>this[_0x31b76d(0x167)][_0x31b76d(0x208)]()),document[_0x31b76d(0x1f4)](_0x31b76d(0x17c))?.['addEventListener'](_0x31b76d(0x18c),()=>this[_0x31b76d(0x167)][_0x31b76d(0x17c)]()),document[_0x31b76d(0x1f4)]('resetAliquotas')?.['addEventListener'](_0x31b76d(0x18c),()=>this['aliquotasController'][_0x31b76d(0x211)]());}[voti_12_0x35bcb6(0x1cc)](){const _0x5850f7=voti_12_0x35bcb6,_0x131bec={'templates':()=>this['updateTemplateViews'](),'precos':()=>this[_0x5850f7(0x20d)](),'itens':()=>this['updateBudgetViews'](),'relatorios':()=>this[_0x5850f7(0x1f0)](),'memoria':()=>this[_0x5850f7(0x1e7)](),'proposta':()=>this[_0x5850f7(0x1d9)](),'pricing':()=>this[_0x5850f7(0x170)](),'orcamento':()=>this[_0x5850f7(0x163)]()};for(const [_0x10a546,_0x470ce8]of Object[_0x5850f7(0x1de)](_0x131bec)){this[_0x5850f7(0x1e5)]['registerTabHandler'](_0x10a546,_0x470ce8);}}[voti_12_0x35bcb6(0x1c3)](){const _0x4ddb5e=voti_12_0x35bcb6;this[_0x4ddb5e(0x19f)][_0x4ddb5e(0x1f5)]=this[_0x4ddb5e(0x1b9)][_0x4ddb5e(0x16f)](),this['templateListComponent'][_0x4ddb5e(0x1f3)]=this[_0x4ddb5e(0x1b9)][_0x4ddb5e(0x1d3)]();}[voti_12_0x35bcb6(0x20d)](){const _0x75252a=voti_12_0x35bcb6,_0x589b71=this['budgetStore'][_0x75252a(0x1b5)](),_0x554bd5=this[_0x75252a(0x1b9)][_0x75252a(0x218)]();this['globalPricesFormComponent'][_0x75252a(0x214)]={..._0x589b71[_0x75252a(0x1c1)]},this[_0x75252a(0x1eb)][_0x75252a(0x1e9)]=_0x554bd5['materialType'],this['globalPricesFormComponent'][_0x75252a(0x174)]={..._0x589b71[_0x75252a(0x174)]},this[_0x75252a(0x1eb)][_0x75252a(0x1b8)]=_0x589b71[_0x75252a(0x1b8)],this[_0x75252a(0x1c5)]['specificPrices']={..._0x589b71[_0x75252a(0x1fa)]},this[_0x75252a(0x1c5)][_0x75252a(0x1b4)]={..._0x589b71[_0x75252a(0x1c1)]};}[voti_12_0x35bcb6(0x200)](){const _0x3e97cf=voti_12_0x35bcb6;this[_0x3e97cf(0x197)]['templates']=this['budgetStore'][_0x3e97cf(0x192)](),this[_0x3e97cf(0x197)][_0x3e97cf(0x183)]=this[_0x3e97cf(0x1b9)][_0x3e97cf(0x1d5)](),this[_0x3e97cf(0x197)]['isEditing']=this['budgetStore'][_0x3e97cf(0x1f2)](),this[_0x3e97cf(0x197)][_0x3e97cf(0x1df)]=this['budgetStore'][_0x3e97cf(0x191)](this[_0x3e97cf(0x1b9)]['getEditingBudgetItemId']()),this[_0x3e97cf(0x179)][_0x3e97cf(0x1d0)](),this[_0x3e97cf(0x179)][_0x3e97cf(0x19c)]();}['updateReports'](){const _0xb0334b=voti_12_0x35bcb6;this[_0xb0334b(0x1bb)][_0xb0334b(0x1d7)](),this[_0xb0334b(0x18a)]['reportData']=this[_0xb0334b(0x1bb)]['generateIndividualReportData'](),this[_0xb0334b(0x1be)][_0xb0334b(0x1b0)]=this['reportController']['generateConsolidatedReportData']();}[voti_12_0x35bcb6(0x1e7)](){const _0x207356=voti_12_0x35bcb6;this[_0x207356(0x1bb)][_0x207356(0x1d7)](),this[_0x207356(0x1dc)][_0x207356(0x1f7)]=this['reportController'][_0x207356(0x166)]();}['updateProposalForm'](){const _0xdc95e8=voti_12_0x35bcb6;this[_0xdc95e8(0x1fc)]['commercialData']={...this[_0xdc95e8(0x1b9)][_0xdc95e8(0x218)]()};}[voti_12_0x35bcb6(0x170)](){const _0x4d1702=voti_12_0x35bcb6,_0x402263=this['budgetStore'][_0x4d1702(0x1e6)](),_0x1d9e40=this[_0x4d1702(0x1b9)][_0x4d1702(0x218)]()?.[_0x4d1702(0x199)]||'',_0x378247=_0x402263[_0x4d1702(0x205)](_0x39bd92=>({..._0x39bd92,'ufDestino':_0x1d9e40}));this[_0x4d1702(0x180)][_0x4d1702(0x1a3)]=[..._0x378247];}[voti_12_0x35bcb6(0x163)](){const _0x2925c5=voti_12_0x35bcb6,_0x3a9cec=this[_0x2925c5(0x1b9)][_0x2925c5(0x20f)](),_0x74ef56=_0x3a9cec[_0x2925c5(0x1a8)]((_0x3dba5e,_0x4a42c8)=>{const _0x3f1dd6=_0x2925c5;return _0x3dba5e[_0x4a42c8['id']]=_0x4a42c8['pricingConfig']?.[_0x3f1dd6(0x216)]||null,_0x3dba5e;},{});this[_0x2925c5(0x20e)]['budgetItems']=[...this[_0x2925c5(0x1b9)][_0x2925c5(0x1d5)]()],this[_0x2925c5(0x20e)][_0x2925c5(0x1f5)]=[..._0x3a9cec],this[_0x2925c5(0x20e)]['pricingResults']={..._0x74ef56};}['openTemplateModal'](_0x28eb4e=null){const _0x351373=voti_12_0x35bcb6;this[_0x351373(0x1b1)][_0x351373(0x16d)](_0x28eb4e);}[voti_12_0x35bcb6(0x1a0)](){this['modalController']['closeTemplateModal']();}['showDeleteConfirmationModal'](_0x3cdb4f){const _0x2a908d=voti_12_0x35bcb6,_0x4b91aa=this['budgetStore'][_0x2a908d(0x188)](_0x3cdb4f);if(!_0x4b91aa)return;const _0x277012=this[_0x2a908d(0x1b9)]['getBudgetItems']()[_0x2a908d(0x18f)](_0x554730=>_0x554730[_0x2a908d(0x1ce)]===_0x3cdb4f);let _0x17b1d4=_0x2a908d(0x190)+_0x4b91aa[_0x2a908d(0x1fb)]+_0x2a908d(0x1c9);_0x277012[_0x2a908d(0x1ca)]>0x0&&(_0x17b1d4+='<div\x20class=\x22notification\x20is-warning\x20mt-4\x22><p><strong>Atenção:</strong>\x20'+_0x277012[_0x2a908d(0x1ca)]+_0x2a908d(0x201)),this[_0x2a908d(0x1e0)](_0x2a908d(0x1ea),_0x17b1d4,()=>{const _0x33243e=_0x2a908d;this[_0x33243e(0x176)][_0x33243e(0x1ff)](_0x3cdb4f);});}[voti_12_0x35bcb6(0x1e0)](_0x4db924,_0x55b29a,_0x184e40,_0x51ee7a={}){const _0x55f860=voti_12_0x35bcb6;this['modalManager'][_0x55f860(0x1a6)]({'title':_0x4db924,'message':_0x55b29a,'onConfirm':_0x184e40,..._0x51ee7a});}['showInfo'](_0x5cc079,_0x4f0c9e){const _0x34a223=voti_12_0x35bcb6;this[_0x34a223(0x189)]['showInfo']({'title':_0x5cc079,'message':_0x4f0c9e});}}
+import { BusinessValidator } from "./shared/validation.js";
+import { NOTIFICATION_TYPES, MESSAGES } from "./shared/config.js";
+import { TemplateController } from "./grades/TemplateController.js";
+import { BudgetController } from "./grades/BudgetController.js";
+import { PriceController } from "./grades/PriceController.js";
+import { PricingController } from "./pricing/PricingController.js";
+import { AliquotasController } from "./pricing/AliquotasController.js";
+import { NavigationController } from "./integrated/controllers/NavigationController.js";
+import { ReportController } from "./integrated/controllers/ReportController.js";
+import { BudgetTabsController } from "./integrated/controllers/BudgetTabsController.js";
+import { ModalController } from "./grades/modals.js";
+import { NotificationManager } from "./integrated/controllers/NotificationManager.js";
+import { ValidationManager } from "./integrated/controllers/ValidationManager.js";
+import { ModalManager } from "./integrated/controllers/ModalManager.js";
+import { BudgetStore } from "./store/BudgetStore.js";
+
+// Importação de todos os componentes
+import './integrated/components/TemplateItem.js';
+import './integrated/components/BudgetItem.js';
+import './integrated/components/SpecificPriceItem.js';
+import './integrated/components/SpecificPriceForm.js';
+import './integrated/components/BudgetItemForm.js';
+import './integrated/components/TemplateItemForm.js';
+import './integrated/components/ClampTemplateForm.js';
+import './integrated/components/TemplateList.js';
+import './integrated/components/GlobalPricesForm.js';
+import './integrated/components/SpecificPricesPanel.js';
+import './integrated/components/PricingAccordion.js';
+import './integrated/components/PricingTemplatePanel.js';
+import './integrated/components/BudgetSummary.js';
+import './integrated/components/BudgetList.js';
+import './integrated/components/CommercialBudget.js';
+import './integrated/components/DetailedReport.js';
+import './integrated/components/DetailedReportItem.js';
+import './integrated/components/ConsolidatedReport.js';
+import './integrated/components/CalculationMemory.js';
+import './integrated/components/ProposalForm.js';
+
+export class Application {
+    constructor() {
+        window.app = this;
+        this.templatesMap = new Map();
+        this.initializeServices();
+        this.initializeControllers();
+        this.initializeManagers();
+        this.init();
+    }
+
+    initializeServices() {
+        this.validator = new BusinessValidator();
+        this.notifications = new NotificationManager();
+        this.budgetStore = new BudgetStore(this.validator);
+        this.modalManager = new ModalManager();
+    }
+
+    initializeControllers() {
+        this.templateController = new TemplateController(this.budgetStore, this.notifications, this.validator);
+        this.budgetController = new BudgetController(this.budgetStore, this.notifications, this);
+        this.priceController = new PriceController(this.budgetStore, this.notifications);
+        this.navigationController = new NavigationController();
+        this.budgetTabsController = new BudgetTabsController(this.budgetStore, this.notifications);
+        this.reportController = new ReportController(this, this.notifications);
+        this.pricingController = new PricingController(this.budgetStore, this.templateController, this.budgetController, this.priceController, this.notifications);
+        this.aliquotasController = new AliquotasController(this.notifications, this);
+        this.modalController = new ModalController(this, this.priceController, this.validator, this.notifications);
+    }
+
+    initializeManagers() {
+        this.validationManager = new ValidationManager(this.validator, this.notifications);
+    }
+
+    async init() {
+        this.bindComponents();
+        this.setupStoreSubscription();
+        this.setupEventListeners();
+        this.budgetStore.init();
+        this.budgetTabsController.initialize();
+        this.navigationController.switchTab("templates");
+    }
+
+    setupStoreSubscription() {
+        this.budgetStore.subscribe(() => this.updateAllViews());
+    }
+
+    setupEventListeners() {
+        this.setupFormEvents();
+        this.setupTemplateListEvents();
+        this.setupBudgetListEvents();
+        this.setupPricesListEvents();
+        this.setupPricingEvents();
+        this.registerTabHandlers();
+
+        const exportPdfBtn = document.getElementById("export-pdf-btn");
+        if (exportPdfBtn) {
+            exportPdfBtn.addEventListener("click", () => this.reportController.exportProposalAsPDF());
+        }
+    }
+
+    updateAllViews() {
+        this.updateTemplatesMap();
+        this.budgetTabsController.updateUI();
+        const activeTab = this.navigationController.getCurrentTab();
+        const handler = this.navigationController.manipuladoresAbas[activeTab];
+        if (handler) handler();
+    }
+
+    bindComponents() {
+        this.itemFormComponent = document.getElementById('item-form-component');
+        this.templateListComponent = document.getElementById('template-list-component');
+        this.globalPricesFormComponent = document.getElementById('global-prices-form-component');
+        this.specificPricesPanelComponent = document.getElementById('specific-prices-panel-component');
+        this.pricingAccordionComponent = document.getElementById('pricing-accordion-component');
+        this.summaryComponent = document.getElementById('budget-summary-component');
+        this.budgetListComponent = document.getElementById('budget-list-component');
+        this.commercialBudgetComponent = document.getElementById('commercial-budget-component');
+        this.detailedReportComponent = document.getElementById('detailed-report-component');
+        this.consolidatedReportComponent = document.getElementById('consolidated-report-component');
+        this.calculationMemoryComponent = document.getElementById('calculation-memory-component');
+        this.proposalFormComponent = document.getElementById('proposal-form-component');
+    }
+
+    updateTemplatesMap() {
+        this.templatesMap.clear();
+        this.budgetStore.getTemplates().forEach(t => this.templatesMap.set(t.id, t));
+    }
+
+    setupFormEvents() {
+        this.itemFormComponent.addEventListener('save-item', e => {
+            const result = this.budgetController.add(e.detail);
+            if (result.success) {
+                const message = this.budgetStore.isEditingBudget() ? MESSAGES.SUCCESS.itemUpdated : MESSAGES.SUCCESS.itemAdded;
+                this.notifications.show(message, NOTIFICATION_TYPES.SUCCESS);
+                this.budgetController.cancelEdit();
+            } else {
+                this.notifications.show(result.errors.join('<br>'), NOTIFICATION_TYPES.WARNING);
+            }
+        });
+
+        this.itemFormComponent.addEventListener('import-items', (e) => this.handleItemImport(e.detail.file));
+        this.itemFormComponent.addEventListener('cancel-edit', () => this.budgetController.cancelEdit());
+        this.itemFormComponent.addEventListener('clear-budget', () => this.budgetController.clear());
+
+        this.globalPricesFormComponent.addEventListener("save-global-prices", () => this.priceController.saveGlobalPrices());
+        this.globalPricesFormComponent.addEventListener("reset-global-prices", () => this.priceController.resetPrices());
+        this.globalPricesFormComponent.addEventListener("material-type-change", e => {
+            this.budgetStore.updateCommercialData('materialType', e.detail.materialType);
+            this.notifications.show("Tipo de material atualizado.", NOTIFICATION_TYPES.INFO);
+        });
+        this.proposalFormComponent.addEventListener('update-commercial-data', e => {
+            if (e.detail.field === 'ufDestino') {
+                const oldUf = this.budgetStore.getCommercialData().ufDestino;
+                if (oldUf !== e.detail.value) {
+                    this.notifications.show("UF alterada. Cálculos de pricing foram invalidados.", NOTIFICATION_TYPES.WARNING);
+                }
+            }
+            this.budgetStore.updateCommercialData(e.detail.field, e.detail.value);
+        });
+        this.proposalFormComponent.addEventListener('update-logo', async (e) => {
+            const { file } = e.detail;
+            if (file) {
+                const validationResult = await this.validator.validateLogoFile(file);
+                if (!validationResult.isValid) {
+                    this.notifications.show(validationResult.message, NOTIFICATION_TYPES.DANGER);
+                    return;
+                }
+            }
+            this.budgetStore.updateLogo(file);
+        });
+    }
+
+    handleItemImport(file) {
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                this.budgetController.importItemsFromCSV(e.target.result);
+            };
+            reader.readAsText(file);
+        }
+    }
+
+    setupTemplateListEvents() {
+        this.templateListComponent.addEventListener('open-template-modal', () => this.openTemplateModal());
+        this.templateListComponent.addEventListener('edit-template', e => this.openTemplateModal(e.detail.templateId));
+        this.templateListComponent.addEventListener('delete-template', e => this.showDeleteConfirmationModal(e.detail.templateId));
+        this.templateListComponent.addEventListener('import-templates-csv', (event) => {
+            if (event.detail.content) {
+                this.templateController.importFromCSV(event.detail.content);
+            }
+        });
+    }
+
+    setupBudgetListEvents() {
+        this.budgetListComponent.addEventListener('edit-item', e => this.budgetStore.setEditingBudgetItem(e.detail.itemId));
+        this.budgetListComponent.addEventListener('remove-item', e => this.budgetController.remove(e.detail.itemId));
+        this.budgetListComponent.addEventListener('reorder-items', e => this.budgetStore.updateItemsOrder(e.detail.orderedIds));
+        this.budgetListComponent.addEventListener('move-item', e => this.budgetController.moveItemToPosition(e.detail.itemId, e.detail.newPosition));
+    }
+
+    setupPricesListEvents() {
+        const pricesContainer = this.specificPricesPanelComponent;
+        if (!pricesContainer) return;
+
+        pricesContainer.addEventListener('add-specific-price', (event) => {
+            const { type } = event.detail;
+            switch (type) {
+                case 'chata': this.modalController.openChataModal(); break;
+                case 'redonda': this.modalController.openRedondaModal(); break;
+                case 'chapa_lateral': this.modalController.openChapaLateralModal(); break;
+                case 'chapa_xadrez': this.modalController.openChapaXadrezModal(); break;
+            }
+        });
+
+        pricesContainer.addEventListener('edit-specific-price', (event) => {
+            const { tipo, dimensao, preco } = event.detail;
+            this.modalController.editSpecificPrice(tipo, dimensao, preco);
+        });
+
+        pricesContainer.addEventListener('remove-specific-price', (event) => {
+            const { tipo, dimensao } = event.detail;
+            this.modalController.removeSpecificPrice(tipo, dimensao);
+        });
+    }
+
+    setupPricingEvents() {
+        const pricingAccordion = this.pricingAccordionComponent;
+        if (pricingAccordion) {
+            pricingAccordion.addEventListener('calculate-pricing', async (e) => {
+                const { templateId, formData } = e.detail;
+                await this.pricingController.calculateTemplatePricing(templateId, formData);
+            });
+
+            pricingAccordion.addEventListener('bulk-copy', () => {
+                const sourceId = pricingAccordion.shadowRoot.getElementById('bulk-template-source').value;
+                if (!sourceId) {
+                    this.notifications.show("Selecione um modelo de origem para copiar.", NOTIFICATION_TYPES.WARNING);
+                    return;
+                }
+                const targetIds = this.budgetStore.getTemplatesWithPricingStatus()
+                .filter(t => !t.isConfigured && t.hasItems)
+                .map(t => t.id);
+                if(targetIds.length === 0) {
+                    this.notifications.show("Todos os outros modelos com itens já estão configurados.", NOTIFICATION_TYPES.INFO);
+                    return;
+                }
+                this.budgetStore.copyPricingConfig(sourceId, targetIds);
+                this.notifications.show(`Configuração copiada para ${targetIds.length} modelo(s).`, NOTIFICATION_TYPES.SUCCESS);
+            });
+
+            pricingAccordion.addEventListener('calculate-all', async () => {
+                await this.pricingController.calculateAllTemplatesPricing();
+            });
+        }
+
+        document.getElementById("toggleAliquotas")?.addEventListener("click", () => this.aliquotasController.toggleAliquotas());
+        document.getElementById("salvarAliquotas")?.addEventListener("click", () => this.aliquotasController.salvarAliquotas());
+        document.getElementById("resetAliquotas")?.addEventListener("click", () => this.aliquotasController.resetAliquotas());
+    }
+
+    registerTabHandlers() {
+        const handlers = {
+            "templates": () => this.updateTemplateViews(),
+            "precos": () => this.updatePricesViews(),
+            "itens": () => this.updateBudgetViews(),
+            "relatorios": () => this.updateReports(),
+            "memoria": () => this.updateCalculationMemory(),
+            "proposta": () => this.updateProposalForm(),
+            "pricing": () => this.updatePricingInterface(),
+            "orcamento": () => this.updateCommercialBudget(),
+        };
+        for (const [tab, handler] of Object.entries(handlers)) {
+            this.navigationController.registerTabHandler(tab, handler);
+        }
+    }
+
+    updateTemplateViews() {
+        this.templateListComponent.templates = this.budgetStore.getTemplatesSortedByDate();
+        this.templateListComponent.editingTemplateId = this.budgetStore.getEditingTemplateId();
+    }
+
+    updatePricesViews() {
+        const prices = this.budgetStore.getPrices();
+        const commercialData = this.budgetStore.getCommercialData();
+        this.globalPricesFormComponent.prices = { ...prices.global };
+        this.globalPricesFormComponent.materialType = commercialData.materialType;
+        this.globalPricesFormComponent.roundingConfig = { ...prices.roundingConfig };
+        this.globalPricesFormComponent.totalWeightCalcMethod = prices.totalWeightCalcMethod;
+        this.specificPricesPanelComponent.specificPrices = { ...prices.especificos };
+        this.specificPricesPanelComponent.globalPrices = { ...prices.global };
+    }
+
+    updateBudgetViews() {
+        this.itemFormComponent.templates = this.budgetStore.getTemplatesSortedByName();
+        this.itemFormComponent.budgetItems = this.budgetStore.getBudgetItems();
+        this.itemFormComponent.isEditing = this.budgetStore.isEditingBudget();
+        this.itemFormComponent.editingItem = this.budgetStore.getBudgetItemById(this.budgetStore.getEditingBudgetItemId());
+        this.budgetController.updateSummaryView();
+        this.budgetController.updateBudgetListView();
+    }
+
+    updateReports() { this.reportController.updateReportService(); this.detailedReportComponent.reportData = this.reportController.generateIndividualReportData(); this.consolidatedReportComponent.reportData = this.reportController.generateConsolidatedReportData(); }
+    updateCalculationMemory() { this.reportController.updateReportService(); this.calculationMemoryComponent.memoryData = this.reportController.generateMemoriaCalculoData(); }
+    updateProposalForm() { this.proposalFormComponent.commercialData = { ...this.budgetStore.getCommercialData() }; }
+    updatePricingInterface() {
+        const templatesWithStatus = this.budgetStore.getTemplatesWithPricingStatus();
+        const ufDestino = this.budgetStore.getCommercialData()?.ufDestino || "";
+        const templatesParaComponente = templatesWithStatus.map(t => ({ ...t, ufDestino }));
+        this.pricingAccordionComponent.templatesWithStatus = [...templatesParaComponente];
+    }
+    updateCommercialBudget() {
+        const allTemplates = this.budgetStore.getTemplates();
+        const allPricingResults = allTemplates.reduce((acc, t) => {
+            acc[t.id] = t.pricingConfig?.result || null; return acc; }, {});
+        this.commercialBudgetComponent.budgetItems = [...this.budgetStore.getBudgetItems()];
+        this.commercialBudgetComponent.templates = [...allTemplates];
+        this.commercialBudgetComponent.pricingResults = { ...allPricingResults };
+    }
+
+    openTemplateModal(templateId = null) {
+        this.modalController.openTemplateModal(templateId);
+    }
+
+    closeTemplateModal() {
+        this.modalController.closeTemplateModal();
+    }
+
+    showDeleteConfirmationModal(templateId) {
+        const template = this.budgetStore.getTemplateById(templateId);
+        if (!template) return;
+        const itemsUsing = this.budgetStore.getBudgetItems().filter(i => i.templateId === templateId);
+        let message = `<p>Excluir o modelo <strong>"${template.nome}"</strong>?</p>`;
+        if (itemsUsing.length > 0) {
+            message += `<div class="notification is-warning mt-4"><p><strong>Atenção:</strong> ${itemsUsing.length} item(ns) do orçamento que usam este modelo também serão removidos.</p></div>`;
+        }
+        this.showConfirmation('Confirmar Exclusão', message, () => {
+            this.templateController.delete(templateId);
+        });
+    }
+
+    showConfirmation(title, message, onConfirm, options = {}) {
+        this.modalManager.showConfirm({ title, message, onConfirm, ...options });
+    }
+
+    showInfo(title, message) {
+        this.modalManager.showInfo({ title, message });
+    }
+}

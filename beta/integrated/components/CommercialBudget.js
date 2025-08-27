@@ -1,4 +1,11 @@
-const voti_30_0x496573=voti_30_0xb073;(function(_0x43890d,_0x8ba52e){const _0x14fd9c=voti_30_0xb073,_0x1a4d70=_0x43890d();while(!![]){try{const _0x404449=-parseInt(_0x14fd9c(0x8d))/0x1+parseInt(_0x14fd9c(0x99))/0x2*(-parseInt(_0x14fd9c(0x8e))/0x3)+-parseInt(_0x14fd9c(0x9d))/0x4*(-parseInt(_0x14fd9c(0x7d))/0x5)+parseInt(_0x14fd9c(0x9e))/0x6+-parseInt(_0x14fd9c(0x75))/0x7*(parseInt(_0x14fd9c(0x86))/0x8)+parseInt(_0x14fd9c(0x9c))/0x9*(-parseInt(_0x14fd9c(0x81))/0xa)+-parseInt(_0x14fd9c(0x90))/0xb*(-parseInt(_0x14fd9c(0x6f))/0xc);if(_0x404449===_0x8ba52e)break;else _0x1a4d70['push'](_0x1a4d70['shift']());}catch(_0x17e861){_0x1a4d70['push'](_0x1a4d70['shift']());}}}(voti_30_0x5e33,0x5e673));import{LitElement,html,css}from'lit';function voti_30_0xb073(_0x1826d4,_0x5c263f){const _0x5e33fb=voti_30_0x5e33();return voti_30_0xb073=function(_0xb0734e,_0x3a3ccc){_0xb0734e=_0xb0734e-0x65;let _0x390f9b=_0x5e33fb[_0xb0734e];return _0x390f9b;},voti_30_0xb073(_0x1826d4,_0x5c263f);}import{FormattingService}from'../../../core/services/FormattingService.js';import{unsafeHTML}from'lit/directives/unsafe-html.js';export class CommercialBudget extends LitElement{static ['styles']=css`
+// GradesVenda0001/integrated/components/CommercialBudget.js
+
+import { LitElement, html, css } from 'lit';
+import { FormattingService } from '../../../core/services/FormattingService.js';
+import { unsafeHTML } from 'lit/directives/unsafe-html.js';
+
+export class CommercialBudget extends LitElement {
+    static styles = css`
         :host {
             display: block;
         }
@@ -54,55 +61,200 @@ const voti_30_0x496573=voti_30_0xb073;(function(_0x43890d,_0x8ba52e){const _0x14
             color: var(--text-dark, #363636);
         }
         /* --- FIM DA CORREÇÃO --- */
-    `;static ['properties']={'budgetItems':{'type':Array},'templates':{'type':Array},'pricingResults':{'type':Object}};constructor(){const _0x10960d=voti_30_0xb073;super(),this[_0x10960d(0x6b)]=[],this[_0x10960d(0x7f)]=[],this[_0x10960d(0x67)]={};}[voti_30_0x496573(0x9a)](_0x4650fc){const _0x3d2d4c=voti_30_0x496573,_0x17ac41=this['shadowRoot']['getElementById'](_0x3d2d4c(0x95)+_0x4650fc),_0xf01674=this['shadowRoot']['getElementById'](_0x3d2d4c(0x87)+_0x4650fc);if(_0x17ac41&&_0xf01674){const _0x3f5385=_0x17ac41[_0x3d2d4c(0xa0)][_0x3d2d4c(0x8a)]===_0x3d2d4c(0xa1);_0x17ac41[_0x3d2d4c(0xa0)]['display']=_0x3f5385?_0x3d2d4c(0x7b):'table-row',_0xf01674[_0x3d2d4c(0x76)][_0x3d2d4c(0x92)]('fa-chevron-down',_0x3f5385),_0xf01674[_0x3d2d4c(0x76)][_0x3d2d4c(0x92)](_0x3d2d4c(0x74),!_0x3f5385);}}[voti_30_0x496573(0x9b)](_0x5525c2,_0x2febeb){const _0x2f06b5=voti_30_0x496573;if(!_0x5525c2)return _0x2f06b5(0x68);const _0x4cf0a2=(_0x5525c2[_0x2f06b5(0x6d)]||0x0)*_0x2febeb,_0x34bb32=(_0x5525c2[_0x2f06b5(0x89)]||0x0)*_0x2febeb,_0x9f1680=(_0x5525c2[_0x2f06b5(0x7c)]||0x0)*_0x2febeb,_0x70bf95=(_0x5525c2[_0x2f06b5(0x83)]||0x0)*_0x2febeb,_0xb6944f=(_0x5525c2['B95_difal']||0x0)*0x64,_0x1ed3a0=(_0x5525c2[_0x2f06b5(0x98)]||0x0)*0x64,_0x43bf42=(_0x5525c2[_0x2f06b5(0x6a)]||0x0)*0x64;return _0x2f06b5(0x6e)+FormattingService['formatNumber'](_0xb6944f,0x2)+_0x2f06b5(0x88)+FormattingService[_0x2f06b5(0xa3)](_0x9f1680)+_0x2f06b5(0x66)+FormattingService['formatNumber']((_0x5525c2['B98_ipiVenda']||0x0)*0x64,0x2)+'%):</strong>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span>'+FormattingService[_0x2f06b5(0xa3)](_0x4cf0a2)+'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22detail-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<strong>(+)\x20ICMS-ST\x20('+FormattingService[_0x2f06b5(0x7e)](_0x1ed3a0,0x2)+_0x2f06b5(0x88)+FormattingService[_0x2f06b5(0xa3)](_0x70bf95)+_0x2f06b5(0x80)+FormattingService['formatNumber'](_0x43bf42,0x2)+_0x2f06b5(0xa2)+FormattingService['formatCurrency'](_0x34bb32)+_0x2f06b5(0x65);}[voti_30_0x496573(0x69)](){const _0xf9cc96=voti_30_0x496573;if(this[_0xf9cc96(0x6b)][_0xf9cc96(0x72)]===0x0)return html`<p class="has-text-grey">Nenhum item no orçamento.</p>`;let _0x334d5c=0x0,_0x447bc=0x0,_0x1e5bdc=![];const _0x26ccc3={};this[_0xf9cc96(0x6b)][_0xf9cc96(0x96)](_0x497a89=>{const _0x435a98=_0xf9cc96,_0x74d8f7=this['templates'][_0x435a98(0x70)](_0x517314=>_0x517314['id']===_0x497a89[_0x435a98(0x73)]);if(_0x74d8f7&&_0x74d8f7[_0x435a98(0x85)]===_0x435a98(0x79)){if(!_0x26ccc3[_0x497a89[_0x435a98(0x73)]])_0x26ccc3[_0x497a89['templateId']]=0x0;_0x26ccc3[_0x497a89[_0x435a98(0x73)]]+=_0x497a89[_0x435a98(0x8f)]*_0x497a89[_0x435a98(0x91)]/0xf4240*_0x497a89[_0x435a98(0x8c)];}});const _0x141e1b=this[_0xf9cc96(0x6b)]['map'](_0x16a9b0=>{const _0x128492=_0xf9cc96,_0x5ac9b8=this[_0x128492(0x7f)][_0x128492(0x70)](_0x56365a=>_0x56365a['id']===_0x16a9b0[_0x128492(0x73)]);if(!_0x5ac9b8)return'';const _0x7be193=this['pricingResults'][_0x5ac9b8['id']],_0x4fd833=FormattingService[_0x128492(0xa4)](_0x16a9b0,_0x5ac9b8,{'excludeQty':!![],'excludeDims':!![]});let _0x56186d='';if(_0x5ac9b8[_0x128492(0x85)]===_0x128492(0x78))_0x56186d=html`<span class="tag is-info is-small">GRAMPO</span>`;else!_0x5ac9b8['isDegrau']&&(_0x56186d=html`<span class="tag is-primary is-light is-small">GRADE</span>`);const _0x27c732=_0x5ac9b8['isDegrau']?html`<span class="tag is-warning is-small">DEGRAU</span>`:'',_0x57cfff=_0x5ac9b8[_0x128492(0x7a)]==='serrilhada'?html`<span class="tag is-dark is-small">SERRILHADA</span>`:'';let _0x1f90f4=0x0,_0x43ca58=0x0,_0x29355f=0x0,_0xdb89=0x1,_0x10307d=_0x128492(0x77),_0x190d53='N/A';if(_0x7be193){_0x1e5bdc=!![];if(_0x5ac9b8['templateType']===_0x128492(0x79)){const _0x177fdd=_0x16a9b0[_0x128492(0x8f)]*_0x16a9b0[_0x128492(0x91)]/0xf4240*_0x16a9b0[_0x128492(0x8c)],_0x2eed8c=_0x26ccc3[_0x5ac9b8['id']]||0x1;_0xdb89=_0x177fdd/_0x2eed8c,_0x10307d=FormattingService[_0x128492(0x7e)](_0x177fdd)+'\x20m²',_0x190d53=_0x16a9b0[_0x128492(0x8f)]+'x'+_0x16a9b0[_0x128492(0x91)]+'mm',_0x43ca58=(_0x7be193[_0x128492(0x93)]||0x0)*_0xdb89,_0x29355f=(_0x7be193[_0x128492(0x84)]||0x0)*_0xdb89,_0x1f90f4=_0x16a9b0['quantidade']>0x0?_0x43ca58/_0x16a9b0[_0x128492(0x8c)]:0x0;}else{const _0x5c3182=_0x7be193[_0x128492(0x9f)][0x0]?.[_0x128492(0x97)]||0x1,_0x244b14=(_0x7be193[_0x128492(0x93)]||0x0)/_0x5c3182;_0x1f90f4=Math['ceil'](_0x244b14*0x64)/0x64,_0x43ca58=_0x1f90f4*_0x16a9b0[_0x128492(0x8c)];const _0x24cab7=_0x7be193[_0x128492(0x93)]||0x0;if(_0x24cab7>0x0){const _0x1214fc=(_0x7be193['B99_valorIPI']||0x0)/_0x24cab7,_0x3d03be=(_0x7be193[_0x128492(0x83)]||0x0)/_0x24cab7,_0x56db6c=_0x43ca58*_0x1214fc,_0x5d5ad8=_0x43ca58*_0x3d03be;_0x29355f=_0x43ca58+_0x56db6c+_0x5d5ad8;}else _0x29355f=_0x43ca58;}_0x334d5c+=_0x43ca58,_0x447bc+=_0x29355f;}return html`
-                <tr class="budget-item-row" id="item-row-${_0x16a9b0['id']}">
-                    <td class="item-number-col">${(_0x16a9b0[_0x128492(0x94)]??0x0)+0x1}</td>
+    `;
+
+    static properties = {
+        budgetItems: { type: Array },
+        templates: { type: Array },
+        pricingResults: { type: Object },
+    };
+
+    constructor() {
+        super();
+        this.budgetItems = [];
+        this.templates = [];
+        this.pricingResults = {};
+    }
+
+    toggleDetailRow(itemId) {
+        const detailRow = this.shadowRoot.getElementById(`detail-row-${itemId}`);
+        const icon = this.shadowRoot.getElementById(`icon-toggle-${itemId}`);
+        if (detailRow && icon) {
+            const isVisible = detailRow.style.display === 'table-row';
+            detailRow.style.display = isVisible ? 'none' : 'table-row';
+            icon.classList.toggle('fa-chevron-down', isVisible);
+            icon.classList.toggle('fa-chevron-up', !isVisible);
+        }
+    }
+
+    // --- INÍCIO DA CORREÇÃO ---
+    // A lógica foi movida de UIRendererManager para dentro do componente.
+    _renderTaxDetails(pricingResult, proporcao) {
+        if (!pricingResult) return 'Detalhes indisponíveis.';
+
+        const ipi = (pricingResult.B99_valorIPI || 0) * proporcao;
+        const icmsProprio = (pricingResult.B83_valorICMSOpPropria || 0) * proporcao;
+        const difal = (pricingResult.B96_valorDifal || 0) * proporcao;
+        const icmsST = (pricingResult.B101_valorDifST || 0) * proporcao;
+
+        const difalRate = (pricingResult.B95_difal || 0) * 100;
+        const icmsSTRate = (pricingResult.B38_icmsSTBruto || 0) * 100;
+        const icmsProprioRate = (pricingResult.B82_icmsOpPropria || 0) * 100;
+
+        return `
+            <div>
+                <h6 class="detail-title">Composição de Valores</h6>
+                <div class="detail-grid">
+                    <div class="detail-item">
+                        <strong>(DIFAL ${FormattingService.formatNumber(difalRate, 2)}%):</strong>
+                        <span>${FormattingService.formatCurrency(difal)}</span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>(+) IPI (${FormattingService.formatNumber((pricingResult.B98_ipiVenda || 0) * 100, 2)}%):</strong>
+                        <span>${FormattingService.formatCurrency(ipi)}</span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>(+) ICMS-ST (${FormattingService.formatNumber(icmsSTRate, 2)}%):</strong>
+                        <span>${FormattingService.formatCurrency(icmsST)}</span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>(ICMS Próprio ${FormattingService.formatNumber(icmsProprioRate, 2)}%):</strong>
+                        <span>(${FormattingService.formatCurrency(icmsProprio)})</span>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+    // --- FIM DA CORREÇÃO ---
+
+
+    render() {
+        if (this.budgetItems.length === 0) {
+            return html`<p class="has-text-grey">Nenhum item no orçamento.</p>`;
+        }
+
+        let totalComDifal = 0;
+        let totalComIpiSt = 0;
+        let pricingCalculado = false;
+
+        const areaTotalPorTemplate = {};
+        this.budgetItems.forEach(item => {
+            const template = this.templates.find(t => t.id === item.templateId);
+            if(template && template.templateType === 'grade'){
+                if (!areaTotalPorTemplate[item.templateId]) areaTotalPorTemplate[item.templateId] = 0;
+                areaTotalPorTemplate[item.templateId] += (item.largura * item.comprimento / 1e6) * item.quantidade;
+            }
+        });
+
+        const tableRows = this.budgetItems.map(item => {
+            const template = this.templates.find(t => t.id === item.templateId);
+            if (!template) return '';
+
+            const pricingResult = this.pricingResults[template.id];
+            const displayData = FormattingService.getItemDisplayData(item, template, {
+                excludeQty: true,
+                excludeDims: true
+            });
+
+            let tagTipo = '';
+            if (template.templateType === 'clamp') {
+                tagTipo = html`<span class="tag is-info is-small">GRAMPO</span>`;
+            } else if (!template.isDegrau) {
+                tagTipo = html`<span class="tag is-primary is-light is-small">GRADE</span>`;
+            }
+            const tagDegrau = template.isDegrau ? html`<span class="tag is-warning is-small">DEGRAU</span>` : '';
+            const tagSuperficie = template.superficie === 'serrilhada' ? html`<span class="tag is-dark is-small">SERRILHADA</span>` : '';
+
+            let valorUnitario = 0, subtotalItem = 0, valorTotalFinal = 0, proporcao = 1;
+            let areaDisplay = 'N/A', dimensionsDisplay = 'N/A';
+
+            if (pricingResult) {
+                pricingCalculado = true;
+
+                if(template.templateType === 'grade') {
+                    const areaTotalItem = (item.largura * item.comprimento / 1e6) * item.quantidade;
+                    const areaTemplate = areaTotalPorTemplate[template.id] || 1;
+                    proporcao = areaTotalItem / areaTemplate;
+                    areaDisplay = `${FormattingService.formatNumber(areaTotalItem)} m²`;
+                    dimensionsDisplay = `${item.largura}x${item.comprimento}mm`;
+
+                    subtotalItem = (pricingResult.B97_precoVendaComDifal || 0) * proporcao;
+                    valorTotalFinal = (pricingResult.B102_valorFinalComIPIST || 0) * proporcao;
+                    valorUnitario = item.quantidade > 0 ? subtotalItem / item.quantidade : 0;
+                } else { // Clamp
+                    const totalQuantityForTemplate = pricingResult.materiaisDetalhes[0]?.qty || 1;
+                    const precoUnitarioPreciso = (pricingResult.B97_precoVendaComDifal || 0) / totalQuantityForTemplate;
+                    valorUnitario = Math.ceil(precoUnitarioPreciso * 100) / 100;
+                    subtotalItem = valorUnitario * item.quantidade;
+
+                    const precoBasePreciso = pricingResult.B97_precoVendaComDifal || 0;
+                    if (precoBasePreciso > 0) {
+                        const ipiRatio = (pricingResult.B99_valorIPI || 0) / precoBasePreciso;
+                        const stRatio = (pricingResult.B101_valorDifST || 0) / precoBasePreciso;
+                        const ipiItem = subtotalItem * ipiRatio;
+                        const stItem = subtotalItem * stRatio;
+                        valorTotalFinal = subtotalItem + ipiItem + stItem;
+                    } else {
+                        valorTotalFinal = subtotalItem;
+                    }
+                }
+
+                totalComDifal += subtotalItem;
+                totalComIpiSt += valorTotalFinal;
+            }
+
+            return html`
+                <tr class="budget-item-row" id="item-row-${item.id}">
+                    <td class="item-number-col">${(item.order ?? 0) + 1}</td>
                     <td class="item-description-cell">
-                        <strong>${_0x4fd833[_0x128492(0x6c)]} ${_0x56186d} ${_0x27c732} ${_0x57cfff}</strong>
-                        ${_0x4fd833[_0x128492(0x82)]?html`<br><small>${_0x4fd833[_0x128492(0x82)]}</small>`:''}
+                        <strong>${displayData.title} ${tagTipo} ${tagDegrau} ${tagSuperficie}</strong>
+                        ${displayData.detailsLine ? html`<br><small>${displayData.detailsLine}</small>` : ''}
                     </td>
-                    <td>${_0x16a9b0[_0x128492(0x8c)]}</td>
-                    <td>${_0x190d53}</td>
-                    <td>${_0x10307d}</td>
-                    <td>${_0x7be193?FormattingService[_0x128492(0xa3)](_0x1f90f4):'-'}</td>
-                    <td>${_0x7be193?FormattingService[_0x128492(0xa3)](_0x43ca58):'-'}</td>
-                    <td>${_0x7be193?FormattingService['formatCurrency'](_0x29355f):html`<span class="has-text-danger">Não calculado</span>`}</td>
+                    <td>${item.quantidade}</td>
+                    <td>${dimensionsDisplay}</td>
+                    <td>${areaDisplay}</td>
+                    <td>${pricingResult ? FormattingService.formatCurrency(valorUnitario) : '-'}</td>
+                    <td>${pricingResult ? FormattingService.formatCurrency(subtotalItem) : '-'}</td>
+                    <td>${pricingResult ? FormattingService.formatCurrency(valorTotalFinal) : html`<span class="has-text-danger">Não calculado</span>`}</td>
                     <td>
-                        <button class="button is-small is-info is-outlined" @click=${()=>this[_0x128492(0x9a)](_0x16a9b0['id'])} ?disabled=${!_0x7be193}>
-                            <span class="icon"><i class="fas fa-chevron-down" id="icon-toggle-${_0x16a9b0['id']}"></i></span>
+                        <button class="button is-small is-info is-outlined" @click=${() => this.toggleDetailRow(item.id)} ?disabled=${!pricingResult}>
+                            <span class="icon"><i class="fas fa-chevron-down" id="icon-toggle-${item.id}"></i></span>
                         </button>
                     </td>
                 </tr>
-                <tr class="budget-detail-row" id="detail-row-${_0x16a9b0['id']}" style="display: none;">
+                <tr class="budget-detail-row" id="detail-row-${item.id}" style="display: none;">
                     <td colspan="9">
                         <div class="budget-detail-content">
-                            ${unsafeHTML(this['_renderTaxDetails'](_0x7be193,_0xdb89))}
+                            ${unsafeHTML(this._renderTaxDetails(pricingResult, proporcao))}
                         </div>
                     </td>
                 </tr>
-            `;});return html`
+            `;
+        });
+
+        return html`
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
             <div class="box">
                 <h4 class="subtitle is-4">Orçamento Comercial Final</h4>
-                ${!_0x1e5bdc?html`<div class="notification is-warning"><p><strong>Atenção:</strong> Execute o cálculo de pricing para gerar valores.</p></div>`:''}
-                ${_0x1e5bdc?html`
+                ${!pricingCalculado ? html`<div class="notification is-warning"><p><strong>Atenção:</strong> Execute o cálculo de pricing para gerar valores.</p></div>` : ''}
+                ${pricingCalculado ? html`
                     <div class="notification is-success is-light">
                         <div class="level">
                             <div class="level-item has-text-centered">
                                 <div>
                                     <p class="heading">Subtotal (c/ DIFAL)</p>
-                                    <p class="title is-5">${FormattingService['formatCurrency'](_0x334d5c)}</p>
+                                    <p class="title is-5">${FormattingService.formatCurrency(totalComDifal)}</p>
                                 </div>
                             </div>
                             <div class="level-item has-text-centered">
                                 <div>
                                     <p class="heading">TOTAL FINAL (c/ IPI+ST)</p>
-                                    <p class="title is-4">${FormattingService[_0xf9cc96(0xa3)](_0x447bc)}</p>
+                                    <p class="title is-4">${FormattingService.formatCurrency(totalComIpiSt)}</p>
                                 </div>
                             </div>
                         </div>
-                    </div>`:''}
+                    </div>` : ''}
                 <table class="table is-fullwidth is-striped is-hoverable">
                     <thead>
                     <tr>
@@ -118,8 +270,12 @@ const voti_30_0x496573=voti_30_0xb073;(function(_0x43890d,_0x8ba52e){const _0x14
                     </tr>
                     </thead>
                     <tbody>
-                    ${_0x141e1b}
+                    ${tableRows}
                     </tbody>
                 </table>
             </div>
-        `;}}customElements[voti_30_0x496573(0x8b)](voti_30_0x496573(0x71),CommercialBudget);function voti_30_0x5e33(){const _0x1eef45=['414280hlNhdW','1779DaAmly','largura','9330134COLwrv','comprimento','toggle','B97_precoVendaComDifal','order','detail-row-','forEach','qty','B38_icmsSTBruto','1270NglnbC','toggleDetailRow','_renderTaxDetails','63gcgopB','8AcHDQG','2929686bRkAQE','materiaisDetalhes','style','table-row','%):</strong>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span>(','formatCurrency','getItemDisplayData',')</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22detail-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<strong>(+)\x20IPI\x20(','pricingResults','Detalhes\x20indisponíveis.','render','B82_icmsOpPropria','budgetItems','title','B99_valorIPI','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h6\x20class=\x22detail-title\x22>Composição\x20de\x20Valores</h6>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22detail-grid\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22detail-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<strong>(DIFAL\x20','12oGKhYv','find','commercial-budget','length','templateId','fa-chevron-up','52080eVssXZ','classList','N/A','clamp','grade','superficie','none','B96_valorDifal','7545OeaSOS','formatNumber','templates','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22detail-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<strong>(ICMS\x20Próprio\x20','114490ccCcCL','detailsLine','B101_valorDifST','B102_valorFinalComIPIST','templateType','88UlYnfC','icon-toggle-','%):</strong>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span>','B83_valorICMSOpPropria','display','define','quantidade'];voti_30_0x5e33=function(){return _0x1eef45;};return voti_30_0x5e33();}
+        `;
+    }
+}
+
+customElements.define('commercial-budget', CommercialBudget);

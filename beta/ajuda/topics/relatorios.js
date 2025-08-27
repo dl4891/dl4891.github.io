@@ -1,1 +1,28 @@
-function voti_10_0x2e72(_0x520434,_0x17e046){const _0x35df62=voti_10_0x35df();return voti_10_0x2e72=function(_0x2e7299,_0x1ffa48){_0x2e7299=_0x2e7299-0x64;let _0x1f3b84=_0x35df62[_0x2e7299];return _0x1f3b84;},voti_10_0x2e72(_0x520434,_0x17e046);}const voti_10_0x1e2484=voti_10_0x2e72;function voti_10_0x35df(){const _0x5e4f84=['\x0a<div\x20class=\x22card-content\x20content\x22>\x0a\x20\x20\x20\x20<p>A\x20aba\x20<i\x20class=\x22fas\x20fa-chart-line\x20mr-2\x22></i>\x20<strong>Relatórios</strong>\x20fornece\x20diferentes\x20visões\x20dos\x20dados\x20do\x20seu\x20orçamento,\x20separando\x20as\x20informações\x20de\x20grades\x20e\x20grampos.</p>\x0a\x20\x20\x20\x20\x0a\x20\x20\x20\x20<h3\x20class=\x22title\x20is-4\x22>Relatório\x20Detalhado\x20por\x20Item</h3>\x0a\x20\x20\x20\x20<p>Este\x20relatório\x20lista\x20cada\x20item\x20do\x20orçamento\x20com\x20seus\x20respectivos\x20detalhes\x20e\x20custos.</p>\x0a\x20\x20\x20\x20<ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>Para\x20Grades:</strong>\x20A\x20visão\x20detalhada\x20é\x20mantida,\x20mostrando\x20a\x20lista\x20de\x20materiais\x20(barras,\x20chapas),\x20dimensões\x20e\x20a\x20composição\x20de\x20custos\x20(Material,\x20Mão\x20de\x20Obra,\x20Galvanização).</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>Para\x20Grampos:</strong>\x20A\x20visão\x20é\x20simplificada.\x20Em\x20vez\x20da\x20lista\x20de\x20materiais,\x20ela\x20exibe\x20os\x20<strong>Custos\x20Unitários\x20Pré-Definidos</strong>\x20(Material,\x20M.O.,\x20Galvanização)\x20que\x20foram\x20inseridos\x20na\x20criação\x20do\x20modelo.</li>\x0a\x20\x20\x20\x20</ul>\x0a\x20\x20\x20\x20\x0a\x20\x20\x20\x20<h3\x20class=\x22title\x20is-4\x22>Consolidado\x20e\x20Plano\x20de\x20Corte</h3>\x0a\x20\x20\x20\x20<p>Este\x20relatório\x20agrega\x20os\x20materiais\x20necessários\x20e\x20otimiza\x20o\x20corte.</p>\x0a\x20\x20\x20\x20\x0a\x20\x20\x20\x20<h4>Consolidado\x20de\x20Materiais\x20para\x20Grades</h4>\x0a\x20\x20\x20\x20<ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<li>Exibe\x20o\x20total\x20de\x20peças\x20e\x20peso\x20de\x20barras\x20e\x20chapas,\x20agrupados\x20por\x20modelo\x20de\x20grade.</li>\x0a\x20\x20\x20\x20</ul>\x0a\x0a\x20\x20\x20\x20<h4>Consolidado\x20de\x20Grampos\x20de\x20Fixação\x20(Nova\x20Seção)</h4>\x0a\x20\x20\x20\x20<ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<li>Uma\x20nova\x20tabela\x20exibe\x20o\x20total\x20de\x20peças,\x20peso\x20e\x20custo\x20para\x20cada\x20modelo\x20de\x20grampo\x20utilizado\x20no\x20orçamento.</li>\x0a\x20\x20\x20\x20</ul>\x0a\x0a\x20\x20\x20\x20<h4>Plano\x20de\x20Corte\x20(Apenas\x20para\x20Grades)</h4>\x0a\x20\x20\x20\x20<p>Detalha\x20como\x20otimizar\x20o\x20corte\x20das\x20barras\x20padrão\x20(6000mm)\x20para\x20minimizar\x20o\x20desperdício.\x20Esta\x20seção\x20só\x20é\x20exibida\x20se\x20houver\x20itens\x20do\x20tipo\x20\x22Grade\x22\x20no\x20orçamento.</p>\x0a</div>\x0a','9ImjnKh','30OWKXXj','4YMJWMx','914632HaujsB','339972TXHpRG','4928710tWFnYx','196782oEzmaa','7423254kiIVAG','7Jvcclv','8980169bfWznq','3409840oXobwH'];voti_10_0x35df=function(){return _0x5e4f84;};return voti_10_0x35df();}(function(_0x4bfd7a,_0x32ae84){const _0x3322f2=voti_10_0x2e72,_0x395786=_0x4bfd7a();while(!![]){try{const _0x2bbed6=-parseInt(_0x3322f2(0x67))/0x1+parseInt(_0x3322f2(0x64))/0x2*(-parseInt(_0x3322f2(0x69))/0x3)+-parseInt(_0x3322f2(0x65))/0x4*(parseInt(_0x3322f2(0x6d))/0x5)+parseInt(_0x3322f2(0x6a))/0x6+-parseInt(_0x3322f2(0x6b))/0x7*(-parseInt(_0x3322f2(0x66))/0x8)+-parseInt(_0x3322f2(0x6f))/0x9*(-parseInt(_0x3322f2(0x68))/0xa)+parseInt(_0x3322f2(0x6c))/0xb;if(_0x2bbed6===_0x32ae84)break;else _0x395786['push'](_0x395786['shift']());}catch(_0x175c56){_0x395786['push'](_0x395786['shift']());}}}(voti_10_0x35df,0x9fe5a));export const content=voti_10_0x1e2484(0x6e);
+export const content = `
+<div class="card-content content">
+    <p>A aba <i class="fas fa-chart-line mr-2"></i> <strong>Relatórios</strong> fornece diferentes visões dos dados do seu orçamento, separando as informações de grades e grampos.</p>
+    
+    <h3 class="title is-4">Relatório Detalhado por Item</h3>
+    <p>Este relatório lista cada item do orçamento com seus respectivos detalhes e custos.</p>
+    <ul>
+        <li><strong>Para Grades:</strong> A visão detalhada é mantida, mostrando a lista de materiais (barras, chapas), dimensões e a composição de custos (Material, Mão de Obra, Galvanização).</li>
+        <li><strong>Para Grampos:</strong> A visão é simplificada. Em vez da lista de materiais, ela exibe os <strong>Custos Unitários Pré-Definidos</strong> (Material, M.O., Galvanização) que foram inseridos na criação do modelo.</li>
+    </ul>
+    
+    <h3 class="title is-4">Consolidado e Plano de Corte</h3>
+    <p>Este relatório agrega os materiais necessários e otimiza o corte.</p>
+    
+    <h4>Consolidado de Materiais para Grades</h4>
+    <ul>
+        <li>Exibe o total de peças e peso de barras e chapas, agrupados por modelo de grade.</li>
+    </ul>
+
+    <h4>Consolidado de Grampos de Fixação (Nova Seção)</h4>
+    <ul>
+        <li>Uma nova tabela exibe o total de peças, peso e custo para cada modelo de grampo utilizado no orçamento.</li>
+    </ul>
+
+    <h4>Plano de Corte (Apenas para Grades)</h4>
+    <p>Detalha como otimizar o corte das barras padrão (6000mm) para minimizar o desperdício. Esta seção só é exibida se houver itens do tipo "Grade" no orçamento.</p>
+</div>
+`;

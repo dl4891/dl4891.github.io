@@ -1,1 +1,231 @@
-function voti_14_0x576e(){const _0x2267f9=['isDegrau','clamp','45BsSivn','259472TqqAEV','teorico','toSafeNumber','malha_menor','lisa','1062699kMmZSj','Malha\x20maior\x20deve\x20estar\x20entre\x2020\x20e\x20150mm','number','180570utUVIs','precosCustomizados','margem','MARGEM_PADRAO','costs','customMaoObra','bl_diam','pesoUnitario','createClampFromFormData','now','Espessura\x20da\x20chapa\x20lateral\x20obrigatória\x20para\x20degraus','customGalvanizacao','chapaLateralLarg','densidade','push','generateId','superficie','Largura\x20da\x20barra\x20portante\x20deve\x20ser\x20maior\x20que\x200','createdAt','bl_esp','centro','10262GahhIl','Largura\x20da\x20chapa\x20lateral\x20obrigatória\x20para\x20degraus','bf_esp','Espessura\x20da\x20chapa\x20xadrez\x20obrigatória\x20quando\x20incluída','custo_mo_grapa','incluirChapaXadrez','custo_mat_porca','interna','custo_galv_grapa','Largura\x20da\x20chapa\x20xadrez\x20obrigatória\x20quando\x20incluída','Espessura\x20da\x20barra\x20portante\x20deve\x20ser\x20maior\x20que\x200','Malha\x20menor\x20não\x20pode\x20ser\x20maior\x20que\x20a\x20malha\x20maior','8iojcRY','chapaXadrezLarg','createDefault','Nome\x20do\x20template\x20é\x20obrigatório','malha_maior','trim','serrilhada','2gtdWjA','toLowerCase','Largura\x20do\x20fechamento\x20deve\x20ser\x20maior\x20que\x200','Malha\x20menor\x20deve\x20estar\x20entre\x2020\x20e\x20150mm','validateClampTemplate','custo_mat_arruela','bl_larg','sanitizeInput','chapaXadrezAjuste','pesoCalcMode','chapaXadrezEsp','createFromCSV','grade','custo_mat_borboleta','true','length','DENSIDADE_ACO','162riCFgm','chapaLateralEsp','nome','bp_esp','bf_larg','tipoMalha','real','validateGradeTemplate','custo_mo_borboleta','custo_mat_grapa','513394iEHuCe','Peso\x20unitário\x20final\x20deve\x20ser\x20maior\x20que\x20zero.','bp_larg','60WJEnEn','Preço\x20customizado\x20de\x20mão\x20de\x20obra\x20obrigatório','21782028dcvKFd','O\x20custo\x20de\x20\x22','Defina\x20pelo\x20menos\x20um\x20tipo\x20de\x20barra\x20de\x20ligação','values','3898962ubzQqs'];voti_14_0x576e=function(){return _0x2267f9;};return voti_14_0x576e();}const voti_14_0x10cc74=voti_14_0x2fc6;(function(_0x458601,_0x4bed11){const _0x204b8e=voti_14_0x2fc6,_0x4f6c97=_0x458601();while(!![]){try{const _0x2212a7=parseInt(_0x204b8e(0x15c))/0x1*(parseInt(_0x204b8e(0x141))/0x2)+parseInt(_0x204b8e(0x119))/0x3+-parseInt(_0x204b8e(0x169))/0x4*(-parseInt(_0x204b8e(0x168))/0x5)+-parseInt(_0x204b8e(0x152))/0x6*(parseInt(_0x204b8e(0x12e))/0x7)+-parseInt(_0x204b8e(0x13a))/0x8*(-parseInt(_0x204b8e(0x165))/0x9)+parseInt(_0x204b8e(0x15f))/0xa*(parseInt(_0x204b8e(0x116))/0xb)+-parseInt(_0x204b8e(0x161))/0xc;if(_0x2212a7===_0x4bed11)break;else _0x4f6c97['push'](_0x4f6c97['shift']());}catch(_0xa9d555){_0x4f6c97['push'](_0x4f6c97['shift']());}}}(voti_14_0x576e,0x4d07d));import{FormattingService}from'../services/FormattingService.js';import{CONFIG}from'../../shared/config.js';function voti_14_0x2fc6(_0x5b7cce,_0x235b50){const _0x576ec6=voti_14_0x576e();return voti_14_0x2fc6=function(_0x2fc6b8,_0x139dc5){_0x2fc6b8=_0x2fc6b8-0x114;let _0x39df10=_0x576ec6[_0x2fc6b8];return _0x39df10;},voti_14_0x2fc6(_0x5b7cce,_0x235b50);}export class TemplateFactory{static['createGradeFromFormData'](_0x8cf589,_0x3c369b=null){const _0x44d274=voti_14_0x2fc6,_0x48d248=_0x8cf589[_0x44d274(0x11a)],_0x113fa1=_0x8cf589[_0x44d274(0x166)],_0x1556bd=_0x8cf589[_0x44d274(0x133)],_0x1451fc={'id':_0x3c369b||FormattingService[_0x44d274(0x128)](),'templateType':_0x44d274(0x14d),'nome':FormattingService[_0x44d274(0x148)](_0x8cf589[_0x44d274(0x154)]),'superficie':_0x8cf589[_0x44d274(0x129)]||_0x44d274(0x115),'bp_esp':FormattingService[_0x44d274(0x16b)](_0x8cf589[_0x44d274(0x155)]),'bp_larg':FormattingService[_0x44d274(0x16b)](_0x8cf589[_0x44d274(0x15e)]),'bl_diam':FormattingService[_0x44d274(0x16b)](_0x8cf589[_0x44d274(0x11f)]),'bl_esp':FormattingService[_0x44d274(0x16b)](_0x8cf589[_0x44d274(0x12c)]),'bl_larg':FormattingService[_0x44d274(0x16b)](_0x8cf589[_0x44d274(0x147)]),'bf_esp':FormattingService[_0x44d274(0x16b)](_0x8cf589[_0x44d274(0x130)]),'bf_larg':FormattingService[_0x44d274(0x16b)](_0x8cf589['bf_larg']),'malha_menor':FormattingService[_0x44d274(0x16b)](_0x8cf589[_0x44d274(0x114)]),'malha_maior':FormattingService[_0x44d274(0x16b)](_0x8cf589[_0x44d274(0x13e)]),'tipoMalha':_0x8cf589[_0x44d274(0x157)],'pesoCalcMode':_0x8cf589[_0x44d274(0x14a)]||_0x44d274(0x158),'densidade':FormattingService[_0x44d274(0x16b)](_0x8cf589[_0x44d274(0x126)],CONFIG[_0x44d274(0x151)]),'margem':FormattingService[_0x44d274(0x16b)](_0x8cf589['margem'],CONFIG[_0x44d274(0x11c)]),'precosCustomizados':_0x48d248,'customMaoObra':_0x48d248?FormattingService[_0x44d274(0x16b)](_0x8cf589[_0x44d274(0x11e)]):0x0,'customGalvanizacao':_0x48d248?FormattingService['toSafeNumber'](_0x8cf589[_0x44d274(0x124)]):0x0,'isDegrau':_0x113fa1,'createdAt':_0x3c369b&&_0x8cf589[_0x44d274(0x12b)]?_0x8cf589['createdAt']:Date['now']()};return _0x113fa1&&(_0x1451fc[_0x44d274(0x153)]=FormattingService['toSafeNumber'](_0x8cf589['chapaLateralEsp'],4.76),_0x1451fc[_0x44d274(0x125)]=FormattingService[_0x44d274(0x16b)](_0x8cf589[_0x44d274(0x125)]),_0x1451fc[_0x44d274(0x133)]=_0x1556bd,_0x1556bd&&(_0x1451fc[_0x44d274(0x14b)]=FormattingService[_0x44d274(0x16b)](_0x8cf589[_0x44d274(0x14b)],3.18),_0x1451fc[_0x44d274(0x13b)]=FormattingService[_0x44d274(0x16b)](_0x8cf589[_0x44d274(0x13b)]),_0x1451fc[_0x44d274(0x149)]=FormattingService[_0x44d274(0x16b)](_0x8cf589[_0x44d274(0x149)],1.05))),_0x1451fc;}static[voti_14_0x10cc74(0x121)](_0x522f20,_0x5c3524=null){const _0x14635d=voti_14_0x10cc74;return{'id':_0x5c3524||FormattingService[_0x14635d(0x128)](),'templateType':_0x14635d(0x167),'nome':FormattingService[_0x14635d(0x148)](_0x522f20[_0x14635d(0x154)]),'costs':{'material':{'grapa':FormattingService[_0x14635d(0x16b)](_0x522f20[_0x14635d(0x15b)]),'borboleta':FormattingService[_0x14635d(0x16b)](_0x522f20[_0x14635d(0x14e)]),'arruela':FormattingService[_0x14635d(0x16b)](_0x522f20[_0x14635d(0x146)]),'porca':FormattingService[_0x14635d(0x16b)](_0x522f20[_0x14635d(0x134)]),'parafuso':FormattingService[_0x14635d(0x16b)](_0x522f20['custo_mat_parafuso'])},'maoDeObra':{'grapa':FormattingService[_0x14635d(0x16b)](_0x522f20[_0x14635d(0x132)]),'borboleta':FormattingService['toSafeNumber'](_0x522f20[_0x14635d(0x15a)])},'galvanizacao':{'grapa':FormattingService[_0x14635d(0x16b)](_0x522f20[_0x14635d(0x136)]),'borboleta':FormattingService[_0x14635d(0x16b)](_0x522f20['custo_galv_borboleta'])}},'pesoUnitario':FormattingService[_0x14635d(0x16b)](_0x522f20[_0x14635d(0x120)]),'createdAt':_0x5c3524&&_0x522f20[_0x14635d(0x12b)]?_0x522f20['createdAt']:Date[_0x14635d(0x122)]()};}static[voti_14_0x10cc74(0x13c)](){const _0x4f95da=voti_14_0x10cc74;return{'id':FormattingService[_0x4f95da(0x128)](),'templateType':_0x4f95da(0x14d),'nome':'','superficie':_0x4f95da(0x115),'bp_esp':0x3,'bp_larg':0x14,'bl_diam':0x0,'bl_esp':0x0,'bl_larg':0x0,'bf_esp':0x3,'bf_larg':0x14,'malha_menor':0x21,'malha_maior':0x42,'tipoMalha':_0x4f95da(0x135),'pesoCalcMode':_0x4f95da(0x158),'densidade':CONFIG[_0x4f95da(0x151)],'margem':CONFIG[_0x4f95da(0x11c)],'precosCustomizados':![],'customMaoObra':0x0,'customGalvanizacao':0x0,'isDegrau':![],'createdAt':Date[_0x4f95da(0x122)]()};}static[voti_14_0x10cc74(0x159)](_0x43cf46){const _0x5ef1c0=voti_14_0x10cc74,_0x517c33=[];return(!_0x43cf46[_0x5ef1c0(0x154)]||_0x43cf46['nome'][_0x5ef1c0(0x13f)]()[_0x5ef1c0(0x150)]===0x0)&&_0x517c33['push'](_0x5ef1c0(0x13d)),_0x43cf46[_0x5ef1c0(0x155)]<=0x0&&_0x517c33['push'](_0x5ef1c0(0x138)),_0x43cf46['bp_larg']<=0x0&&_0x517c33[_0x5ef1c0(0x127)](_0x5ef1c0(0x12a)),_0x43cf46[_0x5ef1c0(0x130)]<=0x0&&_0x517c33[_0x5ef1c0(0x127)]('Espessura\x20do\x20fechamento\x20deve\x20ser\x20maior\x20que\x200'),_0x43cf46[_0x5ef1c0(0x156)]<=0x0&&_0x517c33[_0x5ef1c0(0x127)](_0x5ef1c0(0x143)),(!_0x43cf46[_0x5ef1c0(0x11f)]||_0x43cf46[_0x5ef1c0(0x11f)]<=0x0)&&(!_0x43cf46[_0x5ef1c0(0x12c)]||_0x43cf46[_0x5ef1c0(0x12c)]<=0x0)&&_0x517c33[_0x5ef1c0(0x127)](_0x5ef1c0(0x163)),(_0x43cf46['malha_menor']<0x14||_0x43cf46[_0x5ef1c0(0x114)]>0x96)&&_0x517c33['push'](_0x5ef1c0(0x144)),(_0x43cf46['malha_maior']<0x14||_0x43cf46['malha_maior']>0x96)&&_0x517c33[_0x5ef1c0(0x127)](_0x5ef1c0(0x117)),_0x43cf46[_0x5ef1c0(0x114)]>_0x43cf46['malha_maior']&&_0x517c33[_0x5ef1c0(0x127)](_0x5ef1c0(0x139)),_0x43cf46[_0x5ef1c0(0x11a)]&&(!_0x43cf46[_0x5ef1c0(0x11e)]||_0x43cf46[_0x5ef1c0(0x11e)]<=0x0)&&_0x517c33[_0x5ef1c0(0x127)](_0x5ef1c0(0x160)),_0x43cf46[_0x5ef1c0(0x166)]&&((!_0x43cf46[_0x5ef1c0(0x153)]||_0x43cf46[_0x5ef1c0(0x153)]<=0x0)&&_0x517c33['push'](_0x5ef1c0(0x123)),(!_0x43cf46[_0x5ef1c0(0x125)]||_0x43cf46[_0x5ef1c0(0x125)]<=0x0)&&_0x517c33[_0x5ef1c0(0x127)](_0x5ef1c0(0x12f)),_0x43cf46[_0x5ef1c0(0x133)]&&((!_0x43cf46[_0x5ef1c0(0x14b)]||_0x43cf46[_0x5ef1c0(0x14b)]<=0x0)&&_0x517c33['push'](_0x5ef1c0(0x131)),(!_0x43cf46[_0x5ef1c0(0x13b)]||_0x43cf46[_0x5ef1c0(0x13b)]<=0x0)&&_0x517c33[_0x5ef1c0(0x127)](_0x5ef1c0(0x137)),(!_0x43cf46['chapaXadrezAjuste']||_0x43cf46[_0x5ef1c0(0x149)]<0x1)&&_0x517c33[_0x5ef1c0(0x127)]('Ajuste\x20de\x20peso\x20da\x20chapa\x20xadrez\x20deve\x20ser\x20>=\x201'))),_0x517c33;}static[voti_14_0x10cc74(0x145)](_0x2c1989){const _0x5e52a5=voti_14_0x10cc74,_0x290be9=[];(!_0x2c1989[_0x5e52a5(0x154)]||_0x2c1989[_0x5e52a5(0x154)][_0x5e52a5(0x13f)]()[_0x5e52a5(0x150)]===0x0)&&_0x290be9[_0x5e52a5(0x127)](_0x5e52a5(0x13d));_0x2c1989[_0x5e52a5(0x120)]<=0x0&&_0x290be9[_0x5e52a5(0x127)](_0x5e52a5(0x15d));for(const _0x14ab28 of Object[_0x5e52a5(0x164)](_0x2c1989[_0x5e52a5(0x11d)])){for(const _0x17f6b0 of Object['keys'](_0x14ab28)){(typeof _0x14ab28[_0x17f6b0]!==_0x5e52a5(0x118)||_0x14ab28[_0x17f6b0]<0x0)&&_0x290be9[_0x5e52a5(0x127)](_0x5e52a5(0x162)+_0x17f6b0+'\x22\x20deve\x20ser\x20um\x20número\x20válido.');}}return _0x290be9;}static[voti_14_0x10cc74(0x14c)](_0x6194fb){const _0x191bff=voti_14_0x10cc74,_0x275fe6=_0x6194fb['precosCustomizados']?.[_0x191bff(0x142)]()===_0x191bff(0x14f),_0x614d44=_0x6194fb[_0x191bff(0x166)]?.[_0x191bff(0x142)]()===_0x191bff(0x14f),_0x1d5e16=_0x6194fb[_0x191bff(0x133)]?.[_0x191bff(0x142)]()===_0x191bff(0x14f),_0x2725f9={'id':FormattingService[_0x191bff(0x128)](),'templateType':_0x191bff(0x14d),'nome':FormattingService[_0x191bff(0x148)](_0x6194fb[_0x191bff(0x154)]),'superficie':_0x6194fb[_0x191bff(0x129)]?.[_0x191bff(0x142)]()==='serrilhada'?_0x191bff(0x140):'lisa','bp_esp':FormattingService[_0x191bff(0x16b)](_0x6194fb[_0x191bff(0x155)]),'bp_larg':FormattingService[_0x191bff(0x16b)](_0x6194fb[_0x191bff(0x15e)]),'bl_diam':FormattingService[_0x191bff(0x16b)](_0x6194fb[_0x191bff(0x11f)]),'bl_esp':FormattingService[_0x191bff(0x16b)](_0x6194fb[_0x191bff(0x12c)]),'bl_larg':FormattingService['toSafeNumber'](_0x6194fb[_0x191bff(0x147)]),'bf_esp':FormattingService[_0x191bff(0x16b)](_0x6194fb['bf_esp']),'bf_larg':FormattingService[_0x191bff(0x16b)](_0x6194fb[_0x191bff(0x156)]),'malha_menor':FormattingService[_0x191bff(0x16b)](_0x6194fb['malha_menor']),'malha_maior':FormattingService[_0x191bff(0x16b)](_0x6194fb[_0x191bff(0x13e)]),'tipoMalha':_0x6194fb[_0x191bff(0x157)]===_0x191bff(0x135)?_0x191bff(0x135):_0x191bff(0x12d),'pesoCalcMode':_0x6194fb[_0x191bff(0x14a)]===_0x191bff(0x16a)?_0x191bff(0x16a):_0x191bff(0x158),'densidade':FormattingService['toSafeNumber'](_0x6194fb[_0x191bff(0x126)],CONFIG['DENSIDADE_ACO']),'margem':FormattingService[_0x191bff(0x16b)](_0x6194fb[_0x191bff(0x11b)],CONFIG['MARGEM_PADRAO']),'precosCustomizados':_0x275fe6,'customMaoObra':_0x275fe6?FormattingService[_0x191bff(0x16b)](_0x6194fb[_0x191bff(0x11e)]):0x0,'customGalvanizacao':_0x275fe6?FormattingService[_0x191bff(0x16b)](_0x6194fb['customGalvanizacao']):0x0,'isDegrau':_0x614d44,'createdAt':Date['now']()};return _0x614d44&&(_0x2725f9[_0x191bff(0x153)]=FormattingService[_0x191bff(0x16b)](_0x6194fb[_0x191bff(0x153)],4.76),_0x2725f9[_0x191bff(0x125)]=FormattingService[_0x191bff(0x16b)](_0x6194fb['chapaLateralLarg']),_0x2725f9[_0x191bff(0x133)]=_0x1d5e16,_0x1d5e16&&(_0x2725f9['chapaXadrezEsp']=FormattingService[_0x191bff(0x16b)](_0x6194fb[_0x191bff(0x14b)],3.18),_0x2725f9[_0x191bff(0x13b)]=FormattingService[_0x191bff(0x16b)](_0x6194fb[_0x191bff(0x13b)]),_0x2725f9['chapaXadrezAjuste']=FormattingService['toSafeNumber'](_0x6194fb[_0x191bff(0x149)],1.05))),_0x2725f9;}}
+import { FormattingService } from "../services/FormattingService.js";
+import { CONFIG } from "../../shared/config.js";
+
+export class TemplateFactory {
+
+    static createGradeFromFormData(formData, editingId = null) {
+        const usaPrecosCustomizados = formData.precosCustomizados;
+        const ehDegrau = formData.isDegrau;
+        const incluiChapaXadrez = formData.incluirChapaXadrez;
+
+        const templateData = {
+            id: editingId || FormattingService.generateId(),
+            templateType: 'grade',
+            nome: FormattingService.sanitizeInput(formData.nome),
+            superficie: formData.superficie || 'lisa',
+            bp_esp: FormattingService.toSafeNumber(formData.bp_esp),
+            bp_larg: FormattingService.toSafeNumber(formData.bp_larg),
+            bl_diam: FormattingService.toSafeNumber(formData.bl_diam),
+            bl_esp: FormattingService.toSafeNumber(formData.bl_esp),
+            bl_larg: FormattingService.toSafeNumber(formData.bl_larg),
+            bf_esp: FormattingService.toSafeNumber(formData.bf_esp),
+            bf_larg: FormattingService.toSafeNumber(formData.bf_larg),
+            malha_menor: FormattingService.toSafeNumber(formData.malha_menor),
+            malha_maior: FormattingService.toSafeNumber(formData.malha_maior),
+            tipoMalha: formData.tipoMalha,
+            pesoCalcMode: formData.pesoCalcMode || 'real',
+            densidade: FormattingService.toSafeNumber(formData.densidade, CONFIG.DENSIDADE_ACO),
+            margem: FormattingService.toSafeNumber(formData.margem, CONFIG.MARGEM_PADRAO),
+            precosCustomizados: usaPrecosCustomizados,
+            customMaoObra: usaPrecosCustomizados ? FormattingService.toSafeNumber(formData.customMaoObra) : 0,
+            customGalvanizacao: usaPrecosCustomizados ? FormattingService.toSafeNumber(formData.customGalvanizacao) : 0,
+            isDegrau: ehDegrau,
+            createdAt: (editingId && formData.createdAt) ? formData.createdAt : Date.now()
+        };
+
+        if (ehDegrau) {
+            templateData.chapaLateralEsp = FormattingService.toSafeNumber(formData.chapaLateralEsp, 4.76);
+            templateData.chapaLateralLarg = FormattingService.toSafeNumber(formData.chapaLateralLarg);
+            templateData.incluirChapaXadrez = incluiChapaXadrez;
+
+            if (incluiChapaXadrez) {
+                templateData.chapaXadrezEsp = FormattingService.toSafeNumber(formData.chapaXadrezEsp, 3.18);
+                templateData.chapaXadrezLarg = FormattingService.toSafeNumber(formData.chapaXadrezLarg);
+                templateData.chapaXadrezAjuste = FormattingService.toSafeNumber(formData.chapaXadrezAjuste, 1.05);
+            }
+        }
+
+        return templateData;
+    }
+
+    static createClampFromFormData(formData, editingId = null) {
+        return {
+            id: editingId || FormattingService.generateId(),
+            templateType: 'clamp',
+            nome: FormattingService.sanitizeInput(formData.nome),
+            costs: {
+                material: {
+                    grapa: FormattingService.toSafeNumber(formData.custo_mat_grapa),
+                    borboleta: FormattingService.toSafeNumber(formData.custo_mat_borboleta),
+                    arruela: FormattingService.toSafeNumber(formData.custo_mat_arruela),
+                    porca: FormattingService.toSafeNumber(formData.custo_mat_porca),
+                    parafuso: FormattingService.toSafeNumber(formData.custo_mat_parafuso)
+                },
+                maoDeObra: {
+                    grapa: FormattingService.toSafeNumber(formData.custo_mo_grapa),
+                    borboleta: FormattingService.toSafeNumber(formData.custo_mo_borboleta)
+                },
+                galvanizacao: {
+                    grapa: FormattingService.toSafeNumber(formData.custo_galv_grapa),
+                    borboleta: FormattingService.toSafeNumber(formData.custo_galv_borboleta)
+                }
+            },
+            pesoUnitario: FormattingService.toSafeNumber(formData.pesoUnitario),
+            createdAt: (editingId && formData.createdAt) ? formData.createdAt : Date.now()
+        };
+    }
+
+
+    static createDefault() {
+        return {
+            id: FormattingService.generateId(),
+            templateType: 'grade',
+            nome: "",
+            superficie: "lisa",
+            bp_esp: 3,
+            bp_larg: 20,
+            bl_diam: 0,
+            bl_esp: 0,
+            bl_larg: 0,
+            bf_esp: 3,
+            bf_larg: 20,
+            malha_menor: 33,
+            malha_maior: 66,
+            tipoMalha: 'interna',
+            pesoCalcMode: 'real',
+            densidade: CONFIG.DENSIDADE_ACO,
+            margem: CONFIG.MARGEM_PADRAO,
+            precosCustomizados: false,
+            customMaoObra: 0,
+            customGalvanizacao: 0,
+            isDegrau: false,
+            createdAt: Date.now()
+        };
+    }
+
+    static validateGradeTemplate(templateData) {
+        const erros = [];
+
+        if (!templateData.nome || templateData.nome.trim().length === 0) {
+            erros.push("Nome do template é obrigatório");
+        }
+        if (templateData.bp_esp <= 0) {
+            erros.push("Espessura da barra portante deve ser maior que 0");
+        }
+        if (templateData.bp_larg <= 0) {
+            erros.push("Largura da barra portante deve ser maior que 0");
+        }
+        if (templateData.bf_esp <= 0) {
+            erros.push("Espessura do fechamento deve ser maior que 0");
+        }
+        if (templateData.bf_larg <= 0) {
+            erros.push("Largura do fechamento deve ser maior que 0");
+        }
+        if ((!templateData.bl_diam || templateData.bl_diam <= 0) && (!templateData.bl_esp || templateData.bl_esp <= 0)) {
+            erros.push("Defina pelo menos um tipo de barra de ligação");
+        }
+        if (templateData.malha_menor < 20 || templateData.malha_menor > 150) {
+            erros.push("Malha menor deve estar entre 20 e 150mm");
+        }
+        if (templateData.malha_maior < 20 || templateData.malha_maior > 150) {
+            erros.push("Malha maior deve estar entre 20 e 150mm");
+        }
+        if (templateData.malha_menor > templateData.malha_maior) {
+            erros.push("Malha menor não pode ser maior que a malha maior");
+        }
+
+        if (templateData.precosCustomizados && (!templateData.customMaoObra || templateData.customMaoObra <= 0)) {
+            erros.push("Preço customizado de mão de obra obrigatório");
+        }
+
+        if (templateData.isDegrau) {
+            if (!templateData.chapaLateralEsp || templateData.chapaLateralEsp <= 0) {
+                erros.push("Espessura da chapa lateral obrigatória para degraus");
+            }
+            if (!templateData.chapaLateralLarg || templateData.chapaLateralLarg <= 0) {
+                erros.push("Largura da chapa lateral obrigatória para degraus");
+            }
+
+            if (templateData.incluirChapaXadrez) {
+                if (!templateData.chapaXadrezEsp || templateData.chapaXadrezEsp <= 0) {
+                    erros.push("Espessura da chapa xadrez obrigatória quando incluída");
+                }
+                if (!templateData.chapaXadrezLarg || templateData.chapaXadrezLarg <= 0) {
+                    erros.push("Largura da chapa xadrez obrigatória quando incluída");
+                }
+                if (!templateData.chapaXadrezAjuste || templateData.chapaXadrezAjuste < 1) {
+                    erros.push("Ajuste de peso da chapa xadrez deve ser >= 1");
+                }
+            }
+        }
+
+
+        return erros;
+    }
+
+    static validateClampTemplate(templateData) {
+        const erros = [];
+        if (!templateData.nome || templateData.nome.trim().length === 0) {
+            erros.push("Nome do template é obrigatório");
+        }
+        if (templateData.pesoUnitario <= 0) {
+            erros.push("Peso unitário final deve ser maior que zero.");
+        }
+        for (const category of Object.values(templateData.costs)) {
+            for (const key of Object.keys(category)) {
+                if (typeof category[key] !== 'number' || category[key] < 0) {
+                    erros.push(`O custo de "${key}" deve ser um número válido.`);
+                }
+            }
+        }
+        return erros;
+    }
+
+
+    static createFromCSV(csvRow) {
+        const usaPrecosCustomizados = csvRow.precosCustomizados?.toLowerCase() === 'true';
+        const ehDegrau = csvRow.isDegrau?.toLowerCase() === 'true';
+        const incluiChapaXadrez = csvRow.incluirChapaXadrez?.toLowerCase() === 'true';
+
+        const templateData = {
+            id: FormattingService.generateId(),
+            templateType: 'grade',
+            nome: FormattingService.sanitizeInput(csvRow.nome),
+            // INÍCIO DA MODIFICAÇÃO
+            superficie: csvRow.superficie?.toLowerCase() === 'serrilhada' ? 'serrilhada' : 'lisa',
+            // FIM DA MODIFICAÇÃO
+            bp_esp: FormattingService.toSafeNumber(csvRow.bp_esp),
+            bp_larg: FormattingService.toSafeNumber(csvRow.bp_larg),
+            bl_diam: FormattingService.toSafeNumber(csvRow.bl_diam),
+            bl_esp: FormattingService.toSafeNumber(csvRow.bl_esp),
+            bl_larg: FormattingService.toSafeNumber(csvRow.bl_larg),
+            bf_esp: FormattingService.toSafeNumber(csvRow.bf_esp),
+            bf_larg: FormattingService.toSafeNumber(csvRow.bf_larg),
+            malha_menor: FormattingService.toSafeNumber(csvRow.malha_menor),
+            malha_maior: FormattingService.toSafeNumber(csvRow.malha_maior),
+            tipoMalha: csvRow.tipoMalha === 'interna' ? 'interna' : 'centro',
+            pesoCalcMode: csvRow.pesoCalcMode === 'teorico' ? 'teorico' : 'real',
+            densidade: FormattingService.toSafeNumber(csvRow.densidade, CONFIG.DENSIDADE_ACO),
+            margem: FormattingService.toSafeNumber(csvRow.margem, CONFIG.MARGEM_PADRAO),
+            precosCustomizados: usaPrecosCustomizados,
+            customMaoObra: usaPrecosCustomizados ? FormattingService.toSafeNumber(csvRow.customMaoObra) : 0,
+            customGalvanizacao: usaPrecosCustomizados ? FormattingService.toSafeNumber(csvRow.customGalvanizacao) : 0,
+            isDegrau: ehDegrau,
+            createdAt: Date.now()
+        };
+
+        if (ehDegrau) {
+            templateData.chapaLateralEsp = FormattingService.toSafeNumber(csvRow.chapaLateralEsp, 4.76);
+            templateData.chapaLateralLarg = FormattingService.toSafeNumber(csvRow.chapaLateralLarg);
+            templateData.incluirChapaXadrez = incluiChapaXadrez;
+
+            if (incluiChapaXadrez) {
+                templateData.chapaXadrezEsp = FormattingService.toSafeNumber(csvRow.chapaXadrezEsp, 3.18);
+                templateData.chapaXadrezLarg = FormattingService.toSafeNumber(csvRow.chapaXadrezLarg);
+                templateData.chapaXadrezAjuste = FormattingService.toSafeNumber(csvRow.chapaXadrezAjuste, 1.05);
+            }
+        }
+
+        return templateData;
+    }
+}

@@ -1,1 +1,90 @@
-function voti_0_0x54b6(_0x59f9ce,_0x252175){const _0x10a909=voti_0_0x10a9();return voti_0_0x54b6=function(_0x54b605,_0x50f694){_0x54b605=_0x54b605-0x11c;let _0x275ecb=_0x10a909[_0x54b605];return _0x275ecb;},voti_0_0x54b6(_0x59f9ce,_0x252175);}(function(_0x2a23ed,_0x4700ec){const _0x1b3bae=voti_0_0x54b6,_0x24095f=_0x2a23ed();while(!![]){try{const _0x272033=-parseInt(_0x1b3bae(0x11e))/0x1*(-parseInt(_0x1b3bae(0x129))/0x2)+-parseInt(_0x1b3bae(0x137))/0x3*(parseInt(_0x1b3bae(0x149))/0x4)+parseInt(_0x1b3bae(0x13f))/0x5+parseInt(_0x1b3bae(0x13d))/0x6*(-parseInt(_0x1b3bae(0x14e))/0x7)+-parseInt(_0x1b3bae(0x120))/0x8+-parseInt(_0x1b3bae(0x133))/0x9*(-parseInt(_0x1b3bae(0x14b))/0xa)+-parseInt(_0x1b3bae(0x14d))/0xb;if(_0x272033===_0x4700ec)break;else _0x24095f['push'](_0x24095f['shift']());}catch(_0x3243c6){_0x24095f['push'](_0x24095f['shift']());}}}(voti_0_0x10a9,0x4fdb5),document['addEventListener']('DOMContentLoaded',()=>{const _0x5b5f12=voti_0_0x54b6,_0x51eeb9=document['getElementById'](_0x5b5f12(0x153)),_0x387540=document[_0x5b5f12(0x13c)](_0x5b5f12(0x126)),_0x1c1485=_0x387540[_0x5b5f12(0x134)]('.accordion-item'),_0x4978d0=document['getElementById'](_0x5b5f12(0x138)),_0x2850e6=async _0x38a999=>{const _0x588bef=_0x5b5f12,_0x1fe748=_0x38a999[_0x588bef(0x144)](_0x588bef(0x11f));if(_0x1fe748['hasAttribute']('data-loaded'))return;const _0x5a033b=_0x38a999[_0x588bef(0x11c)][_0x588bef(0x12f)];if(!_0x5a033b)return;try{_0x1fe748['innerHTML']='<p\x20class=\x22is-italic\x20has-text-grey\x22>Carregando...</p>';const _0x42c879=await import(_0x588bef(0x150)+_0x5a033b+'.js');_0x1fe748[_0x588bef(0x123)]=_0x42c879[_0x588bef(0x140)],_0x1fe748[_0x588bef(0x124)](_0x588bef(0x14c),_0x588bef(0x147)),_0x1fe748[_0x588bef(0x124)](_0x588bef(0x12e),_0x42c879[_0x588bef(0x140)]);}catch(_0x2e3ea5){console[_0x588bef(0x127)](_0x588bef(0x11d)+_0x5a033b+'\x27:',_0x2e3ea5),_0x1fe748[_0x588bef(0x123)]=_0x588bef(0x130);}},_0x4ef8c6=async _0x5a23ae=>{const _0x459e98=_0x5b5f12,_0x48a5e3=_0x5a23ae['classList'][_0x459e98(0x14f)](_0x459e98(0x12d));_0x1c1485['forEach'](_0x1f2546=>{const _0x522d16=_0x459e98;_0x1f2546[_0x522d16(0x132)][_0x522d16(0x152)]('is-active'),_0x1f2546[_0x522d16(0x144)](_0x522d16(0x11f))[_0x522d16(0x14a)][_0x522d16(0x136)]=null;});if(!_0x48a5e3){await _0x2850e6(_0x5a23ae),_0x5a23ae[_0x459e98(0x132)][_0x459e98(0x142)](_0x459e98(0x12d));const _0x223e5b=_0x5a23ae['querySelector']('.accordion-content');_0x223e5b[_0x459e98(0x14a)][_0x459e98(0x136)]=_0x223e5b[_0x459e98(0x121)]+0x30+'px';}};_0x1c1485[_0x5b5f12(0x141)](_0x331691=>{const _0x1b9231=_0x5b5f12,_0x21836d=_0x331691[_0x1b9231(0x144)](_0x1b9231(0x135));_0x21836d[_0x1b9231(0x128)]('click',()=>_0x4ef8c6(_0x331691));}),_0x51eeb9[_0x5b5f12(0x128)](_0x5b5f12(0x145),()=>{const _0x3f4413=_0x5b5f12,_0x17b41c=_0x51eeb9[_0x3f4413(0x13a)][_0x3f4413(0x143)]()[_0x3f4413(0x13b)]();let _0x4aba69=0x0;_0x1c1485['forEach'](_0x38e18c=>{const _0x1032f7=_0x3f4413,_0x1a83f4=_0x38e18c[_0x1032f7(0x11c)][_0x1032f7(0x125)]['toLowerCase'](),_0x24f4fa=_0x38e18c['querySelector'](_0x1032f7(0x12b)),_0x1c54e4=_0x38e18c[_0x1032f7(0x144)](_0x1032f7(0x11f));_0x24f4fa[_0x1032f7(0x123)]=_0x24f4fa['textContent'];if(_0x1a83f4[_0x1032f7(0x131)](_0x17b41c)){_0x38e18c[_0x1032f7(0x14a)]['display']=_0x1032f7(0x13e),_0x4aba69++;if(_0x17b41c){const _0x3c41c9=new RegExp(_0x17b41c,'gi');_0x24f4fa[_0x1032f7(0x123)]=_0x24f4fa[_0x1032f7(0x123)][_0x1032f7(0x12a)](_0x3c41c9,_0x1032f7(0x146)+_0x17b41c+_0x1032f7(0x139));if(_0x1c54e4[_0x1032f7(0x151)](_0x1032f7(0x14c))){const _0x27a62f=_0x1c54e4[_0x1032f7(0x12c)](_0x1032f7(0x12e));_0x1c54e4['innerHTML']=_0x27a62f[_0x1032f7(0x12a)](_0x3c41c9,_0x1032f7(0x146)+_0x17b41c+_0x1032f7(0x139));}}else _0x1c54e4['hasAttribute'](_0x1032f7(0x14c))&&(_0x1c54e4['innerHTML']=_0x1c54e4[_0x1032f7(0x12c)](_0x1032f7(0x12e)));}else _0x38e18c[_0x1032f7(0x14a)][_0x1032f7(0x148)]=_0x1032f7(0x122);}),_0x4978d0[_0x3f4413(0x14a)][_0x3f4413(0x148)]=_0x4aba69===0x0?'block':_0x3f4413(0x122);});}));function voti_0_0x10a9(){const _0x1db522=['</span>','value','trim','getElementById','12aHRNBL','block','1611635WYEpRg','content','forEach','add','toLowerCase','querySelector','input','<span\x20class=\x22highlight\x22>','true','display','7392ZAACfy','style','30sGtUdC','data-loaded','895796FskyNW','541527VazlEl','contains','./topics/','hasAttribute','remove','help-search-bar','dataset','Erro\x20ao\x20carregar\x20o\x20tópico\x20\x27','33080AtUzwl','.accordion-content','2573608hsMzwI','scrollHeight','none','innerHTML','setAttribute','searchTerm','help-accordion','error','addEventListener','38jyDIbI','replace','.card-header-title','getAttribute','is-active','data-original-content','topicId','<p\x20class=\x22has-text-danger\x22>Erro\x20ao\x20carregar\x20conteúdo.</p>','includes','classList','240291FDagqJ','querySelectorAll','.accordion-header','maxHeight','237gREuVZ','no-results-message'];voti_0_0x10a9=function(){return _0x1db522;};return voti_0_0x10a9();}
+document.addEventListener('DOMContentLoaded', () => {
+    const searchBar = document.getElementById('help-search-bar');
+    const accordion = document.getElementById('help-accordion');
+    const accordionItems = accordion.querySelectorAll('.accordion-item');
+    const noResultsMessage = document.getElementById('no-results-message');
+
+    const loadTopicContent = async (item) => {
+        const contentDiv = item.querySelector('.accordion-content');
+        if (contentDiv.hasAttribute('data-loaded')) {
+            return; // Já carregado
+        }
+
+        const topicId = item.dataset.topicId;
+        if (!topicId) return;
+
+        try {
+            contentDiv.innerHTML = '<p class="is-italic has-text-grey">Carregando...</p>';
+            const module = await import(`./topics/${topicId}.js`);
+            contentDiv.innerHTML = module.content;
+            contentDiv.setAttribute('data-loaded', 'true');
+            contentDiv.setAttribute('data-original-content', module.content);
+        } catch (error) {
+            console.error(`Erro ao carregar o tópico '${topicId}':`, error);
+            contentDiv.innerHTML = '<p class="has-text-danger">Erro ao carregar conteúdo.</p>';
+        }
+    };
+
+    const toggleAccordionItem = async (item) => {
+        const isActive = item.classList.contains('is-active');
+
+        // Fecha todos os itens
+        accordionItems.forEach(i => {
+            i.classList.remove('is-active');
+            i.querySelector('.accordion-content').style.maxHeight = null;
+        });
+
+        // Abre ou fecha o item clicado
+        if (!isActive) {
+            await loadTopicContent(item);
+            item.classList.add('is-active');
+            const content = item.querySelector('.accordion-content');
+            content.style.maxHeight = content.scrollHeight + 48 + "px";
+        }
+    };
+
+    accordionItems.forEach(item => {
+        const header = item.querySelector('.accordion-header');
+        header.addEventListener('click', () => toggleAccordionItem(item));
+    });
+
+    searchBar.addEventListener('input', () => {
+        const searchTerm = searchBar.value.toLowerCase().trim();
+        let visibleItems = 0;
+
+        accordionItems.forEach(item => {
+            const searchTerms = item.dataset.searchTerm.toLowerCase();
+            const header = item.querySelector('.card-header-title');
+            const contentDiv = item.querySelector('.accordion-content');
+
+            // Restaura o conteúdo original do header para remover destaques antigos
+            header.innerHTML = header.textContent;
+
+            if (searchTerms.includes(searchTerm)) {
+                item.style.display = 'block';
+                visibleItems++;
+
+                // Adiciona destaque ao termo pesquisado
+                if (searchTerm) {
+                    const regex = new RegExp(searchTerm, 'gi');
+                    header.innerHTML = header.innerHTML.replace(regex, `<span class="highlight">${searchTerm}</span>`);
+
+                    // Destaca no conteúdo se já estiver carregado
+                    if (contentDiv.hasAttribute('data-loaded')) {
+                        const originalContent = contentDiv.getAttribute('data-original-content');
+                        contentDiv.innerHTML = originalContent.replace(regex, `<span class="highlight">${searchTerm}</span>`);
+                    }
+                } else {
+                    // Se a busca for limpa, restaura o conteúdo original se carregado
+                    if (contentDiv.hasAttribute('data-loaded')) {
+                        contentDiv.innerHTML = contentDiv.getAttribute('data-original-content');
+                    }
+                }
+            } else {
+                item.style.display = 'none';
+            }
+        });
+
+        noResultsMessage.style.display = visibleItems === 0 ? 'block' : 'none';
+    });
+});

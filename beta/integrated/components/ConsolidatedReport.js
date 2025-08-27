@@ -1,4 +1,9 @@
-function voti_31_0xfa84(){var _0x852fdc=['template','consolidadoGrampos','render','reportData','length','custoTotal','42yeidFg','456170uKNdeM','9081584OuharH','classeDesperdicio','93znubBt','define','consolidadoBarras','larg','formatInteger','tipoBarra','4181404bjJrtl','cards','884376XdDXGP','properties','pesoTotal','numBarras','formatNumber','48337fmpxOy','planoCorte','consolidated-report','formatCurrency','comp','26750043NVVFro','qtd','tipo','esp','pesoMP','icon','tamanhoBarra','consolidadoChapas','29642fJRIGW','styles','10QAnMTy','hasData'];voti_31_0xfa84=function(){return _0x852fdc;};return voti_31_0xfa84();}var voti_31_0x4b5ce4=voti_31_0x4d1a;(function(_0x3e90bd,_0x4b6dbf){var _0x549c93=voti_31_0x4d1a,_0x610d7b=_0x3e90bd();while(!![]){try{var _0x5507cb=parseInt(_0x549c93(0x109))/0x1+-parseInt(_0x549c93(0x116))/0x2*(-parseInt(_0x549c93(0xfc))/0x3)+parseInt(_0x549c93(0x102))/0x4+parseInt(_0x549c93(0xf9))/0x5+parseInt(_0x549c93(0x104))/0x6*(parseInt(_0x549c93(0xf8))/0x7)+parseInt(_0x549c93(0xfa))/0x8+parseInt(_0x549c93(0x10e))/0x9*(-parseInt(_0x549c93(0x118))/0xa);if(_0x5507cb===_0x4b6dbf)break;else _0x610d7b['push'](_0x610d7b['shift']());}catch(_0xf0ece6){_0x610d7b['push'](_0x610d7b['shift']());}}}(voti_31_0xfa84,0xa8e08));import{LitElement,html,css}from'lit';import{map}from'lit/directives/map.js';function voti_31_0x4d1a(_0x212029,_0x3e19f4){var _0xfa841e=voti_31_0xfa84();return voti_31_0x4d1a=function(_0x4d1a30,_0x30fc29){_0x4d1a30=_0x4d1a30-0xf1;var _0x5b9180=_0xfa841e[_0x4d1a30];return _0x5b9180;},voti_31_0x4d1a(_0x212029,_0x3e19f4);}import{FormattingService}from'../../../core/services/FormattingService.js';export class ConsolidatedReport extends LitElement{static [voti_31_0x4b5ce4(0x117)]=css`
+import { LitElement, html, css } from 'lit';
+import { map } from 'lit/directives/map.js';
+import { FormattingService } from '../../../core/services/FormattingService.js';
+
+export class ConsolidatedReport extends LitElement {
+    static styles = css`
         :host {
             display: block;
         }
@@ -94,11 +99,33 @@ function voti_31_0xfa84(){var _0x852fdc=['template','consolidadoGrampos','render
         .waste-low { background: #d4edda; color: #155724; }
         .waste-medium { background: #fff3cd; color: #856404; }
         .waste-high { background: #f8d7da; color: #721c24; }
-    `;static [voti_31_0x4b5ce4(0x105)]={'reportData':{'type':Object}};constructor(){var _0x398436=voti_31_0x4b5ce4;super(),this[_0x398436(0xf5)]={'consolidadoBarras':[],'consolidadoChapas':[],'consolidadoGrampos':[],'planoCorte':[],'hasData':![]};}[voti_31_0x4b5ce4(0xf4)](){var _0x2601d5=voti_31_0x4b5ce4;if(!this[_0x2601d5(0xf5)][_0x2601d5(0xf1)])return html`<p class="has-text-grey">Adicione itens ao orçamento para ver o consolidado geral.</p>`;return html`
+    `;
+
+    static properties = {
+        reportData: { type: Object },
+    };
+
+    constructor() {
+        super();
+        this.reportData = {
+            consolidadoBarras: [],
+            consolidadoChapas: [],
+            consolidadoGrampos: [],
+            planoCorte: [],
+            hasData: false
+        };
+    }
+
+    render() {
+        if (!this.reportData.hasData) {
+            return html`<p class="has-text-grey">Adicione itens ao orçamento para ver o consolidado geral.</p>`;
+        }
+
+        return html`
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-            ${this[_0x2601d5(0xf5)]['consolidadoBarras'][_0x2601d5(0xf6)]>0x0?html`
+            ${this.reportData.consolidadoBarras.length > 0 ? html`
                 <h5 class="subtitle is-5">
                     <i class="fas fa-bars mr-2"></i>
                     Consolidado de Barras Metálicas (Grades)
@@ -116,22 +143,22 @@ function voti_31_0xfa84(){var _0x852fdc=['template','consolidadoGrampos','render
                         </tr>
                         </thead>
                         <tbody>
-                        ${map(this[_0x2601d5(0xf5)][_0x2601d5(0xfe)],_0x536d50=>html`
+                        ${map(this.reportData.consolidadoBarras, (row) => html`
                             <tr>
-                                <td><strong>${_0x536d50[_0x2601d5(0xf2)]}</strong></td>
-                                <td>${_0x536d50[_0x2601d5(0x111)]}</td>
-                                <td>${_0x536d50[_0x2601d5(0xff)]}</td>
-                                <td>${_0x536d50['comp']}</td>
-                                <td>${_0x536d50[_0x2601d5(0x10f)]}</td>
-                                <td>${_0x536d50['peso']}</td>
+                                <td><strong>${row.template}</strong></td>
+                                <td>${row.esp}</td>
+                                <td>${row.larg}</td>
+                                <td>${row.comp}</td>
+                                <td>${row.qtd}</td>
+                                <td>${row.peso}</td>
                             </tr>
                         `)}
                         </tbody>
                     </table>
                 </div>
-            `:''}
+            ` : ''}
 
-            ${this[_0x2601d5(0xf5)][_0x2601d5(0x115)][_0x2601d5(0xf6)]>0x0?html`
+            ${this.reportData.consolidadoChapas.length > 0 ? html`
                 <h5 class="subtitle is-5" style="margin-top: 2rem;">
                     <i class="fas fa-layer-group mr-2"></i>
                     Consolidado de Chapas para Degraus
@@ -150,23 +177,23 @@ function voti_31_0xfa84(){var _0x852fdc=['template','consolidadoGrampos','render
                         </tr>
                         </thead>
                         <tbody>
-                        ${map(this[_0x2601d5(0xf5)]['consolidadoChapas'],_0x5f1592=>html`
+                        ${map(this.reportData.consolidadoChapas, (row) => html`
                             <tr>
-                                <td><strong>${_0x5f1592[_0x2601d5(0xf2)]}</strong></td>
-                                <td>${_0x5f1592[_0x2601d5(0x110)]}</td>
-                                <td>${_0x5f1592[_0x2601d5(0x111)]}</td>
-                                <td>${_0x5f1592['larg']}</td>
-                                <td>${_0x5f1592[_0x2601d5(0x10d)]}</td>
-                                <td>${_0x5f1592[_0x2601d5(0x10f)]}</td>
-                                <td>${_0x5f1592['peso']}</td>
+                                <td><strong>${row.template}</strong></td>
+                                <td>${row.tipo}</td>
+                                <td>${row.esp}</td>
+                                <td>${row.larg}</td>
+                                <td>${row.comp}</td>
+                                <td>${row.qtd}</td>
+                                <td>${row.peso}</td>
                             </tr>
                         `)}
                         </tbody>
                     </table>
                 </div>
-            `:''}
+            ` : ''}
 
-            ${this['reportData'][_0x2601d5(0xf3)][_0x2601d5(0xf6)]>0x0?html`
+            ${this.reportData.consolidadoGrampos.length > 0 ? html`
                 <h5 class="subtitle is-5" style="margin-top: 2rem;">
                     <i class="fas fa-paperclip mr-2"></i>
                     Consolidado de Grampos de Fixação
@@ -183,52 +210,52 @@ function voti_31_0xfa84(){var _0x852fdc=['template','consolidadoGrampos','render
                         </tr>
                         </thead>
                         <tbody>
-                        ${map(this[_0x2601d5(0xf5)][_0x2601d5(0xf3)],_0x13fa69=>html`
+                        ${map(this.reportData.consolidadoGrampos, (row) => html`
                             <tr>
-                                <td><strong>${_0x13fa69[_0x2601d5(0xf2)]}</strong></td>
-                                <td>${FormattingService[_0x2601d5(0x100)](_0x13fa69[_0x2601d5(0x10f)])}</td>
-                                <td>${FormattingService[_0x2601d5(0x108)](_0x13fa69['pesoUnitario'],0x3)}</td>
-                                <td>${FormattingService[_0x2601d5(0x108)](_0x13fa69[_0x2601d5(0x106)])}</td>
-                                <td>${FormattingService[_0x2601d5(0x10c)](_0x13fa69[_0x2601d5(0xf7)])}</td>
+                                <td><strong>${row.template}</strong></td>
+                                <td>${FormattingService.formatInteger(row.qtd)}</td>
+                                <td>${FormattingService.formatNumber(row.pesoUnitario, 3)}</td>
+                                <td>${FormattingService.formatNumber(row.pesoTotal)}</td>
+                                <td>${FormattingService.formatCurrency(row.custoTotal)}</td>
                             </tr>
                         `)}
                         </tbody>
                     </table>
                 </div>
-            `:''}
+            ` : ''}
 
-            ${this['reportData']['planoCorte'][_0x2601d5(0xf6)]>0x0?html`
+            ${this.reportData.planoCorte.length > 0 ? html`
                 <div style="margin-top: 2rem;">
                     <h4 class="subtitle is-5">
                         <i class="fas fa-cut mr-2"></i>
-                        Plano de Corte - Barras de ${this[_0x2601d5(0xf5)][_0x2601d5(0x10a)][0x0][_0x2601d5(0x114)]}mm
+                        Plano de Corte - Barras de ${this.reportData.planoCorte[0].tamanhoBarra}mm
                     </h4>
-                    ${map(this['reportData']['planoCorte'],_0xf2bf56=>html`
+                    ${map(this.reportData.planoCorte, (templatePlan) => html`
                         <div class="box template-cutting-plan-box">
                             <div class="template-cutting-plan-header">
                                 <h2 class="title is-5">
                                     <i class="fas fa-cog mr-2"></i>
-                                    Modelo: ${_0xf2bf56[_0x2601d5(0xf2)]}
+                                    Modelo: ${templatePlan.template}
                                 </h2>
                             </div>
                             <div class="template-cutting-plan-body">
-                                ${map(_0xf2bf56[_0x2601d5(0x103)],_0x34a810=>html`
+                                ${map(templatePlan.cards, (card) => html`
                                     <div class="box aproveitamento-card">
                                         <div class="aproveitamento-header">
                                             <h6 class="subtitle is-6 aproveitamento-title">
-                                                <i class="fas ${_0x34a810[_0x2601d5(0x113)]} mr-2"></i>
-                                                ${_0x34a810[_0x2601d5(0x101)]}: ${_0x34a810['dimensao']}mm
+                                                <i class="fas ${card.icon} mr-2"></i>
+                                                ${card.tipoBarra}: ${card.dimensao}mm
                                             </h6>
-                                            <span class="waste-indicator ${_0x34a810[_0x2601d5(0xfb)]}">
-                                                Desperdício: ${_0x34a810['desperdicio']}%
+                                            <span class="waste-indicator ${card.classeDesperdicio}">
+                                                Desperdício: ${card.desperdicio}%
                                             </span>
                                         </div>
                                         <div class="aproveitamento-body">
                                             <div class="aproveitamento-info">
-                                                <strong>${_0x34a810[_0x2601d5(0x107)]} barras</strong> de ${_0xf2bf56[_0x2601d5(0x114)]}mm
+                                                <strong>${card.numBarras} barras</strong> de ${templatePlan.tamanhoBarra}mm
                                             </div>
                                             <div class="aproveitamento-peso">
-                                                <strong>Peso MP:</strong> ${_0x34a810[_0x2601d5(0x112)]} kg
+                                                <strong>Peso MP:</strong> ${card.pesoMP} kg
                                             </div>
                                         </div>
                                     </div>
@@ -237,5 +264,9 @@ function voti_31_0xfa84(){var _0x852fdc=['template','consolidadoGrampos','render
                         </div>
                     `)}
                 </div>
-            `:''}
-        `;}}customElements[voti_31_0x4b5ce4(0xfd)](voti_31_0x4b5ce4(0x10b),ConsolidatedReport);
+            ` : ''}
+        `;
+    }
+}
+
+customElements.define('consolidated-report', ConsolidatedReport);

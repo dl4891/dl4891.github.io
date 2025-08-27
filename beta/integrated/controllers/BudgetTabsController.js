@@ -1,1 +1,169 @@
-const voti_45_0x37c0fc=voti_45_0x4efe;(function(_0x199eac,_0x32fcab){const _0x5f51fa=voti_45_0x4efe,_0x48f37d=_0x199eac();while(!![]){try{const _0x14ac90=-parseInt(_0x5f51fa(0xc3))/0x1*(parseInt(_0x5f51fa(0xe5))/0x2)+parseInt(_0x5f51fa(0x100))/0x3*(-parseInt(_0x5f51fa(0xe9))/0x4)+-parseInt(_0x5f51fa(0xc9))/0x5*(parseInt(_0x5f51fa(0xcf))/0x6)+parseInt(_0x5f51fa(0x11b))/0x7*(parseInt(_0x5f51fa(0xed))/0x8)+parseInt(_0x5f51fa(0xf2))/0x9+parseInt(_0x5f51fa(0xbe))/0xa*(parseInt(_0x5f51fa(0x105))/0xb)+-parseInt(_0x5f51fa(0x109))/0xc;if(_0x14ac90===_0x32fcab)break;else _0x48f37d['push'](_0x48f37d['shift']());}catch(_0x212f16){_0x48f37d['push'](_0x48f37d['shift']());}}}(voti_45_0x3c4c,0xdfa2a));import{NOTIFICATION_TYPES}from'../../shared/config.js';function voti_45_0x4efe(_0x52de3d,_0x4a7589){const _0x3c4cc4=voti_45_0x3c4c();return voti_45_0x4efe=function(_0x4efe8,_0x4abd7f){_0x4efe8=_0x4efe8-0xbe;let _0x5800ca=_0x3c4cc4[_0x4efe8];return _0x5800ca;},voti_45_0x4efe(_0x52de3d,_0x4a7589);}function voti_45_0x3c4c(){const _0x2340c2=['add','addEventListener','6luGVrw','is-active','updateUI','show','modal-rename-budget','find','new-budget-btn','renameBudget','getAllBudgets','INFO','dataset','budgetId','querySelector','active','textContent','readAsText','onload','trim','body','duplicateCurrentBudget','updateCurrentBudgetName','notifications','2tnwNvH','budget','querySelectorAll','stopPropagation','272nmEsOL','app','getCurrentBudget','Fechar\x20Orçamento\x20com\x20Dados','8EEBURD','closeRenameModal','exportBudget','value','getElementById','10451277QWXzQy','.is-success','createNewBudget','switchToBudget','className','rename-budget-btn','showConfirmation','.budget-tab-close','SUCCESS','openRenameModal','Orçamento\x20duplicado\x20para:\x20','Nome\x20não\x20pode\x20estar\x20vazio','duplicate-budget-btn','name','38604qNoFTF','href','updateBudgetTabs','stringify','budget-tabs','44IqoMlD','duplicateBudget','closeBudget','appendChild','2118228LOhppC','setupEventListeners','is-danger','export-budget-btn','Orçamento\x20importado:\x20','templates','Fechar\x20Mesmo\x20Assim','target','removeChild','exportCurrentBudget','orcamento-','budgetStore','getCurrentBudgetId','saveBudgetName','<p>Este\x20orçamento\x20possui\x20dados.\x20Tem\x20certeza\x20que\x20deseja\x20fechá-lo?\x20Esta\x20ação\x20não\x20pode\x20ser\x20desfeita.</p>','remove','showInfo','.delete,\x20.modal-background,\x20.button:not(.is-success)','10604279JNBFXt','classList','replace','createElement','.json','toISOString','length','Novo\x20orçamento\x20criado:\x20','forEach','3062590gJrsJl','Falha\x20ao\x20importar.\x20Verifique\x20o\x20arquivo.','result','click','budget-tab','1603982ooJnWv','budget-name-input','revokeObjectURL','change','closest','createObjectURL','1648255YJjYVM','download','innerHTML','importBudget'];voti_45_0x3c4c=function(){return _0x2340c2;};return voti_45_0x3c4c();}export class BudgetTabsController{constructor(_0x9ad95b,_0x42d8b9){const _0x408397=voti_45_0x4efe;this[_0x408397(0x114)]=_0x9ad95b,this['notifications']=_0x42d8b9;}['initialize'](){const _0x3e6603=voti_45_0x4efe;this[_0x3e6603(0x10a)](),this[_0x3e6603(0xd1)]();}['setupEventListeners'](){const _0x4e44b0=voti_45_0x4efe;document[_0x4e44b0(0xf1)](_0x4e44b0(0xd5))?.['addEventListener'](_0x4e44b0(0xc1),()=>this[_0x4e44b0(0xf4)]()),document[_0x4e44b0(0xf1)](_0x4e44b0(0xf7))?.[_0x4e44b0(0xce)](_0x4e44b0(0xc1),()=>this['openRenameModal']()),document[_0x4e44b0(0xf1)](_0x4e44b0(0xfe))?.[_0x4e44b0(0xce)](_0x4e44b0(0xc1),()=>this['duplicateCurrentBudget']()),document[_0x4e44b0(0xf1)](_0x4e44b0(0x10c))?.[_0x4e44b0(0xce)](_0x4e44b0(0xc1),()=>this[_0x4e44b0(0x112)]());const _0x48ebb9=document[_0x4e44b0(0xf1)]('import-budget-btn'),_0x28e004=document['getElementById']('import-budget-input');_0x48ebb9&&_0x28e004&&(_0x48ebb9[_0x4e44b0(0xce)](_0x4e44b0(0xc1),()=>_0x28e004[_0x4e44b0(0xc1)]()),_0x28e004[_0x4e44b0(0xce)](_0x4e44b0(0xc6),_0x14b07b=>{const _0x12a475=_0x4e44b0,_0x281f34=_0x14b07b[_0x12a475(0x110)]['files'][0x0];if(_0x281f34){const _0x214c62=new FileReader();_0x214c62[_0x12a475(0xdf)]=_0x1e6a12=>this['importBudget'](_0x1e6a12['target'][_0x12a475(0xc0)]),_0x214c62[_0x12a475(0xde)](_0x281f34);}_0x14b07b[_0x12a475(0x110)][_0x12a475(0xf0)]=null;}));const _0x41b557=document['getElementById'](_0x4e44b0(0x104));_0x41b557?.[_0x4e44b0(0xce)](_0x4e44b0(0xc1),_0x6d96a4=>{const _0xf67279=_0x4e44b0,_0x522c1d=_0x6d96a4[_0xf67279(0x110)][_0xf67279(0xc7)]('.budget-tab');if(_0x6d96a4[_0xf67279(0x110)][_0xf67279(0xc7)](_0xf67279(0xf9)))_0x6d96a4[_0xf67279(0xe8)](),this[_0xf67279(0x107)](_0x522c1d[_0xf67279(0xd9)][_0xf67279(0xda)]);else _0x522c1d&&this[_0xf67279(0x114)][_0xf67279(0xf5)](_0x522c1d[_0xf67279(0xd9)][_0xf67279(0xda)]);});const _0x577546=document[_0x4e44b0(0xf1)]('modal-rename-budget');_0x577546&&(_0x577546[_0x4e44b0(0xdb)](_0x4e44b0(0xf3))[_0x4e44b0(0xce)](_0x4e44b0(0xc1),()=>this[_0x4e44b0(0x116)]()),_0x577546[_0x4e44b0(0xe7)](_0x4e44b0(0x11a))[_0x4e44b0(0x123)](_0x2f767c=>_0x2f767c[_0x4e44b0(0xce)](_0x4e44b0(0xc1),()=>this['closeRenameModal']())));}[voti_45_0x37c0fc(0xf4)](){const _0x5481df=voti_45_0x37c0fc,_0x3cabd5=this[_0x5481df(0x114)][_0x5481df(0xf4)]();this['notifications'][_0x5481df(0xd2)](_0x5481df(0x122)+_0x3cabd5['name'],NOTIFICATION_TYPES['SUCCESS']);}[voti_45_0x37c0fc(0x107)](_0x580a48){const _0x4a47cd=voti_45_0x37c0fc;if(this['budgetStore'][_0x4a47cd(0xd7)]()[_0x4a47cd(0x121)]<=0x1){window[_0x4a47cd(0xea)][_0x4a47cd(0x119)]('Ação\x20Inválida','<p>Não\x20é\x20possível\x20fechar\x20o\x20último\x20orçamento\x20restante.</p>');return;}const _0x2f19dd=this[_0x4a47cd(0x114)][_0x4a47cd(0xd7)]()[_0x4a47cd(0xd4)](_0x5b8721=>_0x5b8721['id']===_0x580a48),_0x3f919f=_0x2f19dd[_0x4a47cd(0x10e)][_0x4a47cd(0x121)]>0x0||_0x2f19dd[_0x4a47cd(0xe6)][_0x4a47cd(0x121)]>0x0;_0x3f919f?window[_0x4a47cd(0xea)][_0x4a47cd(0xf8)](_0x4a47cd(0xec),_0x4a47cd(0x117),()=>this['budgetStore']['closeBudget'](_0x580a48),{'confirmText':_0x4a47cd(0x10f),'type':_0x4a47cd(0x10b)}):this[_0x4a47cd(0x114)][_0x4a47cd(0x107)](_0x580a48);}[voti_45_0x37c0fc(0xfb)](){const _0x26d778=voti_45_0x37c0fc,_0x307e53=this[_0x26d778(0x114)][_0x26d778(0xeb)]();document[_0x26d778(0xf1)](_0x26d778(0xc4))[_0x26d778(0xf0)]=_0x307e53['name'],document[_0x26d778(0xf1)]('modal-rename-budget')[_0x26d778(0x11c)]['add'](_0x26d778(0xd0));}['closeRenameModal'](){const _0x3c0746=voti_45_0x37c0fc;document['getElementById'](_0x3c0746(0xd3))['classList'][_0x3c0746(0x118)](_0x3c0746(0xd0));}[voti_45_0x37c0fc(0x116)](){const _0x2f09d8=voti_45_0x37c0fc,_0xb1e70c=document[_0x2f09d8(0xf1)](_0x2f09d8(0xc4))[_0x2f09d8(0xf0)][_0x2f09d8(0xe0)](),_0x43332f=this[_0x2f09d8(0x114)][_0x2f09d8(0x115)]();_0xb1e70c&&_0x43332f?(this[_0x2f09d8(0x114)][_0x2f09d8(0xd6)](_0x43332f,_0xb1e70c),this[_0x2f09d8(0xee)](),this[_0x2f09d8(0xe4)]['show']('Orçamento\x20renomeado\x20com\x20sucesso',NOTIFICATION_TYPES['SUCCESS'])):this['notifications'][_0x2f09d8(0xd2)](_0x2f09d8(0xfd),NOTIFICATION_TYPES['WARNING']);}[voti_45_0x37c0fc(0xe2)](){const _0x475230=voti_45_0x37c0fc,_0x56f711=this[_0x475230(0x114)][_0x475230(0x115)](),_0x67968a=this[_0x475230(0x114)][_0x475230(0x106)](_0x56f711);_0x67968a&&this[_0x475230(0xe4)][_0x475230(0xd2)](_0x475230(0xfc)+_0x67968a['name'],NOTIFICATION_TYPES[_0x475230(0xfa)]);}[voti_45_0x37c0fc(0xcc)](_0x4c2c0e){const _0x442883=voti_45_0x37c0fc,_0x1dd533=this[_0x442883(0x114)][_0x442883(0xcc)](_0x4c2c0e);_0x1dd533?this[_0x442883(0xe4)]['show'](_0x442883(0x10d)+_0x1dd533[_0x442883(0xff)],NOTIFICATION_TYPES[_0x442883(0xfa)]):this[_0x442883(0xe4)][_0x442883(0xd2)](_0x442883(0xbf),NOTIFICATION_TYPES['DANGER']);}[voti_45_0x37c0fc(0x112)](){const _0x250d19=voti_45_0x37c0fc,_0x5e7a43=this['budgetStore'][_0x250d19(0x115)](),_0xe3dd9d=this[_0x250d19(0x114)][_0x250d19(0xef)](_0x5e7a43);if(!_0xe3dd9d)return;const _0x336521=new Blob([JSON[_0x250d19(0x103)](_0xe3dd9d,null,0x2)],{'type':'application/json'}),_0xcaedcf=URL[_0x250d19(0xc8)](_0x336521),_0x256022=document[_0x250d19(0x11e)]('a');_0x256022[_0x250d19(0x101)]=_0xcaedcf;const _0x329cdb=_0xe3dd9d[_0x250d19(0xff)][_0x250d19(0x11d)](/[^a-zA-Z0-9]/g,'_'),_0x20425e=new Date()[_0x250d19(0x120)]()['split']('T')[0x0];_0x256022[_0x250d19(0xca)]=_0x250d19(0x113)+_0x329cdb+'-'+_0x20425e+_0x250d19(0x11f),document[_0x250d19(0xe1)]['appendChild'](_0x256022),_0x256022[_0x250d19(0xc1)](),document['body'][_0x250d19(0x111)](_0x256022),URL[_0x250d19(0xc5)](_0xcaedcf),this[_0x250d19(0xe4)]['show']('Orçamento\x20exportado\x20com\x20sucesso!',NOTIFICATION_TYPES[_0x250d19(0xd8)]);}[voti_45_0x37c0fc(0xd1)](){const _0x1f5182=voti_45_0x37c0fc;this[_0x1f5182(0x102)](),this[_0x1f5182(0xe3)]();}[voti_45_0x37c0fc(0x102)](){const _0x5d0583=voti_45_0x37c0fc,_0x3bf194=document[_0x5d0583(0xf1)](_0x5d0583(0x104));if(!_0x3bf194)return;const _0x3fc370=this[_0x5d0583(0x114)][_0x5d0583(0xd7)](),_0x33d59a=this[_0x5d0583(0x114)][_0x5d0583(0x115)]();_0x3bf194[_0x5d0583(0xcb)]='',_0x3fc370[_0x5d0583(0x123)](_0x13247e=>{const _0xed5398=_0x5d0583,_0x40089b=document[_0xed5398(0x11e)]('div');_0x40089b[_0xed5398(0xf6)]=_0xed5398(0xc2);if(_0x13247e['id']===_0x33d59a)_0x40089b[_0xed5398(0x11c)][_0xed5398(0xcd)](_0xed5398(0xdc));_0x40089b[_0xed5398(0xd9)][_0xed5398(0xda)]=_0x13247e['id'],_0x40089b[_0xed5398(0xcb)]='<span\x20class=\x22budget-tab-name\x22>'+_0x13247e[_0xed5398(0xff)]+'</span><button\x20class=\x22budget-tab-close\x22\x20title=\x22Fechar\x20orçamento\x22>&times;</button>',_0x3bf194[_0xed5398(0x108)](_0x40089b);});}['updateCurrentBudgetName'](){const _0x31abb6=voti_45_0x37c0fc,_0x57f54c=this[_0x31abb6(0x114)][_0x31abb6(0xeb)](),_0xfe59f6=document[_0x31abb6(0xf1)]('current-budget-name');_0x57f54c&&_0xfe59f6&&(_0xfe59f6[_0x31abb6(0xdd)]=_0x57f54c[_0x31abb6(0xff)]);}}
+import { NOTIFICATION_TYPES } from "../../shared/config.js";
+
+export class BudgetTabsController {
+    constructor(budgetStore, notificationManager) {
+        this.budgetStore = budgetStore;
+        this.notifications = notificationManager;
+    }
+
+    initialize() {
+        this.setupEventListeners();
+        this.updateUI();
+    }
+
+    setupEventListeners() {
+        document.getElementById("new-budget-btn")?.addEventListener("click", () => this.createNewBudget());
+        document.getElementById("rename-budget-btn")?.addEventListener("click", () => this.openRenameModal());
+        document.getElementById("duplicate-budget-btn")?.addEventListener("click", () => this.duplicateCurrentBudget());
+        document.getElementById("export-budget-btn")?.addEventListener("click", () => this.exportCurrentBudget());
+
+        const importBtn = document.getElementById("import-budget-btn");
+        const importInput = document.getElementById("import-budget-input");
+        if (importBtn && importInput) {
+            importBtn.addEventListener("click", () => importInput.click());
+            importInput.addEventListener("change", (e) => {
+                const file = e.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = (ev) => this.importBudget(ev.target.result);
+                    reader.readAsText(file);
+                }
+                e.target.value = null;
+            });
+        }
+
+        const containerAbas = document.getElementById("budget-tabs");
+        containerAbas?.addEventListener("click", (event) => {
+            const abaClicada = event.target.closest(".budget-tab");
+            if (event.target.closest(".budget-tab-close")) {
+                event.stopPropagation();
+                this.closeBudget(abaClicada.dataset.budgetId);
+            } else if (abaClicada) {
+                this.budgetStore.switchToBudget(abaClicada.dataset.budgetId);
+            }
+        });
+
+        const modalRename = document.getElementById("modal-rename-budget");
+        if(modalRename) {
+            modalRename.querySelector('.is-success').addEventListener('click', () => this.saveBudgetName());
+            modalRename.querySelectorAll('.delete, .modal-background, .button:not(.is-success)')
+            .forEach(el => el.addEventListener('click', () => this.closeRenameModal()));
+        }
+    }
+
+    createNewBudget() {
+        const novoOrcamento = this.budgetStore.createNewBudget();
+        this.notifications.show(`Novo orçamento criado: ${novoOrcamento.name}`, NOTIFICATION_TYPES.SUCCESS);
+    }
+
+    closeBudget(budgetId) {
+        if (this.budgetStore.getAllBudgets().length <= 1) {
+            window.app.showInfo("Ação Inválida", "<p>Não é possível fechar o último orçamento restante.</p>");
+            return;
+        }
+
+        const budgetToClose = this.budgetStore.getAllBudgets().find(b => b.id === budgetId);
+        const hasData = budgetToClose.templates.length > 0 || budgetToClose.budget.length > 0;
+
+        if (hasData) {
+            window.app.showConfirmation(
+                'Fechar Orçamento com Dados',
+                '<p>Este orçamento possui dados. Tem certeza que deseja fechá-lo? Esta ação não pode ser desfeita.</p>',
+                () => this.budgetStore.closeBudget(budgetId),
+                { confirmText: 'Fechar Mesmo Assim', type: 'is-danger' }
+            );
+        } else {
+            this.budgetStore.closeBudget(budgetId);
+        }
+    }
+
+    openRenameModal() {
+        const orcamentoAtual = this.budgetStore.getCurrentBudget();
+        document.getElementById("budget-name-input").value = orcamentoAtual.name;
+        document.getElementById("modal-rename-budget").classList.add("is-active");
+    }
+
+    closeRenameModal() {
+        document.getElementById("modal-rename-budget").classList.remove("is-active");
+    }
+
+    saveBudgetName() {
+        const novoNome = document.getElementById("budget-name-input").value.trim();
+        const budgetId = this.budgetStore.getCurrentBudgetId();
+        if (novoNome && budgetId) {
+            this.budgetStore.renameBudget(budgetId, novoNome);
+            this.closeRenameModal();
+            this.notifications.show("Orçamento renomeado com sucesso", NOTIFICATION_TYPES.SUCCESS);
+        } else {
+            this.notifications.show("Nome não pode estar vazio", NOTIFICATION_TYPES.WARNING);
+        }
+    }
+
+    duplicateCurrentBudget() {
+        const budgetId = this.budgetStore.getCurrentBudgetId();
+        const duplicado = this.budgetStore.duplicateBudget(budgetId);
+        if (duplicado) {
+            this.notifications.show(`Orçamento duplicado para: ${duplicado.name}`, NOTIFICATION_TYPES.SUCCESS);
+        }
+    }
+
+    importBudget(fileContent) {
+        const imported = this.budgetStore.importBudget(fileContent);
+        if (imported) {
+            this.notifications.show(`Orçamento importado: ${imported.name}`, NOTIFICATION_TYPES.SUCCESS);
+        } else {
+            this.notifications.show("Falha ao importar. Verifique o arquivo.", NOTIFICATION_TYPES.DANGER);
+        }
+    }
+
+    exportCurrentBudget() {
+        const budgetId = this.budgetStore.getCurrentBudgetId();
+        const exportData = this.budgetStore.exportBudget(budgetId);
+        if (!exportData) return;
+
+        const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const anchor = document.createElement('a');
+        anchor.href = url;
+        const safeBudgetName = exportData.name.replace(/[^a-zA-Z0-9]/g, '_');
+        const dateString = new Date().toISOString().split('T')[0];
+        anchor.download = `orcamento-${safeBudgetName}-${dateString}.json`;
+        document.body.appendChild(anchor);
+        anchor.click();
+        document.body.removeChild(anchor);
+        URL.revokeObjectURL(url);
+
+        this.notifications.show("Orçamento exportado com sucesso!", NOTIFICATION_TYPES.INFO);
+    }
+
+    updateUI() {
+        this.updateBudgetTabs();
+        this.updateCurrentBudgetName();
+    }
+
+    updateBudgetTabs() {
+        const containerAbas = document.getElementById("budget-tabs");
+        if (!containerAbas) return;
+
+        const budgets = this.budgetStore.getAllBudgets();
+        const currentId = this.budgetStore.getCurrentBudgetId();
+
+        containerAbas.innerHTML = "";
+        budgets.forEach(budget => {
+            const abaElemento = document.createElement("div");
+            abaElemento.className = "budget-tab";
+            if (budget.id === currentId) abaElemento.classList.add("active");
+            abaElemento.dataset.budgetId = budget.id;
+            abaElemento.innerHTML = `<span class="budget-tab-name">${budget.name}</span><button class="budget-tab-close" title="Fechar orçamento">&times;</button>`;
+            containerAbas.appendChild(abaElemento);
+        });
+    }
+
+    updateCurrentBudgetName() {
+        const orcamentoAtual = this.budgetStore.getCurrentBudget();
+        const nameElement = document.getElementById("current-budget-name");
+        if (orcamentoAtual && nameElement) {
+            nameElement.textContent = orcamentoAtual.name;
+        }
+    }
+}

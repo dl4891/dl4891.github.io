@@ -1,1 +1,298 @@
-const voti_19_0x35ab65=voti_19_0x3e23;function voti_19_0x3e23(_0x231e26,_0x98faaa){const _0x30af22=voti_19_0x30af();return voti_19_0x3e23=function(_0x3e234f,_0x2265d6){_0x3e234f=_0x3e234f-0x8a;let _0xdf66b6=_0x30af22[_0x3e234f];return _0xdf66b6;},voti_19_0x3e23(_0x231e26,_0x98faaa);}(function(_0x3f10b8,_0x14f7a0){const _0x491480=voti_19_0x3e23,_0x2d3878=_0x3f10b8();while(!![]){try{const _0x166eb2=-parseInt(_0x491480(0xea))/0x1*(parseInt(_0x491480(0x8e))/0x2)+parseInt(_0x491480(0xdd))/0x3*(-parseInt(_0x491480(0xc6))/0x4)+-parseInt(_0x491480(0x8b))/0x5*(parseInt(_0x491480(0xe6))/0x6)+parseInt(_0x491480(0xad))/0x7+parseInt(_0x491480(0xe5))/0x8*(-parseInt(_0x491480(0xb6))/0x9)+parseInt(_0x491480(0xb0))/0xa+parseInt(_0x491480(0xe9))/0xb;if(_0x166eb2===_0x14f7a0)break;else _0x2d3878['push'](_0x2d3878['shift']());}catch(_0x3e3d08){_0x2d3878['push'](_0x2d3878['shift']());}}}(voti_19_0x30af,0xf1c7d));import{MESSAGES,NOTIFICATION_TYPES}from'../shared/config.js';function voti_19_0x30af(){const _0x18b5ad=['buildConsolidatedChapas','pesoComMargem','teorico','isDegrau','nome','saveBudgetItem','totalServico','calcularCustoMaterialConsolidado','costs','importItemsFromCSV','show','getEditingBudgetItemId','order','4sTEWnt','Limpar\x20Orçamento','updateBudgetListView','deleteItem','notifications','peso','totalCustoServicoChapas','materiais','clearBudget','forEach','summary','galvanizacao','Orçamento\x20limpo\x20com\x20sucesso.','area','tipo','values','success','total','remove','updateSummaryView','INFO','diam','calculateCosts','2797107jrHXXO','totalCustoGeral','_applyRounding','length','SUCCESS','calcular','errorCount','map','8cdJiOB','4902lHkSth','store','totalCustoMaterialPuro','13272589xhGeHZ','6425RZQhhF','\x20item(ns)\x20importado(s)\x20com\x20sucesso.','custoTotal','custoUnitario','importedCount','entries','cancelEdit','material','buildConsolidatedByTemplate','comprimentos','summaryComponent','comp','pecas','Nenhum\x20item\x20encontrado\x20no\x20arquivo\x20para\x20importar.','reduce','clearEditingBudgetItem','servicoChapas','clearBudgetItems','maoObra','moveItemToPosition','</p>','pesoUnitario','larg','priceController','5ZTYqSj','Confirmar\x20Remoção','calcularCustoChapas','164OWtTEL','descricao','formatDimensionKey','calculateCostsByM2','templateId','grampo','replace','getProcessPrices','quantidade','calculateTotals','totalGeral','grade','CONFIRMATIONS','splice','editingItemId','Orçamento\x20já\x20está\x20vazio.','templateType','{count}','app','getBudgetItems','getTemplates','updateItemsOrder','push','budgetListComponent','filter','qtd','DANGER','calcularCustoPorTemplate','esp','errors','component','1361871AJhMic','itemsWithCalculations','\x20item(ns)\x20não\x20puderam\x20ser\x20importados.\x20Verifique\x20os\x20erros.','15337750TuAGqn','_calculateItemTotals','find','{description}','chapa','getBudgetItemById','4361022jBnISt','getPrices','unit'];voti_19_0x30af=function(){return _0x18b5ad;};return voti_19_0x30af();}import{CalculationService,separarMateriais}from'../core/services/CalculationService.js';import{CostCalculationService}from'../core/services/CostCalculationService.js';import{FormattingService}from'../core/services/FormattingService.js';export class BudgetController{constructor(_0x8884b1,_0xe52110,_0x103b01){const _0x17645e=voti_19_0x3e23;this['store']=_0x8884b1,this['notifications']=_0xe52110,this[_0x17645e(0xa0)]=_0x103b01;}['add'](_0x4e9a93){const _0x1d0c95=voti_19_0x3e23;return this[_0x1d0c95(0xe7)][_0x1d0c95(0xbe)](_0x4e9a93);}[voti_19_0x35ab65(0xd8)](_0x2f30c1){const _0x1b7a7e=voti_19_0x35ab65,_0x1828ee=this[_0x1b7a7e(0xe7)][_0x1b7a7e(0xb5)](_0x2f30c1);if(!_0x1828ee)return;const _0x2236ac=MESSAGES[_0x1b7a7e(0x9a)][_0x1b7a7e(0xc9)][_0x1b7a7e(0x94)](_0x1b7a7e(0xb3),_0x1828ee[_0x1b7a7e(0x8f)]||'item\x20#'+((_0x1828ee[_0x1b7a7e(0xc5)]||0x0)+0x1));this[_0x1b7a7e(0xa0)]['showConfirmation'](_0x1b7a7e(0x8c),'<p>'+_0x2236ac+_0x1b7a7e(0xfe),()=>{const _0x37d988=_0x1b7a7e;this[_0x37d988(0xe7)]['deleteBudgetItem'](_0x2f30c1),this['notifications'][_0x37d988(0xc3)](MESSAGES[_0x37d988(0xe1)]['itemRemoved'],NOTIFICATION_TYPES['SUCCESS']);});}['clear'](){const _0x2ed8ac=voti_19_0x35ab65;if(this[_0x2ed8ac(0xe7)][_0x2ed8ac(0xa1)]()[_0x2ed8ac(0xe0)]===0x0){this['notifications'][_0x2ed8ac(0xc3)](_0x2ed8ac(0x9d),NOTIFICATION_TYPES[_0x2ed8ac(0xda)]);return;}const _0x37dddd=MESSAGES['CONFIRMATIONS'][_0x2ed8ac(0xce)][_0x2ed8ac(0x94)](_0x2ed8ac(0x9f),this[_0x2ed8ac(0xe7)][_0x2ed8ac(0xa1)]()[_0x2ed8ac(0xe0)]);this['app']['showConfirmation'](_0x2ed8ac(0xc7),'<p>'+_0x37dddd+'</p>',()=>{const _0x14db6d=_0x2ed8ac;this[_0x14db6d(0xe7)][_0x14db6d(0xfb)](),this['notifications']['show'](_0x14db6d(0xd2),NOTIFICATION_TYPES[_0x14db6d(0xe1)]);});}[voti_19_0x35ab65(0xf0)](){const _0x214a9c=voti_19_0x35ab65;this[_0x214a9c(0xe7)][_0x214a9c(0xf9)]();}[voti_19_0x35ab65(0xfd)](_0x20caf6,_0x359609){const _0x535681=voti_19_0x35ab65,_0x4fa195=this[_0x535681(0xe7)][_0x535681(0xa1)](),_0x2eceb3=_0x4fa195[_0x535681(0xb2)](_0x3e9b84=>_0x3e9b84['id']===_0x20caf6);if(!_0x2eceb3)return;const _0x4c181a=_0x4fa195[_0x535681(0xa6)](_0x14c998=>_0x14c998['id']!==_0x20caf6);let _0x4fb57f=_0x359609-0x1;if(_0x4fb57f<0x0)_0x4fb57f=0x0;if(_0x4fb57f>_0x4c181a['length'])_0x4fb57f=_0x4c181a[_0x535681(0xe0)];_0x4c181a[_0x535681(0x9b)](_0x4fb57f,0x0,_0x2eceb3);const _0x296a33=_0x4c181a['map'](_0x4ffa25=>_0x4ffa25['id']);this[_0x535681(0xe7)][_0x535681(0xa3)](_0x296a33);}['importItemsFromCSV'](_0x1eb44d){const _0x579348=voti_19_0x35ab65,_0xb49867=this[_0x579348(0xe7)][_0x579348(0xc2)](_0x1eb44d);return _0xb49867[_0x579348(0xee)]>0x0&&this[_0x579348(0xca)][_0x579348(0xc3)](_0xb49867[_0x579348(0xee)]+_0x579348(0xeb),NOTIFICATION_TYPES[_0x579348(0xe1)]),_0xb49867[_0x579348(0xe3)]>0x0&&(this[_0x579348(0xca)]['show'](_0xb49867['errorCount']+_0x579348(0xaf),NOTIFICATION_TYPES['WARNING']),_0xb49867[_0x579348(0xab)][_0x579348(0xcf)](_0x347633=>{const _0x2b03cd=_0x579348;this[_0x2b03cd(0xca)]['show'](_0x347633,NOTIFICATION_TYPES[_0x2b03cd(0xa8)],0x1f40);})),_0xb49867['importedCount']===0x0&&_0xb49867[_0x579348(0xe3)]===0x0&&this[_0x579348(0xca)][_0x579348(0xc3)](_0x579348(0xf7),NOTIFICATION_TYPES['INFO']),_0xb49867[_0x579348(0xd6)];}[voti_19_0x35ab65(0xd9)](){const _0x4f2e7f=voti_19_0x35ab65,{totalGrades:_0x17f673,totalGrampos:_0x56dc21,totalArea:_0x6e1bfb,totalPesoMargem:_0x3afd3e,consolidado:_0x28a71a,hasTeoricoWeights:_0x51869c}=this[_0x4f2e7f(0x97)](),_0x33a0d8=this[_0x4f2e7f(0xdc)](),_0x5a1100=_0x33a0d8[_0x4f2e7f(0xe8)]+(_0x33a0d8[_0x4f2e7f(0xcc)]||0x0);this[_0x4f2e7f(0xa0)][_0x4f2e7f(0xf4)][_0x4f2e7f(0xd0)]={'totalGrades':_0x17f673,'totalGrampos':_0x56dc21,'totalArea':_0x6e1bfb,'totalPesoMargem':_0x3afd3e,'custoMaterial':_0x5a1100,'custoGeral':_0x33a0d8[_0x4f2e7f(0xde)],'consolidado':{..._0x28a71a},'hasTeoricoWeights':_0x51869c};}[voti_19_0x35ab65(0xc8)](){const _0x37c641=voti_19_0x35ab65,_0x560d24=this[_0x37c641(0xe7)]['getBudgetItems'](),_0x13c2c8=this[_0x37c641(0xe7)]['getTemplates'](),_0x386fe9=this['app'][_0x37c641(0x8a)],_0xfe2b0f=_0x560d24[_0x37c641(0xe4)](_0x4ec27a=>{const _0x3fe8a0=_0x37c641,_0x227eb0=_0x13c2c8['find'](_0x3f9759=>_0x3f9759['id']===_0x4ec27a[_0x3fe8a0(0x92)]);if(!_0x227eb0)return null;const _0xd776b1=this['_calculateItemTotals'](_0x4ec27a,_0x227eb0,_0x386fe9);return{'item':{..._0x4ec27a},'template':_0x227eb0,'costs':{'area':_0xd776b1[_0x3fe8a0(0xd3)],'peso':_0xd776b1['peso'],'pesoComMargem':_0xd776b1[_0x3fe8a0(0xba)],'custoTotal':0x0,'custoUnitario':0x0}};})[_0x37c641(0xa6)](Boolean),_0xd12569=this[_0x37c641(0x91)]();_0xfe2b0f[_0x37c641(0xcf)](_0x22ecf0=>{const _0x5e2cd5=_0x37c641,{template:_0x5c25af,item:_0x15b776,costs:_0x382f2c}=_0x22ecf0;let _0x210fb5=0x0;if(_0x5c25af[_0x5e2cd5(0x9e)]===_0x5e2cd5(0x99)){const _0x100c18=(_0xd12569[_0x5e2cd5(0xf1)]?.[_0x5c25af['nome']]||0x0)*_0x382f2c[_0x5e2cd5(0xd3)],_0x4d7fb1=(_0xd12569[_0x5e2cd5(0xfc)]?.[_0x5c25af[_0x5e2cd5(0xbd)]]||0x0)*_0x382f2c['area'],_0x4b441b=(_0xd12569[_0x5e2cd5(0xd1)]?.[_0x5c25af[_0x5e2cd5(0xbd)]]||0x0)*_0x382f2c[_0x5e2cd5(0xd3)],_0x4a8450=(_0xd12569[_0x5e2cd5(0xfa)]?.[_0x5c25af[_0x5e2cd5(0xbd)]]||0x0)*_0x382f2c['area'];_0x210fb5=_0x100c18+_0x4d7fb1+_0x4b441b+_0x4a8450;}else{const _0x135e60=this['_calculateItemTotals'](_0x15b776,_0x5c25af,_0x386fe9);_0x210fb5=_0x135e60[_0x5e2cd5(0xec)];}_0x22ecf0['costs'][_0x5e2cd5(0xec)]=_0x210fb5,_0x22ecf0[_0x5e2cd5(0xc1)][_0x5e2cd5(0xed)]=_0x15b776[_0x5e2cd5(0x96)]>0x0?_0x210fb5/_0x15b776[_0x5e2cd5(0x96)]:0x0;}),this[_0x37c641(0xa0)][_0x37c641(0xa5)][_0x37c641(0xae)]=[..._0xfe2b0f],this['app']['budgetListComponent'][_0x37c641(0x9c)]=this[_0x37c641(0xe7)][_0x37c641(0xc4)]();}[voti_19_0x35ab65(0xb1)](_0x54ffcd,_0x98f938,_0x2e4747){const _0x1bfe7c=voti_19_0x35ab65;if(_0x98f938[_0x1bfe7c(0x9e)]==='clamp'){const _0x172e5f=Object[_0x1bfe7c(0xd5)](_0x98f938[_0x1bfe7c(0xc1)][_0x1bfe7c(0xf1)])['reduce']((_0x2021a7,_0x17e057)=>_0x2021a7+_0x17e057,0x0),_0x93bf53=Object[_0x1bfe7c(0xd5)](_0x98f938[_0x1bfe7c(0xc1)]['maoDeObra'])[_0x1bfe7c(0xf8)]((_0x437e7d,_0x5a65ae)=>_0x437e7d+_0x5a65ae,0x0),_0x1be490=Object[_0x1bfe7c(0xd5)](_0x98f938[_0x1bfe7c(0xc1)]['galvanizacao'])[_0x1bfe7c(0xf8)]((_0x499489,_0x521f3b)=>_0x499489+_0x521f3b,0x0),_0x153032=_0x172e5f+_0x93bf53+_0x1be490,_0x4eb494=_0x153032*_0x54ffcd[_0x1bfe7c(0x96)],_0x1248bc=_0x98f938[_0x1bfe7c(0xff)]*_0x54ffcd[_0x1bfe7c(0x96)];return{'area':0x0,'peso':_0x1248bc,'pesoComMargem':_0x1248bc,'custoTotal':_0x4eb494,'materiais':{'grampo':{'peso':_0x1248bc,'qtd':_0x54ffcd[_0x1bfe7c(0x96)]}}};}const _0x1e7e3f=this[_0x1bfe7c(0xe7)][_0x1bfe7c(0xb7)]()['totalWeightCalcMethod']||_0x1bfe7c(0xac);if(_0x1e7e3f===_0x1bfe7c(0xb8)){const _0x30e36a={..._0x54ffcd,'quantidade':0x1},_0x4efecf=CalculationService[_0x1bfe7c(0xe2)](_0x30e36a,_0x98f938,_0x2e4747),_0x3a25c9=CalculationService[_0x1bfe7c(0xe2)](_0x54ffcd,_0x98f938,_0x2e4747),_0xc6d21a=_0x2e4747[_0x1bfe7c(0xdf)](_0x4efecf[_0x1bfe7c(0xba)]),_0xa2a66f=_0xc6d21a/(0x1+_0x98f938['margem']/0x64);return{'area':_0x4efecf[_0x1bfe7c(0xd3)]*_0x54ffcd[_0x1bfe7c(0x96)],'peso':_0xa2a66f*_0x54ffcd[_0x1bfe7c(0x96)],'pesoComMargem':_0xc6d21a*_0x54ffcd[_0x1bfe7c(0x96)],'materiais':_0x3a25c9['materiais']};}return CalculationService[_0x1bfe7c(0xe2)](_0x54ffcd,_0x98f938,_0x2e4747);}['calculateTotals'](){const _0x209ab3=voti_19_0x35ab65,_0x497439=this[_0x209ab3(0xe7)][_0x209ab3(0xa2)](),_0xac97c2=this[_0x209ab3(0xa0)][_0x209ab3(0x8a)];let _0xe9e50c=0x0,_0x742ac4=0x0,_0x35880c=0x0,_0x68a3c4=0x0,_0x304e57=![];const _0x1d88f7={};return this['store'][_0x209ab3(0xa1)]()[_0x209ab3(0xcf)](_0x4fe310=>{const _0x2c556a=_0x209ab3,_0x50e6bc=_0x497439['find'](_0x124d10=>_0x124d10['id']===_0x4fe310[_0x2c556a(0x92)]);if(!_0x50e6bc)return;const _0x48402e=this[_0x2c556a(0xb1)](_0x4fe310,_0x50e6bc,_0xac97c2);if(_0x50e6bc['templateType']===_0x2c556a(0x99)){_0xe9e50c+=_0x4fe310['quantidade'],_0x35880c+=_0x48402e['area'];if(_0x50e6bc['pesoCalcMode']===_0x2c556a(0xbb))_0x304e57=!![];const _0x2587b1=CalculationService[_0x2c556a(0xe2)](_0x4fe310,_0x50e6bc,_0xac97c2);Object['entries'](_0x2587b1[_0x2c556a(0xcd)])[_0x2c556a(0xcf)](([_0xa3dcd6,_0x314106])=>{const _0x332dd0=_0x2c556a;if(_0x314106[_0x332dd0(0xcb)]>0x0){if(!_0x1d88f7[_0xa3dcd6])_0x1d88f7[_0xa3dcd6]={'peso':0x0,'qtd':0x0};_0x1d88f7[_0xa3dcd6][_0x332dd0(0xcb)]+=_0x314106[_0x332dd0(0xcb)],_0x1d88f7[_0xa3dcd6][_0x332dd0(0xa7)]+=_0x314106[_0x332dd0(0xa7)];}});}else{_0x742ac4+=_0x4fe310['quantidade'];if(!_0x1d88f7[_0x2c556a(0x93)])_0x1d88f7['grampo']={'peso':0x0,'qtd':0x0,'nome':'Grampos\x20de\x20Fixação'};_0x1d88f7[_0x2c556a(0x93)][_0x2c556a(0xcb)]+=_0x48402e['peso'],_0x1d88f7['grampo'][_0x2c556a(0xa7)]+=_0x4fe310[_0x2c556a(0x96)];}_0x68a3c4+=_0x48402e[_0x2c556a(0xba)];}),{'totalGrades':_0xe9e50c,'totalGrampos':_0x742ac4,'totalArea':_0x35880c,'totalPesoMargem':_0x68a3c4,'consolidado':_0x1d88f7,'hasTeoricoWeights':_0x304e57};}[voti_19_0x35ab65(0xdc)](){const _0xe1fced=voti_19_0x35ab65,_0x1fb819=this[_0xe1fced(0xe7)][_0xe1fced(0xa2)](),_0x5b68b0=this[_0xe1fced(0xa0)][_0xe1fced(0x8a)],_0x21fdc2=this[_0xe1fced(0xf2)](_0x1fb819,_0x5b68b0),_0x5ce464=this[_0xe1fced(0xb9)](_0x1fb819,_0x5b68b0),_0x4e9583=CostCalculationService[_0xe1fced(0xc0)](_0x21fdc2,_0x5b68b0,_0x1fb819),_0xad2f83=CostCalculationService[_0xe1fced(0x8d)](_0x5ce464,_0x5b68b0,_0x1fb819);let _0x354f10=0x0,_0x213c2e=0x0,_0x159324=0x0;this['store']['getBudgetItems']()[_0xe1fced(0xcf)](_0x5c698e=>{const _0x3f5440=_0xe1fced,_0x34d581=_0x1fb819['find'](_0x2544d4=>_0x2544d4['id']===_0x5c698e['templateId']);if(!_0x34d581)return;const _0x35a24e=this['_calculateItemTotals'](_0x5c698e,_0x34d581,_0x5b68b0);if(_0x34d581[_0x3f5440(0x9e)]===_0x3f5440(0x99)){const _0xb4d46f=_0x5b68b0[_0x3f5440(0x95)](_0x34d581);_0x354f10+=_0x35a24e[_0x3f5440(0xba)]*_0xb4d46f[_0x3f5440(0xfc)],_0x213c2e+=_0x35a24e[_0x3f5440(0xba)]*_0xb4d46f[_0x3f5440(0xd1)];}else _0x159324+=_0x35a24e[_0x3f5440(0xec)];});const _0x1200f1=_0x4e9583[_0xe1fced(0xd7)]+_0xad2f83[_0xe1fced(0x98)]+_0x354f10+_0x213c2e;return{'totalCustoMaterialPuro':_0x4e9583[_0xe1fced(0xd7)]+_0xad2f83['totalMaterial'],'totalCustoServicoChapas':_0xad2f83[_0xe1fced(0xbf)],'totalCustoGeral':_0x1200f1+_0x159324};}[voti_19_0x35ab65(0x91)](){const _0x4e5909=voti_19_0x35ab65,_0x1097cd=this[_0x4e5909(0xe7)][_0x4e5909(0xa2)](),_0x50849c=this[_0x4e5909(0xa0)][_0x4e5909(0x8a)],_0x41b6b6=this[_0x4e5909(0xe7)]['getBudgetItems']();return CostCalculationService[_0x4e5909(0xa9)](_0x41b6b6[_0x4e5909(0xa6)](_0x36cf18=>{const _0x14905e=_0x4e5909,_0x2cdcb1=_0x1097cd[_0x14905e(0xb2)](_0x1f2887=>_0x1f2887['id']===_0x36cf18['templateId']);return _0x2cdcb1&&_0x2cdcb1['templateType']===_0x14905e(0x99);}),_0x1097cd,_0x50849c);}[voti_19_0x35ab65(0xf2)](_0x1d3d33,_0x20084a){const _0x34ad1b=voti_19_0x35ab65,_0x369ef4={};return this[_0x34ad1b(0xe7)][_0x34ad1b(0xa1)]()[_0x34ad1b(0xcf)](_0x34f426=>{const _0x12bbef=_0x34ad1b,_0x2b1954=_0x1d3d33['find'](_0x5164a5=>_0x5164a5['id']===_0x34f426[_0x12bbef(0x92)]);if(!_0x2b1954||_0x2b1954[_0x12bbef(0x9e)]!==_0x12bbef(0x99))return;if(!_0x369ef4[_0x2b1954['nome']])_0x369ef4[_0x2b1954[_0x12bbef(0xbd)]]={};const _0x1507c9=CalculationService[_0x12bbef(0xe2)](_0x34f426,_0x2b1954,_0x20084a),{barras:_0x22af46}=separarMateriais(_0x1507c9[_0x12bbef(0xcd)],_0x2b1954[_0x12bbef(0xbc)]);Object[_0x12bbef(0xef)](_0x22af46)[_0x12bbef(0xcf)](([_0x2f8e07,_0x293703])=>{const _0x518527=_0x12bbef;if(_0x293703['peso']>0x0){const _0x59ffbf=FormattingService[_0x518527(0x90)](_0x293703[_0x518527(0xd4)],_0x293703[_0x518527(0xaa)],_0x293703[_0x518527(0x100)],_0x293703[_0x518527(0xdb)]);!_0x369ef4[_0x2b1954['nome']][_0x59ffbf]&&(_0x369ef4[_0x2b1954[_0x518527(0xbd)]][_0x59ffbf]={'esp':_0x293703[_0x518527(0xaa)]||'-','larg':_0x293703['larg']||'-','diam':_0x293703[_0x518527(0xdb)]||0x0,'tipo':_0x293703['tipo'],'qtd':0x0,'peso':0x0,'pecas':[]});const _0x3eca2e=_0x369ef4[_0x2b1954[_0x518527(0xbd)]][_0x59ffbf];_0x3eca2e[_0x518527(0xa7)]+=_0x293703[_0x518527(0xa7)],_0x3eca2e[_0x518527(0xcb)]+=_0x293703[_0x518527(0xcb)];for(let _0x4df97a=0x0;_0x4df97a<_0x293703[_0x518527(0xa7)];_0x4df97a++){_0x3eca2e[_0x518527(0xf6)][_0x518527(0xa4)](_0x293703['comp']);}}});}),_0x369ef4;}['buildConsolidatedChapas'](_0xaad645,_0x5b9b04){const _0x603aed=voti_19_0x35ab65,_0xaf82d={};return this['store'][_0x603aed(0xa1)]()[_0x603aed(0xcf)](_0x13c5d1=>{const _0x3959c1=_0x603aed,_0x838a76=_0xaad645['find'](_0x3fca03=>_0x3fca03['id']===_0x13c5d1[_0x3959c1(0x92)]);if(!_0x838a76?.['isDegrau'])return;if(!_0xaf82d[_0x838a76[_0x3959c1(0xbd)]])_0xaf82d[_0x838a76[_0x3959c1(0xbd)]]={};const _0x3e5e63=CalculationService[_0x3959c1(0xe2)](_0x13c5d1,_0x838a76,_0x5b9b04),{chapas:_0x96dfcb}=separarMateriais(_0x3e5e63['materiais'],_0x838a76[_0x3959c1(0xbc)]);Object[_0x3959c1(0xef)](_0x96dfcb)[_0x3959c1(0xcf)](([_0x570d97,_0x14185b])=>{const _0x4852bb=_0x3959c1;if(_0x14185b[_0x4852bb(0xcb)]>0x0){!_0xaf82d[_0x838a76['nome']][_0x570d97]&&(_0xaf82d[_0x838a76[_0x4852bb(0xbd)]][_0x570d97]={'esp':_0x14185b[_0x4852bb(0xaa)],'larg':_0x14185b[_0x4852bb(0x100)],'comp':_0x14185b[_0x4852bb(0xf5)],'tipo':_0x4852bb(0xb4),'qtd':0x0,'peso':0x0,'comprimentos':[]});const _0x3dc217=_0xaf82d[_0x838a76[_0x4852bb(0xbd)]][_0x570d97];_0x3dc217[_0x4852bb(0xa7)]+=_0x14185b[_0x4852bb(0xa7)],_0x3dc217[_0x4852bb(0xcb)]+=_0x14185b[_0x4852bb(0xcb)];for(let _0x39c46f=0x0;_0x39c46f<_0x14185b[_0x4852bb(0xa7)];_0x39c46f++){_0x3dc217[_0x4852bb(0xf3)][_0x4852bb(0xa4)](_0x14185b['comp']);}}});}),_0xaf82d;}}
+import { MESSAGES, NOTIFICATION_TYPES } from "../shared/config.js";
+import { CalculationService, separarMateriais } from "../core/services/CalculationService.js";
+import { CostCalculationService } from "../core/services/CostCalculationService.js";
+import { FormattingService } from "../core/services/FormattingService.js";
+
+export class BudgetController {
+    constructor(budgetStore, notificationManager, appInstance) {
+        this.store = budgetStore;
+        this.notifications = notificationManager;
+        this.app = appInstance;
+    }
+
+    add(itemData) {
+        return this.store.saveBudgetItem(itemData);
+    }
+
+    remove(itemId) {
+        const item = this.store.getBudgetItemById(itemId);
+        if (!item) return;
+        const message = MESSAGES.CONFIRMATIONS.deleteItem.replace('{description}', item.descricao || `item #${(item.order || 0) + 1}`);
+        this.app.showConfirmation('Confirmar Remoção', `<p>${message}</p>`, () => {
+            this.store.deleteBudgetItem(itemId);
+            this.notifications.show(MESSAGES.SUCCESS.itemRemoved, NOTIFICATION_TYPES.SUCCESS);
+        });
+    }
+
+    clear() {
+        if (this.store.getBudgetItems().length === 0) {
+            this.notifications.show("Orçamento já está vazio.", NOTIFICATION_TYPES.INFO);
+            return;
+        }
+        const message = MESSAGES.CONFIRMATIONS.clearBudget.replace('{count}', this.store.getBudgetItems().length);
+        this.app.showConfirmation('Limpar Orçamento', `<p>${message}</p>`, () => {
+            this.store.clearBudgetItems();
+            this.notifications.show("Orçamento limpo com sucesso.", NOTIFICATION_TYPES.SUCCESS);
+        });
+    }
+
+    cancelEdit() {
+        this.store.clearEditingBudgetItem();
+    }
+
+    moveItemToPosition(itemId, newPosition) {
+        const items = this.store.getBudgetItems();
+        const itemToMove = items.find(item => item.id === itemId);
+        if (!itemToMove) return;
+        const otherItems = items.filter(item => item.id !== itemId);
+        let targetIndex = newPosition - 1;
+        if (targetIndex < 0) targetIndex = 0;
+        if (targetIndex > otherItems.length) targetIndex = otherItems.length;
+        otherItems.splice(targetIndex, 0, itemToMove);
+        const orderedIds = otherItems.map(item => item.id);
+        this.store.updateItemsOrder(orderedIds);
+    }
+
+    importItemsFromCSV(csvContent) {
+        const result = this.store.importItemsFromCSV(csvContent);
+
+        if (result.importedCount > 0) {
+            this.notifications.show(`${result.importedCount} item(ns) importado(s) com sucesso.`, NOTIFICATION_TYPES.SUCCESS);
+        }
+
+        if (result.errorCount > 0) {
+            this.notifications.show(`${result.errorCount} item(ns) não puderam ser importados. Verifique os erros.`, NOTIFICATION_TYPES.WARNING);
+            result.errors.forEach(error => {
+                this.notifications.show(error, NOTIFICATION_TYPES.DANGER, 8000);
+            });
+        }
+
+        if(result.importedCount === 0 && result.errorCount === 0) {
+            this.notifications.show("Nenhum item encontrado no arquivo para importar.", NOTIFICATION_TYPES.INFO);
+        }
+
+        return result.success;
+    }
+
+    updateSummaryView() {
+        const { totalGrades, totalGrampos, totalArea, totalPesoMargem, consolidado, hasTeoricoWeights } = this.calculateTotals();
+        const custos = this.calculateCosts();
+        const custoMaterialTotal = custos.totalCustoMaterialPuro + (custos.totalCustoServicoChapas || 0);
+
+        this.app.summaryComponent.summary = {
+            totalGrades,
+            totalGrampos,
+            totalArea,
+            totalPesoMargem,
+            custoMaterial: custoMaterialTotal,
+            custoGeral: custos.totalCustoGeral,
+            consolidado: { ...consolidado },
+            hasTeoricoWeights,
+        };
+    }
+
+    updateBudgetListView() {
+        const items = this.store.getBudgetItems();
+        const templates = this.store.getTemplates();
+        const priceController = this.app.priceController;
+
+        const itemsWithCalculations = items.map(item => {
+            const template = templates.find(t => t.id === item.templateId);
+            if (!template) return null;
+
+            const calculoItem = this._calculateItemTotals(item, template, priceController);
+            return {
+                item: { ...item },
+                template,
+                costs: {
+                    area: calculoItem.area,
+                    peso: calculoItem.peso,
+                    pesoComMargem: calculoItem.pesoComMargem,
+                    custoTotal: 0,
+                    custoUnitario: 0,
+                }
+            };
+        }).filter(Boolean);
+
+        const costsByM2 = this.calculateCostsByM2();
+
+        itemsWithCalculations.forEach(d => {
+            const { template, item, costs } = d;
+            let custoTotal = 0;
+            if (template.templateType === 'grade') {
+                const custoMaterial = (costsByM2.material?.[template.nome] || 0) * costs.area;
+                const custoMaoObra = (costsByM2.maoObra?.[template.nome] || 0) * costs.area;
+                const custoGalvanizacao = (costsByM2.galvanizacao?.[template.nome] || 0) * costs.area;
+                const custoChapas = (costsByM2.servicoChapas?.[template.nome] || 0) * costs.area;
+                custoTotal = custoMaterial + custoMaoObra + custoGalvanizacao + custoChapas;
+            } else { // Clamp
+                const calculoItem = this._calculateItemTotals(item, template, priceController);
+                custoTotal = calculoItem.custoTotal;
+            }
+            d.costs.custoTotal = custoTotal;
+            d.costs.custoUnitario = item.quantidade > 0 ? custoTotal / item.quantidade : 0;
+        });
+
+        this.app.budgetListComponent.itemsWithCalculations = [...itemsWithCalculations];
+        this.app.budgetListComponent.editingItemId = this.store.getEditingBudgetItemId();
+    }
+
+    _calculateItemTotals(item, template, priceController) {
+        if (template.templateType === 'clamp') {
+            const matCost = Object.values(template.costs.material).reduce((s, v) => s + v, 0);
+            const moCost = Object.values(template.costs.maoDeObra).reduce((s, v) => s + v, 0);
+            const galvCost = Object.values(template.costs.galvanizacao).reduce((s, v) => s + v, 0);
+            const unitCost = matCost + moCost + galvCost;
+            const totalCost = unitCost * item.quantidade;
+            const totalWeight = template.pesoUnitario * item.quantidade;
+            return {
+                area: 0,
+                peso: totalWeight,
+                pesoComMargem: totalWeight,
+                custoTotal: totalCost,
+                materiais: { grampo: { peso: totalWeight, qtd: item.quantidade } }
+            };
+        }
+
+        const calcMethod = this.store.getPrices().totalWeightCalcMethod || 'component';
+        if (calcMethod === 'unit') {
+            const singleItem = { ...item, quantidade: 1 };
+            const unitCalculation = CalculationService.calcular(singleItem, template, priceController);
+            const totalCalculationForMaterials = CalculationService.calcular(item, template, priceController);
+            const roundedUnitPesoComMargem = priceController._applyRounding(unitCalculation.pesoComMargem);
+            const roundedUnitPeso = roundedUnitPesoComMargem / (1 + template.margem / 100);
+            return {
+                area: unitCalculation.area * item.quantidade,
+                peso: roundedUnitPeso * item.quantidade,
+                pesoComMargem: roundedUnitPesoComMargem * item.quantidade,
+                materiais: totalCalculationForMaterials.materiais
+            };
+        }
+        return CalculationService.calcular(item, template, priceController);
+    }
+
+    calculateTotals() {
+        const todosTemplates = this.store.getTemplates();
+        const priceController = this.app.priceController;
+        let totalGrades = 0, totalGrampos = 0, totalArea = 0, totalPesoMargem = 0, hasTeoricoWeights = false;
+        const consolidado = {};
+
+        this.store.getBudgetItems().forEach(item => {
+            const template = todosTemplates.find(t => t.id === item.templateId);
+            if (!template) return;
+
+            const calculo = this._calculateItemTotals(item, template, priceController);
+            if (template.templateType === 'grade') {
+                totalGrades += item.quantidade;
+                totalArea += calculo.area;
+                if (template.pesoCalcMode === 'teorico') hasTeoricoWeights = true;
+                const calculoConsolidado = CalculationService.calcular(item, template, priceController);
+                Object.entries(calculoConsolidado.materiais).forEach(([nome, dados]) => {
+                    if (dados.peso > 0) {
+                        if (!consolidado[nome]) consolidado[nome] = { peso: 0, qtd: 0 };
+                        consolidado[nome].peso += dados.peso;
+                        consolidado[nome].qtd += dados.qtd;
+                    }
+                });
+            } else {
+                totalGrampos += item.quantidade;
+                if (!consolidado['grampo']) consolidado['grampo'] = { peso: 0, qtd: 0, nome: 'Grampos de Fixação' };
+                consolidado['grampo'].peso += calculo.peso;
+                consolidado['grampo'].qtd += item.quantidade;
+            }
+            totalPesoMargem += calculo.pesoComMargem;
+        });
+        return { totalGrades, totalGrampos, totalArea, totalPesoMargem, consolidado, hasTeoricoWeights };
+    }
+
+    calculateCosts() {
+        const todosTemplates = this.store.getTemplates();
+        const priceController = this.app.priceController;
+        const consolidadoPorTemplate = this.buildConsolidatedByTemplate(todosTemplates, priceController);
+        const consolidadoChapas = this.buildConsolidatedChapas(todosTemplates, priceController);
+        const custoBarras = CostCalculationService.calcularCustoMaterialConsolidado(consolidadoPorTemplate, priceController, todosTemplates);
+        const custoChapas = CostCalculationService.calcularCustoChapas(consolidadoChapas, priceController, todosTemplates);
+        let totalCustoMaoObra = 0;
+        let totalCustoGalvanizacao = 0;
+        let custoTotalGrampos = 0;
+        this.store.getBudgetItems().forEach(item => {
+            const template = todosTemplates.find(t => t.id === item.templateId);
+            if (!template) return;
+            const calculo = this._calculateItemTotals(item, template, priceController);
+            if (template.templateType === 'grade') {
+                const precosProcesso = priceController.getProcessPrices(template);
+                totalCustoMaoObra += calculo.pesoComMargem * precosProcesso.maoObra;
+                totalCustoGalvanizacao += calculo.pesoComMargem * precosProcesso.galvanizacao;
+            } else {
+                custoTotalGrampos += calculo.custoTotal;
+            }
+        });
+        const custoGeralGrades = custoBarras.total + custoChapas.totalGeral + totalCustoMaoObra + totalCustoGalvanizacao;
+        return {
+            totalCustoMaterialPuro: custoBarras.total + custoChapas.totalMaterial,
+            totalCustoServicoChapas: custoChapas.totalServico,
+            totalCustoGeral: custoGeralGrades + custoTotalGrampos,
+        };
+    }
+
+    calculateCostsByM2() {
+        const todosTemplates = this.store.getTemplates();
+        const priceController = this.app.priceController;
+        const budgetItems = this.store.getBudgetItems();
+        return CostCalculationService.calcularCustoPorTemplate(budgetItems.filter(item => {
+            const template = todosTemplates.find(t => t.id === item.templateId);
+            return template && template.templateType === 'grade';
+        }), todosTemplates, priceController);
+    }
+
+    buildConsolidatedByTemplate(todosTemplates, priceController) {
+        const consolidado = {};
+        this.store.getBudgetItems().forEach(item => {
+            const template = todosTemplates.find(t => t.id === item.templateId);
+            if (!template || template.templateType !== 'grade') return;
+            if (!consolidado[template.nome]) consolidado[template.nome] = {};
+            const calculo = CalculationService.calcular(item, template, priceController);
+            const { barras } = separarMateriais(calculo.materiais, template.isDegrau);
+            Object.entries(barras).forEach(([_, dadosMaterial]) => {
+                if (dadosMaterial.peso > 0) {
+                    const chaveDimensao = FormattingService.formatDimensionKey(dadosMaterial.tipo, dadosMaterial.esp, dadosMaterial.larg, dadosMaterial.diam);
+                    if (!consolidado[template.nome][chaveDimensao]) {
+                        consolidado[template.nome][chaveDimensao] = { esp: dadosMaterial.esp || '-', larg: dadosMaterial.larg || '-', diam: dadosMaterial.diam || 0, tipo: dadosMaterial.tipo, qtd: 0, peso: 0, pecas: [] };
+                    }
+                    const material = consolidado[template.nome][chaveDimensao];
+                    material.qtd += dadosMaterial.qtd;
+                    material.peso += dadosMaterial.peso;
+                    for (let i = 0; i < dadosMaterial.qtd; i++) {
+                        material.pecas.push(dadosMaterial.comp);
+                    }
+                }
+            });
+        });
+        return consolidado;
+    }
+
+    buildConsolidatedChapas(todosTemplates, priceController) {
+        const consolidado = {};
+        this.store.getBudgetItems().forEach(item => {
+            const template = todosTemplates.find(t => t.id === item.templateId);
+            if (!template?.isDegrau) return;
+            if (!consolidado[template.nome]) consolidado[template.nome] = {};
+            const calculo = CalculationService.calcular(item, template, priceController);
+            const { chapas } = separarMateriais(calculo.materiais, template.isDegrau);
+            Object.entries(chapas).forEach(([nomeChapa, dadosChapa]) => {
+                if (dadosChapa.peso > 0) {
+                    if (!consolidado[template.nome][nomeChapa]) {
+                        consolidado[template.nome][nomeChapa] = { esp: dadosChapa.esp, larg: dadosChapa.larg, comp: dadosChapa.comp, tipo: 'chapa', qtd: 0, peso: 0, comprimentos: [] };
+                    }
+                    const chapa = consolidado[template.nome][nomeChapa];
+                    chapa.qtd += dadosChapa.qtd;
+                    chapa.peso += dadosChapa.peso;
+                    for (let i = 0; i < dadosChapa.qtd; i++) {
+                        chapa.comprimentos.push(dadosChapa.comp);
+                    }
+                }
+            });
+        });
+        return consolidado;
+    }
+}

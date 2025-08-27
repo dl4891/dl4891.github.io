@@ -1,1 +1,87 @@
-const voti_22_0x177fe6=voti_22_0x4ee9;function voti_22_0x4ee9(_0x1099a9,_0x5cca52){const _0x301e29=voti_22_0x301e();return voti_22_0x4ee9=function(_0x4ee910,_0x537892){_0x4ee910=_0x4ee910-0x107;let _0x1bb558=_0x301e29[_0x4ee910];return _0x1bb558;},voti_22_0x4ee9(_0x1099a9,_0x5cca52);}function voti_22_0x301e(){const _0x439525=['24sXASiu','errors','forEach','305852SQGCYy','saveTemplate','getSortedByName','11107030NArCZc','1pUnohm','errorCount','show','444348sQnMnp','10646944PmNRrG','deleteTemplate','2018516rbosZX','store','4676095kWQRFa','getSortedByDate','delete','DANGER','templateSaved','notifications','Nenhum\x20modelo\x20encontrado\x20no\x20arquivo\x20para\x20importar.','edit','join','<br>','SUCCESS','getTemplatesSortedByDate','grade','success','136LpSSJr','getEditingTemplateId','getEditingId','getTemplateById','setEditingTemplate','templateDeleted','importedCount','getTemplatesSortedByName','6KugDwW','WARNING','getTemplates','getById','4619944vutHwb','\x20modelo(s)\x20de\x20grade\x20importado(s)\x20com\x20sucesso.','INFO'];voti_22_0x301e=function(){return _0x439525;};return voti_22_0x301e();}(function(_0x289c8b,_0x431da4){const _0x4243a4=voti_22_0x4ee9,_0x9b2911=_0x289c8b();while(!![]){try{const _0x48eba0=parseInt(_0x4243a4(0x11a))/0x1*(parseInt(_0x4243a4(0x120))/0x2)+parseInt(_0x4243a4(0x113))/0x3*(-parseInt(_0x4243a4(0x116))/0x4)+parseInt(_0x4243a4(0x122))/0x5+-parseInt(_0x4243a4(0x10c))/0x6*(-parseInt(_0x4243a4(0x110))/0x7)+-parseInt(_0x4243a4(0x130))/0x8*(-parseInt(_0x4243a4(0x11d))/0x9)+-parseInt(_0x4243a4(0x119))/0xa+-parseInt(_0x4243a4(0x11e))/0xb;if(_0x48eba0===_0x431da4)break;else _0x9b2911['push'](_0x9b2911['shift']());}catch(_0x44dea9){_0x9b2911['push'](_0x9b2911['shift']());}}}(voti_22_0x301e,0xb7f4a));import{MESSAGES,NOTIFICATION_TYPES}from'../shared/config.js';export class TemplateController{constructor(_0x4cd6bf,_0x5de212,_0x3a2c8d){const _0x19a640=voti_22_0x4ee9;this[_0x19a640(0x121)]=_0x4cd6bf,this[_0x19a640(0x127)]=_0x5de212,this['validator']=_0x3a2c8d;}['save'](_0x37357a,_0x2e3350=voti_22_0x177fe6(0x12e)){const _0x257501=voti_22_0x177fe6,_0x629059=!!this[_0x257501(0x121)][_0x257501(0x131)](),_0x687764=this[_0x257501(0x121)][_0x257501(0x117)](_0x37357a,_0x2e3350);if(!_0x687764[_0x257501(0x12f)])return this[_0x257501(0x127)][_0x257501(0x11c)](_0x687764[_0x257501(0x114)][_0x257501(0x12a)](_0x257501(0x12b)),NOTIFICATION_TYPES[_0x257501(0x10d)]),![];return this['notifications'][_0x257501(0x11c)](_0x629059?MESSAGES[_0x257501(0x12c)]['templateUpdated']:MESSAGES[_0x257501(0x12c)][_0x257501(0x126)],NOTIFICATION_TYPES[_0x257501(0x12c)]),!![];}[voti_22_0x177fe6(0x129)](_0x155cdc){const _0x4e0f94=voti_22_0x177fe6;return this[_0x4e0f94(0x121)][_0x4e0f94(0x108)](_0x155cdc),this[_0x4e0f94(0x121)][_0x4e0f94(0x107)](_0x155cdc);}[voti_22_0x177fe6(0x124)](_0x401ce8){const _0x1646d5=voti_22_0x177fe6;return this[_0x1646d5(0x121)][_0x1646d5(0x11f)](_0x401ce8),this[_0x1646d5(0x127)][_0x1646d5(0x11c)](MESSAGES[_0x1646d5(0x12c)][_0x1646d5(0x109)],NOTIFICATION_TYPES[_0x1646d5(0x12c)]),!![];}['clearEditing'](){const _0xc633e8=voti_22_0x177fe6;this[_0xc633e8(0x121)]['clearEditingTemplate']();}['importFromCSV'](_0x50903c){const _0x44f73e=voti_22_0x177fe6,_0x1176a0=this[_0x44f73e(0x121)]['importTemplatesFromCSV'](_0x50903c);return _0x1176a0[_0x44f73e(0x10a)]>0x0&&this[_0x44f73e(0x127)][_0x44f73e(0x11c)](_0x1176a0[_0x44f73e(0x10a)]+_0x44f73e(0x111),NOTIFICATION_TYPES[_0x44f73e(0x12c)]),_0x1176a0[_0x44f73e(0x11b)]>0x0&&(this[_0x44f73e(0x127)][_0x44f73e(0x11c)](_0x1176a0[_0x44f73e(0x11b)]+'\x20modelo(s)\x20não\x20puderam\x20ser\x20importados.\x20Verifique\x20os\x20erros.',NOTIFICATION_TYPES[_0x44f73e(0x10d)]),_0x1176a0[_0x44f73e(0x114)][_0x44f73e(0x115)](_0x49915d=>{const _0xa886b5=_0x44f73e;this['notifications']['show'](_0x49915d,NOTIFICATION_TYPES[_0xa886b5(0x125)],0x1f40);})),_0x1176a0[_0x44f73e(0x10a)]===0x0&&_0x1176a0['errorCount']===0x0&&this[_0x44f73e(0x127)][_0x44f73e(0x11c)](_0x44f73e(0x128),NOTIFICATION_TYPES[_0x44f73e(0x112)]),_0x1176a0[_0x44f73e(0x12f)];}['getAll'](){const _0x9f2d6f=voti_22_0x177fe6;return this[_0x9f2d6f(0x121)][_0x9f2d6f(0x10e)]();}[voti_22_0x177fe6(0x10f)](_0x42dddc){const _0x40cc5c=voti_22_0x177fe6;return this[_0x40cc5c(0x121)][_0x40cc5c(0x107)](_0x42dddc);}[voti_22_0x177fe6(0x118)](){const _0x46b729=voti_22_0x177fe6;return this[_0x46b729(0x121)][_0x46b729(0x10b)]();}[voti_22_0x177fe6(0x123)](){const _0x3f5ab5=voti_22_0x177fe6;return this[_0x3f5ab5(0x121)][_0x3f5ab5(0x12d)]();}[voti_22_0x177fe6(0x132)](){const _0xbb0da6=voti_22_0x177fe6;return this[_0xbb0da6(0x121)]['getEditingTemplateId']();}['isEditing'](){const _0x5876d9=voti_22_0x177fe6;return!!this['store'][_0x5876d9(0x131)]();}}
+import { MESSAGES, NOTIFICATION_TYPES } from "../shared/config.js";
+
+export class TemplateController {
+    constructor(budgetStore, notificationManager, validator) {
+        this.store = budgetStore;
+        this.notifications = notificationManager;
+        this.validator = validator;
+    }
+
+    save(formData, templateType = 'grade') {
+        const isEditing = !!this.store.getEditingTemplateId();
+        const result = this.store.saveTemplate(formData, templateType);
+
+        if (!result.success) {
+            this.notifications.show(result.errors.join('<br>'), NOTIFICATION_TYPES.WARNING);
+            return false;
+        }
+
+        this.notifications.show(
+            isEditing ? MESSAGES.SUCCESS.templateUpdated : MESSAGES.SUCCESS.templateSaved,
+            NOTIFICATION_TYPES.SUCCESS
+        );
+        return true;
+    }
+
+    edit(templateId) {
+        this.store.setEditingTemplate(templateId);
+        return this.store.getTemplateById(templateId);
+    }
+
+    delete(templateId) {
+        this.store.deleteTemplate(templateId);
+        this.notifications.show(MESSAGES.SUCCESS.templateDeleted, NOTIFICATION_TYPES.SUCCESS);
+        return true;
+    }
+
+    clearEditing() {
+        this.store.clearEditingTemplate();
+    }
+
+    importFromCSV(csvContent) {
+        const result = this.store.importTemplatesFromCSV(csvContent);
+
+        if (result.importedCount > 0) {
+            this.notifications.show(`${result.importedCount} modelo(s) de grade importado(s) com sucesso.`, NOTIFICATION_TYPES.SUCCESS);
+        }
+
+        if (result.errorCount > 0) {
+            this.notifications.show(`${result.errorCount} modelo(s) não puderam ser importados. Verifique os erros.`, NOTIFICATION_TYPES.WARNING);
+            result.errors.forEach(error => {
+                this.notifications.show(error, NOTIFICATION_TYPES.DANGER, 8000);
+            });
+        }
+
+        if(result.importedCount === 0 && result.errorCount === 0) {
+            this.notifications.show("Nenhum modelo encontrado no arquivo para importar.", NOTIFICATION_TYPES.INFO);
+        }
+
+        return result.success;
+    }
+
+    // --- MÉTODOS DE LEITURA (GETTERS) RESTAURADOS ---
+    // Estes métodos agora delegam para o BudgetStore, como planejado.
+    getAll() {
+        return this.store.getTemplates();
+    }
+
+    getById(templateId) {
+        return this.store.getTemplateById(templateId);
+    }
+
+    getSortedByName() {
+        return this.store.getTemplatesSortedByName();
+    }
+
+    getSortedByDate() {
+        return this.store.getTemplatesSortedByDate();
+    }
+
+    getEditingId() {
+        return this.store.getEditingTemplateId();
+    }
+
+    isEditing() {
+        return !!this.store.getEditingTemplateId();
+    }
+}

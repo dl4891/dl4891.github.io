@@ -1,1 +1,114 @@
-const voti_21_0x2eed60=voti_21_0x25b3;(function(_0x157a0e,_0x38782f){const _0xe719f2=voti_21_0x25b3,_0x20d282=_0x157a0e();while(!![]){try{const _0x11d809=parseInt(_0xe719f2(0xe0))/0x1+parseInt(_0xe719f2(0xd7))/0x2+parseInt(_0xe719f2(0xe8))/0x3+parseInt(_0xe719f2(0xbf))/0x4+parseInt(_0xe719f2(0xef))/0x5*(parseInt(_0xe719f2(0xec))/0x6)+parseInt(_0xe719f2(0xee))/0x7*(-parseInt(_0xe719f2(0xb9))/0x8)+-parseInt(_0xe719f2(0xeb))/0x9;if(_0x11d809===_0x38782f)break;else _0x20d282['push'](_0x20d282['shift']());}catch(_0x385549){_0x20d282['push'](_0x20d282['shift']());}}}(voti_21_0x518f,0x84dd3));import{FormattingService}from'../core/services/FormattingService.js';import{NOTIFICATION_TYPES}from'../shared/config.js';function voti_21_0x25b3(_0x1866c9,_0x52ded7){const _0x518f52=voti_21_0x518f();return voti_21_0x25b3=function(_0x25b309,_0x1693a1){_0x25b309=_0x25b309-0xb5;let _0x491e20=_0x518f52[_0x25b309];return _0x491e20;},voti_21_0x25b3(_0x1866c9,_0x52ded7);}function voti_21_0x518f(){const _0x1bcfef=['6YUTcNX','#rounding-method','14pNBpXk','5405860lIgNkp','maoObra','getSpecificPrices','Resetar','#preco-mao-obra','store','corteDobraChpaXadrez','Corrija\x20os\x20erros\x20no\x20formulário\x20de\x20preços\x20globais','_applyRounding','showConfirmation','addSpecificPrice','global','customMaoObra','galvanizacao','3684440LbdiIe','chataPadrao','round','customGalvanizacao','getGlobalPrices','<p>Deseja\x20resetar\x20todos\x20os\x20preços\x20e\x20configurações\x20para\x20os\x20valores\x20padrão?</p>','1091044sIsgMh','SUCCESS','pow','WARNING','redonda','ceil','querySelector','Resetar\x20Preços','updateGlobalPrices','method','addOrUpdateSpecificPrice','getMaterialPrice','globalPricesFormComponent','#preco-galvanizacao','#preco-chapa-lateral-padrao','Preços\x20e\x20configurações\x20salvos!','decimals','toSafeNumber','getPrices','#preco-chata-padrao','is-warning','chapaXadrezPadrao','chapa_lateral_','removeSpecificPrice','437198DVGiGE','value','#preco-redonda-padrao','none','especificos','shadowRoot','Preços\x20e\x20configurações\x20resetados','notifications','app','733847ASPKjg','getChapaLateralPrice','show','form','saveGlobalPrices','chata_','#preco-chapa-xadrez-padrao','chapaLateralPadrao','573672XMoLhc','resetPrices','getChapaXadrezPrice','9290538NGRUrs'];voti_21_0x518f=function(){return _0x1bcfef;};return voti_21_0x518f();}export class PriceController{constructor(_0x313dca,_0x5652fd){const _0x6b8b52=voti_21_0x25b3;this[_0x6b8b52(0xf4)]=_0x313dca,this[_0x6b8b52(0xde)]=_0x5652fd;}[voti_21_0x2eed60(0xe4)](){const _0x43c97d=voti_21_0x2eed60,_0x26770c=window[_0x43c97d(0xdf)][_0x43c97d(0xcb)][_0x43c97d(0xdc)][_0x43c97d(0xc5)](_0x43c97d(0xe3));if(!window[_0x43c97d(0xdf)]['validator']['validateForm'](_0x26770c)){this[_0x43c97d(0xde)][_0x43c97d(0xe2)](_0x43c97d(0xf6),NOTIFICATION_TYPES[_0x43c97d(0xc2)]);return;}const _0xe244e7={'maoObra':_0x26770c[_0x43c97d(0xc5)](_0x43c97d(0xf3))['value'],'galvanizacao':_0x26770c[_0x43c97d(0xc5)](_0x43c97d(0xcc))[_0x43c97d(0xd8)],'chataPadrao':_0x26770c['querySelector'](_0x43c97d(0xd2))['value'],'redondaPadrao':_0x26770c[_0x43c97d(0xc5)](_0x43c97d(0xd9))['value'],'chapaLateralPadrao':_0x26770c[_0x43c97d(0xc5)](_0x43c97d(0xcd))[_0x43c97d(0xd8)],'chapaXadrezPadrao':_0x26770c['querySelector'](_0x43c97d(0xe6))[_0x43c97d(0xd8)],'corteChpaLateral':_0x26770c[_0x43c97d(0xc5)]('#preco-corte-chapa-lateral')[_0x43c97d(0xd8)],'corteDobraChpaXadrez':_0x26770c[_0x43c97d(0xc5)]('#preco-corte-dobra-chapa-xadrez')['value'],'roundingMethod':_0x26770c[_0x43c97d(0xc5)](_0x43c97d(0xed))[_0x43c97d(0xd8)],'roundingDecimals':_0x26770c['querySelector']('#rounding-decimals')[_0x43c97d(0xd8)],'totalWeightCalcMethod':_0x26770c[_0x43c97d(0xc5)]('input[name=\x22total-weight-calc-method\x22]:checked')['value']};this[_0x43c97d(0xf4)][_0x43c97d(0xc7)](_0xe244e7),this[_0x43c97d(0xde)][_0x43c97d(0xe2)](_0x43c97d(0xce),NOTIFICATION_TYPES[_0x43c97d(0xc0)]);}[voti_21_0x2eed60(0xe9)](){const _0x5ba699=voti_21_0x2eed60;window['app'][_0x5ba699(0xf8)](_0x5ba699(0xc6),_0x5ba699(0xbe),()=>{const _0x5e0135=_0x5ba699;this[_0x5e0135(0xf4)]['resetGlobalPrices'](),this[_0x5e0135(0xde)]['show'](_0x5e0135(0xdd),NOTIFICATION_TYPES['INFO']);},{'confirmText':_0x5ba699(0xf2),'type':_0x5ba699(0xd3)});}[voti_21_0x2eed60(0xb5)](_0x51d69b,_0x4c4664,_0x194fc7,_0x1b9180=null){const _0x1656c0=voti_21_0x2eed60,_0xd19e6e=_0x51d69b+'_'+_0x4c4664,_0x133f06=_0x1b9180?_0x51d69b+'_'+_0x1b9180:null;this['store'][_0x1656c0(0xc9)](_0xd19e6e,_0x194fc7,_0x133f06);}[voti_21_0x2eed60(0xd6)](_0x35018f,_0xd17f82){const _0x5df3a2=voti_21_0x2eed60,_0x416b27=_0x35018f+'_'+_0xd17f82;this[_0x5df3a2(0xf4)][_0x5df3a2(0xd6)](_0x416b27);}[voti_21_0x2eed60(0xf7)](_0x561537){const _0x1e0ee8=voti_21_0x2eed60,_0x4ac511=this[_0x1e0ee8(0xf4)][_0x1e0ee8(0xd1)](),_0x1c3ec5=_0x4ac511['roundingConfig']||{'method':_0x1e0ee8(0xda),'decimals':0x2};if(_0x1c3ec5[_0x1e0ee8(0xc8)]===_0x1e0ee8(0xda))return _0x561537;const _0x1e8bfb=Math[_0x1e0ee8(0xc1)](0xa,_0x1c3ec5[_0x1e0ee8(0xcf)]);if(_0x1c3ec5[_0x1e0ee8(0xc8)]==='ceil')return Math[_0x1e0ee8(0xc4)](_0x561537*_0x1e8bfb)/_0x1e8bfb;if(_0x1c3ec5['method']===_0x1e0ee8(0xbb))return Math[_0x1e0ee8(0xbb)](_0x561537*_0x1e8bfb)/_0x1e8bfb;return _0x561537;}[voti_21_0x2eed60(0xbd)](){const _0x1263b5=voti_21_0x2eed60;return this[_0x1263b5(0xf4)][_0x1263b5(0xd1)]()[_0x1263b5(0xb6)];}[voti_21_0x2eed60(0xf1)](){const _0x55be96=voti_21_0x2eed60;return{...this[_0x55be96(0xf4)][_0x55be96(0xd1)]()[_0x55be96(0xdb)]};}[voti_21_0x2eed60(0xca)](_0x2c26fd,_0x28050b,_0x430c73,_0x2b2898){const _0x32a467=voti_21_0x2eed60,_0x5415b0=this[_0x32a467(0xf4)]['getPrices']();if(_0x2c26fd===_0x32a467(0xc3)){const _0x105e46='redonda_'+_0x2b2898;return _0x5415b0[_0x32a467(0xdb)][_0x105e46]||_0x5415b0[_0x32a467(0xb6)]['redondaPadrao'];}else{const _0x109d16=_0x32a467(0xe5)+_0x28050b+'x'+_0x430c73;return _0x5415b0[_0x32a467(0xdb)][_0x109d16]||_0x5415b0['global'][_0x32a467(0xba)];}}[voti_21_0x2eed60(0xe1)](_0x17c2f0,_0xa21409){const _0x22d350=voti_21_0x2eed60,_0x4ce2c9=this['store']['getPrices'](),_0x45f357=_0x22d350(0xd5)+_0x17c2f0+'x'+_0xa21409,_0x555605=_0x4ce2c9[_0x22d350(0xdb)][_0x45f357]||_0x4ce2c9[_0x22d350(0xb6)][_0x22d350(0xe7)],_0x3c8b12=_0x4ce2c9[_0x22d350(0xb6)]['corteChpaLateral'];return _0x555605+_0x3c8b12;}[voti_21_0x2eed60(0xea)](_0x3f2735,_0x101ec7){const _0x139fce=voti_21_0x2eed60,_0x22659f=this[_0x139fce(0xf4)][_0x139fce(0xd1)](),_0x5461d8='chapa_xadrez_'+_0x3f2735+'x'+_0x101ec7,_0x59e3ea=_0x22659f[_0x139fce(0xdb)][_0x5461d8]||_0x22659f[_0x139fce(0xb6)][_0x139fce(0xd4)],_0x6b6311=_0x22659f[_0x139fce(0xb6)][_0x139fce(0xf5)];return _0x59e3ea+_0x6b6311;}['getProcessPrices'](_0x1193b6){const _0x4b4882=voti_21_0x2eed60,_0x424be9=this[_0x4b4882(0xf4)][_0x4b4882(0xd1)]();if(_0x1193b6['precosCustomizados'])return{'maoObra':FormattingService[_0x4b4882(0xd0)](_0x1193b6[_0x4b4882(0xb7)]),'galvanizacao':FormattingService[_0x4b4882(0xd0)](_0x1193b6[_0x4b4882(0xbc)])};return{'maoObra':_0x424be9['global'][_0x4b4882(0xf0)],'galvanizacao':_0x424be9[_0x4b4882(0xb6)][_0x4b4882(0xb8)]};}}
+import { FormattingService } from "../core/services/FormattingService.js";
+import { NOTIFICATION_TYPES } from "../shared/config.js";
+
+export class PriceController {
+    constructor(budgetStore, notificationManager) {
+        this.store = budgetStore;
+        this.notifications = notificationManager;
+    }
+
+    saveGlobalPrices() {
+        const formElement = window.app.globalPricesFormComponent.shadowRoot.querySelector('form');
+        if (!window.app.validator.validateForm(formElement)) {
+            this.notifications.show("Corrija os erros no formulário de preços globais", NOTIFICATION_TYPES.WARNING);
+            return;
+        }
+        const pricesData = {
+            maoObra: formElement.querySelector("#preco-mao-obra").value,
+            galvanizacao: formElement.querySelector("#preco-galvanizacao").value,
+            chataPadrao: formElement.querySelector("#preco-chata-padrao").value,
+            redondaPadrao: formElement.querySelector("#preco-redonda-padrao").value,
+            chapaLateralPadrao: formElement.querySelector("#preco-chapa-lateral-padrao").value,
+            chapaXadrezPadrao: formElement.querySelector("#preco-chapa-xadrez-padrao").value,
+            corteChpaLateral: formElement.querySelector("#preco-corte-chapa-lateral").value,
+            corteDobraChpaXadrez: formElement.querySelector("#preco-corte-dobra-chapa-xadrez").value,
+            roundingMethod: formElement.querySelector("#rounding-method").value,
+            roundingDecimals: formElement.querySelector("#rounding-decimals").value,
+            totalWeightCalcMethod: formElement.querySelector('input[name="total-weight-calc-method"]:checked').value,
+        };
+        this.store.updateGlobalPrices(pricesData);
+        this.notifications.show("Preços e configurações salvos!", NOTIFICATION_TYPES.SUCCESS);
+    }
+
+    resetPrices() {
+        window.app.showConfirmation(
+            'Resetar Preços',
+            '<p>Deseja resetar todos os preços e configurações para os valores padrão?</p>',
+            () => {
+                this.store.resetGlobalPrices();
+                this.notifications.show("Preços e configurações resetados", NOTIFICATION_TYPES.INFO);
+            },
+            { confirmText: 'Resetar', type: 'is-warning' }
+        );
+    }
+
+    addSpecificPrice(tipo, dimensao, preco, originalDimensao = null) {
+        const key = `${tipo}_${dimensao}`;
+        const originalKey = originalDimensao ? `${tipo}_${originalDimensao}` : null;
+        this.store.addOrUpdateSpecificPrice(key, preco, originalKey);
+    }
+
+    removeSpecificPrice(tipo, dimensao) {
+        const key = `${tipo}_${dimensao}`;
+        this.store.removeSpecificPrice(key);
+    }
+
+    _applyRounding(value) {
+        const prices = this.store.getPrices();
+        const config = prices.roundingConfig || { method: 'none', decimals: 2 };
+        if (config.method === 'none') return value;
+        const factor = Math.pow(10, config.decimals);
+        if (config.method === 'ceil') return Math.ceil(value * factor) / factor;
+        if (config.method === 'round') return Math.round(value * factor) / factor;
+        return value;
+    }
+
+    getGlobalPrices() {
+        return this.store.getPrices().global;
+    }
+
+    getSpecificPrices() {
+        return { ...this.store.getPrices().especificos };
+    }
+
+    getMaterialPrice(tipoMaterial, espessura, largura, diametro) {
+        const prices = this.store.getPrices();
+        if (tipoMaterial === 'redonda') {
+            const chave = `redonda_${diametro}`;
+            return prices.especificos[chave] || prices.global.redondaPadrao;
+        } else { // 'chata'
+            const chave = `chata_${espessura}x${largura}`;
+            return prices.especificos[chave] || prices.global.chataPadrao;
+        }
+    }
+
+    getChapaLateralPrice(espessura, largura) {
+        const prices = this.store.getPrices();
+        const chave = `chapa_lateral_${espessura}x${largura}`;
+        const precoMaterial = prices.especificos[chave] || prices.global.chapaLateralPadrao;
+        const precoServico = prices.global.corteChpaLateral;
+        return precoMaterial + precoServico;
+    }
+
+    getChapaXadrezPrice(espessura, largura) {
+        const prices = this.store.getPrices();
+        const chave = `chapa_xadrez_${espessura}x${largura}`;
+        const precoMaterial = prices.especificos[chave] || prices.global.chapaXadrezPadrao;
+        const precoServico = prices.global.corteDobraChpaXadrez;
+        return precoMaterial + precoServico;
+    }
+
+    getProcessPrices(template) {
+        const prices = this.store.getPrices();
+        if (template.precosCustomizados) {
+            return {
+                maoObra: FormattingService.toSafeNumber(template.customMaoObra),
+                galvanizacao: FormattingService.toSafeNumber(template.customGalvanizacao)
+            };
+        }
+        return {
+            maoObra: prices.global.maoObra,
+            galvanizacao: prices.global.galvanizacao
+        };
+    }
+}

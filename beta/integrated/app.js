@@ -1,1 +1,61 @@
-const voti_23_0x1213b6=voti_23_0xafd2;(function(_0x352cab,_0x3c3437){const _0x4269ce=voti_23_0xafd2,_0x447863=_0x352cab();while(!![]){try{const _0x43a325=-parseInt(_0x4269ce(0xfc))/0x1*(parseInt(_0x4269ce(0xf5))/0x2)+parseInt(_0x4269ce(0xf6))/0x3*(parseInt(_0x4269ce(0xf3))/0x4)+parseInt(_0x4269ce(0xe9))/0x5*(parseInt(_0x4269ce(0xf4))/0x6)+-parseInt(_0x4269ce(0xe6))/0x7+-parseInt(_0x4269ce(0xfe))/0x8*(-parseInt(_0x4269ce(0xed))/0x9)+parseInt(_0x4269ce(0x104))/0xa+parseInt(_0x4269ce(0xe8))/0xb*(-parseInt(_0x4269ce(0xf1))/0xc);if(_0x43a325===_0x3c3437)break;else _0x447863['push'](_0x447863['shift']());}catch(_0x59f84e){_0x447863['push'](_0x447863['shift']());}}}(voti_23_0x5715,0x8e149));function voti_23_0xafd2(_0xce0542,_0x47887f){const _0x57152c=voti_23_0x5715();return voti_23_0xafd2=function(_0xafd276,_0x48ba04){_0xafd276=_0xafd276-0xe5;let _0x497c11=_0x57152c[_0xafd276];return _0x497c11;},voti_23_0xafd2(_0xce0542,_0x47887f);}import{Application}from'../Application.js';class IntegratedApplication{constructor(){const _0xbaef6c=voti_23_0xafd2;this[_0xbaef6c(0xea)]=null,this['initializeApp']();}async[voti_23_0x1213b6(0xf8)](){const _0x40b2b5=voti_23_0x1213b6;try{this['app']=new Application(),this[_0x40b2b5(0xf0)]();}catch(_0x45672d){console[_0x40b2b5(0xfd)](_0x40b2b5(0xf2),_0x45672d),this[_0x40b2b5(0xec)](_0x45672d);}}[voti_23_0x1213b6(0xf0)](){const _0x4c193f=voti_23_0x1213b6;window[_0x4c193f(0xeb)](_0x4c193f(0x100),_0x3c34fe=>{const _0x5d63d1=_0x4c193f;console[_0x5d63d1(0xfd)](_0x5d63d1(0xf7),_0x3c34fe[_0x5d63d1(0x102)]);const _0x68ba45=_0x3c34fe[_0x5d63d1(0x102)]instanceof Error?_0x3c34fe[_0x5d63d1(0x102)][_0x5d63d1(0xf9)]:'Erro\x20desconhecido.';this[_0x5d63d1(0xea)]&&this[_0x5d63d1(0xea)][_0x5d63d1(0xe5)]?this[_0x5d63d1(0xea)]['notifications'][_0x5d63d1(0xee)]('Ocorreu\x20um\x20erro\x20inesperado:\x20'+_0x68ba45+_0x5d63d1(0xef),'danger',0x2710):alert('Ocorreu\x20um\x20erro\x20inesperado:\x20'+_0x68ba45+_0x5d63d1(0xef)),_0x3c34fe['preventDefault']();});}['showInitializationError'](_0x385d83){const _0x13ed39=voti_23_0x1213b6,_0x138d13=document[_0x13ed39(0x103)]('.tab-content-container')||document['body'];_0x138d13[_0x13ed39(0x101)]='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22notification\x20is-danger\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h4\x20class=\x22title\x20is-4\x22>Erro\x20de\x20Inicialização</h4>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>Não\x20foi\x20possível\x20inicializar\x20a\x20aplicação.\x20Por\x20favor,\x20recarregue\x20a\x20página.</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<details\x20style=\x22margin-top:\x201rem;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<summary>Detalhes\x20técnicos</summary>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<pre\x20style=\x22margin-top:\x200.5rem;\x20padding:\x201rem;\x20background:\x20#f5f5f5;\x20border-radius:\x204px;\x20overflow-x:\x20auto;\x22>\x0a'+_0x385d83[_0x13ed39(0xf9)]+'\x0a'+_0x385d83[_0x13ed39(0xff)]+_0x13ed39(0xfb);}}document[voti_23_0x1213b6(0xe7)]===voti_23_0x1213b6(0xfa)?document[voti_23_0x1213b6(0xeb)]('DOMContentLoaded',()=>{new IntegratedApplication();}):new IntegratedApplication();function voti_23_0x5715(){const _0xcbd8c4=['stack','unhandledrejection','innerHTML','reason','querySelector','7452400nNOpmE','notifications','6219150eqomSr','readyState','1518weNHvu','15XoejmZ','app','addEventListener','showInitializationError','361269XfCcMs','show','.\x20Tente\x20recarregar\x20a\x20página.','setupErrorHandling','75996YrmCqw','Erro\x20fatal\x20durante\x20a\x20inicialização:','416ZZHpHM','1105554RXZLOw','5864LkRWWl','17025InQExC','Rejeição\x20de\x20Promise\x20não\x20tratada:','initializeApp','message','loading','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</pre>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</details>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22button\x20is-primary\x22\x20onclick=\x22window.location.reload()\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-sync-alt\x22></i>\x20Recarregar\x20Página\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','173htfOux','error','192haJiBg'];voti_23_0x5715=function(){return _0xcbd8c4;};return voti_23_0x5715();}
+import { Application } from '../Application.js';
+
+class IntegratedApplication {
+    constructor() {
+        this.app = null;
+        this.initializeApp();
+    }
+
+    async initializeApp() {
+        try {
+            // A instância da aplicação agora é criada a partir da nova classe Application
+            this.app = new Application();
+            this.setupErrorHandling();
+        } catch (error) {
+            console.error("Erro fatal durante a inicialização:", error);
+            this.showInitializationError(error);
+        }
+    }
+
+    setupErrorHandling() {
+        window.addEventListener('unhandledrejection', (event) => {
+            console.error("Rejeição de Promise não tratada:", event.reason);
+            const errorMessage = (event.reason instanceof Error) ? event.reason.message : 'Erro desconhecido.';
+            if (this.app && this.app.notifications) {
+                this.app.notifications.show(`Ocorreu um erro inesperado: ${errorMessage}. Tente recarregar a página.`, "danger", 10000);
+            } else {
+                alert(`Ocorreu um erro inesperado: ${errorMessage}. Tente recarregar a página.`);
+            }
+            event.preventDefault();
+        });
+    }
+
+    showInitializationError(error) {
+        const errorContainer = document.querySelector('.tab-content-container') || document.body;
+        errorContainer.innerHTML = `
+            <div class="notification is-danger">
+                <h4 class="title is-4">Erro de Inicialização</h4>
+                <p>Não foi possível inicializar a aplicação. Por favor, recarregue a página.</p>
+                <details style="margin-top: 1rem;">
+                    <summary>Detalhes técnicos</summary>
+                    <pre style="margin-top: 0.5rem; padding: 1rem; background: #f5f5f5; border-radius: 4px; overflow-x: auto;">
+${error.message}
+${error.stack}
+                    </pre>
+                </details>
+                <button class="button is-primary" onclick="window.location.reload()">
+                    <i class="fas fa-sync-alt"></i> Recarregar Página
+                </button>
+            </div>
+        `;
+    }
+}
+
+// Inicia a aplicação quando o DOM estiver pronto
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+        new IntegratedApplication();
+    });
+} else {
+    new IntegratedApplication();
+}

@@ -1,1 +1,78 @@
-function voti_56_0x950e(_0x13be60,_0x31e49d){const _0x1cf643=voti_56_0x1cf6();return voti_56_0x950e=function(_0x950e82,_0x5f45f5){_0x950e82=_0x950e82-0xb6;let _0x2dd968=_0x1cf643[_0x950e82];return _0x2dd968;},voti_56_0x950e(_0x13be60,_0x31e49d);}const voti_56_0x3e6e1d=voti_56_0x950e;function voti_56_0x1cf6(){const _0xe286a3=['LocalStorage\x20não\x20está\x20disponível.\x20A\x20aplicação\x20não\x20poderá\x20salvar\x20os\x20dados.','Erro\x20ao\x20salvar\x20dados\x20para\x20a\x20chave\x20','removeItem','27NRiGBu','_getKey','error','current_budget_id','_checkAvailability','7JDbGmo','getItem','1651890mYoIUU','namespace','loadAllBudgets','isAvailable','753784AURVZO','loadBudgetCounter','829734YqYDGf','_save','561936JmjRJG','_load','saveAllBudgets','budget_counter','878400JykYqQ','1490iGtXql','712620QuSzbF','357DTarNB','loadCurrentBudgetId','setItem','multi_budgets','budget_app_v2'];voti_56_0x1cf6=function(){return _0xe286a3;};return voti_56_0x1cf6();}(function(_0x572bd4,_0x3648d5){const _0x5c5a69=voti_56_0x950e,_0x2dacf6=_0x572bd4();while(!![]){try{const _0x4d25e8=-parseInt(_0x5c5a69(0xb7))/0x1*(parseInt(_0x5c5a69(0xd3))/0x2)+parseInt(_0x5c5a69(0xcc))/0x3+-parseInt(_0x5c5a69(0xd2))/0x4+-parseInt(_0x5c5a69(0xb6))/0x5+parseInt(_0x5c5a69(0xce))/0x6+parseInt(_0x5c5a69(0xc4))/0x7*(-parseInt(_0x5c5a69(0xca))/0x8)+parseInt(_0x5c5a69(0xbf))/0x9*(parseInt(_0x5c5a69(0xc6))/0xa);if(_0x4d25e8===_0x3648d5)break;else _0x2dacf6['push'](_0x2dacf6['shift']());}catch(_0x2a8f8f){_0x2dacf6['push'](_0x2dacf6['shift']());}}}(voti_56_0x1cf6,0x23081));export class PersistenceService{constructor(_0x221c1a=voti_56_0x3e6e1d(0xbb)){const _0x1bcb93=voti_56_0x3e6e1d;this[_0x1bcb93(0xc7)]=_0x221c1a,this[_0x1bcb93(0xc9)]=this[_0x1bcb93(0xc3)](),!this[_0x1bcb93(0xc9)]&&console['error'](_0x1bcb93(0xbc));}['_checkAvailability'](){const _0x170edb=voti_56_0x3e6e1d;try{const _0x47f6fb='__storage_test__';return localStorage['setItem'](_0x47f6fb,_0x47f6fb),localStorage[_0x170edb(0xbe)](_0x47f6fb),!![];}catch(_0x49580b){return![];}}['_getKey'](_0x24d1ab){const _0x2ac413=voti_56_0x3e6e1d;return this[_0x2ac413(0xc7)]+'_'+_0x24d1ab;}[voti_56_0x3e6e1d(0xcd)](_0x3d6aae,_0x1de95f){const _0x73dd21=voti_56_0x3e6e1d;if(!this['isAvailable'])return![];try{return localStorage[_0x73dd21(0xb9)](this[_0x73dd21(0xc0)](_0x3d6aae),JSON['stringify'](_0x1de95f)),!![];}catch(_0x1273d3){return console[_0x73dd21(0xc1)](_0x73dd21(0xbd)+_0x3d6aae+':',_0x1273d3),![];}}[voti_56_0x3e6e1d(0xcf)](_0x52b06a,_0x701294=null){const _0x373b55=voti_56_0x3e6e1d;if(!this['isAvailable'])return _0x701294;try{const _0x130f32=localStorage[_0x373b55(0xc5)](this[_0x373b55(0xc0)](_0x52b06a));return _0x130f32?JSON['parse'](_0x130f32):_0x701294;}catch(_0x46a0ea){return console[_0x373b55(0xc1)]('Erro\x20ao\x20carregar\x20dados\x20da\x20chave\x20'+_0x52b06a+':',_0x46a0ea),_0x701294;}}[voti_56_0x3e6e1d(0xc8)](){const _0x5239fd=voti_56_0x3e6e1d;return this[_0x5239fd(0xcf)]('multi_budgets',[]);}[voti_56_0x3e6e1d(0xd0)](_0x1b7b31){const _0x1c90b7=voti_56_0x3e6e1d;return this[_0x1c90b7(0xcd)](_0x1c90b7(0xba),_0x1b7b31);}[voti_56_0x3e6e1d(0xb8)](){const _0x45f978=voti_56_0x3e6e1d;return this['_load'](_0x45f978(0xc2),null);}['saveCurrentBudgetId'](_0x5c5367){const _0x542864=voti_56_0x3e6e1d;return this[_0x542864(0xcd)](_0x542864(0xc2),_0x5c5367);}[voti_56_0x3e6e1d(0xcb)](){const _0x54b0e6=voti_56_0x3e6e1d;return this[_0x54b0e6(0xcf)]('budget_counter',0x1);}['saveBudgetCounter'](_0x2838c3){const _0x50d697=voti_56_0x3e6e1d;return this[_0x50d697(0xcd)](_0x50d697(0xd1),_0x2838c3);}}
+/**
+ * PersistenceService centraliza e abstrai toda a interação com o localStorage,
+ * garantindo um ponto único de leitura e escrita para o estado da aplicação.
+ * Isso desacopla a lógica de armazenamento da lógica de negócio do Store.
+ */
+export class PersistenceService {
+    constructor(namespace = "budget_app_v2") {
+        this.namespace = namespace;
+        this.isAvailable = this._checkAvailability();
+        if (!this.isAvailable) {
+            console.error("LocalStorage não está disponível. A aplicação não poderá salvar os dados.");
+            // Em uma aplicação real, poderíamos notificar o usuário aqui.
+        }
+    }
+
+    _checkAvailability() {
+        try {
+            const testKey = "__storage_test__";
+            localStorage.setItem(testKey, testKey);
+            localStorage.removeItem(testKey);
+            return true;
+        } catch (error) {
+            return false;
+        }
+    }
+
+    _getKey(key) {
+        return `${this.namespace}_${key}`;
+    }
+
+    _save(key, data) {
+        if (!this.isAvailable) return false;
+        try {
+            localStorage.setItem(this._getKey(key), JSON.stringify(data));
+            return true;
+        } catch (error) {
+            console.error(`Erro ao salvar dados para a chave ${key}:`, error);
+            return false;
+        }
+    }
+
+    _load(key, defaultValue = null) {
+        if (!this.isAvailable) return defaultValue;
+        try {
+            const savedData = localStorage.getItem(this._getKey(key));
+            return savedData ? JSON.parse(savedData) : defaultValue;
+        } catch (error) {
+            console.error(`Erro ao carregar dados da chave ${key}:`, error);
+            return defaultValue;
+        }
+    }
+
+    // --- Métodos Públicos para o BudgetStore ---
+
+    loadAllBudgets() {
+        return this._load("multi_budgets", []);
+    }
+
+    saveAllBudgets(budgets) {
+        return this._save("multi_budgets", budgets);
+    }
+
+    loadCurrentBudgetId() {
+        return this._load("current_budget_id", null);
+    }
+
+    saveCurrentBudgetId(id) {
+        return this._save("current_budget_id", id);
+    }
+
+    loadBudgetCounter() {
+        return this._load("budget_counter", 1);
+    }
+
+    saveBudgetCounter(count) {
+        return this._save("budget_counter", count);
+    }
+}

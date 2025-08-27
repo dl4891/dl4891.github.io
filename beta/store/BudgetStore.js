@@ -1,1 +1,496 @@
-const voti_60_0x33f1eb=voti_60_0x5ae1;function voti_60_0x191d(){const _0xd848d8=['getBudgetItems','especificos','updateLogo','chapaXadrezPadrao','subscribe','parse','venda','updateItemsOrder','clearEditingTemplate','updateCommercialData','localeCompare','push','exportBudget','loadCurrentBudgetId','validateBudgetItem','roundingConfig','692608iKUIOV','setEditingBudgetItem','getBudgetItemById','map',':\x20Modelo\x20com\x20nome\x20\x22','commercialData','importTemplatesFromCSV','add','ceil','trim','loadBudgetCounter','saveCurrentBudgetId','editingBudgetItemId','generateId','no-items','deleteBudgetItem','Orçamento\x201','getCurrentBudget','CSV\x20inválido\x20ou\x20vazio.','length','toISOString','templateId','lastCalculated','4303691jgFrEp','logoBase64','unit','result','grade','findIndex','reduce','\x22\x20já\x20existe.','Linha\x20','budgetCounter','clearBudgetItems','B97_precoVendaComDifal','2571784NgShij','updateTemplatePricingConfig','clearEditingBudgetItem','378463gLCbXi','largura','address','readAsDataURL','some','createGradeFromFormData','getCommercialData','validateDegrauUniqueness','budgets','saveBudgetCounter','getTemplatesWithPricingStatus','slice','sort','comprimento','toLowerCase','1956DpUkZf','createdAt','setEditingTemplate','message','nome','editingTemplateId','corteChpaLateral','Já\x20existe\x20um\x20modelo\x20com\x20este\x20nome.','deleteTemplate','currentBudgetId','getTemplatesSortedByName','loadAllBudgets','now','removeSpecificPrice','stringify','calculated','updateGlobalPrices','find','budget','renameBudget','order','forEach','2.0','saveBudgetItem','toSafeNumber','global','getEditingBudgetItemId','closeBudget','createClampFromFormData','Orçamento\x20','pricingConfig','\x20(Importado)','configured','\x20(Cópia)','prices','\x20|\x20IE:\x20','filter','getTemplateById','templates','4566gUzpJA','cnpj','getAllBudgets','has','templateType','AÇO\x20CARBONO','validateGradeTemplate','0000','getTemplates','3021006NKuTUl','4677790cMLHMZ','totalWeightCalcMethod','FOB\x20(Material\x20a\x20retirar,\x20indicar\x20transportadora)','importBudget','corteDobraChpaXadrez','split','createNewBudget','switchToBudget','galvanizacao','target','validateClampTemplate','copyPricingConfig','name','not-configured','getEditingTemplateId'];voti_60_0x191d=function(){return _0xd848d8;};return voti_60_0x191d();}(function(_0x94178d,_0x55cc01){const _0x5a5bb8=voti_60_0x5ae1,_0x5b2e9e=_0x94178d();while(!![]){try{const _0x198c4f=parseInt(_0x5a5bb8(0x1d4))/0x1+parseInt(_0x5a5bb8(0x1ae))/0x2+-parseInt(_0x5a5bb8(0x20a))/0x3*(parseInt(_0x5a5bb8(0x1e3))/0x4)+parseInt(_0x5a5bb8(0x214))/0x5+parseInt(_0x5a5bb8(0x213))/0x6+-parseInt(_0x5a5bb8(0x1c5))/0x7+-parseInt(_0x5a5bb8(0x1d1))/0x8;if(_0x198c4f===_0x55cc01)break;else _0x5b2e9e['push'](_0x5b2e9e['shift']());}catch(_0x4286f8){_0x5b2e9e['push'](_0x5b2e9e['shift']());}}}(voti_60_0x191d,0x75fd2));import{PersistenceService}from'../shared/services/PersistenceService.js';import{Utils}from'../shared/services/utils-service.js';import{INTEGRATED_DEFAULTS}from'../integrated/config.js';function voti_60_0x5ae1(_0xe7a138,_0x46f9ec){const _0x191d86=voti_60_0x191d();return voti_60_0x5ae1=function(_0x5ae15f,_0xb34142){_0x5ae15f=_0x5ae15f-0x1a1;let _0x523ef2=_0x191d86[_0x5ae15f];return _0x523ef2;},voti_60_0x5ae1(_0xe7a138,_0x46f9ec);}import{COMPANY_INFO}from'../shared/config.js';import{TemplateFactory}from'../core/factories/TemplateFactory.js';import{BudgetItemFactory}from'../core/factories/BudgetItemFactory.js';export class BudgetStore{#state;#persistenceService;#listeners=new Set();#validator;constructor(_0x45a6c4){this.#persistenceService=new PersistenceService(),this.#validator=_0x45a6c4,this.#state={'budgets':[],'currentBudgetId':null,'budgetCounter':0x1,'editingTemplateId':null,'editingBudgetItemId':null};}#notify(){for(const _0x5276e2 of this.#listeners){_0x5276e2(this.#state);}}[voti_60_0x33f1eb(0x1a2)](_0x17b4c0){const _0x4a9c54=voti_60_0x33f1eb;return this.#listeners[_0x4a9c54(0x1b5)](_0x17b4c0),()=>this.#listeners['delete'](_0x17b4c0);}['getState'](){return{...this.#state};}[voti_60_0x33f1eb(0x20c)](){return this.#state['budgets'];}['getCurrentBudgetId'](){const _0x259a59=voti_60_0x33f1eb;return this.#state[_0x259a59(0x1ec)];}[voti_60_0x33f1eb(0x1bf)](){const _0x8433d3=voti_60_0x33f1eb;if(this.#state[_0x8433d3(0x1dc)][_0x8433d3(0x1c1)]===0x0)return null;return this.#state[_0x8433d3(0x1dc)][_0x8433d3(0x1f4)](_0xc0bab8=>_0xc0bab8['id']===this.#state[_0x8433d3(0x1ec)])||this.#state[_0x8433d3(0x1dc)][0x0];}[voti_60_0x33f1eb(0x212)](){const _0x198a88=voti_60_0x33f1eb;return this[_0x198a88(0x1bf)]()?.[_0x198a88(0x209)]||[];}['getTemplatesSortedByDate'](){const _0x56bc52=voti_60_0x33f1eb;return[...this['getTemplates']()][_0x56bc52(0x1e0)]((_0x23b491,_0x39b07f)=>_0x39b07f[_0x56bc52(0x1e4)]-_0x23b491[_0x56bc52(0x1e4)]);}[voti_60_0x33f1eb(0x1ed)](){const _0x5302ec=voti_60_0x33f1eb;return[...this[_0x5302ec(0x212)]()][_0x5302ec(0x1e0)]((_0x102496,_0x1d8036)=>_0x102496['nome'][_0x5302ec(0x1a8)](_0x1d8036['nome']));}[voti_60_0x33f1eb(0x208)](_0x4e52c3){const _0x141639=voti_60_0x33f1eb;return this[_0x141639(0x212)]()[_0x141639(0x1f4)](_0x35eb73=>_0x35eb73['id']===_0x4e52c3);}[voti_60_0x33f1eb(0x223)](){const _0x4eab73=voti_60_0x33f1eb,_0x16b37e=this[_0x4eab73(0x1bf)]();if(!_0x16b37e)return[];return[..._0x16b37e[_0x4eab73(0x1f5)]||[]][_0x4eab73(0x1e0)]((_0x496689,_0x3ab717)=>_0x496689[_0x4eab73(0x1f7)]-_0x3ab717[_0x4eab73(0x1f7)]);}[voti_60_0x33f1eb(0x1b0)](_0x3fed38){const _0x11e223=voti_60_0x33f1eb;return this[_0x11e223(0x223)]()[_0x11e223(0x1f4)](_0x12f1b7=>_0x12f1b7['id']===_0x3fed38);}['getPrices'](){const _0xd18b53=voti_60_0x33f1eb;return this[_0xd18b53(0x1bf)]()?.[_0xd18b53(0x205)]||this.#getDefaultPrices();}[voti_60_0x33f1eb(0x1da)](){const _0x5d721d=voti_60_0x33f1eb;return this[_0x5d721d(0x1bf)]()?.[_0x5d721d(0x1b3)]||this.#getDefaultCommercialData();}[voti_60_0x33f1eb(0x222)](){return this.#state['editingTemplateId'];}[voti_60_0x33f1eb(0x1fd)](){const _0x1608c7=voti_60_0x33f1eb;return this.#state[_0x1608c7(0x1ba)];}['isEditingBudget'](){const _0x204a75=voti_60_0x33f1eb;return!!this.#state[_0x204a75(0x1ba)];}[voti_60_0x33f1eb(0x1de)](){const _0x292065=voti_60_0x33f1eb,_0x2e1d96=this[_0x292065(0x212)](),_0x2e899b=this[_0x292065(0x223)]();return _0x2e1d96['map'](_0x2e4f30=>{const _0x5d498c=_0x292065,_0x41d729=_0x2e899b[_0x5d498c(0x1d8)](_0x51d89c=>_0x51d89c[_0x5d498c(0x1c3)]===_0x2e4f30['id']),_0x3e65a1=_0x2e4f30['pricingConfig']?.[_0x5d498c(0x203)]||![],_0x30acc6=!!_0x2e4f30[_0x5d498c(0x201)]?.[_0x5d498c(0x1c8)];let _0x1dabfb=_0x5d498c(0x1bc);_0x41d729&&(_0x1dabfb=_0x3e65a1?_0x30acc6?_0x5d498c(0x1f2):_0x5d498c(0x203):_0x5d498c(0x221));let _0x17115a=null;if(_0x30acc6&&_0x2e4f30['templateType']===_0x5d498c(0x1c9)){const _0x1ddac9=_0x2e899b[_0x5d498c(0x207)](_0x37ba35=>_0x37ba35[_0x5d498c(0x1c3)]===_0x2e4f30['id']),_0x1ed216=_0x1ddac9[_0x5d498c(0x1cb)]((_0x17e3f9,_0x33509b)=>_0x17e3f9+_0x33509b[_0x5d498c(0x1d5)]*_0x33509b[_0x5d498c(0x1e1)]/0xf4240*_0x33509b['quantidade'],0x0);_0x17115a=_0x1ed216>0x0?_0x2e4f30[_0x5d498c(0x201)][_0x5d498c(0x1c8)][_0x5d498c(0x1d0)]/_0x1ed216:null;}return{..._0x2e4f30,'hasItems':_0x41d729,'isConfigured':_0x3e65a1,'hasResult':_0x30acc6,'status':_0x1dabfb,'pricePerM2':_0x17115a};});}['init'](){const _0x5b54d5=voti_60_0x33f1eb,_0xe655b=this.#persistenceService[_0x5b54d5(0x1ee)](),_0x3a5bb1=this.#persistenceService[_0x5b54d5(0x1ab)](),_0x553312=this.#persistenceService[_0x5b54d5(0x1b8)]();this.#state[_0x5b54d5(0x1dc)]=_0xe655b['map'](_0x44c171=>this.#hydrateBudget(_0x44c171)),this.#state[_0x5b54d5(0x1ce)]=_0x553312,this.#state[_0x5b54d5(0x1dc)][_0x5b54d5(0x1c1)]===0x0?this['createNewBudget'](_0x5b54d5(0x1be)):this.#state[_0x5b54d5(0x1ec)]=_0x3a5bb1&&this.#state['budgets'][_0x5b54d5(0x1d8)](_0x2159bf=>_0x2159bf['id']===_0x3a5bb1)?_0x3a5bb1:this.#state[_0x5b54d5(0x1dc)][0x0]['id'],this.#notify();}[voti_60_0x33f1eb(0x21a)](_0xd919e=null){const _0x3edf3b=voti_60_0x33f1eb,_0x36c661=_0xd919e||_0x3edf3b(0x200)+this.#state[_0x3edf3b(0x1ce)],_0x5ce2bf={'id':Utils[_0x3edf3b(0x1bb)](),'name':_0x36c661,'createdAt':Date[_0x3edf3b(0x1ef)](),'templates':[],'budget':[],'prices':this.#getDefaultPrices(),'commercialData':this.#getDefaultCommercialData()};return this.#state['budgets'][_0x3edf3b(0x1a9)](_0x5ce2bf),this.#state['currentBudgetId']=_0x5ce2bf['id'],this.#state[_0x3edf3b(0x1ce)]++,this.#persistStateAndNotify(),_0x5ce2bf;}[voti_60_0x33f1eb(0x21b)](_0x422163){const _0x6156c7=voti_60_0x33f1eb;this.#state[_0x6156c7(0x1ec)]!==_0x422163&&(this.#state[_0x6156c7(0x1ec)]=_0x422163,this.#persistStateAndNotify());}[voti_60_0x33f1eb(0x1fe)](_0x33aae0){const _0x4dc86a=voti_60_0x33f1eb,_0x59720d=this.#state[_0x4dc86a(0x1dc)][_0x4dc86a(0x1ca)](_0x3b5c6e=>_0x3b5c6e['id']===_0x33aae0);if(_0x59720d===-0x1)return;this.#state[_0x4dc86a(0x1dc)]['splice'](_0x59720d,0x1),this.#state[_0x4dc86a(0x1ec)]===_0x33aae0&&(this.#state['currentBudgetId']=this.#state['budgets'][_0x4dc86a(0x1c1)]>0x0?this.#state[_0x4dc86a(0x1dc)][0x0]['id']:null),this.#persistStateAndNotify();}[voti_60_0x33f1eb(0x1f6)](_0x12f28e,_0x44d65c){const _0x244b1b=voti_60_0x33f1eb,_0x16a7ac=this.#state[_0x244b1b(0x1dc)][_0x244b1b(0x1f4)](_0x2456fb=>_0x2456fb['id']===_0x12f28e);_0x16a7ac&&_0x44d65c&&(_0x16a7ac[_0x244b1b(0x220)]=_0x44d65c,this.#persistStateAndNotify());}['duplicateBudget'](_0x28b4db){const _0xb3b9c4=voti_60_0x33f1eb,_0x243a5d=this.#state[_0xb3b9c4(0x1dc)]['find'](_0x24c3a8=>_0x24c3a8['id']===_0x28b4db);if(!_0x243a5d)return null;const _0x171fd4={...JSON[_0xb3b9c4(0x1a3)](JSON[_0xb3b9c4(0x1f1)](_0x243a5d)),'id':Utils['generateId'](),'name':_0x243a5d['name']+_0xb3b9c4(0x204),'createdAt':Date[_0xb3b9c4(0x1ef)]()};return this.#state[_0xb3b9c4(0x1dc)][_0xb3b9c4(0x1a9)](_0x171fd4),this.#state[_0xb3b9c4(0x1ec)]=_0x171fd4['id'],this.#persistStateAndNotify(),_0x171fd4;}[voti_60_0x33f1eb(0x217)](_0x34a69b){const _0x5368da=voti_60_0x33f1eb;try{const _0x268cae=JSON[_0x5368da(0x1a3)](_0x34a69b);if(!_0x268cae['name']||!_0x268cae['templates']||!_0x268cae['budget'])throw new Error('Arquivo\x20de\x20orçamento\x20inválido.');const _0x3e1654=this.#hydrateBudget({'id':Utils[_0x5368da(0x1bb)](),'name':_0x268cae[_0x5368da(0x220)]+_0x5368da(0x202),'createdAt':Date[_0x5368da(0x1ef)](),..._0x268cae});return this.#state[_0x5368da(0x1dc)][_0x5368da(0x1a9)](_0x3e1654),this.#state[_0x5368da(0x1ec)]=_0x3e1654['id'],this.#persistStateAndNotify(),_0x3e1654;}catch(_0x42524b){return console['error']('Erro\x20na\x20importação\x20do\x20orçamento:',_0x42524b),null;}}[voti_60_0x33f1eb(0x1aa)](_0xe2d03){const _0x2d5e5b=voti_60_0x33f1eb,_0x5003ce=this.#state['budgets'][_0x2d5e5b(0x1f4)](_0x5d43f1=>_0x5d43f1['id']===_0xe2d03);if(!_0x5003ce)return null;return{'name':_0x5003ce[_0x2d5e5b(0x220)],'createdAt':_0x5003ce['createdAt'],'exportedAt':Date[_0x2d5e5b(0x1ef)](),'templates':_0x5003ce['templates'],'budget':_0x5003ce[_0x2d5e5b(0x1f5)],'prices':_0x5003ce[_0x2d5e5b(0x205)],'commercialData':_0x5003ce['commercialData'],'version':_0x2d5e5b(0x1f9)};}['saveTemplate'](_0x5a3e9b,_0x870785){const _0x5baa64=voti_60_0x33f1eb;let _0x1ab704,_0x5e9d71;const _0x5ac422=this.#state[_0x5baa64(0x1e8)];_0x870785===_0x5baa64(0x1c9)?(_0x1ab704=TemplateFactory[_0x5baa64(0x1d9)](_0x5a3e9b,_0x5ac422),_0x5e9d71=this.#validator[_0x5baa64(0x210)](_0x1ab704)):(_0x1ab704=TemplateFactory[_0x5baa64(0x1ff)](_0x5a3e9b,_0x5ac422),_0x5e9d71=this.#validator[_0x5baa64(0x21e)](_0x1ab704));if(_0x5e9d71['length']>0x0)return{'success':![],'errors':_0x5e9d71};const _0x3ed73e=this['getTemplates']()['some'](_0x2823c0=>_0x2823c0['nome'][_0x5baa64(0x1e2)]()===_0x1ab704[_0x5baa64(0x1e7)][_0x5baa64(0x1e2)]()&&_0x2823c0['id']!==_0x5ac422);if(_0x3ed73e)return{'success':![],'errors':[_0x5baa64(0x1ea)]};const _0x366303=this[_0x5baa64(0x1bf)]();if(_0x5ac422){const _0xb7b156=_0x366303[_0x5baa64(0x209)][_0x5baa64(0x1ca)](_0x388552=>_0x388552['id']===_0x5ac422);if(_0xb7b156!==-0x1)_0x366303[_0x5baa64(0x209)][_0xb7b156]=_0x1ab704;}else _0x366303[_0x5baa64(0x209)][_0x5baa64(0x1a9)](_0x1ab704);return this[_0x5baa64(0x1a6)](),this.#persistState(),{'success':!![]};}[voti_60_0x33f1eb(0x1eb)](_0x59e255){const _0x434f12=voti_60_0x33f1eb,_0x9cfc4a=this[_0x434f12(0x1bf)]();_0x9cfc4a[_0x434f12(0x209)]=_0x9cfc4a[_0x434f12(0x209)][_0x434f12(0x207)](_0x4ea271=>_0x4ea271['id']!==_0x59e255),_0x9cfc4a[_0x434f12(0x1f5)]=_0x9cfc4a[_0x434f12(0x1f5)]['filter'](_0x23d526=>_0x23d526[_0x434f12(0x1c3)]!==_0x59e255),this.#persistStateAndNotify();}[voti_60_0x33f1eb(0x1e5)](_0x30667d){const _0x503090=voti_60_0x33f1eb;this.#state[_0x503090(0x1e8)]=_0x30667d,this.#notify();}[voti_60_0x33f1eb(0x1a6)](){const _0x484f05=voti_60_0x33f1eb;this.#state[_0x484f05(0x1e8)]=null,this.#notify();}[voti_60_0x33f1eb(0x1fa)](_0x393598){const _0x4753a9=voti_60_0x33f1eb,_0x2aa7fe=this['getTemplates'](),_0x1103a7=this[_0x4753a9(0x1bf)](),_0x511121=this.#state[_0x4753a9(0x1ba)],_0x1ba21a=BudgetItemFactory['createFromFormData'](_0x393598,_0x2aa7fe),_0x30b076=BudgetItemFactory[_0x4753a9(0x1ac)](_0x1ba21a,_0x2aa7fe);if(_0x30b076[_0x4753a9(0x1c1)]>0x0)return{'success':![],'errors':_0x30b076};const _0x168bcf=BudgetItemFactory[_0x4753a9(0x1db)](_0x1ba21a,_0x1103a7[_0x4753a9(0x1f5)],_0x2aa7fe,_0x511121);if(_0x168bcf[_0x4753a9(0x1c1)]>0x0)return{'success':![],'errors':_0x168bcf};if(_0x511121){const _0x43ddde=_0x1103a7[_0x4753a9(0x1f5)]['findIndex'](_0x4606c6=>_0x4606c6['id']===_0x511121);if(_0x43ddde!==-0x1){const _0xd88eff=_0x1103a7[_0x4753a9(0x1f5)][_0x43ddde];_0x1ba21a['id']=_0xd88eff['id'],_0x1ba21a['createdAt']=_0xd88eff[_0x4753a9(0x1e4)],_0x1ba21a[_0x4753a9(0x1f7)]=_0xd88eff[_0x4753a9(0x1f7)],_0x1103a7[_0x4753a9(0x1f5)][_0x43ddde]=_0x1ba21a;}}else _0x1ba21a['order']=_0x1103a7[_0x4753a9(0x1f5)]['length'],_0x1103a7[_0x4753a9(0x1f5)][_0x4753a9(0x1a9)](_0x1ba21a);return this[_0x4753a9(0x1d3)](),this.#persistState(),{'success':!![]};}[voti_60_0x33f1eb(0x1bd)](_0x142b33){const _0x29e363=voti_60_0x33f1eb,_0x1ff102=this[_0x29e363(0x1bf)]();_0x1ff102['budget']=_0x1ff102[_0x29e363(0x1f5)][_0x29e363(0x207)](_0x5b209f=>_0x5b209f['id']!==_0x142b33),_0x1ff102[_0x29e363(0x1f5)][_0x29e363(0x1e0)]((_0x446b52,_0x2dea29)=>_0x446b52[_0x29e363(0x1f7)]-_0x2dea29[_0x29e363(0x1f7)])[_0x29e363(0x1f8)]((_0x3b3035,_0x4bee1e)=>_0x3b3035[_0x29e363(0x1f7)]=_0x4bee1e),this.#persistStateAndNotify();}[voti_60_0x33f1eb(0x1cf)](){const _0x25dea3=voti_60_0x33f1eb,_0x2e2824=this[_0x25dea3(0x1bf)]();_0x2e2824&&(_0x2e2824[_0x25dea3(0x1f5)]=[],this.#persistStateAndNotify());}[voti_60_0x33f1eb(0x1af)](_0x2fa6c2){const _0x2d63e5=voti_60_0x33f1eb;this.#state[_0x2d63e5(0x1ba)]=_0x2fa6c2,this.#notify();}[voti_60_0x33f1eb(0x1d3)](){const _0x780513=voti_60_0x33f1eb;this.#state[_0x780513(0x1ba)]=null,this.#notify();}[voti_60_0x33f1eb(0x1a5)](_0x378ddb){const _0x1abf0c=voti_60_0x33f1eb,_0x42100d=this[_0x1abf0c(0x1bf)](),_0x52ef7c=new Map(_0x42100d[_0x1abf0c(0x1f5)][_0x1abf0c(0x1b1)](_0x1d9d14=>[_0x1d9d14['id'],_0x1d9d14])),_0x9ccf64=_0x378ddb[_0x1abf0c(0x1b1)](_0x4a007e=>_0x52ef7c['get'](_0x4a007e))[_0x1abf0c(0x207)](Boolean);_0x9ccf64['forEach']((_0x43e22f,_0x3c2fcc)=>{const _0x4118d4=_0x1abf0c;_0x43e22f[_0x4118d4(0x1f7)]=_0x3c2fcc;}),_0x42100d['budget']=_0x9ccf64,this.#persistStateAndNotify();}[voti_60_0x33f1eb(0x1f3)](_0x34f5b6){const _0x389a7d=voti_60_0x33f1eb,_0x22f3d2=this['getCurrentBudget']();_0x22f3d2[_0x389a7d(0x205)]['global']={'maoObra':Utils[_0x389a7d(0x1fb)](_0x34f5b6['maoObra']),'galvanizacao':Utils[_0x389a7d(0x1fb)](_0x34f5b6[_0x389a7d(0x21c)]),'chataPadrao':Utils[_0x389a7d(0x1fb)](_0x34f5b6['chataPadrao']),'redondaPadrao':Utils[_0x389a7d(0x1fb)](_0x34f5b6['redondaPadrao']),'chapaLateralPadrao':Utils['toSafeNumber'](_0x34f5b6['chapaLateralPadrao']),'chapaXadrezPadrao':Utils['toSafeNumber'](_0x34f5b6[_0x389a7d(0x1a1)]),'corteChpaLateral':Utils['toSafeNumber'](_0x34f5b6[_0x389a7d(0x1e9)]),'corteDobraChpaXadrez':Utils['toSafeNumber'](_0x34f5b6[_0x389a7d(0x218)])},_0x22f3d2[_0x389a7d(0x205)][_0x389a7d(0x1ad)]={'method':_0x34f5b6['roundingMethod'],'decimals':Utils[_0x389a7d(0x1fb)](_0x34f5b6['roundingDecimals'],0x2)},_0x22f3d2['prices']['totalWeightCalcMethod']=_0x34f5b6[_0x389a7d(0x215)],this.#persistStateAndNotify();}['resetGlobalPrices'](){const _0x201c05=voti_60_0x33f1eb,_0x265572=this[_0x201c05(0x1bf)]();_0x265572['prices']['global']=this.#getDefaultPrices()['global'],_0x265572[_0x201c05(0x205)][_0x201c05(0x1ad)]=this.#getDefaultPrices()[_0x201c05(0x1ad)],_0x265572[_0x201c05(0x205)][_0x201c05(0x215)]=this.#getDefaultPrices()[_0x201c05(0x215)],this.#persistStateAndNotify();}['addOrUpdateSpecificPrice'](_0x288a45,_0x2e8c94,_0x437d07=null){const _0x373230=voti_60_0x33f1eb,_0x24a680=this['getCurrentBudget']();!_0x24a680['prices'][_0x373230(0x224)]&&(_0x24a680[_0x373230(0x205)][_0x373230(0x224)]={}),_0x437d07&&_0x437d07!==_0x288a45&&delete _0x24a680[_0x373230(0x205)][_0x373230(0x224)][_0x437d07],_0x24a680[_0x373230(0x205)][_0x373230(0x224)][_0x288a45]=Utils[_0x373230(0x1fb)](_0x2e8c94),this.#persistStateAndNotify();}[voti_60_0x33f1eb(0x1f0)](_0x308b42){const _0x4da918=voti_60_0x33f1eb,_0x513978=this[_0x4da918(0x1bf)]();_0x513978[_0x4da918(0x205)][_0x4da918(0x224)]&&_0x513978['prices'][_0x4da918(0x224)][_0x308b42]&&(delete _0x513978[_0x4da918(0x205)][_0x4da918(0x224)][_0x308b42],this.#persistStateAndNotify());}[voti_60_0x33f1eb(0x1a7)](_0x252cf6,_0x2470c3){const _0xd03df4=voti_60_0x33f1eb,_0x3279d3=this[_0xd03df4(0x1bf)](),_0x201376=_0x3279d3['commercialData']['ufDestino'];_0x3279d3[_0xd03df4(0x1b3)][_0x252cf6]=_0x2470c3,_0x252cf6==='ufDestino'&&_0x201376!==_0x2470c3&&this.#invalidateAllPricingResults(),this.#persistStateAndNotify();}[voti_60_0x33f1eb(0x225)](_0x295df1){const _0x17f2bd=voti_60_0x33f1eb,_0xf4c367=this[_0x17f2bd(0x1bf)]();if(_0x295df1){const _0x475928=new FileReader();_0x475928['onload']=_0x25f84b=>{const _0xca4b53=_0x17f2bd;_0xf4c367[_0xca4b53(0x1b3)]['logoBase64']=_0x25f84b[_0xca4b53(0x21d)][_0xca4b53(0x1c8)],this.#persistStateAndNotify();},_0x475928[_0x17f2bd(0x1d7)](_0x295df1);}else _0xf4c367['commercialData'][_0x17f2bd(0x1c6)]=null,this.#persistStateAndNotify();}[voti_60_0x33f1eb(0x1d2)](_0xdec88d,_0x50b0e8){const _0x271ff5=voti_60_0x33f1eb,_0x443c90=this[_0x271ff5(0x1bf)](),_0x3f20b4=_0x443c90[_0x271ff5(0x209)][_0x271ff5(0x1f4)](_0x43a227=>_0x43a227['id']===_0xdec88d);_0x3f20b4&&(_0x3f20b4[_0x271ff5(0x201)]={..._0x3f20b4[_0x271ff5(0x201)],..._0x50b0e8,'configured':!![],'lastUpdated':Date[_0x271ff5(0x1ef)]()},this.#persistStateAndNotify());}['updateTemplatePricingResult'](_0x58d936,_0x39e2ec){const _0x3fbc07=voti_60_0x33f1eb,_0x4ca126=this[_0x3fbc07(0x1bf)](),_0x152f71=_0x4ca126[_0x3fbc07(0x209)][_0x3fbc07(0x1f4)](_0x23e239=>_0x23e239['id']===_0x58d936);_0x152f71&&(_0x152f71[_0x3fbc07(0x201)][_0x3fbc07(0x1c8)]=_0x39e2ec,_0x152f71['pricingConfig'][_0x3fbc07(0x1c4)]=Date[_0x3fbc07(0x1ef)](),this.#persistStateAndNotify());}[voti_60_0x33f1eb(0x21f)](_0x38227c,_0x393487){const _0x5144cb=voti_60_0x33f1eb,_0x5b077b=this[_0x5144cb(0x1bf)](),_0x523308=_0x5b077b[_0x5144cb(0x209)]['find'](_0x58b34f=>_0x58b34f['id']===_0x38227c);if(!_0x523308?.[_0x5144cb(0x201)])return;_0x393487[_0x5144cb(0x1f8)](_0xe566bb=>{const _0x57e390=_0x5144cb,_0x975f55=_0x5b077b[_0x57e390(0x209)][_0x57e390(0x1f4)](_0x2b6673=>_0x2b6673['id']===_0xe566bb);_0x975f55&&(_0x975f55[_0x57e390(0x201)]={..._0x523308[_0x57e390(0x201)],'result':null,'lastCalculated':null,'lastUpdated':Date[_0x57e390(0x1ef)]()});}),this.#persistStateAndNotify();}[voti_60_0x33f1eb(0x1b4)](_0x4a543b){const _0x1cd408=voti_60_0x33f1eb,_0x2426d4=_0x4a543b[_0x1cd408(0x219)]('\x0a')[_0x1cd408(0x207)](_0x150e67=>_0x150e67[_0x1cd408(0x1b7)]()!=='');if(_0x2426d4[_0x1cd408(0x1c1)]<0x2)return{'success':![],'errors':['CSV\x20inválido\x20ou\x20vazio.']};const _0x2e98d7=_0x2426d4[0x0]['split'](',')[_0x1cd408(0x1b1)](_0x4ac70f=>_0x4ac70f[_0x1cd408(0x1b7)]()),_0x26d82e=_0x2426d4[_0x1cd408(0x1df)](0x1),_0x428270=[],_0x2f2c35=[],_0x1eeb97=new Set(),_0x45f27c=this[_0x1cd408(0x212)]();return _0x26d82e[_0x1cd408(0x1f8)]((_0x498ce0,_0x1cc467)=>{const _0x1b0b2e=_0x1cd408,_0xc9881e=_0x498ce0[_0x1b0b2e(0x219)](',')[_0x1b0b2e(0x1b1)](_0x2d3af3=>_0x2d3af3['trim']()),_0x2a5482=_0x2e98d7['reduce']((_0x5769f5,_0x36d01b,_0x1cd7b9)=>({..._0x5769f5,[_0x36d01b]:_0xc9881e[_0x1cd7b9]}),{});try{const _0x4c4f71=TemplateFactory['createFromCSV'](_0x2a5482);if(_0x45f27c[_0x1b0b2e(0x1d8)](_0x5627c1=>_0x5627c1[_0x1b0b2e(0x1e7)]['toLowerCase']()===_0x4c4f71[_0x1b0b2e(0x1e7)][_0x1b0b2e(0x1e2)]())||_0x1eeb97[_0x1b0b2e(0x20d)](_0x4c4f71[_0x1b0b2e(0x1e7)][_0x1b0b2e(0x1e2)]()))throw new Error(_0x1b0b2e(0x1cd)+(_0x1cc467+0x2)+_0x1b0b2e(0x1b2)+_0x4c4f71[_0x1b0b2e(0x1e7)]+_0x1b0b2e(0x1cc));const _0x438837=this.#validator[_0x1b0b2e(0x210)](_0x4c4f71);if(_0x438837[_0x1b0b2e(0x1c1)]>0x0)throw new Error(_0x1b0b2e(0x1cd)+(_0x1cc467+0x2)+':\x20'+_0x438837[0x0]);_0x2f2c35[_0x1b0b2e(0x1a9)](_0x4c4f71),_0x1eeb97['add'](_0x4c4f71[_0x1b0b2e(0x1e7)][_0x1b0b2e(0x1e2)]());}catch(_0x168e62){_0x428270[_0x1b0b2e(0x1a9)](_0x168e62['message']);}}),_0x2f2c35['length']>0x0&&(this[_0x1cd408(0x1bf)]()[_0x1cd408(0x209)][_0x1cd408(0x1a9)](..._0x2f2c35),this.#persistStateAndNotify()),{'success':_0x2f2c35['length']>0x0,'importedCount':_0x2f2c35[_0x1cd408(0x1c1)],'errorCount':_0x428270[_0x1cd408(0x1c1)],'errors':_0x428270};}['importItemsFromCSV'](_0x51fe94){const _0x1ed8f3=voti_60_0x33f1eb,_0x3e3018=_0x51fe94[_0x1ed8f3(0x219)]('\x0a')[_0x1ed8f3(0x207)](_0x5384df=>_0x5384df[_0x1ed8f3(0x1b7)]()!=='');if(_0x3e3018['length']<0x2)return{'success':![],'errors':[_0x1ed8f3(0x1c0)]};const _0x13f147=_0x3e3018[0x0][_0x1ed8f3(0x219)](',')[_0x1ed8f3(0x1b1)](_0x5bd083=>_0x5bd083['trim']()),_0xd84e1c=_0x3e3018['slice'](0x1),_0x4f8731=[],_0x1c24b9=[],_0x5cbe9a=this['getTemplates'](),_0xcaf8b2=this[_0x1ed8f3(0x1bf)](),_0x2aeaff=_0xcaf8b2[_0x1ed8f3(0x1f5)]['length'];return _0xd84e1c['forEach']((_0x113ed2,_0x4f150a)=>{const _0x41fdd1=_0x1ed8f3,_0xedbac8=_0x113ed2[_0x41fdd1(0x219)](',')[_0x41fdd1(0x1b1)](_0x1cad3c=>_0x1cad3c[_0x41fdd1(0x1b7)]()),_0x50e26e=_0x13f147['reduce']((_0x5cba79,_0x30edd8,_0x408aef)=>({..._0x5cba79,[_0x30edd8]:_0xedbac8[_0x408aef]}),{});try{const _0x4d870f=BudgetItemFactory['createFromCSV'](_0x50e26e,_0x5cbe9a),_0x58a805=BudgetItemFactory[_0x41fdd1(0x1ac)](_0x4d870f,_0x5cbe9a);if(_0x58a805[_0x41fdd1(0x1c1)]>0x0)throw new Error('Linha\x20'+(_0x4f150a+0x2)+':\x20'+_0x58a805[0x0]);const _0x517ea9=BudgetItemFactory['validateDegrauUniqueness'](_0x4d870f,_0xcaf8b2['budget'],_0x5cbe9a,null);if(_0x517ea9[_0x41fdd1(0x1c1)]>0x0)throw new Error(_0x41fdd1(0x1cd)+(_0x4f150a+0x2)+':\x20'+_0x517ea9[0x0]);_0x4d870f[_0x41fdd1(0x1f7)]=_0x2aeaff+_0x1c24b9[_0x41fdd1(0x1c1)],_0x1c24b9[_0x41fdd1(0x1a9)](_0x4d870f);}catch(_0x362eb2){_0x4f8731[_0x41fdd1(0x1a9)](_0x362eb2[_0x41fdd1(0x1e6)]);}}),_0x1c24b9[_0x1ed8f3(0x1c1)]>0x0&&(_0xcaf8b2['budget'][_0x1ed8f3(0x1a9)](..._0x1c24b9),this.#persistStateAndNotify()),{'success':_0x1c24b9[_0x1ed8f3(0x1c1)]>0x0,'importedCount':_0x1c24b9[_0x1ed8f3(0x1c1)],'errorCount':_0x4f8731[_0x1ed8f3(0x1c1)],'errors':_0x4f8731};}#persistStateAndNotify(){this.#persistState(),this.#notify();}#persistState(){const _0x2208db=voti_60_0x33f1eb;this.#persistenceService['saveAllBudgets'](this.#state['budgets']),this.#persistenceService[_0x2208db(0x1b9)](this.#state[_0x2208db(0x1ec)]),this.#persistenceService[_0x2208db(0x1dd)](this.#state[_0x2208db(0x1ce)]);}#invalidateAllPricingResults(){const _0x281cc9=voti_60_0x33f1eb,_0x4bc6d1=this[_0x281cc9(0x212)]();_0x4bc6d1['forEach'](_0x193149=>{const _0xcf38ad=_0x281cc9;_0x193149[_0xcf38ad(0x201)]&&(_0x193149[_0xcf38ad(0x201)][_0xcf38ad(0x1c8)]=null,_0x193149[_0xcf38ad(0x201)][_0xcf38ad(0x1c4)]=null);});}#hydrateBudget(_0x2cb385){const _0x19d071=voti_60_0x33f1eb,_0x4b3445={..._0x2cb385,'templates':_0x2cb385['templates']||[],'budget':_0x2cb385[_0x19d071(0x1f5)]||[],'prices':{...this.#getDefaultPrices(),..._0x2cb385[_0x19d071(0x205)]||{}},'commercialData':{...this.#getDefaultCommercialData(),..._0x2cb385[_0x19d071(0x1b3)]||{}}};return _0x4b3445[_0x19d071(0x205)][_0x19d071(0x1fc)]={...this.#getDefaultPrices()[_0x19d071(0x1fc)],..._0x4b3445[_0x19d071(0x205)]['global']||{}},_0x4b3445[_0x19d071(0x205)][_0x19d071(0x224)]=_0x4b3445['prices']['especificos']||{},_0x4b3445[_0x19d071(0x209)][_0x19d071(0x1f8)](_0x520b9f=>{const _0x21a26a=_0x19d071;if(!_0x520b9f[_0x21a26a(0x201)])_0x520b9f[_0x21a26a(0x201)]=this.#getDefaultTemplatePricingConfig();if(!_0x520b9f[_0x21a26a(0x20e)])_0x520b9f[_0x21a26a(0x20e)]=_0x21a26a(0x1c9);}),_0x4b3445;}#getDefaultPrices(){const _0x3763da=voti_60_0x33f1eb;return{'global':{...INTEGRATED_DEFAULTS['PRICES']},'especificos':{},'roundingConfig':{'method':_0x3763da(0x1b6),'decimals':0x2},'totalWeightCalcMethod':_0x3763da(0x1c7)};}#getDefaultCommercialData(){const _0x4d5555=voti_60_0x33f1eb;return{'headerLine1':COMPANY_INFO[_0x4d5555(0x220)],'headerLine2':COMPANY_INFO[_0x4d5555(0x1d6)],'headerLine3':'CNPJ:\x20'+COMPANY_INFO[_0x4d5555(0x20b)]+_0x4d5555(0x206)+COMPANY_INFO['ie']+'\x20|\x20Fone:\x20'+COMPANY_INFO['phone'],'clientName':'','clientIdentifier':'','ufDestino':'','deliveryTime':'','paymentTerms':'(Sujeito\x20a\x20análise\x20de\x20crédito)','shippingInfo':_0x4d5555(0x216),'sellerName':'','sellerContact':'','quoteNumber':_0x4d5555(0x211),'validUntil':new Date(Date[_0x4d5555(0x1ef)]()+0x4*0x18*0x3c*0x3c*0x3e8)[_0x4d5555(0x1c2)]()['split']('T')[0x0],'materialType':_0x4d5555(0x20f)};}#getDefaultTemplatePricingConfig(){const _0x145ca5=voti_60_0x33f1eb;return{'tipoConfiguracao':'','lucroLiquido':0x14,'despesasFixas':9.5,'comissoesInternas':3.5,'comissoesRepres':0x0,'despesasFinanceiras':0.26,'csllIrpj':2.81,'icmsMaterial':0x12,'ipiMaterial':3.25,'ipiRevenda':0x0,'ipiVendaFinal':3.25,'fretePerc':0x0,'freteValor':0x0,'stCompraQtde':0x0,'stCompraUnit':0x0,'taxaEnergiaQtde':0x0,'taxaEnergiaUnit':0x0,'tipoOperacao':_0x145ca5(0x1a4),'vendaEstaleiro':![],'vendaExportacao':![],'allIPIsZero':!![],'configured':![],'lastCalculated':null,'result':null};}}
+import { PersistenceService } from '../shared/services/PersistenceService.js';
+import { Utils } from '../shared/services/utils-service.js';
+import { INTEGRATED_DEFAULTS } from '../integrated/config.js';
+import { COMPANY_INFO } from '../shared/config.js';
+import { TemplateFactory } from '../core/factories/TemplateFactory.js';
+import { BudgetItemFactory } from '../core/factories/BudgetItemFactory.js';
+
+export class BudgetStore {
+    #state;
+    #persistenceService;
+    #listeners = new Set();
+    #validator;
+
+    constructor(validator) {
+        this.#persistenceService = new PersistenceService();
+        this.#validator = validator;
+        this.#state = {
+            budgets: [],
+            currentBudgetId: null,
+            budgetCounter: 1,
+            editingTemplateId: null,
+            editingBudgetItemId: null,
+        };
+    }
+
+    #notify() {
+        for (const listener of this.#listeners) {
+            listener(this.#state);
+        }
+    }
+
+    subscribe(listener) {
+        this.#listeners.add(listener);
+        return () => this.#listeners.delete(listener);
+    }
+
+    // --- Getters ---
+    getState() { return { ...this.#state }; }
+    getAllBudgets() { return this.#state.budgets; }
+    getCurrentBudgetId() { return this.#state.currentBudgetId; }
+    getCurrentBudget() {
+        if (this.#state.budgets.length === 0) return null;
+        return this.#state.budgets.find(b => b.id === this.#state.currentBudgetId) || this.#state.budgets[0];
+    }
+    getTemplates() { return this.getCurrentBudget()?.templates || []; }
+    getTemplatesSortedByDate() { return [...this.getTemplates()].sort((a, b) => b.createdAt - a.createdAt); }
+    getTemplatesSortedByName() { return [...this.getTemplates()].sort((a, b) => a.nome.localeCompare(b.nome)); }
+    getTemplateById(templateId) { return this.getTemplates().find(t => t.id === templateId); }
+    getBudgetItems() {
+        const budget = this.getCurrentBudget();
+        if (!budget) return [];
+        return [...(budget.budget || [])].sort((a, b) => a.order - b.order);
+    }
+    getBudgetItemById(itemId) { return this.getBudgetItems().find(i => i.id === itemId); }
+    getPrices() { return this.getCurrentBudget()?.prices || this.#getDefaultPrices(); }
+    getCommercialData() { return this.getCurrentBudget()?.commercialData || this.#getDefaultCommercialData(); }
+    getEditingTemplateId() { return this.#state.editingTemplateId; }
+    getEditingBudgetItemId() { return this.#state.editingBudgetItemId; }
+    isEditingBudget() { return !!this.#state.editingBudgetItemId; }
+
+    getTemplatesWithPricingStatus() {
+        const templates = this.getTemplates();
+        const budgetItems = this.getBudgetItems();
+        return templates.map(template => {
+            const hasItems = budgetItems.some(item => item.templateId === template.id);
+            const isConfigured = template.pricingConfig?.configured || false;
+            const hasResult = !!template.pricingConfig?.result;
+            let status = "no-items";
+            if (hasItems) {
+                status = isConfigured ? (hasResult ? "calculated" : "configured") : "not-configured";
+            }
+            let pricePerM2 = null;
+            if (hasResult && template.templateType === 'grade') {
+                const itemsForTemplate = budgetItems.filter(item => item.templateId === template.id);
+                const totalArea = itemsForTemplate.reduce((sum, item) => sum + (item.largura * item.comprimento / 1e6 * item.quantidade), 0);
+                pricePerM2 = totalArea > 0 ? template.pricingConfig.result.B97_precoVendaComDifal / totalArea : null;
+            }
+            return { ...template, hasItems, isConfigured, hasResult, status, pricePerM2 };
+        });
+    }
+
+    // --- Ações ---
+    init() {
+        const budgets = this.#persistenceService.loadAllBudgets();
+        const currentBudgetId = this.#persistenceService.loadCurrentBudgetId();
+        const budgetCounter = this.#persistenceService.loadBudgetCounter();
+        this.#state.budgets = budgets.map(budget => this.#hydrateBudget(budget));
+        this.#state.budgetCounter = budgetCounter;
+        if (this.#state.budgets.length === 0) {
+            this.createNewBudget("Orçamento 1");
+        } else {
+            this.#state.currentBudgetId = (currentBudgetId && this.#state.budgets.some(b => b.id === currentBudgetId)) ? currentBudgetId : this.#state.budgets[0].id;
+        }
+        this.#notify();
+    }
+
+    createNewBudget(budgetName = null) {
+        const name = budgetName || `Orçamento ${this.#state.budgetCounter}`;
+        const newBudget = {
+            id: Utils.generateId(), name, createdAt: Date.now(),
+            templates: [], budget: [],
+            prices: this.#getDefaultPrices(),
+            commercialData: this.#getDefaultCommercialData(),
+        };
+        this.#state.budgets.push(newBudget);
+        this.#state.currentBudgetId = newBudget.id;
+        this.#state.budgetCounter++;
+        this.#persistStateAndNotify();
+        return newBudget;
+    }
+
+    switchToBudget(budgetId) {
+        if (this.#state.currentBudgetId !== budgetId) {
+            this.#state.currentBudgetId = budgetId;
+            this.#persistStateAndNotify();
+        }
+    }
+
+    closeBudget(budgetId) {
+        const budgetIndex = this.#state.budgets.findIndex(b => b.id === budgetId);
+        if (budgetIndex === -1) return;
+        this.#state.budgets.splice(budgetIndex, 1);
+        if (this.#state.currentBudgetId === budgetId) {
+            this.#state.currentBudgetId = this.#state.budgets.length > 0 ? this.#state.budgets[0].id : null;
+        }
+        this.#persistStateAndNotify();
+    }
+
+    renameBudget(budgetId, newName) {
+        const budget = this.#state.budgets.find(b => b.id === budgetId);
+        if (budget && newName) {
+            budget.name = newName;
+            this.#persistStateAndNotify();
+        }
+    }
+
+    duplicateBudget(budgetId) {
+        const sourceBudget = this.#state.budgets.find(b => b.id === budgetId);
+        if (!sourceBudget) return null;
+        const newBudget = {
+            ...JSON.parse(JSON.stringify(sourceBudget)),
+            id: Utils.generateId(), name: `${sourceBudget.name} (Cópia)`, createdAt: Date.now(),
+        };
+        this.#state.budgets.push(newBudget);
+        this.#state.currentBudgetId = newBudget.id;
+        this.#persistStateAndNotify();
+        return newBudget;
+    }
+
+    importBudget(fileContent) {
+        try {
+            const importedData = JSON.parse(fileContent);
+            if (!importedData.name || !importedData.templates || !importedData.budget) throw new Error("Arquivo de orçamento inválido.");
+            const newBudget = this.#hydrateBudget({
+                id: Utils.generateId(), name: `${importedData.name} (Importado)`, createdAt: Date.now(), ...importedData
+            });
+            this.#state.budgets.push(newBudget);
+            this.#state.currentBudgetId = newBudget.id;
+            this.#persistStateAndNotify();
+            return newBudget;
+        } catch (error) {
+            console.error("Erro na importação do orçamento:", error);
+            return null;
+        }
+    }
+
+    exportBudget(budgetId) {
+        const budgetToExport = this.#state.budgets.find(b => b.id === budgetId);
+        if (!budgetToExport) return null;
+        return {
+            name: budgetToExport.name, createdAt: budgetToExport.createdAt, exportedAt: Date.now(),
+            templates: budgetToExport.templates, budget: budgetToExport.budget,
+            prices: budgetToExport.prices, commercialData: budgetToExport.commercialData, version: "2.0"
+        };
+    }
+
+    saveTemplate(formData, templateType) {
+        let templateData, errors;
+        const editingId = this.#state.editingTemplateId;
+        if (templateType === 'grade') {
+            templateData = TemplateFactory.createGradeFromFormData(formData, editingId);
+            errors = this.#validator.validateGradeTemplate(templateData);
+        } else {
+            templateData = TemplateFactory.createClampFromFormData(formData, editingId);
+            errors = this.#validator.validateClampTemplate(templateData);
+        }
+        if (errors.length > 0) return { success: false, errors };
+        const isDuplicate = this.getTemplates().some(t => t.nome.toLowerCase() === templateData.nome.toLowerCase() && t.id !== editingId);
+        if (isDuplicate) return { success: false, errors: ["Já existe um modelo com este nome."] };
+
+        const budget = this.getCurrentBudget();
+        if (editingId) {
+            const index = budget.templates.findIndex(t => t.id === editingId);
+            if (index !== -1) budget.templates[index] = templateData;
+        } else {
+            budget.templates.push(templateData);
+        }
+        this.clearEditingTemplate();
+        this.#persistState();
+        return { success: true };
+    }
+
+    deleteTemplate(templateId) {
+        const budget = this.getCurrentBudget();
+        budget.templates = budget.templates.filter(t => t.id !== templateId);
+        budget.budget = budget.budget.filter(item => item.templateId !== templateId);
+        this.#persistStateAndNotify();
+    }
+
+    setEditingTemplate(templateId) { this.#state.editingTemplateId = templateId; this.#notify(); }
+    clearEditingTemplate() { this.#state.editingTemplateId = null; this.#notify(); }
+
+    saveBudgetItem(itemData) {
+        const templates = this.getTemplates();
+        const budget = this.getCurrentBudget();
+        const editingId = this.#state.editingBudgetItemId;
+
+        const newItem = BudgetItemFactory.createFromFormData(itemData, templates);
+        const validationErrors = BudgetItemFactory.validateBudgetItem(newItem, templates);
+        if (validationErrors.length > 0) return { success: false, errors: validationErrors };
+
+        const degrauErrors = BudgetItemFactory.validateDegrauUniqueness(newItem, budget.budget, templates, editingId);
+        if (degrauErrors.length > 0) return { success: false, errors: degrauErrors };
+
+        if (editingId) {
+            const index = budget.budget.findIndex(i => i.id === editingId);
+            if (index !== -1) {
+                const originalItem = budget.budget[index];
+                newItem.id = originalItem.id; newItem.createdAt = originalItem.createdAt; newItem.order = originalItem.order;
+                budget.budget[index] = newItem;
+            }
+        } else {
+            newItem.order = budget.budget.length;
+            budget.budget.push(newItem);
+        }
+        this.clearEditingBudgetItem();
+        this.#persistState();
+        return { success: true };
+    }
+
+    deleteBudgetItem(itemId) {
+        const budget = this.getCurrentBudget();
+        budget.budget = budget.budget.filter(i => i.id !== itemId);
+        budget.budget.sort((a, b) => a.order - b.order).forEach((it, index) => it.order = index);
+        this.#persistStateAndNotify();
+    }
+
+    clearBudgetItems() {
+        const budget = this.getCurrentBudget();
+        if (budget) {
+            budget.budget = [];
+            this.#persistStateAndNotify();
+        }
+    }
+
+    setEditingBudgetItem(itemId) { this.#state.editingBudgetItemId = itemId; this.#notify(); }
+    clearEditingBudgetItem() { this.#state.editingBudgetItemId = null; this.#notify(); }
+
+    updateItemsOrder(orderedIds) {
+        const budget = this.getCurrentBudget();
+        const itemMap = new Map(budget.budget.map(item => [item.id, item]));
+        const newBudgetItems = orderedIds.map(id => itemMap.get(id)).filter(Boolean);
+        newBudgetItems.forEach((item, index) => { item.order = index; });
+        budget.budget = newBudgetItems;
+        this.#persistStateAndNotify();
+    }
+
+    updateGlobalPrices(pricesData) {
+        const budget = this.getCurrentBudget();
+        budget.prices.global = {
+            maoObra: Utils.toSafeNumber(pricesData.maoObra), galvanizacao: Utils.toSafeNumber(pricesData.galvanizacao),
+            chataPadrao: Utils.toSafeNumber(pricesData.chataPadrao), redondaPadrao: Utils.toSafeNumber(pricesData.redondaPadrao),
+            chapaLateralPadrao: Utils.toSafeNumber(pricesData.chapaLateralPadrao), chapaXadrezPadrao: Utils.toSafeNumber(pricesData.chapaXadrezPadrao),
+            corteChpaLateral: Utils.toSafeNumber(pricesData.corteChpaLateral), corteDobraChpaXadrez: Utils.toSafeNumber(pricesData.corteDobraChpaXadrez)
+        };
+        budget.prices.roundingConfig = { method: pricesData.roundingMethod, decimals: Utils.toSafeNumber(pricesData.roundingDecimals, 2) };
+        budget.prices.totalWeightCalcMethod = pricesData.totalWeightCalcMethod;
+        this.#persistStateAndNotify();
+    }
+
+    resetGlobalPrices() {
+        const budget = this.getCurrentBudget();
+        budget.prices.global = this.#getDefaultPrices().global;
+        budget.prices.roundingConfig = this.#getDefaultPrices().roundingConfig;
+        budget.prices.totalWeightCalcMethod = this.#getDefaultPrices().totalWeightCalcMethod;
+        this.#persistStateAndNotify();
+    }
+
+    addOrUpdateSpecificPrice(key, value, originalKey = null) {
+        const budget = this.getCurrentBudget();
+        if (!budget.prices.especificos) {
+            budget.prices.especificos = {};
+        }
+        if (originalKey && originalKey !== key) {
+            delete budget.prices.especificos[originalKey];
+        }
+        budget.prices.especificos[key] = Utils.toSafeNumber(value);
+        this.#persistStateAndNotify();
+    }
+
+    removeSpecificPrice(key) {
+        const budget = this.getCurrentBudget();
+        if (budget.prices.especificos && budget.prices.especificos[key]) {
+            delete budget.prices.especificos[key];
+            this.#persistStateAndNotify();
+        }
+    }
+
+    updateCommercialData(field, value) {
+        const budget = this.getCurrentBudget();
+        const oldUf = budget.commercialData.ufDestino;
+        budget.commercialData[field] = value;
+        if(field === 'ufDestino' && oldUf !== value) {
+            this.#invalidateAllPricingResults();
+        }
+        this.#persistStateAndNotify();
+    }
+
+    updateLogo(file) {
+        const budget = this.getCurrentBudget();
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                budget.commercialData.logoBase64 = e.target.result;
+                this.#persistStateAndNotify();
+            };
+            reader.readAsDataURL(file);
+        } else {
+            budget.commercialData.logoBase64 = null;
+            this.#persistStateAndNotify();
+        }
+    }
+
+    updateTemplatePricingConfig(templateId, config) {
+        const budget = this.getCurrentBudget();
+        const template = budget.templates.find(t => t.id === templateId);
+        if (template) {
+            template.pricingConfig = { ...template.pricingConfig, ...config, configured: true, lastUpdated: Date.now() };
+            this.#persistStateAndNotify();
+        }
+    }
+
+    updateTemplatePricingResult(templateId, result) {
+        const budget = this.getCurrentBudget();
+        const template = budget.templates.find(t => t.id === templateId);
+        if (template) {
+            template.pricingConfig.result = result;
+            template.pricingConfig.lastCalculated = Date.now();
+            this.#persistStateAndNotify();
+        }
+    }
+
+    copyPricingConfig(sourceTemplateId, targetTemplateIds) {
+        const budget = this.getCurrentBudget();
+        const sourceTemplate = budget.templates.find(t => t.id === sourceTemplateId);
+        if (!sourceTemplate?.pricingConfig) return;
+
+        targetTemplateIds.forEach(targetId => {
+            const targetTemplate = budget.templates.find(t => t.id === targetId);
+            if (targetTemplate) {
+                targetTemplate.pricingConfig = {
+                    ...sourceTemplate.pricingConfig,
+                    result: null,
+                    lastCalculated: null,
+                    lastUpdated: Date.now()
+                };
+            }
+        });
+        this.#persistStateAndNotify();
+    }
+
+    importTemplatesFromCSV(csvContent) {
+        const lines = csvContent.split('\n').filter(line => line.trim() !== '');
+        if (lines.length < 2) return { success: false, errors: ["CSV inválido ou vazio."] };
+
+        const header = lines[0].split(',').map(h => h.trim());
+        const rows = lines.slice(1);
+        const errorMessages = [], newTemplates = [], importedNames = new Set();
+        const currentTemplates = this.getTemplates();
+
+        rows.forEach((row, index) => {
+            const data = row.split(',').map(d => d.trim());
+            const csvRow = header.reduce((obj, nextKey, i) => ({ ...obj, [nextKey]: data[i] }), {});
+            try {
+                const templateData = TemplateFactory.createFromCSV(csvRow);
+                if (currentTemplates.some(t => t.nome.toLowerCase() === templateData.nome.toLowerCase()) || importedNames.has(templateData.nome.toLowerCase())) {
+                    throw new Error(`Linha ${index + 2}: Modelo com nome "${templateData.nome}" já existe.`);
+                }
+                const errors = this.#validator.validateGradeTemplate(templateData);
+                if (errors.length > 0) throw new Error(`Linha ${index + 2}: ${errors[0]}`);
+                newTemplates.push(templateData);
+                importedNames.add(templateData.nome.toLowerCase());
+            } catch (error) {
+                errorMessages.push(error.message);
+            }
+        });
+
+        if (newTemplates.length > 0) {
+            this.getCurrentBudget().templates.push(...newTemplates);
+            this.#persistStateAndNotify();
+        }
+
+        return { success: newTemplates.length > 0, importedCount: newTemplates.length, errorCount: errorMessages.length, errors: errorMessages };
+    }
+
+    importItemsFromCSV(csvContent) {
+        const lines = csvContent.split('\n').filter(line => line.trim() !== '');
+        if (lines.length < 2) return { success: false, errors: ["CSV inválido ou vazio."] };
+
+        const header = lines[0].split(',').map(h => h.trim());
+        const rows = lines.slice(1);
+        const errorMessages = [], newItems = [];
+        const allTemplates = this.getTemplates();
+        const currentBudget = this.getCurrentBudget();
+        const initialIndex = currentBudget.budget.length;
+
+        rows.forEach((row, index) => {
+            const data = row.split(',').map(d => d.trim());
+            const csvRow = header.reduce((obj, nextKey, i) => ({ ...obj, [nextKey]: data[i] }), {});
+            try {
+                const newItem = BudgetItemFactory.createFromCSV(csvRow, allTemplates);
+                const validationErrors = BudgetItemFactory.validateBudgetItem(newItem, allTemplates);
+                if (validationErrors.length > 0) throw new Error(`Linha ${index + 2}: ${validationErrors[0]}`);
+                const degrauErrors = BudgetItemFactory.validateDegrauUniqueness(newItem, currentBudget.budget, allTemplates, null);
+                if (degrauErrors.length > 0) throw new Error(`Linha ${index + 2}: ${degrauErrors[0]}`);
+                newItem.order = initialIndex + newItems.length;
+                newItems.push(newItem);
+            } catch (error) {
+                errorMessages.push(error.message);
+            }
+        });
+
+        if (newItems.length > 0) {
+            currentBudget.budget.push(...newItems);
+            this.#persistStateAndNotify();
+        }
+
+        return { success: newItems.length > 0, importedCount: newItems.length, errorCount: errorMessages.length, errors: errorMessages };
+    }
+
+    // --- Métodos Privados ---
+    #persistStateAndNotify() { this.#persistState(); this.#notify(); }
+    #persistState() {
+        this.#persistenceService.saveAllBudgets(this.#state.budgets);
+        this.#persistenceService.saveCurrentBudgetId(this.#state.currentBudgetId);
+        this.#persistenceService.saveBudgetCounter(this.#state.budgetCounter);
+    }
+
+    #invalidateAllPricingResults() {
+        const templates = this.getTemplates();
+        templates.forEach(template => {
+            if (template.pricingConfig) {
+                template.pricingConfig.result = null;
+                template.pricingConfig.lastCalculated = null;
+            }
+        });
+    }
+
+    #hydrateBudget(budgetData) {
+        const hydrated = {
+            ...budgetData, templates: budgetData.templates || [], budget: budgetData.budget || [],
+            prices: { ...this.#getDefaultPrices(), ...(budgetData.prices || {}) },
+            commercialData: { ...this.#getDefaultCommercialData(), ...(budgetData.commercialData || {}) }
+        };
+        hydrated.prices.global = { ...this.#getDefaultPrices().global, ...(hydrated.prices.global || {}) };
+        hydrated.prices.especificos = hydrated.prices.especificos || {};
+        hydrated.templates.forEach(t => {
+            if (!t.pricingConfig) t.pricingConfig = this.#getDefaultTemplatePricingConfig();
+            if (!t.templateType) t.templateType = 'grade';
+        });
+        return hydrated;
+    }
+
+    #getDefaultPrices() { return { global: { ...INTEGRATED_DEFAULTS.PRICES }, especificos: {}, roundingConfig: { method: 'ceil', decimals: 2 }, totalWeightCalcMethod: 'unit' }; }
+    #getDefaultCommercialData() {
+        return {
+            headerLine1: COMPANY_INFO.name, headerLine2: COMPANY_INFO.address,
+            headerLine3: `CNPJ: ${COMPANY_INFO.cnpj} | IE: ${COMPANY_INFO.ie} | Fone: ${COMPANY_INFO.phone}`,
+            clientName: "", clientIdentifier: "", ufDestino: "",
+            deliveryTime: "", paymentTerms: "(Sujeito a análise de crédito)",
+            shippingInfo: "FOB (Material a retirar, indicar transportadora)", sellerName: "",
+            sellerContact: "", quoteNumber: "0000",
+            validUntil: new Date(Date.now() + 4 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+            materialType: "AÇO CARBONO"
+        };
+    }
+    #getDefaultTemplatePricingConfig() {
+        return {
+            tipoConfiguracao: "", lucroLiquido: 20, despesasFixas: 9.5, comissoesInternas: 3.5, comissoesRepres: 0,
+            despesasFinanceiras: 0.26, csllIrpj: 2.81, icmsMaterial: 18, ipiMaterial: 3.25, ipiRevenda: 0,
+            ipiVendaFinal: 3.25, fretePerc: 0, freteValor: 0, stCompraQtde: 0, stCompraUnit: 0,
+            taxaEnergiaQtde: 0, taxaEnergiaUnit: 0, tipoOperacao: "venda", vendaEstaleiro: false,
+            vendaExportacao: false, allIPIsZero: true, configured: false, lastCalculated: null, result: null,
+        };
+    }
+}

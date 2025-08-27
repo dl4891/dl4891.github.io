@@ -1,1 +1,308 @@
-const voti_49_0x38bd80=voti_49_0x21bc;(function(_0x11b787,_0x36ff15){const _0x53889e=voti_49_0x21bc,_0x1eec01=_0x11b787();while(!![]){try{const _0x19dcc0=parseInt(_0x53889e(0x17d))/0x1*(-parseInt(_0x53889e(0x132))/0x2)+-parseInt(_0x53889e(0x178))/0x3*(-parseInt(_0x53889e(0x155))/0x4)+-parseInt(_0x53889e(0x19b))/0x5*(parseInt(_0x53889e(0x1c6))/0x6)+parseInt(_0x53889e(0x1a8))/0x7*(-parseInt(_0x53889e(0x13f))/0x8)+-parseInt(_0x53889e(0x164))/0x9+parseInt(_0x53889e(0x139))/0xa+parseInt(_0x53889e(0x18f))/0xb;if(_0x19dcc0===_0x36ff15)break;else _0x1eec01['push'](_0x1eec01['shift']());}catch(_0x1565ba){_0x1eec01['push'](_0x1eec01['shift']());}}}(voti_49_0x50c5,0x1eb05));function voti_49_0x50c5(){const _0x194be2=['Descrição','avoid','1223370TmQURg','addImage','auto','malha_maior','filter','row','setFontSize','bp_larg','reduce','right','dataKey','MALHA:\x20','text','invalidateCaches','Orçamento\x20nº:\x20','T00:00:00','individualReportCache','textColor','mm\x0a','superficie','562101SLIvpB','getProcessPrices','Página\x20','priceController','grade','1emhxJp','Preço\x20(R$)','serrilhada','B96_valorDifal','length','shippingInfo','Prazo:','finalY','\x20SERRILHADO','consolidatedReportCache','sellerContact','descricao','B97_precoVendaComDifal','B102_valorFinalComIPIST','app','Pagamento:','result','find','1595924LAkYbY','chapaLateralEsp','chapaXadrezEsp','qty','B83_valorICMSOpPropria','\x20SERRILHADA','jspdf','DIFAL\x20(incluso)','chapaXadrezLarg','validUntil','width','values','2295zDAGSb','paymentTerms','normal','ufDestino','push','Orçamento\x20válido\x20até:\x20','sem_numero','UF:\x20','+IPI','subscribe','N/A','malha_menor','getNumberOfPages','7lBLLxP','bl_diam','bold','bl_esp','largura','ACABAMENTO:\x20NATURAL','Subtotal','isDegrau','Orçamento\x20vazio.\x20Adicione\x20itens\x20para\x20poder\x20exportar.','getTemplates','sellerName','A\x20combinar','autoTable','toLocaleDateString','referenciaTecnica','headerLine2','round','notifications','imprimirDescricao','templateType','helvetica','index','pt-BR','.pdf','B101_valorDifST','comprimento','valign','bp_esp','ACABAMENTO:\x20GALVANIZAÇÃO\x20A\x20FOGO','middle','342nzTwed','interna','materiaisDetalhes','formatNumber','map','GRADE\x20DE\x20PISO\x20','tipoMalha','clientIdentifier','get','CHAPA\x20LATERAL:\x20','memoryReportCache','materialType','styles','Orçamento\x20para','templatesMap','center','join','GRAMPO\x20DE\x20FIXAÇÃO\x20','logoBase64','column','quantidade','galvanizacao','show','B98_ipiVenda','budgetController','25354OcGTwy','IPI\x20(a\x20incluir)','bl_larg','CHAPA\x20ANTIDERRAPANTE:\x20','Item','putTotalPages','DIMENSÃO:\x20','560890HElBXA','forEach','costs','B82_icmsOpPropria','ceil','Orcamento_','704552RVNpmz','setFont','PDF\x20gerado\x20com\x20sucesso!','pricingConfig','reportService','WARNING','Nenhum\x20item\x20teve\x20seu\x20preço\x20final\x20calculado.\x20Vá\x20para\x20a\x20aba\x20\x27Lucro\x27\x20e\x20calcule\x20os\x20preços.','generateIndividualReportData','Qtd.','(vão)\x20x\x20','function','BARRA\x20LIGAÇÃO:\x20','internal','generateConsolidatedReportData','(INTERNA)','generateMemoriaCalculoData','updateReportService','cell','quoteNumber','deliveryTime','headerLine3','Valor\x20(R$)','4azldcy','fillColor','chapaLateralLarg','budgetStore','(CENTRO\x20A\x20CENTRO)','lastAutoTable','formatCurrency','plain','ICMS\x20(incluso)\x20','incluirChapaXadrez','templateId','TOTAL','DEGRAU\x20'];voti_49_0x50c5=function(){return _0x194be2;};return voti_49_0x50c5();}import{ReportService}from'../../core/services/ReportService.js';import{NOTIFICATION_TYPES}from'../../shared/config.js';function voti_49_0x21bc(_0x5c8b11,_0x109049){const _0x50c5bd=voti_49_0x50c5();return voti_49_0x21bc=function(_0x21bc29,_0x363a98){_0x21bc29=_0x21bc29-0x132;let _0x287e3f=_0x50c5bd[_0x21bc29];return _0x287e3f;},voti_49_0x21bc(_0x5c8b11,_0x109049);}import{FormattingService}from'../../core/services/FormattingService.js';export class ReportController{constructor(_0x239472,_0x34bfd8){const _0xd2809c=voti_49_0x21bc;this['app']=_0x239472,this[_0xd2809c(0x1b9)]=_0x34bfd8,this[_0xd2809c(0x143)]=null,this[_0xd2809c(0x18b)][_0xd2809c(0x158)][_0xd2809c(0x1a4)](()=>this[_0xd2809c(0x171)]());}[voti_49_0x38bd80(0x171)](){const _0x2a6d94=voti_49_0x38bd80;this[_0x2a6d94(0x174)]=null,this[_0x2a6d94(0x186)]=null,this[_0x2a6d94(0x1d0)]=null;}[voti_49_0x38bd80(0x14f)](){const _0x3fe392=voti_49_0x38bd80;this[_0x3fe392(0x171)](),this['reportService']=new ReportService(this['app'][_0x3fe392(0x1de)],this['app'][_0x3fe392(0x158)][_0x3fe392(0x1b1)](),this[_0x3fe392(0x18b)]['priceController'],this['app']['templatesMap']);}[voti_49_0x38bd80(0x146)](){const _0x22d929=voti_49_0x38bd80;if(this[_0x22d929(0x174)])return this[_0x22d929(0x174)];if(!this[_0x22d929(0x143)])this[_0x22d929(0x14f)]();return this[_0x22d929(0x174)]=this[_0x22d929(0x143)]['generateIndividualReportData'](),this[_0x22d929(0x174)];}[voti_49_0x38bd80(0x14c)](){const _0x19b5ed=voti_49_0x38bd80;if(this[_0x19b5ed(0x186)])return this[_0x19b5ed(0x186)];if(!this[_0x19b5ed(0x143)])this[_0x19b5ed(0x14f)]();return this[_0x19b5ed(0x186)]=this[_0x19b5ed(0x143)][_0x19b5ed(0x14c)](),this[_0x19b5ed(0x186)];}[voti_49_0x38bd80(0x14e)](){const _0x2e22db=voti_49_0x38bd80;if(this[_0x2e22db(0x1d0)])return this[_0x2e22db(0x1d0)];if(!this[_0x2e22db(0x143)])this[_0x2e22db(0x14f)]();return this['memoryReportCache']=this[_0x2e22db(0x143)][_0x2e22db(0x14e)](),this[_0x2e22db(0x1d0)];}['exportProposalAsPDF'](){const _0x5a2b10=voti_49_0x38bd80,{jsPDF:_0x3f4865}=window[_0x5a2b10(0x195)],_0x5346cf=new _0x3f4865(),_0x3e7233='{totalPages}',_0xde5494=this['app'][_0x5a2b10(0x158)]['getCommercialData'](),_0x2f91bd=this[_0x5a2b10(0x18b)][_0x5a2b10(0x158)]['getBudgetItems'](),_0x4f215b=this[_0x5a2b10(0x18b)][_0x5a2b10(0x1d4)];if(_0x2f91bd[_0x5a2b10(0x181)]===0x0){this['notifications'][_0x5a2b10(0x1dc)](_0x5a2b10(0x1b0),NOTIFICATION_TYPES[_0x5a2b10(0x144)]);return;}const _0xb945a7=_0x2f91bd['some'](_0x4ec6f5=>{const _0x44cd33=_0x5a2b10,_0xd150e3=_0x4f215b[_0x44cd33(0x1ce)](_0x4ec6f5[_0x44cd33(0x15f)]);return _0xd150e3&&_0xd150e3[_0x44cd33(0x142)]&&_0xd150e3[_0x44cd33(0x142)][_0x44cd33(0x18d)];});if(!_0xb945a7){this['notifications'][_0x5a2b10(0x1dc)](_0x5a2b10(0x145),NOTIFICATION_TYPES[_0x5a2b10(0x144)]);return;}const _0x3d12ba=(_0x4a414e,_0x41c9fc)=>{const _0x19d3e6=_0x5a2b10;let _0x73e102=[],_0x179eb5='';if(_0x41c9fc['templateType']==='clamp'){const _0x424613=Object[_0x19d3e6(0x19a)](_0x41c9fc[_0x19d3e6(0x13b)][_0x19d3e6(0x1db)])[_0x19d3e6(0x16c)]((_0xf26925,_0x3214ee)=>_0xf26925+_0x3214ee,0x0),_0xcb5de4=_0x424613>0x0?'ACABAMENTO:\x20GALVANIZADO\x20A\x20FOGO':_0x19d3e6(0x1ad);_0x179eb5=_0x19d3e6(0x1d7)+_0x41c9fc['nome']+'\x0a'+_0xcb5de4;}else{const _0x2156dc=_0xde5494[_0x19d3e6(0x1d1)]||'AÇO\x20CARBONO',_0x653d82=this[_0x19d3e6(0x18b)][_0x19d3e6(0x17b)][_0x19d3e6(0x179)](_0x41c9fc),_0x20db12=_0x653d82[_0x19d3e6(0x1db)]>0x0?_0x19d3e6(0x1c4):_0x19d3e6(0x1ad),_0x5de738=_0x41c9fc['tipoMalha']===_0x19d3e6(0x1c7)?_0x19d3e6(0x14d):_0x19d3e6(0x159),_0x212291=_0x41c9fc[_0x19d3e6(0x177)]===_0x19d3e6(0x17f)?_0x41c9fc[_0x19d3e6(0x1af)]?_0x19d3e6(0x185):_0x19d3e6(0x194):'';_0x179eb5+=_0x41c9fc[_0x19d3e6(0x1af)]?_0x19d3e6(0x161)+_0x2156dc+_0x212291+'\x0a'+_0x20db12+'\x0a':_0x19d3e6(0x1cb)+_0x2156dc+_0x212291+'\x0a'+_0x20db12+'\x0a',_0x179eb5+='BARRA\x20PORTANTE:\x20'+_0x41c9fc[_0x19d3e6(0x1c3)]+'x'+_0x41c9fc['bp_larg']+_0x19d3e6(0x176),_0x179eb5+=_0x41c9fc[_0x19d3e6(0x1a9)]>0x0?'BARRA\x20LIGAÇÃO:\x20Ø'+_0x41c9fc[_0x19d3e6(0x1a9)]+_0x19d3e6(0x176):_0x19d3e6(0x14a)+_0x41c9fc[_0x19d3e6(0x1ab)]+'x'+_0x41c9fc[_0x19d3e6(0x134)]+_0x19d3e6(0x176);if(_0x41c9fc['isDegrau']){const _0x1afeb1=_0x41c9fc[_0x19d3e6(0x157)]||0x5*Math[_0x19d3e6(0x13d)]((_0x41c9fc[_0x19d3e6(0x16b)]+0x25)/0x5);_0x179eb5+=_0x19d3e6(0x1cf)+_0x41c9fc[_0x19d3e6(0x190)]+'x'+_0x1afeb1+_0x19d3e6(0x176);if(_0x41c9fc[_0x19d3e6(0x15e)]){let _0x562fdb=_0x41c9fc[_0x19d3e6(0x1cc)]==='interna'?_0x41c9fc['malha_menor']+Math[_0x19d3e6(0x1b8)](_0x41c9fc[_0x19d3e6(0x1c3)]):_0x41c9fc[_0x19d3e6(0x1a6)];const _0x11adb6=_0x41c9fc[_0x19d3e6(0x197)]||_0x41c9fc[_0x19d3e6(0x16b)]+_0x562fdb;_0x179eb5+=_0x19d3e6(0x135)+_0x41c9fc[_0x19d3e6(0x191)]+'x'+_0x11adb6+_0x19d3e6(0x176);}}_0x179eb5+=_0x19d3e6(0x16f)+_0x41c9fc[_0x19d3e6(0x1a6)]+'x'+_0x41c9fc[_0x19d3e6(0x167)]+'\x20'+_0x5de738+'\x0a',_0x179eb5+=_0x19d3e6(0x138)+_0x4a414e[_0x19d3e6(0x1ac)]+_0x19d3e6(0x148)+_0x4a414e[_0x19d3e6(0x1c1)]+'mm';}_0x73e102['push'](_0x179eb5);if(_0x4a414e[_0x19d3e6(0x1ba)]&&_0x4a414e[_0x19d3e6(0x188)])_0x73e102[_0x19d3e6(0x19f)](_0x4a414e[_0x19d3e6(0x188)]);if(_0x4a414e[_0x19d3e6(0x1b6)])_0x73e102[_0x19d3e6(0x19f)]('Ref.\x20Técnica:\x20'+_0x4a414e[_0x19d3e6(0x1b6)]);return _0x73e102[_0x19d3e6(0x1d6)]('\x0a');};let _0x1e0b65=0x0,_0x40bb75=0x0,_0x845fe5=0x0,_0x1eb562=0x0,_0x2b17a3=0x0,_0x12804f=0x0;const _0xfcf13e={};_0x2f91bd[_0x5a2b10(0x13a)](_0x1a37d4=>{const _0xd13dd4=_0x5a2b10,_0x4ee67e=_0x4f215b[_0xd13dd4(0x1ce)](_0x1a37d4['templateId']);if(_0x4ee67e&&_0x4ee67e['templateType']===_0xd13dd4(0x17c)){if(!_0xfcf13e[_0x1a37d4['templateId']])_0xfcf13e[_0x1a37d4[_0xd13dd4(0x15f)]]=0x0;_0xfcf13e[_0x1a37d4[_0xd13dd4(0x15f)]]+=_0x1a37d4[_0xd13dd4(0x1ac)]*_0x1a37d4[_0xd13dd4(0x1c1)]/0xf4240*_0x1a37d4[_0xd13dd4(0x1da)];}}),_0x2f91bd['forEach'](_0x305ab2=>{const _0x139119=_0x5a2b10,_0x4aed98=_0x4f215b[_0x139119(0x1ce)](_0x305ab2['templateId']),_0x433d0d=_0x4aed98?.[_0x139119(0x142)]?.[_0x139119(0x18d)];if(!_0x433d0d)return;let _0x39ab6a,_0x146026,_0x4aa552,_0x25e233,_0x48eab7,_0x21a62a;if(_0x4aed98[_0x139119(0x1bb)]===_0x139119(0x17c)){const _0x3937d8=_0x305ab2['largura']*_0x305ab2[_0x139119(0x1c1)]/0xf4240*_0x305ab2[_0x139119(0x1da)],_0x24339a=_0xfcf13e[_0x305ab2['templateId']]||0x1,_0x3f797f=_0x3937d8/_0x24339a;_0x39ab6a=(_0x433d0d[_0x139119(0x189)]||0x0)*_0x3f797f,_0x146026=(_0x433d0d[_0x139119(0x18a)]||0x0)*_0x3f797f,_0x4aa552=(_0x433d0d['B99_valorIPI']||0x0)*_0x3f797f,_0x25e233=(_0x433d0d['B83_valorICMSOpPropria']||0x0)*_0x3f797f,_0x48eab7=(_0x433d0d[_0x139119(0x180)]||0x0)*_0x3f797f,_0x21a62a=(_0x433d0d['B101_valorDifST']||0x0)*_0x3f797f;}else{const _0x3e2722=_0x433d0d['materiaisDetalhes'][0x0]?.[_0x139119(0x192)]||0x1,_0x1604d6=(_0x433d0d[_0x139119(0x189)]||0x0)/_0x3e2722,_0x350b00=Math[_0x139119(0x13d)](_0x1604d6*0x64)/0x64;_0x39ab6a=_0x350b00*_0x305ab2['quantidade'];const _0x5bf075=_0x433d0d[_0x139119(0x189)]||0x0;if(_0x5bf075>0x0){const _0x3218c1=(_0x433d0d['B99_valorIPI']||0x0)/_0x5bf075,_0x397893=(_0x433d0d[_0x139119(0x1c0)]||0x0)/_0x5bf075;_0x4aa552=_0x39ab6a*_0x3218c1,_0x21a62a=_0x39ab6a*_0x397893,_0x146026=_0x39ab6a+_0x4aa552+_0x21a62a,_0x25e233=_0x39ab6a*((_0x433d0d[_0x139119(0x193)]||0x0)/_0x5bf075),_0x48eab7=_0x39ab6a*((_0x433d0d[_0x139119(0x180)]||0x0)/_0x5bf075);}else _0x146026=_0x39ab6a,_0x4aa552=_0x21a62a=_0x25e233=_0x48eab7=0x0;}_0x1e0b65+=_0x39ab6a,_0x40bb75+=_0x146026,_0x845fe5+=_0x4aa552,_0x1eb562+=_0x25e233,_0x2b17a3+=_0x48eab7,_0x12804f+=_0x21a62a;});const _0x499277=_0x2f91bd[_0x5a2b10(0x1ca)](_0x3d186d=>{const _0x20009f=_0x5a2b10,_0x182114=_0x4f215b[_0x20009f(0x1ce)](_0x3d186d['templateId']),_0x439bf3=_0x182114?.['pricingConfig']?.['result'];if(!_0x182114||!_0x439bf3)return null;let _0x38e1b0,_0x257d65;if(_0x182114[_0x20009f(0x1bb)]===_0x20009f(0x17c)){const _0x5cdace=_0x3d186d[_0x20009f(0x1ac)]*_0x3d186d[_0x20009f(0x1c1)]/0xf4240*_0x3d186d['quantidade'],_0x4b06b9=_0xfcf13e[_0x3d186d[_0x20009f(0x15f)]]||0x1;_0x38e1b0=(_0x439bf3[_0x20009f(0x189)]||0x0)*(_0x5cdace/_0x4b06b9);}else{const _0x5e5433=_0x439bf3[_0x20009f(0x1c8)][0x0]?.[_0x20009f(0x192)]||0x1,_0x583fa2=(_0x439bf3[_0x20009f(0x189)]||0x0)/_0x5e5433;_0x257d65=Math[_0x20009f(0x13d)](_0x583fa2*0x64)/0x64,_0x38e1b0=_0x257d65*_0x3d186d[_0x20009f(0x1da)];}_0x257d65=_0x3d186d['quantidade']>0x0?_0x38e1b0/_0x3d186d['quantidade']:0x0;const _0x1fdc28=(_0x439bf3[_0x20009f(0x1dd)]||0x0)*0x64;return[_0x3d186d['order']+0x1,_0x3d186d[_0x20009f(0x1da)],'pç',_0x3d12ba(_0x3d186d,_0x182114),FormattingService['formatNumber'](_0x257d65),_0x1fdc28>0x0?FormattingService[_0x20009f(0x1c9)](_0x1fdc28,0x2)+'%':'-',_0xde5494['deliveryTime']||_0x20009f(0x1b3),FormattingService[_0x20009f(0x1c9)](_0x38e1b0)];})[_0x5a2b10(0x168)](_0x339bab=>_0x339bab!==null),_0x33e142=()=>{const _0x2580aa=_0x5a2b10,_0x211791=_0x5346cf[_0x2580aa(0x14b)][_0x2580aa(0x1a7)](),_0x20fa6e=_0xde5494[_0x2580aa(0x1d8)];if(_0x20fa6e)_0x5346cf[_0x2580aa(0x165)](_0x20fa6e,'PNG',0xe,0xc,0x19,0x0);_0x5346cf[_0x2580aa(0x16a)](0xa)['setFont'](_0x2580aa(0x1bc),_0x2580aa(0x1aa)),_0x5346cf[_0x2580aa(0x170)](_0xde5494['headerLine1'],0x69,0xf,{'align':'center'});if(_0x211791===0x1){_0x5346cf['setFontSize'](0x8)[_0x2580aa(0x140)]('helvetica','normal'),_0x5346cf[_0x2580aa(0x170)](_0xde5494[_0x2580aa(0x1b7)],0x69,0x14,{'align':_0x2580aa(0x1d5)}),_0x5346cf['text'](_0xde5494[_0x2580aa(0x153)],0x69,0x19,{'align':'center'}),_0x5346cf['setFontSize'](0xa)[_0x2580aa(0x140)](_0x2580aa(0x1bc),_0x2580aa(0x1aa)),_0x5346cf['text'](_0x2580aa(0x1d3),0xe,0x28),_0x5346cf[_0x2580aa(0x170)](_0x2580aa(0x172)+_0xde5494[_0x2580aa(0x151)],0xc8,0x28,{'align':'right'}),_0x5346cf[_0x2580aa(0x16a)](0x9)[_0x2580aa(0x140)](_0x2580aa(0x1bc),_0x2580aa(0x19d)),_0x5346cf[_0x2580aa(0x170)](_0xde5494['clientName']||'N/A',0xe,0x2d),_0x5346cf[_0x2580aa(0x170)]('Data:\x20'+new Date()[_0x2580aa(0x1b5)](_0x2580aa(0x1be)),0xc8,0x2d,{'align':_0x2580aa(0x16d)}),_0x5346cf[_0x2580aa(0x170)](_0xde5494[_0x2580aa(0x1cd)]||_0x2580aa(0x1a5),0xe,0x32);const _0x12ca1e=_0xde5494['validUntil']?new Date(_0xde5494[_0x2580aa(0x198)]+_0x2580aa(0x173)):new Date();_0x5346cf[_0x2580aa(0x170)](_0x2580aa(0x1a0)+_0x12ca1e['toLocaleDateString'](_0x2580aa(0x1be)),0xc8,0x32,{'align':_0x2580aa(0x16d)}),_0x5346cf[_0x2580aa(0x170)](_0x2580aa(0x1a2)+(_0xde5494[_0x2580aa(0x19e)]||_0x2580aa(0x1a5)),0xe,0x37);}else _0x5346cf[_0x2580aa(0x170)](_0x2580aa(0x172)+_0xde5494[_0x2580aa(0x151)],0xc8,0xf,{'align':_0x2580aa(0x16d)});_0x5346cf[_0x2580aa(0x16a)](0x8)['text'](_0x2580aa(0x17a)+_0x211791+'\x20de\x20'+_0x3e7233,_0x5346cf[_0x2580aa(0x14b)]['pageSize'][_0x2580aa(0x199)]/0x2,0x11f,{'align':'center'});};_0x5346cf['autoTable']({'startY':0x41,'margin':{'top':0x23,'bottom':0x14},'head':[[_0x5a2b10(0x136),_0x5a2b10(0x147),'Un',_0x5a2b10(0x162),_0x5a2b10(0x17e),_0x5a2b10(0x1a3),'Prazo',_0x5a2b10(0x154)]],'body':_0x499277,'theme':'grid','headStyles':{'fillColor':[0xc0,0x0,0x0],'textColor':0xff,'fontStyle':_0x5a2b10(0x1aa)},'styles':{'fontSize':0x8,'cellPadding':0x2},'columnStyles':{0x0:{'cellWidth':0xa,'halign':_0x5a2b10(0x1d5)},0x1:{'cellWidth':0xa,'halign':'center'},0x2:{'cellWidth':0x8,'halign':'center'},0x3:{'cellWidth':_0x5a2b10(0x166)},0x4:{'halign':_0x5a2b10(0x16d)},0x5:{'cellWidth':0xc,'halign':_0x5a2b10(0x16d)},0x6:{'cellWidth':0x14},0x7:{'cellWidth':0x19,'halign':_0x5a2b10(0x16d)}},'rowPageBreak':_0x5a2b10(0x163),'didParseCell':_0x16e358=>{const _0x4ccc5c=_0x5a2b10;_0x16e358[_0x4ccc5c(0x1d9)][_0x4ccc5c(0x16e)]===0x3&&(_0x16e358[_0x4ccc5c(0x150)][_0x4ccc5c(0x1d2)][_0x4ccc5c(0x1c2)]=_0x4ccc5c(0x1c5));},'didDrawPage':_0x33e142});const _0x2612f9=_0x5346cf[_0x5a2b10(0x15a)][_0x5a2b10(0x184)];let _0x5c3f10=_0x2612f9+0x5;_0x2612f9>0xeb&&(_0x5346cf['addPage'](),_0x5c3f10=0x1e);const _0x206816=_0x2f91bd[_0x5a2b10(0x18e)](_0x2a61a5=>_0x4f215b[_0x5a2b10(0x1ce)](_0x2a61a5[_0x5a2b10(0x15f)])?.['pricingConfig']?.['result']),_0x54da0f=_0x206816?_0x4f215b[_0x5a2b10(0x1ce)](_0x206816[_0x5a2b10(0x15f)])[_0x5a2b10(0x142)][_0x5a2b10(0x18d)]:{},_0x19f696=(_0x54da0f[_0x5a2b10(0x13c)]||0x0)*0x64,_0x2d6bc9=[[{'content':_0x5a2b10(0x183),'styles':{'fontStyle':'bold'}},{'content':_0xde5494[_0x5a2b10(0x152)]||_0x5a2b10(0x1b3)},{'content':_0x5a2b10(0x1ae),'styles':{'fontStyle':_0x5a2b10(0x1aa),'halign':_0x5a2b10(0x16d)}},{'content':FormattingService['formatCurrency'](_0x1e0b65),'styles':{'halign':'right'}}],[{'content':'Frete:','styles':{'fontStyle':_0x5a2b10(0x1aa)}},{'content':_0xde5494[_0x5a2b10(0x182)]},{'content':_0x5a2b10(0x133),'styles':{'fontStyle':_0x5a2b10(0x1aa),'halign':'right'}},{'content':FormattingService['formatCurrency'](_0x845fe5),'styles':{'halign':'right'}}],[{'content':_0x5a2b10(0x18c),'styles':{'fontStyle':'bold'}},{'content':_0xde5494[_0x5a2b10(0x19c)]},{'content':_0x5a2b10(0x196),'styles':{'fontStyle':'bold','halign':_0x5a2b10(0x16d)}},{'content':_0x2b17a3>0x0?FormattingService[_0x5a2b10(0x15b)](_0x2b17a3):'-','styles':{'halign':_0x5a2b10(0x16d)}}],[{'content':'','colSpan':0x2},{'content':_0x5a2b10(0x15d)+FormattingService[_0x5a2b10(0x1c9)](_0x19f696,0x2)+'%','styles':{'fontStyle':'bold','halign':'right'}},{'content':FormattingService[_0x5a2b10(0x15b)](_0x1eb562),'styles':{'halign':_0x5a2b10(0x16d)}}],[{'content':'','colSpan':0x2},{'content':'Outros\x20(ICMS-ST)','styles':{'fontStyle':'bold','halign':'right'}},{'content':_0x12804f>0x0?FormattingService[_0x5a2b10(0x15b)](_0x12804f):'-','styles':{'halign':_0x5a2b10(0x16d)}}],[{'content':'','colSpan':0x2},{'content':_0x5a2b10(0x160),'styles':{'fontStyle':_0x5a2b10(0x1aa),'halign':_0x5a2b10(0x16d)}},{'content':FormattingService['formatCurrency'](_0x40bb75),'styles':{'fontStyle':_0x5a2b10(0x1aa),'halign':_0x5a2b10(0x16d)}}],[{'content':_0xde5494[_0x5a2b10(0x1b2)],'styles':{'fontStyle':'bold'},'colSpan':0x4}],[{'content':_0xde5494[_0x5a2b10(0x187)],'colSpan':0x4}]];_0x5346cf[_0x5a2b10(0x1b4)]({'startY':_0x5c3f10,'body':_0x2d6bc9,'theme':_0x5a2b10(0x15c),'rowPageBreak':_0x5a2b10(0x163),'styles':{'fontSize':0x9,'cellPadding':0x2},'columnStyles':{0x0:{'cellWidth':0x19},0x1:{'cellWidth':_0x5a2b10(0x166)},0x2:{'cellWidth':0x28},0x3:{'cellWidth':0x1e}},'didParseCell':_0x1f4770=>{const _0x2ac606=_0x5a2b10;_0x1f4770['column'][_0x2ac606(0x1bd)]>=0x2&&(_0x1f4770[_0x2ac606(0x150)][_0x2ac606(0x1d2)]['lineWidth']=0.1,_0x1f4770[_0x2ac606(0x150)]['styles']['lineColor']=[0x0,0x0,0x0]),_0x1f4770[_0x2ac606(0x169)][_0x2ac606(0x1bd)]===0x5&&_0x1f4770[_0x2ac606(0x1d9)][_0x2ac606(0x1bd)]>=0x2&&(_0x1f4770[_0x2ac606(0x150)][_0x2ac606(0x1d2)][_0x2ac606(0x156)]=[0xc0,0x0,0x0],_0x1f4770['cell'][_0x2ac606(0x1d2)][_0x2ac606(0x175)]=[0xff,0xff,0xff]);},'didDrawPage':_0x33e142}),typeof _0x5346cf[_0x5a2b10(0x137)]===_0x5a2b10(0x149)&&_0x5346cf[_0x5a2b10(0x137)](_0x3e7233),_0x5346cf['save'](_0x5a2b10(0x13e)+(_0xde5494[_0x5a2b10(0x151)]||_0x5a2b10(0x1a1))+_0x5a2b10(0x1bf)),this[_0x5a2b10(0x1b9)]['show'](_0x5a2b10(0x141),NOTIFICATION_TYPES['SUCCESS']);}}
+import { ReportService } from "../../core/services/ReportService.js";
+import { NOTIFICATION_TYPES } from "../../shared/config.js";
+import { FormattingService } from "../../core/services/FormattingService.js";
+
+export class ReportController {
+    constructor(appInstance, notificationManager) {
+        this.app = appInstance;
+        this.notifications = notificationManager;
+        this.reportService = null;
+
+        this.app.budgetStore.subscribe(() => this.invalidateCaches());
+    }
+
+    invalidateCaches() {
+        this.individualReportCache = null;
+        this.consolidatedReportCache = null;
+        this.memoryReportCache = null;
+    }
+
+    updateReportService() {
+        this.invalidateCaches();
+        this.reportService = new ReportService(
+            this.app.budgetController,
+            this.app.budgetStore.getTemplates(),
+            this.app.priceController,
+            this.app.templatesMap
+        );
+    }
+
+    generateIndividualReportData() {
+        if (this.individualReportCache) return this.individualReportCache;
+        if (!this.reportService) this.updateReportService();
+
+        this.individualReportCache = this.reportService.generateIndividualReportData();
+        return this.individualReportCache;
+    }
+
+    generateConsolidatedReportData() {
+        if (this.consolidatedReportCache) return this.consolidatedReportCache;
+        if (!this.reportService) this.updateReportService();
+
+        this.consolidatedReportCache = this.reportService.generateConsolidatedReportData();
+        return this.consolidatedReportCache;
+    }
+
+    generateMemoriaCalculoData() {
+        if (this.memoryReportCache) return this.memoryReportCache;
+        if (!this.reportService) this.updateReportService();
+
+        this.memoryReportCache = this.reportService.generateMemoriaCalculoData();
+        return this.memoryReportCache;
+    }
+
+    exportProposalAsPDF() {
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF();
+        const totalPagesExp = '{totalPages}';
+
+        const commercialData = this.app.budgetStore.getCommercialData();
+        const budgetItems = this.app.budgetStore.getBudgetItems();
+        const templatesMap = this.app.templatesMap;
+
+        if (budgetItems.length === 0) {
+            this.notifications.show("Orçamento vazio. Adicione itens para poder exportar.", NOTIFICATION_TYPES.WARNING);
+            return;
+        }
+
+        const hasAnyPriceCalculated = budgetItems.some(item => {
+            const template = templatesMap.get(item.templateId);
+            return template && template.pricingConfig && template.pricingConfig.result;
+        });
+
+        if (!hasAnyPriceCalculated) {
+            this.notifications.show("Nenhum item teve seu preço final calculado. Vá para a aba 'Lucro' e calcule os preços.", NOTIFICATION_TYPES.WARNING);
+            return;
+        }
+
+        const generateItemDescription = (item, template) => {
+            let descParts = [];
+            let standardDesc = '';
+
+            if (template.templateType === 'clamp') {
+                const totalGalvCost = Object.values(template.costs.galvanizacao).reduce((a, b) => a + b, 0);
+                const acabamento = totalGalvCost > 0 ? "ACABAMENTO: GALVANIZADO A FOGO" : "ACABAMENTO: NATURAL";
+                standardDesc = `GRAMPO DE FIXAÇÃO ${template.nome}\n${acabamento}`;
+            } else {
+                const materialType = commercialData.materialType || "AÇO CARBONO";
+                const precosProcesso = this.app.priceController.getProcessPrices(template);
+                const acabamento = precosProcesso.galvanizacao > 0 ? "ACABAMENTO: GALVANIZAÇÃO A FOGO" : "ACABAMENTO: NATURAL";
+                const tipoMalhaLabel = template.tipoMalha === 'interna' ? "(INTERNA)" : "(CENTRO A CENTRO)";
+                const superficie = template.superficie === 'serrilhada' ? (template.isDegrau ? ' SERRILHADO' : ' SERRILHADA') : '';
+
+                standardDesc += template.isDegrau ? `DEGRAU ${materialType}${superficie}\n${acabamento}\n` : `GRADE DE PISO ${materialType}${superficie}\n${acabamento}\n`;
+                standardDesc += `BARRA PORTANTE: ${template.bp_esp}x${template.bp_larg}mm\n`;
+                standardDesc += template.bl_diam > 0 ? `BARRA LIGAÇÃO: Ø${template.bl_diam}mm\n` : `BARRA LIGAÇÃO: ${template.bl_esp}x${template.bl_larg}mm\n`;
+
+                if (template.isDegrau) {
+                    const chapaLateralLarg = template.chapaLateralLarg || (5 * Math.ceil((template.bp_larg + 37) / 5));
+                    standardDesc += `CHAPA LATERAL: ${template.chapaLateralEsp}x${chapaLateralLarg}mm\n`;
+                    if (template.incluirChapaXadrez) {
+                        let malhaMenorEfetiva = template.tipoMalha === 'interna' ? template.malha_menor + Math.round(template.bp_esp) : template.malha_menor;
+                        const chapaXadrezLarg = template.chapaXadrezLarg || (template.bp_larg + malhaMenorEfetiva);
+                        standardDesc += `CHAPA ANTIDERRAPANTE: ${template.chapaXadrezEsp}x${chapaXadrezLarg}mm\n`;
+                    }
+                }
+
+                standardDesc += `MALHA: ${template.malha_menor}x${template.malha_maior} ${tipoMalhaLabel}\n`;
+                standardDesc += `DIMENSÃO: ${item.largura}(vão) x ${item.comprimento}mm`;
+            }
+            descParts.push(standardDesc);
+
+            if (item.imprimirDescricao && item.descricao) descParts.push(item.descricao);
+            if (item.referenciaTecnica) descParts.push(`Ref. Técnica: ${item.referenciaTecnica}`);
+            return descParts.join('\n');
+        };
+
+        let somaTotalSubtotal = 0, somaTotalFinal = 0, somaTotalIPI = 0;
+        let somaTotalICMS = 0, somaTotalDIFAL = 0, somaTotalST = 0;
+
+        const areaTotalPorTemplate = {};
+        budgetItems.forEach(item => {
+            const template = templatesMap.get(item.templateId);
+            if (template && template.templateType === 'grade') {
+                if (!areaTotalPorTemplate[item.templateId]) areaTotalPorTemplate[item.templateId] = 0;
+                areaTotalPorTemplate[item.templateId] += (item.largura * item.comprimento / 1e6) * item.quantidade;
+            }
+        });
+
+        budgetItems.forEach(item => {
+            const template = templatesMap.get(item.templateId);
+            const pricingResult = template?.pricingConfig?.result;
+            if (!pricingResult) return;
+
+            let subtotalItem, valorFinalItem, ipiItem, icmsItem, difalItem, stItem;
+
+            if (template.templateType === 'grade') {
+                const areaItem = (item.largura * item.comprimento / 1e6) * item.quantidade;
+                const areaTotalTemplate = areaTotalPorTemplate[item.templateId] || 1;
+                const proporcaoItem = areaItem / areaTotalTemplate;
+                subtotalItem = (pricingResult.B97_precoVendaComDifal || 0) * proporcaoItem;
+                valorFinalItem = (pricingResult.B102_valorFinalComIPIST || 0) * proporcaoItem;
+                ipiItem = (pricingResult.B99_valorIPI || 0) * proporcaoItem;
+                icmsItem = (pricingResult.B83_valorICMSOpPropria || 0) * proporcaoItem;
+                difalItem = (pricingResult.B96_valorDifal || 0) * proporcaoItem;
+                stItem = (pricingResult.B101_valorDifST || 0) * proporcaoItem;
+            } else { // Clamp
+                const totalQuantityForTemplate = pricingResult.materiaisDetalhes[0]?.qty || 1;
+                const precoUnitarioPreciso = (pricingResult.B97_precoVendaComDifal || 0) / totalQuantityForTemplate;
+                const valorUnitario = Math.ceil(precoUnitarioPreciso * 100) / 100;
+                subtotalItem = valorUnitario * item.quantidade;
+                const precoBasePreciso = pricingResult.B97_precoVendaComDifal || 0;
+                if (precoBasePreciso > 0) {
+                    const ipiRatio = (pricingResult.B99_valorIPI || 0) / precoBasePreciso;
+                    const stRatio = (pricingResult.B101_valorDifST || 0) / precoBasePreciso;
+                    ipiItem = subtotalItem * ipiRatio;
+                    stItem = subtotalItem * stRatio;
+                    valorFinalItem = subtotalItem + ipiItem + stItem;
+                    icmsItem = subtotalItem * ((pricingResult.B83_valorICMSOpPropria || 0) / precoBasePreciso);
+                    difalItem = subtotalItem * ((pricingResult.B96_valorDifal || 0) / precoBasePreciso);
+                } else {
+                    valorFinalItem = subtotalItem;
+                    ipiItem = stItem = icmsItem = difalItem = 0;
+                }
+            }
+            somaTotalSubtotal += subtotalItem;
+            somaTotalFinal += valorFinalItem;
+            somaTotalIPI += ipiItem;
+            somaTotalICMS += icmsItem;
+            somaTotalDIFAL += difalItem;
+            somaTotalST += stItem;
+        });
+
+        const tableBody = budgetItems.map(item => {
+            const template = templatesMap.get(item.templateId);
+            const pricingResult = template?.pricingConfig?.result;
+            if (!template || !pricingResult) return null;
+
+            let valorTotal, valorUnitario;
+            if (template.templateType === 'grade') {
+                const areaItem = (item.largura * item.comprimento / 1e6) * item.quantidade;
+                const areaTotalTemplate = areaTotalPorTemplate[item.templateId] || 1;
+                valorTotal = (pricingResult.B97_precoVendaComDifal || 0) * (areaItem / areaTotalTemplate);
+            } else {
+                const totalQuantity = pricingResult.materiaisDetalhes[0]?.qty || 1;
+                const precoUnitarioPreciso = (pricingResult.B97_precoVendaComDifal || 0) / totalQuantity;
+                valorUnitario = Math.ceil(precoUnitarioPreciso * 100) / 100;
+                valorTotal = valorUnitario * item.quantidade;
+            }
+            valorUnitario = item.quantidade > 0 ? valorTotal / item.quantidade : 0;
+            const ipiRate = (pricingResult.B98_ipiVenda || 0) * 100;
+
+            return [
+                item.order + 1, item.quantidade, 'pç',
+                generateItemDescription(item, template),
+                FormattingService.formatNumber(valorUnitario),
+                ipiRate > 0 ? `${FormattingService.formatNumber(ipiRate, 2)}%` : "-",
+                commercialData.deliveryTime || 'A combinar',
+                FormattingService.formatNumber(valorTotal)
+            ];
+        }).filter(row => row !== null);
+
+        const drawPageTemplate = () => {
+            const pageCount = doc.internal.getNumberOfPages();
+            const logoBase64 = commercialData.logoBase64;
+            if (logoBase64) doc.addImage(logoBase64, 'PNG', 14, 12, 25, 0);
+
+            doc.setFontSize(10).setFont("helvetica", "bold");
+            doc.text(commercialData.headerLine1, 105, 15, { align: 'center' });
+            if (pageCount === 1) {
+                doc.setFontSize(8).setFont("helvetica", "normal");
+                doc.text(commercialData.headerLine2, 105, 20, { align: 'center' });
+                doc.text(commercialData.headerLine3, 105, 25, { align: 'center' });
+                doc.setFontSize(10).setFont("helvetica", "bold");
+                doc.text("Orçamento para", 14, 40);
+                doc.text(`Orçamento nº: ${commercialData.quoteNumber}`, 200, 40, { align: 'right' });
+                doc.setFontSize(9).setFont("helvetica", "normal");
+                doc.text(commercialData.clientName || 'N/A', 14, 45);
+                doc.text(`Data: ${new Date().toLocaleDateString('pt-BR')}`, 200, 45, { align: 'right' });
+                doc.text(commercialData.clientIdentifier || 'N/A', 14, 50);
+                const validUntilDate = commercialData.validUntil ? new Date(commercialData.validUntil + 'T00:00:00') : new Date();
+                doc.text(`Orçamento válido até: ${validUntilDate.toLocaleDateString('pt-BR')}`, 200, 50, { align: 'right' });
+                doc.text(`UF: ${commercialData.ufDestino || 'N/A'}`, 14, 55);
+            } else {
+                doc.text(`Orçamento nº: ${commercialData.quoteNumber}`, 200, 15, { align: 'right' });
+            }
+            doc.setFontSize(8).text(`Página ${pageCount} de ${totalPagesExp}`, doc.internal.pageSize.width / 2, 287, { align: 'center' });
+        };
+
+        doc.autoTable({
+            startY: 65,
+            margin: { top: 35, bottom: 20 },
+            head: [['Item', 'Qtd.', 'Un', 'Descrição', 'Preço (R$)', '+IPI', 'Prazo', 'Valor (R$)']],
+            body: tableBody,
+            theme: 'grid',
+            headStyles: { fillColor: [192, 0, 0], textColor: 255, fontStyle: 'bold' },
+            styles: { fontSize: 8, cellPadding: 2 },
+            columnStyles: {
+                0: { cellWidth: 10, halign: 'center' },
+                1: { cellWidth: 10, halign: 'center' },
+                2: { cellWidth: 8,  halign: 'center' },
+                3: { cellWidth: 'auto' },
+                4: { halign: 'right' },
+                5: { cellWidth: 12, halign: 'right' },
+                6: { cellWidth: 20 },
+                7: { cellWidth: 25, halign: 'right' }
+            },
+            rowPageBreak: 'avoid',
+            didParseCell: (data) => {
+                if (data.column.dataKey === 3) { data.cell.styles.valign = 'middle'; }
+            },
+            didDrawPage: drawPageTemplate
+        });
+
+        const finalY = doc.lastAutoTable.finalY;
+        let startYAfterMainTable = finalY + 5;
+        if (finalY > 235) {
+            doc.addPage();
+            startYAfterMainTable = 30;
+        }
+
+        const firstPricedItem = budgetItems.find(item => templatesMap.get(item.templateId)?.pricingConfig?.result);
+        const firstPricingResult = firstPricedItem ? templatesMap.get(firstPricedItem.templateId).pricingConfig.result : {};
+        const icmsRate = (firstPricingResult.B82_icmsOpPropria || 0) * 100;
+
+        const finalTableBody = [
+            [{ content: 'Prazo:', styles: { fontStyle: 'bold' } }, { content: commercialData.deliveryTime || 'A combinar' }, { content: 'Subtotal', styles: { fontStyle: 'bold', halign: 'right' } }, { content: FormattingService.formatCurrency(somaTotalSubtotal), styles: { halign: 'right' } }],
+            [{ content: 'Frete:', styles: { fontStyle: 'bold' } }, { content: commercialData.shippingInfo }, { content: 'IPI (a incluir)', styles: { fontStyle: 'bold', halign: 'right' } }, { content: FormattingService.formatCurrency(somaTotalIPI), styles: { halign: 'right' } }],
+            [{ content: 'Pagamento:', styles: { fontStyle: 'bold' } }, { content: commercialData.paymentTerms }, { content: 'DIFAL (incluso)', styles: { fontStyle: 'bold', halign: 'right' } }, { content: somaTotalDIFAL > 0 ? FormattingService.formatCurrency(somaTotalDIFAL) : '-', styles: { halign: 'right' } }],
+            [{ content: '', colSpan: 2 }, { content: `ICMS (incluso) ${FormattingService.formatNumber(icmsRate, 2)}%`, styles: { fontStyle: 'bold', halign: 'right' } }, { content: FormattingService.formatCurrency(somaTotalICMS), styles: { halign: 'right' } }],
+            [{ content: '', colSpan: 2 }, { content: 'Outros (ICMS-ST)', styles: { fontStyle: 'bold', halign: 'right' } }, { content: somaTotalST > 0 ? FormattingService.formatCurrency(somaTotalST) : '-', styles: { halign: 'right' } }],
+            [{ content: '', colSpan: 2 }, { content: 'TOTAL', styles: { fontStyle: 'bold', halign: 'right' } }, { content: FormattingService.formatCurrency(somaTotalFinal), styles: { fontStyle: 'bold', halign: 'right' } }],
+            [{ content: commercialData.sellerName, styles: { fontStyle: 'bold' }, colSpan: 4 }],
+            [{ content: commercialData.sellerContact, colSpan: 4 }]
+        ];
+
+        doc.autoTable({
+            startY: startYAfterMainTable,
+            body: finalTableBody,
+            theme: 'plain',
+            rowPageBreak: 'avoid',
+            styles: { fontSize: 9, cellPadding: 2 },
+            columnStyles: {
+                0: { cellWidth: 25 },
+                1: { cellWidth: 'auto' },
+                2: { cellWidth: 40 },
+                3: { cellWidth: 30 }
+            },
+            didParseCell: (data) => {
+                if (data.column.index >= 2) {
+                    data.cell.styles.lineWidth = 0.1;
+                    data.cell.styles.lineColor = [0, 0, 0];
+                }
+                if (data.row.index === 5 && data.column.index >= 2) {
+                    data.cell.styles.fillColor = [192, 0, 0];
+                    data.cell.styles.textColor = [255, 255, 255];
+                }
+            },
+            didDrawPage: drawPageTemplate
+        });
+
+        if (typeof doc.putTotalPages === 'function') {
+            doc.putTotalPages(totalPagesExp);
+        }
+
+        doc.save(`Orcamento_${commercialData.quoteNumber || 'sem_numero'}.pdf`);
+        this.notifications.show("PDF gerado com sucesso!", NOTIFICATION_TYPES.SUCCESS);
+    }
+}

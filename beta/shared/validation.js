@@ -1,1 +1,412 @@
-const voti_59_0x444bac=voti_59_0x14e3;(function(_0x1af7b3,_0x3f937d){const _0xe74061=voti_59_0x14e3,_0x339f90=_0x1af7b3();while(!![]){try{const _0x3085ac=parseInt(_0xe74061(0xc2))/0x1*(parseInt(_0xe74061(0xd1))/0x2)+-parseInt(_0xe74061(0xff))/0x3+parseInt(_0xe74061(0xb5))/0x4*(-parseInt(_0xe74061(0xb9))/0x5)+-parseInt(_0xe74061(0x93))/0x6+parseInt(_0xe74061(0xc3))/0x7+-parseInt(_0xe74061(0xfd))/0x8+parseInt(_0xe74061(0xc5))/0x9;if(_0x3085ac===_0x3f937d)break;else _0x339f90['push'](_0x339f90['shift']());}catch(_0x401310){_0x339f90['push'](_0x339f90['shift']());}}}(voti_59_0x1508,0x50776));import{Utils}from'./services/utils-service.js';export class Validator{constructor(){const _0x339960=voti_59_0x14e3;this['rules']={},this[_0x339960(0x118)]={};}[voti_59_0x444bac(0xcc)](_0x2b42f7){const _0x282b47=voti_59_0x444bac;this[_0x282b47(0x120)]={...this[_0x282b47(0x120)],..._0x2b42f7};}[voti_59_0x444bac(0x10c)](_0x58ff9d,_0xbebea0){this['customValidators'][_0x58ff9d]=_0xbebea0;}[voti_59_0x444bac(0xfc)](_0x572556,_0x3ed679=null){const _0x53090d=voti_59_0x444bac,_0x5a7f19=_0x3ed679!==null?_0x3ed679:_0x572556[_0x53090d(0xe8)],_0x55bce0=_0x572556['id'],_0x389e22=this[_0x53090d(0x120)][_0x55bce0];if(!_0x389e22)return!![];const _0x5c6a68=this[_0x53090d(0xea)](_0x5a7f19,_0x389e22,_0x572556);return this[_0x53090d(0x10d)](_0x572556,_0x5c6a68),_0x5c6a68[_0x53090d(0xdc)]===0x0;}[voti_59_0x444bac(0xde)](_0x4a72d0){const _0x6fc6a5=voti_59_0x444bac,_0x343b81=_0x4a72d0['querySelectorAll'](_0x6fc6a5(0x11d));let _0x219e94=!![];return _0x343b81[_0x6fc6a5(0x105)](_0xd9f8e8=>{const _0x2d29e2=_0x6fc6a5;!this[_0x2d29e2(0xfc)](_0xd9f8e8)&&(_0x219e94=![]);}),_0x219e94;}[voti_59_0x444bac(0xea)](_0x3af9e2,_0x2013bd,_0x2d9739=null){const _0x2d1446=voti_59_0x444bac,_0x75a4a8=[];if(_0x2013bd[_0x2d1446(0xc4)]&&this[_0x2d1446(0xa5)](_0x3af9e2))return _0x75a4a8[_0x2d1446(0xd0)](_0x2d1446(0xb6)),_0x75a4a8;if(this['isEmpty'](_0x3af9e2))return _0x75a4a8;_0x2013bd[_0x2d1446(0xb4)]!==undefined&&Number(_0x3af9e2)<_0x2013bd[_0x2d1446(0xb4)]&&_0x75a4a8[_0x2d1446(0xd0)](_0x2d1446(0xe1)+_0x2013bd[_0x2d1446(0xb4)]);_0x2013bd['max']!==undefined&&Number(_0x3af9e2)>_0x2013bd[_0x2d1446(0xe9)]&&_0x75a4a8[_0x2d1446(0xd0)](_0x2d1446(0xae)+_0x2013bd[_0x2d1446(0xe9)]);_0x2013bd[_0x2d1446(0x11f)]&&_0x3af9e2[_0x2d1446(0xdc)]<_0x2013bd[_0x2d1446(0x11f)]&&_0x75a4a8['push'](_0x2d1446(0xad)+_0x2013bd[_0x2d1446(0x11f)]+_0x2d1446(0xb0));_0x2013bd[_0x2d1446(0x100)]&&_0x3af9e2[_0x2d1446(0xdc)]>_0x2013bd[_0x2d1446(0x100)]&&_0x75a4a8['push'](_0x2d1446(0x110)+_0x2013bd[_0x2d1446(0x100)]+_0x2d1446(0xb0));if(_0x2013bd[_0x2d1446(0xc1)]&&_0x2d9739){const _0x173bba=_0x2013bd['custom'][_0x2d1446(0xa0)](_0x4e31a1=>{const _0x1d383f=this['customValidators'][_0x4e31a1];return _0x1d383f?_0x1d383f(_0x3af9e2,_0x2d9739):null;})['filter'](_0x4ceac9=>_0x4ceac9!==null);_0x75a4a8[_0x2d1446(0xd0)](..._0x173bba);}return _0x75a4a8;}[voti_59_0x444bac(0x10d)](_0x5cca79,_0x48b8e2){const _0xd9cf97=voti_59_0x444bac,_0x40e38d=this[_0xd9cf97(0x116)](_0x5cca79);_0x48b8e2[_0xd9cf97(0xdc)]>0x0?(_0x5cca79[_0xd9cf97(0xbf)]['add'](_0xd9cf97(0x94)),_0x40e38d&&(_0x40e38d[_0xd9cf97(0xd2)]=_0x48b8e2[0x0],_0x40e38d[_0xd9cf97(0x107)][_0xd9cf97(0xaa)]=_0xd9cf97(0x9e))):(_0x5cca79[_0xd9cf97(0xbf)]['remove'](_0xd9cf97(0x94)),_0x40e38d&&(_0x40e38d[_0xd9cf97(0x107)][_0xd9cf97(0xaa)]=_0xd9cf97(0xaf)));}['getHelpElement'](_0x26bb88){const _0x18d9fd=voti_59_0x444bac,_0x57458f=_0x26bb88['closest'](_0x18d9fd(0xf5));return _0x57458f?_0x57458f['querySelector'](_0x18d9fd(0xa6)):null;}[voti_59_0x444bac(0xa5)](_0x3934f4){const _0x30799e=voti_59_0x444bac;return _0x3934f4===null||_0x3934f4===undefined||typeof _0x3934f4==='string'&&_0x3934f4[_0x30799e(0x97)]()==='';}[voti_59_0x444bac(0xac)](_0x33343e){const _0x52f2c4=voti_59_0x444bac;_0x33343e[_0x52f2c4(0xbf)]['remove']('field-error');const _0x13ad57=this[_0x52f2c4(0x116)](_0x33343e);_0x13ad57&&(_0x13ad57['style']['display']=_0x52f2c4(0xaf));}[voti_59_0x444bac(0xc8)](_0x5ab89d){const _0x4649ea=voti_59_0x444bac;_0x5ab89d['querySelectorAll'](_0x4649ea(0xd4))[_0x4649ea(0x105)](_0x39064f=>{const _0xff0580=_0x4649ea;this[_0xff0580(0xac)](_0x39064f);});}[voti_59_0x444bac(0xca)](_0x2319ca,_0x770fff=0x12c){const _0x2b5957=voti_59_0x444bac,_0x41b30e=_0x2319ca['querySelectorAll'](_0x2b5957(0xd4));_0x41b30e[_0x2b5957(0x105)](_0x57da12=>{const _0x120659=_0x2b5957,_0x54b261=Utils[_0x120659(0x115)](()=>this['validateField'](_0x57da12),_0x770fff);_0x57da12['type']!==_0x120659(0xe3)&&_0x57da12[_0x120659(0xc0)]('input',_0x54b261),_0x57da12[_0x120659(0xc0)]('blur',()=>this[_0x120659(0xfc)](_0x57da12)),_0x57da12[_0x120659(0xe4)]===_0x120659(0xe3)&&_0x57da12[_0x120659(0xc0)](_0x120659(0xa1),()=>this['validateField'](_0x57da12));});}[voti_59_0x444bac(0xbb)](_0x34e714,_0x53901b){const _0x3705dd=voti_59_0x444bac;this[_0x3705dd(0x10d)](_0x34e714,[_0x53901b]);}[voti_59_0x444bac(0xb8)](_0xf87cd8){const _0x4a55ef=voti_59_0x444bac;return _0xf87cd8['querySelectorAll']('.field-error')[_0x4a55ef(0xdc)]>0x0;}}function voti_59_0x14e3(_0xd0126f,_0x16cf67){const _0x150882=voti_59_0x1508();return voti_59_0x14e3=function(_0x14e3cf,_0x445753){_0x14e3cf=_0x14e3cf-0x8c;let _0xbf0b82=_0x150882[_0x14e3cf];return _0xbf0b82;},voti_59_0x14e3(_0xd0126f,_0x16cf67);}function voti_59_0x1508(){const _0xe08a8f=['templateId','every','Peso\x20unitário\x20final\x20deve\x20ser\x20um\x20número\x20maior\x20que\x20zero.','onload','height','keys','length','Largura\x20da\x20chapa\x20lateral\x20obrigatória\x20para\x20degraus','validateForm','form','bp_larg','Valor\x20mínimo:\x20','#bf-esp','select-one','type','Largura\x20da\x20chapa\x20xadrez\x20obrigatória\x20quando\x20incluída','Espessura\x20portante\x20não\x20pode\x20exceder\x2050%\x20da\x20malha\x20menor\x20(','Malha\x20maior\x20deve\x20estar\x20entre\x2020\x20e\x20150mm','value','max','checkRules','\x22\x20deve\x20ser\x20um\x20número\x20válido\x20(≥\x200).','incluirChapaXadrez','Espessura\x20fechamento\x20deve\x20ser\x20≥\x20espessura\x20portante\x20(','values','revokeObjectURL','Espessura\x20da\x20chapa\x20lateral\x20obrigatória\x20para\x20degraus','arrayBuffer','validateLogoFile','chapaLateralLarg','validateGradeTemplate','.field','closest','#bl-larg','Malha\x20menor\x20deve\x20estar\x20entre\x2020\x20e\x20150mm','Nenhum\x20arquivo\x20selecionado.','isDegrau','nome','validateField','2054224hyVoOd','setupCustomValidators','828351xvJnKr','maxLength','templateType','fechamentoValidation','#malha-menor','Espessura\x20da\x20chapa\x20xadrez\x20obrigatória\x20quando\x20incluída','forEach','validateClampTemplate','style','Diâmetro\x20deve\x20ser\x200\x20ou\x20entre\x202\x20e\x209.99mm','Espessura\x20fechamento\x20deve\x20ser\x20≥\x20portante\x20(','precosCustomizados','#bl-diam','addCustomValidator','updateFieldUI','A\x20imagem\x20é\x20muito\x20grande.\x20As\x20dimensões\x20máximas\x20são\x20','Comprimento\x20deve\x20ser\x20pelo\x20menos\x202x\x20a\x20malha\x20menor','Máximo\x20','#malha-maior','malha_menor','createObjectURL','chapaXadrezAjuste','debounce','getHelpElement','bf-larg','customValidators','chapaXadrezEsp','#bp-larg','Arquivo\x20inválido.\x20Apenas\x20imagens\x20no\x20formato\x20PNG\x20são\x20permitidas.','O\x20custo\x20de\x20\x22','input[required],\x20select[required]','malhaValidation','minLength','rules','Se\x20usar\x20barra\x20chata,\x20diâmetro\x20deve\x20ser\x200','Largura\x20chata\x20deve\x20ser\x200\x20ou\x20entre\x202\x20e\x20100mm','Largura\x20fechamento\x20deve\x20ser\x20≥\x20portante\x20(','validateLigacaoFields','ligacaoValidation','bl_diam','Dimensões\x20muito\x20grandes\x20(máximo\x206000mm)','width','1977048iKhUCd','field-error','slice','comprimento','trim','MB.','toSafeNumber','Espessura\x20chata\x20deve\x20ser\x200\x20ou\x20entre\x202\x20e\x2010mm','querySelector','Malha\x20menor\x20não\x20pode\x20ser\x20maior\x20que\x20a\x20malha\x20maior','bf_esp','block','customMaoObra','map','change','size','Espessura\x20fechamento\x20não\x20pode\x20exceder\x2050%\x20da\x20malha\x20menor\x20(','chapaLateralEsp','isEmpty','.help','pesoUnitario','#bp-esp','bl_larg','display','portanteValidation','clearFieldValidation','Mínimo\x20','Valor\x20máximo:\x20','none','\x20caracteres','Se\x20usar\x20barra\x20redonda,\x20espessura\x20e\x20largura\x20chata\x20devem\x20ser\x200','Espessura\x20portante\x20deve\x20estar\x20entre\x202\x20e\x2010mm','bp_esp','min','740IJapUL','Campo\x20obrigatório','bf-esp','hasErrors','9190rmtogo','#bl-esp','showCustomError','mm)','bl_esp','setupBusinessRules','classList','addEventListener','custom','1enVmce','326732vYTPoi','required','10466982BomOKh','Para\x20barra\x20chata,\x20ambas\x20dimensões\x20devem\x20ser\x20≥\x202mm','chapaXadrezLarg','clearFormValidation','malha_maior','setupRealTimeValidation','validateDegrauFields','setRules','O\x20arquivo\x20parece\x20ser\x20um\x20PNG\x20corrompido\x20ou\x20não\x20pôde\x20ser\x20lido.','src','Comprimento\x20mínimo\x20de\x20200mm\x20para\x20degraus','push','644698PxxTnW','textContent','Defina\x20pelo\x20menos\x20um\x20tipo\x20de\x20barra\x20de\x20ligação','input,\x20select','largura'];voti_59_0x1508=function(){return _0xe08a8f;};return voti_59_0x1508();}export class BusinessValidator extends Validator{constructor(){const _0x4920bc=voti_59_0x444bac;super(),this[_0x4920bc(0xbe)](),this[_0x4920bc(0xfe)]();}async[voti_59_0x444bac(0xf2)](_0x3c43f8){const _0x382416=voti_59_0x444bac;if(!_0x3c43f8)return{'isValid':![],'message':_0x382416(0xf9)};const _0xcaf519=0x2;if(_0x3c43f8[_0x382416(0xa2)]>_0xcaf519*0x400*0x400)return{'isValid':![],'message':'O\x20arquivo\x20é\x20muito\x20grande.\x20O\x20tamanho\x20máximo\x20é\x20de\x20'+_0xcaf519+_0x382416(0x98)};const _0x27ae39=[0x89,0x50,0x4e,0x47,0xd,0xa,0x1a,0xa],_0x5ec0d2=await _0x3c43f8[_0x382416(0x95)](0x0,0x8)[_0x382416(0xf1)](),_0x52b7b2=new Uint8Array(_0x5ec0d2);if(_0x52b7b2['length']<0x8||!_0x52b7b2[_0x382416(0xd7)]((_0xd0f290,_0x268030)=>_0xd0f290===_0x27ae39[_0x268030]))return{'isValid':![],'message':_0x382416(0x11b)};const _0xf83d4=0x7d0;try{const _0x507834=await new Promise((_0x136e8f,_0x3fe847)=>{const _0x409e14=_0x382416,_0x45e76b=new Image(),_0x36ea74=URL[_0x409e14(0x113)](_0x3c43f8);_0x45e76b[_0x409e14(0xd9)]=()=>{URL['revokeObjectURL'](_0x36ea74),_0x136e8f(_0x45e76b);},_0x45e76b['onerror']=()=>{const _0x1f27c1=_0x409e14;URL[_0x1f27c1(0xef)](_0x36ea74),_0x3fe847();},_0x45e76b[_0x409e14(0xce)]=_0x36ea74;});if(_0x507834[_0x382416(0x92)]>_0xf83d4||_0x507834[_0x382416(0xda)]>_0xf83d4)return{'isValid':![],'message':_0x382416(0x10e)+_0xf83d4+'x'+_0xf83d4+'\x20pixels.'};}catch(_0x26d1e4){return{'isValid':![],'message':_0x382416(0xcd)};}return{'isValid':!![],'message':'Arquivo\x20válido.'};}[voti_59_0x444bac(0xbe)](){const _0x239a51=voti_59_0x444bac;this[_0x239a51(0xcc)]({'template-nome':{'required':!![],'minLength':0x1,'maxLength':0x32},'bp-esp':{'required':!![],'min':0x2,'max':0xa,'custom':[_0x239a51(0xab)]},'bp-larg':{'required':!![],'min':0x14,'max':0x64,'custom':['portanteValidation']},'bl-diam':{'min':0x0,'max':9.99,'custom':[_0x239a51(0x8f)]},'bl-esp':{'min':0x0,'max':0xa,'custom':[_0x239a51(0x8f)]},'bl-larg':{'min':0x0,'max':0x64,'custom':[_0x239a51(0x8f)]},'bf-esp':{'required':!![],'min':0x2,'max':0xa,'custom':[_0x239a51(0x102)]},'bf-larg':{'required':!![],'min':0x14,'max':0x64,'custom':[_0x239a51(0x102)]},'malha-menor':{'required':!![],'min':0x14,'max':0x96,'custom':[_0x239a51(0x11e)]},'malha-maior':{'required':!![],'min':0x14,'max':0x96,'custom':[_0x239a51(0x11e)]},'densidade':{'required':!![],'min':0x1b58,'max':0x2328},'margem':{'required':!![],'min':0x0,'max':0x32},'select-template':{'required':!![]},'item-quantidade':{'required':!![],'min':0x1,'max':0x270f},'item-largura':{'required':!![],'min':0x32,'max':0x1770},'item-comprimento':{'required':!![],'min':0x32,'max':0x1770},'item-descricao':{'maxLength':0x64},'preco-mao-obra':{'required':!![],'min':0x0,'max':0x3e8},'preco-galvanizacao':{'min':0x0,'max':0x3e8},'preco-chata-padrao':{'required':!![],'min':0x0,'max':0x64},'preco-redonda-padrao':{'required':!![],'min':0x0,'max':0x64},'icmsMaterial':{'required':!![],'min':0x0,'max':0x64},'ipiMaterial':{'required':!![],'min':0x0,'max':0x64},'lucroLiquido':{'required':!![],'min':0x0,'max':0x64},'despesasFixas':{'required':!![],'min':0x0,'max':0x64},'proposta-client-name':{'required':!![],'minLength':0x3},'proposta-client-uf':{'required':!![]},'proposta-quote-number':{'required':!![]}});}[voti_59_0x444bac(0xfe)](){const _0xbc6ffb=voti_59_0x444bac;this['addCustomValidator'](_0xbc6ffb(0x11e),(_0x48ad1f,_0x535711)=>{const _0xa793d1=_0xbc6ffb,_0x5995ea=_0x535711[_0xa793d1(0xf6)]('form');if(!_0x5995ea)return null;const _0x3f4ce1=Utils[_0xa793d1(0x99)](_0x5995ea['querySelector'](_0xa793d1(0x103))?.[_0xa793d1(0xe8)]),_0x63c4c7=Utils['toSafeNumber'](_0x5995ea[_0xa793d1(0x9b)](_0xa793d1(0x111))?.['value']);if(_0x3f4ce1>_0x63c4c7)return _0xa793d1(0x9c);return null;}),this['addCustomValidator']('portanteValidation',(_0x21867a,_0x5564e5)=>{const _0x534121=_0xbc6ffb,_0x19d00f=_0x5564e5[_0x534121(0xf6)](_0x534121(0xdf));if(!_0x19d00f)return null;const _0x24e870=Utils[_0x534121(0x99)](_0x19d00f['querySelector']('#bp-esp')?.[_0x534121(0xe8)]),_0x3c310e=Utils['toSafeNumber'](_0x19d00f[_0x534121(0x9b)](_0x534121(0x103))?.[_0x534121(0xe8)]);if(_0x3c310e>0x0&&_0x24e870>0.5*_0x3c310e)return _0x534121(0xe6)+0.5*_0x3c310e+_0x534121(0xbc);return null;}),this[_0xbc6ffb(0x10c)]('fechamentoValidation',(_0x115e88,_0xaeff21)=>{const _0x3d066c=_0xbc6ffb,_0x4d9d47=_0xaeff21[_0x3d066c(0xf6)](_0x3d066c(0xdf));if(!_0x4d9d47)return null;const _0x3de93a=Utils[_0x3d066c(0x99)](_0x4d9d47[_0x3d066c(0x9b)](_0x3d066c(0xa8))?.['value']),_0x3df16a=Utils[_0x3d066c(0x99)](_0x4d9d47[_0x3d066c(0x9b)](_0x3d066c(0x11a))?.['value']),_0x300bc3=Utils[_0x3d066c(0x99)](_0x4d9d47[_0x3d066c(0x9b)](_0x3d066c(0xe2))?.[_0x3d066c(0xe8)]),_0x43fb5b=Utils['toSafeNumber'](_0x4d9d47['querySelector']('#bf-larg')?.[_0x3d066c(0xe8)]),_0x3e6920=Utils[_0x3d066c(0x99)](_0x4d9d47[_0x3d066c(0x9b)]('#malha-menor')?.[_0x3d066c(0xe8)]);if(_0xaeff21['id']===_0x3d066c(0xb7)&&_0x3de93a>0x0&&_0x300bc3<_0x3de93a)return _0x3d066c(0xed)+_0x3de93a+'mm)';if(_0xaeff21['id']===_0x3d066c(0x117)&&_0x3df16a>0x0&&_0x43fb5b<_0x3df16a)return'Largura\x20fechamento\x20deve\x20ser\x20≥\x20largura\x20portante\x20('+_0x3df16a+_0x3d066c(0xbc);if(_0xaeff21['id']===_0x3d066c(0xb7)&&_0x3e6920>0x0&&_0x300bc3>0.5*_0x3e6920)return _0x3d066c(0xa3)+0.5*_0x3e6920+_0x3d066c(0xbc);return null;}),this[_0xbc6ffb(0x10c)]('ligacaoValidation',(_0x300031,_0x1ffe8e)=>{const _0x6856dc=_0xbc6ffb,_0x45e333=_0x1ffe8e[_0x6856dc(0xf6)](_0x6856dc(0xdf));if(!_0x45e333)return null;const _0x543665=this[_0x6856dc(0x8e)](_0x45e333);if(_0x543665)return _0x543665;const _0x531cce=Utils['toSafeNumber'](_0x45e333[_0x6856dc(0x9b)]('#malha-maior')?.[_0x6856dc(0xe8)]);if(_0x531cce>0x0){const _0x55bf34=0.5*_0x531cce,_0x21495a=Utils['toSafeNumber'](_0x45e333['querySelector'](_0x6856dc(0x10b))?.['value']),_0x52e8b6=Utils[_0x6856dc(0x99)](_0x45e333[_0x6856dc(0x9b)](_0x6856dc(0xba))?.[_0x6856dc(0xe8)]);if(_0x21495a>_0x55bf34)return'Diâmetro\x20ligação\x20não\x20pode\x20exceder\x2050%\x20da\x20malha\x20maior\x20('+_0x55bf34+_0x6856dc(0xbc);if(_0x52e8b6>_0x55bf34)return'Espessura\x20ligação\x20não\x20pode\x20exceder\x2050%\x20da\x20malha\x20maior\x20('+_0x55bf34+_0x6856dc(0xbc);}return null;});}[voti_59_0x444bac(0x8e)](_0xa0415){const _0x32f85a=voti_59_0x444bac,_0x50592a=Utils['toSafeNumber'](_0xa0415[_0x32f85a(0x9b)](_0x32f85a(0x10b))?.[_0x32f85a(0xe8)]),_0x29e8b2=Utils[_0x32f85a(0x99)](_0xa0415[_0x32f85a(0x9b)](_0x32f85a(0xba))?.['value']),_0x4b3d21=Utils[_0x32f85a(0x99)](_0xa0415[_0x32f85a(0x9b)](_0x32f85a(0xf7))?.[_0x32f85a(0xe8)]);if(_0x50592a!==0x0&&(_0x50592a<0x2||_0x50592a>=0xa))return'Diâmetro\x20deve\x20ser\x200\x20ou\x20entre\x202\x20e\x209.99mm';if(_0x29e8b2!==0x0&&(_0x29e8b2<0x2||_0x29e8b2>0xa))return _0x32f85a(0x9a);if(_0x4b3d21!==0x0&&(_0x4b3d21<0x2||_0x4b3d21>0x64))return'Largura\x20chata\x20deve\x20ser\x200\x20ou\x20entre\x202\x20e\x20100mm';const _0x2db5b3=_0x29e8b2>=0x2,_0x2cce0b=_0x4b3d21>=0x2;if(_0x50592a>=0x2&&(_0x29e8b2>0x0||_0x4b3d21>0x0))return _0x32f85a(0xb1);if(_0x2db5b3||_0x2cce0b){if(_0x50592a>0x0)return _0x32f85a(0x121);if(!_0x2db5b3||!_0x2cce0b)return _0x32f85a(0xc6);}if(_0x50592a===0x0&&_0x29e8b2===0x0&&_0x4b3d21===0x0)return _0x32f85a(0xd3);return null;}[voti_59_0x444bac(0xf4)](_0x3e697e){const _0x3ce3a1=voti_59_0x444bac,_0x8952b9=[];if(_0x3e697e['bp_esp']<0x2||_0x3e697e[_0x3ce3a1(0xb3)]>0xa)_0x8952b9[_0x3ce3a1(0xd0)](_0x3ce3a1(0xb2));if(_0x3e697e[_0x3ce3a1(0xe0)]<0x14||_0x3e697e['bp_larg']>0x64)_0x8952b9[_0x3ce3a1(0xd0)]('Largura\x20portante\x20deve\x20estar\x20entre\x2020\x20e\x20100mm');if(_0x3e697e[_0x3ce3a1(0x9d)]<_0x3e697e[_0x3ce3a1(0xb3)])_0x8952b9['push'](_0x3ce3a1(0x109)+_0x3e697e[_0x3ce3a1(0xb3)]+'mm)');if(_0x3e697e['bf_larg']<_0x3e697e[_0x3ce3a1(0xe0)])_0x8952b9['push'](_0x3ce3a1(0x8d)+_0x3e697e[_0x3ce3a1(0xe0)]+_0x3ce3a1(0xbc));if(_0x3e697e[_0x3ce3a1(0x112)]<0x14||_0x3e697e[_0x3ce3a1(0x112)]>0x96)_0x8952b9[_0x3ce3a1(0xd0)](_0x3ce3a1(0xf8));if(_0x3e697e['malha_maior']<0x14||_0x3e697e['malha_maior']>0x96)_0x8952b9[_0x3ce3a1(0xd0)](_0x3ce3a1(0xe7));if(_0x3e697e[_0x3ce3a1(0x112)]>_0x3e697e['malha_maior'])_0x8952b9[_0x3ce3a1(0xd0)](_0x3ce3a1(0x9c));const _0x4f9c1f=0.5*_0x3e697e['malha_menor'];if(_0x3e697e[_0x3ce3a1(0xb3)]>_0x4f9c1f)_0x8952b9[_0x3ce3a1(0xd0)](_0x3ce3a1(0xe6)+_0x4f9c1f+_0x3ce3a1(0xbc));if(_0x3e697e[_0x3ce3a1(0x9d)]>_0x4f9c1f)_0x8952b9[_0x3ce3a1(0xd0)](_0x3ce3a1(0xa3)+_0x4f9c1f+'mm)');const _0x1e3aed=0.5*_0x3e697e['malha_maior'];if(_0x3e697e[_0x3ce3a1(0x90)]>_0x1e3aed)_0x8952b9[_0x3ce3a1(0xd0)]('Diâmetro\x20ligação\x20não\x20pode\x20exceder\x2050%\x20da\x20malha\x20maior\x20('+_0x1e3aed+_0x3ce3a1(0xbc));if(_0x3e697e[_0x3ce3a1(0xbd)]>_0x1e3aed)_0x8952b9[_0x3ce3a1(0xd0)]('Espessura\x20ligação\x20não\x20pode\x20exceder\x2050%\x20da\x20malha\x20maior\x20('+_0x1e3aed+'mm)');const _0x49e9cd=this['validateLigacaoData'](_0x3e697e);if(_0x49e9cd)_0x8952b9[_0x3ce3a1(0xd0)](_0x49e9cd);return _0x3e697e[_0x3ce3a1(0x10a)]&&(!_0x3e697e[_0x3ce3a1(0x9f)]||_0x3e697e[_0x3ce3a1(0x9f)]<=0x0)&&_0x8952b9[_0x3ce3a1(0xd0)]('Preço\x20customizado\x20de\x20mão\x20de\x20obra\x20obrigatório'),_0x3e697e['isDegrau']&&this[_0x3ce3a1(0xcb)](_0x3e697e,_0x8952b9),_0x8952b9;}[voti_59_0x444bac(0x106)](_0x321f38){const _0x3d668d=voti_59_0x444bac,_0x34d0d2=[];(!_0x321f38['nome']||_0x321f38[_0x3d668d(0xfb)][_0x3d668d(0x97)]()['length']===0x0)&&_0x34d0d2[_0x3d668d(0xd0)]('Nome\x20do\x20template\x20é\x20obrigatório');(_0x321f38[_0x3d668d(0xa7)]<=0x0||!Utils['isValidNumber'](_0x321f38['pesoUnitario']))&&_0x34d0d2[_0x3d668d(0xd0)](_0x3d668d(0xd8));for(const _0x4a6cf5 of Object[_0x3d668d(0xee)](_0x321f38['costs'])){for(const _0x364b00 of Object[_0x3d668d(0xdb)](_0x4a6cf5)){const _0x2368c6=_0x4a6cf5[_0x364b00];(_0x2368c6===null||_0x2368c6===''||isNaN(_0x2368c6)||_0x2368c6<0x0)&&_0x34d0d2[_0x3d668d(0xd0)](_0x3d668d(0x11c)+_0x364b00+_0x3d668d(0xeb));}}return[...new Set(_0x34d0d2)];}['validateLigacaoData'](_0x29466e){const _0x1f5f43=voti_59_0x444bac,_0x387462=Utils[_0x1f5f43(0x99)](_0x29466e[_0x1f5f43(0x90)]),_0x23a939=Utils[_0x1f5f43(0x99)](_0x29466e[_0x1f5f43(0xbd)]),_0x52b3f5=Utils[_0x1f5f43(0x99)](_0x29466e[_0x1f5f43(0xa9)]);if(_0x387462!==0x0&&(_0x387462<0x2||_0x387462>=0xa))return _0x1f5f43(0x108);if(_0x23a939!==0x0&&(_0x23a939<0x2||_0x23a939>0xa))return _0x1f5f43(0x9a);if(_0x52b3f5!==0x0&&(_0x52b3f5<0x2||_0x52b3f5>0x64))return _0x1f5f43(0x8c);const _0x2189b0=_0x23a939>=0x2,_0x291687=_0x52b3f5>=0x2;if(_0x387462>=0x2&&(_0x23a939>0x0||_0x52b3f5>0x0))return _0x1f5f43(0xb1);if(_0x2189b0||_0x291687){if(_0x387462>0x0)return'Se\x20usar\x20barra\x20chata,\x20diâmetro\x20deve\x20ser\x200';if(!_0x2189b0||!_0x291687)return _0x1f5f43(0xc6);}if(_0x387462===0x0&&_0x23a939===0x0&&_0x52b3f5===0x0)return'Defina\x20pelo\x20menos\x20um\x20tipo\x20de\x20barra\x20de\x20ligação';return null;}[voti_59_0x444bac(0xcb)](_0x491e21,_0x7fe6f3){const _0x1320b1=voti_59_0x444bac;if(!_0x491e21[_0x1320b1(0xa4)]||_0x491e21[_0x1320b1(0xa4)]<=0x0)_0x7fe6f3[_0x1320b1(0xd0)](_0x1320b1(0xf0));if(!_0x491e21[_0x1320b1(0xf3)]||_0x491e21[_0x1320b1(0xf3)]<=0x0)_0x7fe6f3['push'](_0x1320b1(0xdd));if(_0x491e21[_0x1320b1(0xec)]){if(!_0x491e21[_0x1320b1(0x119)]||_0x491e21[_0x1320b1(0x119)]<=0x0)_0x7fe6f3[_0x1320b1(0xd0)](_0x1320b1(0x104));if(!_0x491e21['chapaXadrezLarg']||_0x491e21[_0x1320b1(0xc7)]<=0x0)_0x7fe6f3[_0x1320b1(0xd0)](_0x1320b1(0xe5));if(!_0x491e21['chapaXadrezAjuste']||_0x491e21[_0x1320b1(0x114)]<0x1)_0x7fe6f3['push']('Ajuste\x20de\x20peso\x20da\x20chapa\x20xadrez\x20deve\x20ser\x20>=\x201');}}['validateBudgetItem'](_0x1a26e1,_0x5daae6){const _0xde6f0d=voti_59_0x444bac,_0x1f999d=[],_0x566cfd=_0x5daae6['find'](_0x350d46=>_0x350d46['id']===_0x1a26e1[_0xde6f0d(0xd6)]);if(!_0x566cfd)_0x1f999d[_0xde6f0d(0xd0)]('Template\x20selecionado\x20não\x20existe');else{if(_0x566cfd[_0xde6f0d(0x101)]==='grade'){if(_0x1a26e1[_0xde6f0d(0xd5)]<0x64||_0x1a26e1['comprimento']<0x64)_0x1f999d['push']('Dimensões\x20muito\x20pequenas\x20(mínimo\x20100mm)');if(_0x1a26e1['largura']>0x1770||_0x1a26e1[_0xde6f0d(0x96)]>0x1770)_0x1f999d[_0xde6f0d(0xd0)](_0xde6f0d(0x91));if(_0x1a26e1[_0xde6f0d(0xd5)]<0x2*_0x566cfd[_0xde6f0d(0xc9)])_0x1f999d[_0xde6f0d(0xd0)]('Largura\x20deve\x20ser\x20pelo\x20menos\x202x\x20a\x20malha\x20maior');if(_0x1a26e1['comprimento']<0x2*_0x566cfd['malha_menor'])_0x1f999d[_0xde6f0d(0xd0)](_0xde6f0d(0x10f));if(_0x566cfd[_0xde6f0d(0xfa)]&&_0x1a26e1[_0xde6f0d(0x96)]<0xc8)_0x1f999d[_0xde6f0d(0xd0)](_0xde6f0d(0xcf));}}return _0x1f999d;}}
+import { Utils } from './services/utils-service.js';
+
+export class Validator {
+    constructor() {
+        this.rules = {};
+        this.customValidators = {};
+    }
+
+    setRules(newRules) {
+        this.rules = { ...this.rules, ...newRules };
+    }
+
+    addCustomValidator(name, validatorFunction) {
+        this.customValidators[name] = validatorFunction;
+    }
+
+    validateField(fieldElement, value = null) {
+        const valorAtual = value !== null ? value : fieldElement.value;
+        const fieldId = fieldElement.id;
+        const fieldRules = this.rules[fieldId];
+
+        if (!fieldRules) return true; // Sem regras, campo é válido
+
+        const errorMessages = this.checkRules(valorAtual, fieldRules, fieldElement);
+        this.updateFieldUI(fieldElement, errorMessages);
+        return errorMessages.length === 0;
+    }
+
+    validateForm(formElement) {
+        const requiredFields = formElement.querySelectorAll('input[required], select[required]');
+        let isFormValid = true;
+        requiredFields.forEach(field => {
+            if (!this.validateField(field)) {
+                isFormValid = false;
+            }
+        });
+        return isFormValid;
+    }
+
+    checkRules(value, rules, fieldElement = null) {
+        const errors = [];
+        if (rules.required && this.isEmpty(value)) {
+            errors.push("Campo obrigatório");
+            return errors; // Não continua se for obrigatório e vazio
+        }
+
+        if (this.isEmpty(value)) return errors; // Se não for obrigatório, não valida mais nada se vazio
+
+        if (rules.min !== undefined && Number(value) < rules.min) {
+            errors.push(`Valor mínimo: ${rules.min}`);
+        }
+        if (rules.max !== undefined && Number(value) > rules.max) {
+            errors.push(`Valor máximo: ${rules.max}`);
+        }
+        if (rules.minLength && value.length < rules.minLength) {
+            errors.push(`Mínimo ${rules.minLength} caracteres`);
+        }
+        if (rules.maxLength && value.length > rules.maxLength) {
+            errors.push(`Máximo ${rules.maxLength} caracteres`);
+        }
+        if (rules.custom && fieldElement) {
+            const customErrors = rules.custom.map(validatorName => {
+                const validatorFunc = this.customValidators[validatorName];
+                return validatorFunc ? validatorFunc(value, fieldElement) : null;
+            }).filter(error => error !== null);
+            errors.push(...customErrors);
+        }
+        return errors;
+    }
+
+    updateFieldUI(fieldElement, errorMessages) {
+        const helpElement = this.getHelpElement(fieldElement);
+        if (errorMessages.length > 0) {
+            fieldElement.classList.add('field-error');
+            if (helpElement) {
+                helpElement.textContent = errorMessages[0];
+                helpElement.style.display = 'block';
+            }
+        } else {
+            fieldElement.classList.remove('field-error');
+            if (helpElement) {
+                helpElement.style.display = 'none';
+            }
+        }
+    }
+
+    getHelpElement(fieldElement) {
+        const fieldContainer = fieldElement.closest('.field');
+        return fieldContainer ? fieldContainer.querySelector('.help') : null;
+    }
+
+    isEmpty(value) {
+        return value === null || value === undefined || (typeof value === 'string' && value.trim() === '');
+    }
+
+    clearFieldValidation(fieldElement) {
+        fieldElement.classList.remove('field-error');
+        const helpElement = this.getHelpElement(fieldElement);
+        if (helpElement) {
+            helpElement.style.display = 'none';
+        }
+    }
+
+    clearFormValidation(formElement) {
+        formElement.querySelectorAll('input, select').forEach(field => {
+            this.clearFieldValidation(field);
+        });
+    }
+
+    setupRealTimeValidation(formElement, delay = 300) {
+        const fields = formElement.querySelectorAll('input, select');
+        fields.forEach(field => {
+            const debouncedValidation = Utils.debounce(() => this.validateField(field), delay);
+
+            if (field.type !== 'select-one') {
+                field.addEventListener('input', debouncedValidation);
+            }
+            field.addEventListener('blur', () => this.validateField(field));
+            if (field.type === 'select-one') {
+                field.addEventListener('change', () => this.validateField(field));
+            }
+        });
+    }
+
+    showCustomError(fieldElement, message) {
+        this.updateFieldUI(fieldElement, [message]);
+    }
+
+    hasErrors(formElement) {
+        return formElement.querySelectorAll('.field-error').length > 0;
+    }
+}
+
+
+export class BusinessValidator extends Validator {
+    constructor() {
+        super();
+        this.setupBusinessRules();
+        this.setupCustomValidators();
+    }
+
+    async validateLogoFile(file) {
+        if (!file) {
+            return { isValid: false, message: "Nenhum arquivo selecionado." };
+        }
+
+        const MAX_SIZE_MB = 2;
+        if (file.size > MAX_SIZE_MB * 1024 * 1024) {
+            return { isValid: false, message: `O arquivo é muito grande. O tamanho máximo é de ${MAX_SIZE_MB}MB.` };
+        }
+
+        const PNG_SIGNATURE = [0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A];
+        const buffer = await file.slice(0, 8).arrayBuffer();
+        const view = new Uint8Array(buffer);
+
+        if (view.length < 8 || !view.every((byte, index) => byte === PNG_SIGNATURE[index])) {
+            return { isValid: false, message: "Arquivo inválido. Apenas imagens no formato PNG são permitidas." };
+        }
+
+        const MAX_DIMENSION = 2000;
+        try {
+            const image = await new Promise((resolve, reject) => {
+                const img = new Image();
+                const objectURL = URL.createObjectURL(file);
+                img.onload = () => {
+                    URL.revokeObjectURL(objectURL);
+                    resolve(img);
+                };
+                img.onerror = () => {
+                    URL.revokeObjectURL(objectURL);
+                    reject();
+                };
+                img.src = objectURL;
+            });
+
+            if (image.width > MAX_DIMENSION || image.height > MAX_DIMENSION) {
+                return { isValid: false, message: `A imagem é muito grande. As dimensões máximas são ${MAX_DIMENSION}x${MAX_DIMENSION} pixels.` };
+            }
+
+        } catch (error) {
+            return { isValid: false, message: "O arquivo parece ser um PNG corrompido ou não pôde ser lido." };
+        }
+
+        return { isValid: true, message: "Arquivo válido." };
+    }
+
+    setupBusinessRules() {
+        this.setRules({
+            'template-nome': { required: true, minLength: 1, maxLength: 50 },
+            'bp-esp': { required: true, min: 2, max: 10, custom: ['portanteValidation'] },
+            'bp-larg': { required: true, min: 20, max: 100, custom: ['portanteValidation'] },
+            'bl-diam': { min: 0, max: 9.99, custom: ['ligacaoValidation'] },
+            'bl-esp': { min: 0, max: 10, custom: ['ligacaoValidation'] },
+            'bl-larg': { min: 0, max: 100, custom: ['ligacaoValidation'] },
+            'bf-esp': { required: true, min: 2, max: 10, custom: ['fechamentoValidation'] },
+            'bf-larg': { required: true, min: 20, max: 100, custom: ['fechamentoValidation'] },
+            'malha-menor': { required: true, min: 20, max: 150, custom: ['malhaValidation'] },
+            'malha-maior': { required: true, min: 20, max: 150, custom: ['malhaValidation'] },
+            'densidade': { required: true, min: 7000, max: 9000 },
+            'margem': { required: true, min: 0, max: 50 },
+            'select-template': { required: true },
+            'item-quantidade': { required: true, min: 1, max: 9999 },
+            'item-largura': { required: true, min: 50, max: 6000 },
+            'item-comprimento': { required: true, min: 50, max: 6000 },
+            'item-descricao': { maxLength: 100 },
+            'preco-mao-obra': { required: true, min: 0, max: 1000 },
+            'preco-galvanizacao': { min: 0, max: 1000 },
+            'preco-chata-padrao': { required: true, min: 0, max: 100 },
+            'preco-redonda-padrao': { required: true, min: 0, max: 100 },
+            'icmsMaterial': { required: true, min: 0, max: 100 },
+            'ipiMaterial': { required: true, min: 0, max: 100 },
+            'lucroLiquido': { required: true, min: 0, max: 100 },
+            'despesasFixas': { required: true, min: 0, max: 100 },
+            'proposta-client-name': { required: true, minLength: 3 },
+            'proposta-client-uf': { required: true },
+            'proposta-quote-number': { required: true },
+        });
+    }
+
+    setupCustomValidators() {
+        this.addCustomValidator('malhaValidation', (_, fieldElement) => {
+            const form = fieldElement.closest('form');
+            if (!form) return null;
+            const malhaMenor = Utils.toSafeNumber(form.querySelector('#malha-menor')?.value);
+            const malhaMaior = Utils.toSafeNumber(form.querySelector('#malha-maior')?.value);
+            if (malhaMenor > malhaMaior) {
+                return "Malha menor não pode ser maior que a malha maior";
+            }
+            return null;
+        });
+
+        this.addCustomValidator('portanteValidation', (_, fieldElement) => {
+            const form = fieldElement.closest('form');
+            if (!form) return null;
+            const espPortante = Utils.toSafeNumber(form.querySelector('#bp-esp')?.value);
+            const malhaMenor = Utils.toSafeNumber(form.querySelector('#malha-menor')?.value);
+            if (malhaMenor > 0 && espPortante > (0.5 * malhaMenor)) {
+                return `Espessura portante não pode exceder 50% da malha menor (${0.5 * malhaMenor}mm)`;
+            }
+            return null;
+        });
+
+        this.addCustomValidator('fechamentoValidation', (_, fieldElement) => {
+            const form = fieldElement.closest('form');
+            if (!form) return null;
+            const espPortante = Utils.toSafeNumber(form.querySelector('#bp-esp')?.value);
+            const largPortante = Utils.toSafeNumber(form.querySelector('#bp-larg')?.value);
+            const espFechamento = Utils.toSafeNumber(form.querySelector('#bf-esp')?.value);
+            const largFechamento = Utils.toSafeNumber(form.querySelector('#bf-larg')?.value);
+            const malhaMenor = Utils.toSafeNumber(form.querySelector('#malha-menor')?.value);
+
+            if (fieldElement.id === 'bf-esp' && espPortante > 0 && espFechamento < espPortante) {
+                return `Espessura fechamento deve ser ≥ espessura portante (${espPortante}mm)`;
+            }
+            if (fieldElement.id === 'bf-larg' && largPortante > 0 && largFechamento < largPortante) {
+                return `Largura fechamento deve ser ≥ largura portante (${largPortante}mm)`;
+            }
+            if (fieldElement.id === 'bf-esp' && malhaMenor > 0 && espFechamento > (0.5 * malhaMenor)) {
+                return `Espessura fechamento não pode exceder 50% da malha menor (${0.5 * malhaMenor}mm)`;
+            }
+            return null;
+        });
+
+        this.addCustomValidator('ligacaoValidation', (_, fieldElement) => {
+            const form = fieldElement.closest('form');
+            if (!form) return null;
+
+            const erroLigacao = this.validateLigacaoFields(form);
+            if (erroLigacao) return erroLigacao;
+
+            const malhaMaior = Utils.toSafeNumber(form.querySelector('#malha-maior')?.value);
+            if (malhaMaior > 0) {
+                const limite = 0.5 * malhaMaior;
+                const diamLigacao = Utils.toSafeNumber(form.querySelector('#bl-diam')?.value);
+                const espLigacao = Utils.toSafeNumber(form.querySelector('#bl-esp')?.value);
+                if (diamLigacao > limite) return `Diâmetro ligação não pode exceder 50% da malha maior (${limite}mm)`;
+                if (espLigacao > limite) return `Espessura ligação não pode exceder 50% da malha maior (${limite}mm)`;
+            }
+            return null;
+        });
+    }
+
+    validateLigacaoFields(form) {
+        const diam = Utils.toSafeNumber(form.querySelector('#bl-diam')?.value);
+        const esp = Utils.toSafeNumber(form.querySelector('#bl-esp')?.value);
+        const larg = Utils.toSafeNumber(form.querySelector('#bl-larg')?.value);
+
+        if (diam !== 0 && (diam < 2 || diam >= 10)) return "Diâmetro deve ser 0 ou entre 2 e 9.99mm";
+        if (esp !== 0 && (esp < 2 || esp > 10)) return "Espessura chata deve ser 0 ou entre 2 e 10mm";
+        if (larg !== 0 && (larg < 2 || larg > 100)) return "Largura chata deve ser 0 ou entre 2 e 100mm";
+
+        const usaChataEsp = esp >= 2;
+        const usaChataLarg = larg >= 2;
+
+        if (diam >= 2 && (esp > 0 || larg > 0)) return "Se usar barra redonda, espessura e largura chata devem ser 0";
+        if (usaChataEsp || usaChataLarg) {
+            if (diam > 0) return "Se usar barra chata, diâmetro deve ser 0";
+            if (!usaChataEsp || !usaChataLarg) return "Para barra chata, ambas dimensões devem ser ≥ 2mm";
+        }
+
+        if (diam === 0 && esp === 0 && larg === 0) {
+            return "Defina pelo menos um tipo de barra de ligação";
+        }
+        return null;
+    }
+
+    validateGradeTemplate(templateData) {
+        const erros = [];
+
+        if (templateData.bp_esp < 2 || templateData.bp_esp > 10) erros.push("Espessura portante deve estar entre 2 e 10mm");
+        if (templateData.bp_larg < 20 || templateData.bp_larg > 100) erros.push("Largura portante deve estar entre 20 e 100mm");
+        if (templateData.bf_esp < templateData.bp_esp) erros.push(`Espessura fechamento deve ser ≥ portante (${templateData.bp_esp}mm)`);
+        if (templateData.bf_larg < templateData.bp_larg) erros.push(`Largura fechamento deve ser ≥ portante (${templateData.bp_larg}mm)`);
+        if (templateData.malha_menor < 20 || templateData.malha_menor > 150) erros.push("Malha menor deve estar entre 20 e 150mm");
+        if (templateData.malha_maior < 20 || templateData.malha_maior > 150) erros.push("Malha maior deve estar entre 20 e 150mm");
+        if (templateData.malha_menor > templateData.malha_maior) erros.push("Malha menor não pode ser maior que a malha maior");
+
+        const limiteMalhaMenor = 0.5 * templateData.malha_menor;
+        if (templateData.bp_esp > limiteMalhaMenor) erros.push(`Espessura portante não pode exceder 50% da malha menor (${limiteMalhaMenor}mm)`);
+        if (templateData.bf_esp > limiteMalhaMenor) erros.push(`Espessura fechamento não pode exceder 50% da malha menor (${limiteMalhaMenor}mm)`);
+
+        const limiteMalhaMaior = 0.5 * templateData.malha_maior;
+        if (templateData.bl_diam > limiteMalhaMaior) erros.push(`Diâmetro ligação não pode exceder 50% da malha maior (${limiteMalhaMaior}mm)`);
+        if (templateData.bl_esp > limiteMalhaMaior) erros.push(`Espessura ligação não pode exceder 50% da malha maior (${limiteMalhaMaior}mm)`);
+
+        const erroLigacao = this.validateLigacaoData(templateData);
+        if (erroLigacao) erros.push(erroLigacao);
+
+        if (templateData.precosCustomizados && (!templateData.customMaoObra || templateData.customMaoObra <= 0)) {
+            erros.push("Preço customizado de mão de obra obrigatório");
+        }
+
+        if (templateData.isDegrau) {
+            this.validateDegrauFields(templateData, erros);
+        }
+
+        return erros;
+    }
+
+    validateClampTemplate(clampData) {
+        const erros = [];
+        if (!clampData.nome || clampData.nome.trim().length === 0) {
+            erros.push("Nome do template é obrigatório");
+        }
+        if (clampData.pesoUnitario <= 0 || !Utils.isValidNumber(clampData.pesoUnitario)) {
+            erros.push("Peso unitário final deve ser um número maior que zero.");
+        }
+
+        for (const category of Object.values(clampData.costs)) {
+            for (const key of Object.keys(category)) {
+                const value = category[key];
+                if (value === null || value === '' || isNaN(value) || value < 0) {
+                    erros.push(`O custo de "${key}" deve ser um número válido (≥ 0).`);
+                }
+            }
+        }
+        return [...new Set(erros)];
+    }
+
+
+    validateLigacaoData(templateData) {
+        const diam = Utils.toSafeNumber(templateData.bl_diam);
+        const esp = Utils.toSafeNumber(templateData.bl_esp);
+        const larg = Utils.toSafeNumber(templateData.bl_larg);
+
+        if (diam !== 0 && (diam < 2 || diam >= 10)) return "Diâmetro deve ser 0 ou entre 2 e 9.99mm";
+        if (esp !== 0 && (esp < 2 || esp > 10)) return "Espessura chata deve ser 0 ou entre 2 e 10mm";
+        if (larg !== 0 && (larg < 2 || larg > 100)) return "Largura chata deve ser 0 ou entre 2 e 100mm";
+
+        const usaChataEsp = esp >= 2;
+        const usaChataLarg = larg >= 2;
+
+        if (diam >= 2 && (esp > 0 || larg > 0)) return "Se usar barra redonda, espessura e largura chata devem ser 0";
+        if (usaChataEsp || usaChataLarg) {
+            if (diam > 0) return "Se usar barra chata, diâmetro deve ser 0";
+            if (!usaChataEsp || !usaChataLarg) return "Para barra chata, ambas dimensões devem ser ≥ 2mm";
+        }
+
+        if (diam === 0 && esp === 0 && larg === 0) return "Defina pelo menos um tipo de barra de ligação";
+        return null;
+    }
+
+    validateDegrauFields(templateData, erros) {
+        if (!templateData.chapaLateralEsp || templateData.chapaLateralEsp <= 0) erros.push("Espessura da chapa lateral obrigatória para degraus");
+        if (!templateData.chapaLateralLarg || templateData.chapaLateralLarg <= 0) erros.push("Largura da chapa lateral obrigatória para degraus");
+
+        if (templateData.incluirChapaXadrez) {
+            if (!templateData.chapaXadrezEsp || templateData.chapaXadrezEsp <= 0) erros.push("Espessura da chapa xadrez obrigatória quando incluída");
+            if (!templateData.chapaXadrezLarg || templateData.chapaXadrezLarg <= 0) erros.push("Largura da chapa xadrez obrigatória quando incluída");
+            if (!templateData.chapaXadrezAjuste || templateData.chapaXadrezAjuste < 1) erros.push("Ajuste de peso da chapa xadrez deve ser >= 1");
+        }
+    }
+
+    validateBudgetItem(itemData, todosTemplates) {
+        const erros = [];
+        const template = todosTemplates.find(t => t.id === itemData.templateId);
+
+        if (!template) {
+            erros.push("Template selecionado não existe");
+        } else {
+            if (template.templateType === 'grade') {
+                if (itemData.largura < 100 || itemData.comprimento < 100) erros.push("Dimensões muito pequenas (mínimo 100mm)");
+                if (itemData.largura > 6000 || itemData.comprimento > 6000) erros.push("Dimensões muito grandes (máximo 6000mm)");
+                if (itemData.largura < (2 * template.malha_maior)) erros.push("Largura deve ser pelo menos 2x a malha maior");
+                if (itemData.comprimento < (2 * template.malha_menor)) erros.push("Comprimento deve ser pelo menos 2x a malha menor");
+                if (template.isDegrau && itemData.comprimento < 200) erros.push("Comprimento mínimo de 200mm para degraus");
+            }
+        }
+
+        return erros;
+    }
+}

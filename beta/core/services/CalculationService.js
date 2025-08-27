@@ -1,1 +1,197 @@
-const voti_15_0xa83876=voti_15_0x1b68;(function(_0x4a9e23,_0x5dd92e){const _0x4c5c18=voti_15_0x1b68,_0x3219d8=_0x4a9e23();while(!![]){try{const _0x4ca388=-parseInt(_0x4c5c18(0x135))/0x1*(-parseInt(_0x4c5c18(0x129))/0x2)+parseInt(_0x4c5c18(0x143))/0x3+-parseInt(_0x4c5c18(0x125))/0x4+parseInt(_0x4c5c18(0x140))/0x5*(-parseInt(_0x4c5c18(0x128))/0x6)+-parseInt(_0x4c5c18(0x141))/0x7*(parseInt(_0x4c5c18(0x123))/0x8)+-parseInt(_0x4c5c18(0x147))/0x9+parseInt(_0x4c5c18(0x12c))/0xa;if(_0x4ca388===_0x5dd92e)break;else _0x3219d8['push'](_0x3219d8['shift']());}catch(_0x4083f5){_0x3219d8['push'](_0x3219d8['shift']());}}}(voti_15_0xb67c,0xe52d3));import{CONFIG}from'../../shared/config.js';import{Utils}from'../../shared/services/utils-service.js';function voti_15_0x1b68(_0x293d6a,_0x4bb425){const _0xb67c5a=voti_15_0xb67c();return voti_15_0x1b68=function(_0x1b68ed,_0x56e2ce){_0x1b68ed=_0x1b68ed-0x122;let _0x177104=_0xb67c5a[_0x1b68ed];return _0x177104;},voti_15_0x1b68(_0x293d6a,_0x4bb425);}class CalculationServiceBase{static['calcular'](_0x276719,_0x52b9cc,_0x5c9a72){const _0x3770e1=voti_15_0x1b68,{quantidade:_0x325d96,largura:_0x21c73a,comprimento:_0x834b9b}=_0x276719,{bp_esp:_0x45fd34,bp_larg:_0x3442c7,bl_diam:_0x3fa44b,bl_esp:_0x23ab21,bl_larg:_0xca487a,bf_esp:_0x14cf87,bf_larg:_0x27f20a,malha_menor:_0x48cd50,malha_maior:_0x5dc134,densidade:_0x1f4cb4,margem:_0x4d44a4,isDegrau:_0x582a5c,tipoMalha:_0x525ae3,pesoCalcMode:_0x5371f7}=_0x52b9cc;if(!_0x325d96||!_0x21c73a||!_0x834b9b)return{'area':0x0,'peso':0x0,'pesoComMargem':0x0,'materiais':{}};let _0x50dccb=_0x48cd50;_0x525ae3===_0x3770e1(0x12a)&&(_0x50dccb=_0x48cd50+Math[_0x3770e1(0x124)](_0x45fd34));const _0x5eb0c5=_0x3fa44b<=0x0&&_0x23ab21<=0x0?0x0:Math['floor'](_0x834b9b-0x2*_0x14cf87),_0x483b37=Math[_0x3770e1(0x126)](_0x21c73a-0x1-0x2*_0x14cf87),_0x59e253=Math[_0x3770e1(0x126)](_0x21c73a-0x1-0x2*_0x14cf87),_0x2b3df1=_0x834b9b,_0x5b5fa2=_0x834b9b,_0x24d324=Math['floor'](_0x21c73a-0x1-0x2*_0x14cf87),_0x30e767=Math[_0x3770e1(0x127)]((Math[_0x3770e1(0x126)](_0x21c73a-0x1-0x2*_0x14cf87)+_0x14cf87)/_0x5dc134),_0x312927=Math[_0x3770e1(0x127)]((_0x5eb0c5-0x1+_0x14cf87)/_0x50dccb),_0x401ed0=Math['ceil'](_0x30e767+0.95),_0xecd2a8=Math[_0x3770e1(0x142)](_0x312927+0.95),_0x422cd=_0x5371f7===_0x3770e1(0x146),_0x56d5e6=_0x422cd?_0x21c73a:_0x483b37,_0x3663be=_0x422cd?_0x834b9b:_0x5eb0c5,_0x47e14a=_0x422cd?_0x834b9b:_0x5eb0c5,_0x170101=_0x422cd?_0x21c73a:_0x59e253,_0x46831a=_0x422cd?_0x834b9b:_0x2b3df1,_0x145d71=_0x422cd?_0x834b9b:_0x5b5fa2,_0x2392b6=_0x422cd?_0x21c73a:_0x24d324,_0x2e4bfa=Math['abs']((_0xecd2a8-0x2)*_0x325d96),_0x176dc5=Math['abs']((_0x401ed0-0x2)*_0x325d96),_0x10c23a=_0x325d96*0x2,_0x43f59e={'portante':{'tipo':_0x3770e1(0x145),'esp':_0x45fd34,'larg':_0x3442c7,'comp':_0x483b37,'qtd':_0x2e4bfa,'peso':_0x5c9a72[_0x3770e1(0x13d)](CalculationServiceBase[_0x3770e1(0x13a)](_0x45fd34,_0x3442c7,_0x56d5e6,_0x1f4cb4)*_0x2e4bfa)},'ligacaoDiam':_0x3fa44b>0x0?{'tipo':_0x3770e1(0x149),'diam':_0x3fa44b,'comp':_0x5eb0c5,'qtd':_0x176dc5,'peso':_0x5c9a72['_applyRounding'](CalculationServiceBase[_0x3770e1(0x13b)](_0x3fa44b,_0x3663be,_0x1f4cb4)*_0x176dc5)}:{'peso':0x0,'qtd':0x0},'ligacaoChata':_0x23ab21>0x0?{'tipo':_0x3770e1(0x145),'esp':_0x23ab21,'larg':_0xca487a,'comp':_0x5eb0c5,'qtd':_0x176dc5,'peso':_0x5c9a72[_0x3770e1(0x13d)](CalculationServiceBase['calcularPesoChata'](_0x23ab21,_0xca487a,_0x47e14a,_0x1f4cb4)*_0x176dc5)}:{'peso':0x0,'qtd':0x0},'fechTerminal':{'tipo':'chata','esp':_0x14cf87,'larg':_0x27f20a,'comp':_0x59e253,'qtd':_0x10c23a,'peso':_0x5c9a72[_0x3770e1(0x13d)](CalculationServiceBase[_0x3770e1(0x13a)](_0x14cf87,_0x27f20a,_0x170101,_0x1f4cb4)*_0x10c23a)},'fechLateral':{'tipo':_0x3770e1(0x145),'esp':_0x14cf87,'larg':_0x27f20a,'comp':_0x2b3df1,'qtd':_0x10c23a,'peso':_0x5c9a72[_0x3770e1(0x13d)](CalculationServiceBase[_0x3770e1(0x13a)](_0x14cf87,_0x27f20a,_0x46831a,_0x1f4cb4)*_0x10c23a)}};if(_0x582a5c){const _0x14f554=_0x52b9cc[_0x3770e1(0x144)]||0x5*Math[_0x3770e1(0x142)]((_0x3442c7+0x25)/0x5),_0x9fd6b7=0x2*_0x325d96;_0x43f59e[_0x3770e1(0x133)]={'tipo':'chapa','esp':_0x52b9cc[_0x3770e1(0x132)]||4.76,'larg':_0x14f554,'comp':_0x5b5fa2,'qtd':_0x9fd6b7,'peso':_0x5c9a72[_0x3770e1(0x13d)](CalculationServiceBase[_0x3770e1(0x13a)](_0x52b9cc[_0x3770e1(0x132)]||4.76,_0x14f554,_0x145d71,_0x1f4cb4)*_0x9fd6b7)},delete _0x43f59e['fechLateral'];if(_0x52b9cc[_0x3770e1(0x139)]){const _0x28b306=_0x52b9cc[_0x3770e1(0x12f)]||_0x3442c7+_0x50dccb,_0x2e8fa9=_0x52b9cc[_0x3770e1(0x12d)]||1.05,_0x391e59=CalculationServiceBase['calcularPesoChata'](_0x52b9cc['chapaXadrezEsp']||3.18,_0x28b306,_0x2392b6,_0x1f4cb4);_0x43f59e[_0x3770e1(0x137)]={'tipo':_0x3770e1(0x148),'esp':_0x52b9cc[_0x3770e1(0x138)]||3.18,'larg':_0x28b306,'comp':_0x24d324,'qtd':_0x325d96,'peso':_0x5c9a72[_0x3770e1(0x13d)](_0x391e59*_0x325d96*_0x2e8fa9)};}}const _0x21fc55=Object[_0x3770e1(0x13e)](_0x43f59e)['reduce']((_0x41a005,_0x519432)=>_0x41a005+(_0x519432[_0x3770e1(0x122)]||0x0),0x0);return{'area':_0x21c73a/0x3e8*(_0x834b9b/0x3e8)*_0x325d96,'peso':_0x21fc55,'pesoComMargem':_0x21fc55*(0x1+_0x4d44a4/0x64),'materiais':_0x43f59e};}static[voti_15_0xa83876(0x13a)](_0xd475f,_0x3a21bc,_0x494fcc,_0x4aff5c){if(!_0xd475f||!_0x3a21bc||!_0x494fcc)return 0x0;return _0xd475f/0x3e8*(_0x3a21bc/0x3e8)*(_0x494fcc/0x3e8)*_0x4aff5c;}static[voti_15_0xa83876(0x13b)](_0x421928,_0x445703,_0x451cdf){if(!_0x421928||!_0x445703)return 0x0;const _0x420fdf=_0x421928/0x3e8/0x2;return Math['PI']*_0x420fdf*_0x420fdf*(_0x445703/0x3e8)*_0x451cdf;}}const memoizedCalcular=Utils['memoize'](CalculationServiceBase[voti_15_0xa83876(0x131)]);function voti_15_0xb67c(){const _0x5afaeb=['8JXNuKw','interna','entries','8736710uwQIff','chapaXadrezAjuste','BARRA_PADRAO','chapaXadrezLarg','sort','calcular','chapaLateralEsp','chapaLateral','ocupado','123746qrDBOz','length','chapaXadrez','chapaXadrezEsp','incluirChapaXadrez','calcularPesoChata','calcularPesoRedonda','otimizar','_applyRounding','values','pecas','5xBsuNH','5075JtjTLK','ceil','3111387YfgzZl','chapaLateralLarg','chata','teorico','6361470gcwgWL','chapa','redonda','especial','push','forEach','peso','3512YEqNkb','round','807724gIFtaK','floor','abs','1440246atCfMu'];voti_15_0xb67c=function(){return _0x5afaeb;};return voti_15_0xb67c();}export class CalculationService extends CalculationServiceBase{static[voti_15_0xa83876(0x131)](_0x3d7921,_0x2d923c,_0x24ef3e){return memoizedCalcular(_0x3d7921,_0x2d923c,_0x24ef3e);}}export class CuttingOptimizer{static[voti_15_0xa83876(0x13c)](_0x178684,_0x227740=CONFIG[voti_15_0xa83876(0x12e)]){const _0x2a9b0b=voti_15_0xa83876;if(!_0x178684||_0x178684[_0x2a9b0b(0x136)]===0x0)return{'barras':0x0,'desperdicio':0x0};const _0x263389=[..._0x178684][_0x2a9b0b(0x130)]((_0x227919,_0xedefbf)=>_0xedefbf-_0x227919),_0xb7dcbb=[];for(const _0x26a0d6 of _0x263389){if(_0x26a0d6>_0x227740){_0xb7dcbb[_0x2a9b0b(0x14b)]({'pecas':[_0x26a0d6],'ocupado':_0x26a0d6,'sobra':0x0,'especial':!![]});continue;}let _0x5d7395=null,_0x3434f3=_0x227740;for(const _0x44e919 of _0xb7dcbb){if(_0x44e919[_0x2a9b0b(0x14a)])continue;const _0x36fa13=_0x227740-_0x44e919['ocupado']-_0x26a0d6;_0x36fa13>=0x0&&_0x36fa13<_0x3434f3&&(_0x5d7395=_0x44e919,_0x3434f3=_0x36fa13);}_0x5d7395?(_0x5d7395[_0x2a9b0b(0x13f)][_0x2a9b0b(0x14b)](_0x26a0d6),_0x5d7395[_0x2a9b0b(0x134)]+=_0x26a0d6,_0x5d7395['sobra']=_0x227740-_0x5d7395[_0x2a9b0b(0x134)]):_0xb7dcbb[_0x2a9b0b(0x14b)]({'pecas':[_0x26a0d6],'ocupado':_0x26a0d6,'sobra':_0x227740-_0x26a0d6,'especial':![]});}const _0x9dc47f=_0xb7dcbb['reduce']((_0x3a7c6e,_0x37f722)=>_0x3a7c6e+(_0x37f722[_0x2a9b0b(0x14a)]?0x0:_0x37f722['sobra']),0x0),_0x1acf2b=_0xb7dcbb[_0x2a9b0b(0x136)]*_0x227740,_0x1a6296=_0x1acf2b>0x0?_0x9dc47f/_0x1acf2b*0x64:0x0;return{'barras':_0xb7dcbb[_0x2a9b0b(0x136)],'desperdicio':_0x1a6296,'detalhes':_0xb7dcbb};}}export function separarMateriais(_0x20681c,_0x502fb6){const _0x8bb2b1=voti_15_0xa83876;if(!_0x502fb6)return{'barras':_0x20681c,'chapas':{}};const _0x2c033a={},_0x58efa7={};return Object[_0x8bb2b1(0x12b)](_0x20681c)[_0x8bb2b1(0x14c)](([_0x2f2e25,_0x31c900])=>{const _0x3c9738=_0x8bb2b1;_0x31c900[_0x3c9738(0x122)]>0x0&&(_0x2f2e25===_0x3c9738(0x133)||_0x2f2e25===_0x3c9738(0x137)?_0x58efa7[_0x2f2e25]=_0x31c900:_0x2c033a[_0x2f2e25]=_0x31c900);}),{'barras':_0x2c033a,'chapas':_0x58efa7};}
+import { CONFIG } from "../../shared/config.js";
+import { Utils } from "../../shared/services/utils-service.js";
+
+class CalculationServiceBase {
+
+    static calcular(itemOrcamento, template, priceController) {
+        const { quantidade, largura, comprimento } = itemOrcamento;
+        const {
+            bp_esp, bp_larg, bl_diam, bl_esp, bl_larg, bf_esp, bf_larg,
+            malha_menor, malha_maior, densidade, margem, isDegrau, tipoMalha,
+            pesoCalcMode
+        } = template;
+
+        if (!quantidade || !largura || !comprimento) {
+            return { area: 0, peso: 0, pesoComMargem: 0, materiais: {} };
+        }
+
+        let malhaMenorEfetiva = malha_menor;
+        if (tipoMalha === 'interna') {
+            malhaMenorEfetiva = malha_menor + Math.round(bp_esp);
+        }
+
+        const compRealLigacao = (bl_diam <= 0 && bl_esp <= 0) ? 0 : Math.floor(comprimento - (2 * bf_esp));
+        const compRealPortante = Math.floor(largura - 1 - (2 * bf_esp));
+        const compRealFechTerminal = Math.floor(largura - 1 - (2 * bf_esp));
+        const compRealFechLateral = comprimento;
+        const compRealChapaLateral = comprimento;
+        const compRealChapaXadrez = Math.floor(largura - 1 - (2 * bf_esp));
+
+        const malhaTotalPortante = Math.abs((Math.floor(largura - 1 - (2 * bf_esp)) + bf_esp) / malha_maior);
+        const malhaTotalLigacao = Math.abs((compRealLigacao - 1 + bf_esp) / malhaMenorEfetiva);
+
+        const numBarrasPortantes = Math.ceil(malhaTotalPortante + 0.95);
+        const numBarrasLigacao = Math.ceil(malhaTotalLigacao + 0.95);
+
+        const usarPesoTeorico = pesoCalcMode === 'teorico';
+        const compPesoPortante = usarPesoTeorico ? largura : compRealPortante;
+        const compPesoLigacaoDiam = usarPesoTeorico ? comprimento : compRealLigacao;
+        const compPesoLigacaoChata = usarPesoTeorico ? comprimento : compRealLigacao;
+        const compPesoFechTerminal = usarPesoTeorico ? largura : compRealFechTerminal;
+        const compPesoFechLateral = usarPesoTeorico ? comprimento : compRealFechLateral;
+        const compPesoChapaLateral = usarPesoTeorico ? comprimento : compRealChapaLateral;
+        const compPesoChapaXadrez = usarPesoTeorico ? largura : compRealChapaXadrez;
+
+        const qtdPortante = Math.abs((numBarrasLigacao - 2) * quantidade);
+        const qtdLigacao = Math.abs((numBarrasPortantes - 2) * quantidade);
+        const qtdFechamento = quantidade * 2;
+
+        const materiais = {
+            portante: {
+                tipo: 'chata', esp: bp_esp, larg: bp_larg, comp: compRealPortante, qtd: qtdPortante,
+                peso: priceController._applyRounding(CalculationServiceBase.calcularPesoChata(bp_esp, bp_larg, compPesoPortante, densidade) * qtdPortante)
+            },
+            ligacaoDiam: (bl_diam > 0) ? {
+                tipo: 'redonda', diam: bl_diam, comp: compRealLigacao, qtd: qtdLigacao,
+                peso: priceController._applyRounding(CalculationServiceBase.calcularPesoRedonda(bl_diam, compPesoLigacaoDiam, densidade) * qtdLigacao)
+            } : { peso: 0, qtd: 0 },
+            ligacaoChata: (bl_esp > 0) ? {
+                tipo: 'chata', esp: bl_esp, larg: bl_larg, comp: compRealLigacao, qtd: qtdLigacao,
+                peso: priceController._applyRounding(CalculationServiceBase.calcularPesoChata(bl_esp, bl_larg, compPesoLigacaoChata, densidade) * qtdLigacao)
+            } : { peso: 0, qtd: 0 },
+            fechTerminal: {
+                tipo: 'chata', esp: bf_esp, larg: bf_larg, comp: compRealFechTerminal, qtd: qtdFechamento,
+                peso: priceController._applyRounding(CalculationServiceBase.calcularPesoChata(bf_esp, bf_larg, compPesoFechTerminal, densidade) * qtdFechamento)
+            },
+            fechLateral: {
+                tipo: 'chata', esp: bf_esp, larg: bf_larg, comp: compRealFechLateral, qtd: qtdFechamento,
+                peso: priceController._applyRounding(CalculationServiceBase.calcularPesoChata(bf_esp, bf_larg, compPesoFechLateral, densidade) * qtdFechamento)
+            }
+        };
+
+        if (isDegrau) {
+            const chapaLateralLarg = template.chapaLateralLarg || (5 * Math.ceil((bp_larg + 37) / 5));
+            const qtdChapaLateral = 2 * quantidade;
+            materiais.chapaLateral = {
+                tipo: 'chapa', esp: template.chapaLateralEsp || 4.76, larg: chapaLateralLarg, comp: compRealChapaLateral, qtd: qtdChapaLateral,
+                peso: priceController._applyRounding(CalculationServiceBase.calcularPesoChata(template.chapaLateralEsp || 4.76, chapaLateralLarg, compPesoChapaLateral, densidade) * qtdChapaLateral)
+            };
+            delete materiais.fechLateral;
+
+            if (template.incluirChapaXadrez) {
+                const chapaXadrezLarg = template.chapaXadrezLarg || (bp_larg + malhaMenorEfetiva);
+                const ajustePeso = template.chapaXadrezAjuste || 1.05;
+                const pesoBaseChapaXadrez = CalculationServiceBase.calcularPesoChata(template.chapaXadrezEsp || 3.18, chapaXadrezLarg, compPesoChapaXadrez, densidade);
+                materiais.chapaXadrez = {
+                    tipo: 'chapa', esp: template.chapaXadrezEsp || 3.18, larg: chapaXadrezLarg, comp: compRealChapaXadrez, qtd: quantidade,
+                    peso: priceController._applyRounding(pesoBaseChapaXadrez * quantidade * ajustePeso)
+                };
+            }
+        }
+
+        const pesoTotal = Object.values(materiais).reduce((soma, material) => soma + (material.peso || 0), 0);
+
+        return {
+            area: (largura / 1000) * (comprimento / 1000) * quantidade,
+            peso: pesoTotal,
+            pesoComMargem: pesoTotal * (1 + margem / 100),
+            materiais: materiais
+        };
+    }
+
+    static calcularPesoChata(esp, larg, comp, densidade) {
+        if (!esp || !larg || !comp) return 0;
+        return (esp / 1000) * (larg / 1000) * (comp / 1000) * densidade;
+    }
+
+    static calcularPesoRedonda(diam, comp, densidade) {
+        if (!diam || !comp) return 0;
+        const raio = (diam / 1000) / 2;
+        return Math.PI * raio * raio * (comp / 1000) * densidade;
+    }
+}
+
+const memoizedCalcular = Utils.memoize(CalculationServiceBase.calcular);
+
+export class CalculationService extends CalculationServiceBase {
+    static calcular(itemOrcamento, template, priceController) {
+        return memoizedCalcular(itemOrcamento, template, priceController);
+    }
+}
+
+export class CuttingOptimizer {
+
+    static otimizar(pecas, comprimentoBarraPadrao = CONFIG.BARRA_PADRAO) {
+        if (!pecas || pecas.length === 0) {
+            return { barras: 0, desperdicio: 0 };
+        }
+
+        const pecasOrdenadas = [...pecas].sort((a, b) => b - a);
+        const barrasUtilizadas = [];
+
+        for (const peca of pecasOrdenadas) {
+            if (peca > comprimentoBarraPadrao) {
+                barrasUtilizadas.push({ pecas: [peca], ocupado: peca, sobra: 0, especial: true });
+                continue;
+            }
+
+            let melhorBarra = null;
+            let menorSobra = comprimentoBarraPadrao;
+
+            for (const barra of barrasUtilizadas) {
+                if (barra.especial) continue;
+
+                const sobraAtual = comprimentoBarraPadrao - barra.ocupado - peca;
+                if (sobraAtual >= 0 && sobraAtual < menorSobra) {
+                    melhorBarra = barra;
+                    menorSobra = sobraAtual;
+                }
+            }
+
+            if (melhorBarra) {
+                melhorBarra.pecas.push(peca);
+                melhorBarra.ocupado += peca;
+                melhorBarra.sobra = comprimentoBarraPadrao - melhorBarra.ocupado;
+            } else {
+                barrasUtilizadas.push({
+                    pecas: [peca],
+                    ocupado: peca,
+                    sobra: comprimentoBarraPadrao - peca,
+                    especial: false
+                });
+            }
+        }
+
+        const desperdicioTotal = barrasUtilizadas.reduce((soma, barra) => soma + (barra.especial ? 0 : barra.sobra), 0);
+        const comprimentoTotalUtilizado = barrasUtilizadas.length * comprimentoBarraPadrao;
+        const percentualDesperdicio = comprimentoTotalUtilizado > 0 ? (desperdicioTotal / comprimentoTotalUtilizado) * 100 : 0;
+
+        return {
+            barras: barrasUtilizadas.length,
+            desperdicio: percentualDesperdicio,
+            detalhes: barrasUtilizadas
+        };
+    }
+}
+
+
+export function separarMateriais(todosMateriais, ehDegrau) {
+    if (!ehDegrau) {
+        return { barras: todosMateriais, chapas: {} };
+    }
+
+    const barras = {};
+    const chapas = {};
+
+    Object.entries(todosMateriais).forEach(([nomeMaterial, dadosMaterial]) => {
+        if (dadosMaterial.peso > 0) {
+            if (nomeMaterial === 'chapaLateral' || nomeMaterial === 'chapaXadrez') {
+                chapas[nomeMaterial] = dadosMaterial;
+            } else {
+                barras[nomeMaterial] = dadosMaterial;
+            }
+        }
+    });
+
+    return { barras, chapas };
+}
