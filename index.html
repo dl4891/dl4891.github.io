@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Integrado de Orçamentos - Grades Metálicas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="shared/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+
+    <script type="importmap">
+        {
+          "imports": {
+            "lit": "https://cdn.jsdelivr.net/npm/lit@3.1.4/index.js",
+            "lit/": "https://cdn.jsdelivr.net/npm/lit@3.1.4/",
+            "@lit/reactive-element": "https://cdn.jsdelivr.net/npm/@lit/reactive-element@2.0.4/reactive-element.js",
+            "@lit/reactive-element/": "https://cdn.jsdelivr.net/npm/@lit/reactive-element@2.0.4/",
+            "lit-html": "https://cdn.jsdelivr.net/npm/lit-html@3.1.4/lit-html.js",
+            "lit-html/": "https://cdn.jsdelivr.net/npm/lit-html@3.1.4/",
+            "lit-element": "https://cdn.jsdelivr.net/npm/lit-element@4.0.5/lit-element.js",
+            "lit-element/": "https://cdn.jsdelivr.net/npm/lit-element@4.0.5/",
+            "@lit-labs/virtualizer": "https://cdn.jsdelivr.net/npm/@lit-labs/virtualizer@2.0.14/lit-virtualizer.js",
+            "@lit-labs/virtualizer/": "https://cdn.jsdelivr.net/npm/@lit-labs/virtualizer@2.0.14/",
+            "tslib": "https://cdn.jsdelivr.net/npm/tslib@2.6.3/tslib.es6.js"
+          }
+        }
+    </script>
+</head>
+<body>
+<div id="notification-container" class="notification-container"></div>
+<div class="container-fluid">
+    <header class="budget-header">
+        <div class="budget-tabs-container">
+            <div class="budget-tabs" id="budget-tabs">
+                <div class="budget-tab active" data-budget-id="default">
+                    <span class="budget-tab-name">Orçamento 1</span>
+                    <button class="budget-tab-close" title="Fechar orçamento">&times;</button>
+                </div>
+            </div>
+            <button class="budget-tab-new" id="new-budget-btn" title="Novo orçamento"><i class="fas fa-plus"></i>
+            </button>
+        </div>
+        <div class="budget-info">
+            <span id="current-budget-name">Orçamento 1</span>
+            <div class="field is-grouped">
+                <p class="control">
+                    <button class="button is-small is-info" id="rename-budget-btn"><i class="fas fa-edit"></i>Renomear
+                    </button>
+                </p>
+                <p class="control">
+                    <button class="button is-small is-warning" id="duplicate-budget-btn">
+                        <i class="fas fa-copy"></i>Duplicar Orçamento
+                    </button>
+                </p>
+                <p class="control">
+                    <button class="button is-small is-primary" id="export-budget-btn">
+                        <i class="fas fa-save"></i>Salvar Orçamento
+                    </button>
+                </p>
+                <p class="control">
+                    <button class="button is-small is-success" id="import-budget-btn">
+                        <i class="fas fa-folder-open"></i>Abrir Orçamento
+                    </button>
+                </p>
+            </div>
+            <input type="file" id="import-budget-input" style="display: none;" accept=".json">
+        </div>
+    </header>
+    <nav class="main-tabs">
+        <div class="tabs is-boxed is-large">
+            <ul>
+                <li class="is-active" data-tab="templates">
+                    <a><span class="icon"><i class="fas fa-cogs"></i></span><span>Modelos</span></a></li>
+                <li data-tab="precos"><a><span class="icon"><i class="fas fa-dollar-sign"></i></span><span>Preços</span></a>
+                </li>
+                <li data-tab="itens"><a><span class="icon"><i class="fas fa-list"></i></span><span>Itens</span></a></li>
+                <li data-tab="relatorios">
+                    <a><span class="icon"><i class="fas fa-chart-line"></i></span><span>Relatórios</span></a></li>
+                <li data-tab="memoria">
+                    <a><span class="icon"><i class="fas fa-calculator"></i></span><span>Memória</span></a></li>
+                <li data-tab="proposta">
+                    <a><span class="icon"><i class="fas fa-stamp"></i></span><span>Proposta</span></a></li>
+                <li data-tab="pricing">
+                    <a><span class="icon"><i class="fas fa-percentage"></i></span><span>Lucro</span></a></li>
+                <li data-tab="orcamento">
+                    <a><span class="icon"><i class="fas fa-file-invoice"></i></span><span>Orçamento</span></a></li>
+                <li><a href="ajuda/"><span class="icon"><i class="fas fa-question-circle"></i></span><span>Ajuda</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="tab-content-container">
+        <div id="templates-content" class="tab-content active">
+            <div class="columns">
+                <div class="column is-8">
+                    <div class="box">
+                        <h3 class="subtitle is-4" id="template-form-title">Criar/Editar Modelo de Produto</h3>
+
+                        <div class="field">
+                            <label class="label">Tipo de Modelo de Produto</label>
+                            <div class="control" id="template-type-selector">
+                                <label class="radio">
+                                    <input type="radio" name="template-type" value="grade" checked>
+                                    Grade de Piso
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="template-type" value="clamp">
+                                    Grampo de Fixação
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="grade-form-container">
+                            <template-item-form id="template-form-component"></template-item-form>
+                        </div>
+
+                        <div id="clamp-form-container" style="display: none;">
+                            <clamp-template-form id="clamp-form-component"></clamp-template-form>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <template-list id="template-list-component"></template-list>
+                </div>
+            </div>
+        </div>
+        <div id="precos-content" class="tab-content">
+            <div class="columns">
+                <div class="column is-8">
+                    <global-prices-form id="global-prices-form-component"></global-prices-form>
+                </div>
+                <div class="column is-4">
+                    <specific-prices-panel id="specific-prices-panel-component"></specific-prices-panel>
+                </div>
+            </div>
+        </div>
+        <div id="itens-content" class="tab-content">
+            <div class="columns">
+                <div class="column is-8">
+                    <div class="box">
+                        <div class="level">
+                            <div class="level-left">
+                                <h3 class="subtitle is-4">Adicionar Item ao Orçamento</h3>
+                            </div>
+                            <div class="level-right">
+                                <button class="button is-small is-link" id="import-items-btn">
+                                    <i class="fas fa-upload mr-2"></i>Importar itens
+                                </button>
+                                <input type="file" id="import-items-input" style="display:none" accept=".csv">
+                            </div>
+                        </div>
+                        <budget-item-form id="item-form-component"></budget-item-form>
+                    </div>
+                    <div class="box">
+                        <h3 class="subtitle is-4">Itens do Orçamento</h3>
+                        <budget-list id="budget-list-component"></budget-list>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <budget-summary id="budget-summary-component"></budget-summary>
+                </div>
+            </div>
+        </div>
+        <div id="memoria-content" class="tab-content">
+            <div class="box">
+                <h3 class="subtitle is-4">Memória de Cálculo por Modelo</h3>
+                <calculation-memory id="calculation-memory-component"></calculation-memory>
+            </div>
+        </div>
+        <div id="relatorios-content" class="tab-content">
+            <div class="box">
+                <h3 class="subtitle is-4">Relatório Detalhado por Item</h3>
+                <detailed-report id="detailed-report-component"></detailed-report>
+            </div>
+            <div class="box">
+                <h3 class="subtitle is-4">Consolidado e Plano de Corte</h3>
+                <consolidated-report id="consolidated-report-component"></consolidated-report>
+            </div>
+        </div>
+        <div id="orcamento-content" class="tab-content">
+            <commercial-budget id="commercial-budget-component"></commercial-budget>
+            <div class="field is-grouped mt-5">
+                <p class="control">
+                    <button class="button is-large is-primary" id="export-pdf-btn">
+                        <span class="icon is-medium"><i class="fas fa-file-pdf"></i></span>
+                        <span>Exportar para PDF</span>
+                    </button>
+                </p>
+            </div>
+        </div>
+        <div id="proposta-content" class="tab-content">
+            <proposal-form id="proposal-form-component"></proposal-form>
+        </div>
+        <div id="pricing-content" class="tab-content">
+            <pricing-accordion id="pricing-accordion-component"></pricing-accordion>
+            <div class="box">
+                <h4 class="subtitle is-5">Tabela de Alíquotas
+                    <button class="button is-small is-outlined ml-2" id="toggleAliquotas">
+                        <i class="fas fa-edit"></i>Editar Alíquotas
+                    </button>
+                </h4>
+                <div id="aliquotasContainer" style="display: none;">
+                    <div class="notification is-warning is-light"><p>
+                        <strong>Atenção:</strong>Alterações nas alíquotas afetam todos os cálculos. Use dados oficiais atualizados.
+                    </p></div>
+                    <div class="table-container">
+                        <table class="table is-striped is-hoverable is-fullwidth">
+                            <thead>
+                            <tr>
+                                <th>UF</th>
+                                <th>MVA Grade</th>
+                                <th>Aliq. Int.</th>
+                                <th>MVA Grampo</th>
+                                <th>MVA Telas</th>
+                                <th>Aliq. SP</th>
+                                <th>Ações</th>
+                            </tr>
+                            </thead>
+                            <tbody id="aliquotasTableBody"></tbody>
+                        </table>
+                    </div>
+                    <div class="field is-grouped">
+                        <div class="control">
+                            <button class="button is-success" id="salvarAliquotas">
+                                <i class="fas fa-save"></i>Salvar Alterações
+                            </button>
+                        </div>
+                        <div class="control">
+                            <button class="button is-warning" id="resetAliquotas">
+                                <i class="fas fa-undo"></i>Restaurar Padrão
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="modal-preco-chata">
+    <div class="modal-background" onclick="integratedApp.fecharModalPreco()"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title"><i class="fas fa-plus mr-2"></i><span id="modal-chata-title"></span></p>
+            <button class="delete" onclick="integratedApp.fecharModalPreco()"></button>
+        </header>
+        <section class="modal-card-body"></section>
+        <footer class="modal-card-foot">
+            <button class="button is-success"><span class="icon"><i class="fas fa-save"></i></span><span>Salvar</span></button>
+            <button class="button" onclick="integratedApp.fecharModalPreco()">Cancelar</button>
+        </footer>
+    </div>
+</div>
+<div class="modal" id="modal-preco-redonda">
+    <div class="modal-background" onclick="integratedApp.fecharModalPreco()"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title"><i class="fas fa-plus mr-2"></i><span id="modal-redonda-title"></span></p>
+            <button class="delete" onclick="integratedApp.fecharModalPreco()"></button>
+        </header>
+        <section class="modal-card-body"></section>
+        <footer class="modal-card-foot">
+            <button class="button is-success"><span class="icon"><i class="fas fa-save"></i></span><span>Salvar</span></button>
+            <button class="button" onclick="integratedApp.fecharModalPreco()">Cancelar</button>
+        </footer>
+    </div>
+</div>
+<div class="modal" id="modal-preco-chapa-lateral">
+    <div class="modal-background" onclick="integratedApp.fecharModalPreco()"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title"><i class="fas fa-plus mr-2"></i><span id="modal-chapa-lateral-title"></span></p>
+            <button class="delete" onclick="integratedApp.fecharModalPreco()"></button>
+        </header>
+        <section class="modal-card-body"></section>
+        <footer class="modal-card-foot">
+            <button class="button is-success"><span class="icon"><i class="fas fa-save"></i></span><span>Salvar</span></button>
+            <button class="button" onclick="integratedApp.fecharModalPreco()">Cancelar</button>
+        </footer>
+    </div>
+</div>
+<div class="modal" id="modal-preco-chapa-xadrez">
+    <div class="modal-background" onclick="integratedApp.fecharModalPreco()"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title"><i class="fas fa-plus mr-2"></i><span id="modal-chapa-xadrez-title"></span></p>
+            <button class="delete" onclick="integratedApp.fecharModalPreco()"></button>
+        </header>
+        <section class="modal-card-body"></section>
+        <footer class="modal-card-foot">
+            <button class="button is-success"><span class="icon"><i class="fas fa-save"></i></span><span>Salvar</span></button>
+            <button class="button" onclick="integratedApp.fecharModalPreco()">Cancelar</button>
+        </footer>
+    </div>
+</div>
+
+<div class="modal" id="modal-rename-budget">
+    <div class="modal-background" onclick="integratedApp.closeRenameModal()"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Renomear Orçamento</p>
+            <button class="delete" onclick="integratedApp.closeRenameModal()"></button>
+        </header>
+        <section class="modal-card-body">
+            <div class="field">
+                <label class="label">Nome do Orçamento</label>
+                <div class="control">
+                    <input id="budget-name-input" class="input" type="text" placeholder="Nome do orçamento">
+                </div>
+            </div>
+        </section>
+        <footer class="modal-card-foot">
+            <button class="button is-success" onclick="integratedApp.saveBudgetName()">Salvar</button>
+            <button class="button" onclick="integratedApp.closeRenameModal()">Cancelar</button>
+        </footer>
+    </div>
+</div>
+
+<div class="modal" id="modal-confirm-delete">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Confirmar Exclusão</p>
+            <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body" id="delete-modal-content">
+        </section>
+        <footer class="modal-card-foot">
+            <button class="button is-danger" id="delete-confirm-btn">Excluir</button>
+            <button class="button" id="delete-cancel-btn">Cancelar</button>
+        </footer>
+    </div>
+</div>
+
+<script>
+    window.app = null;
+    window.waitForApp = function (callback) {
+        if (window.app && window.app.constructor.name === 'AppController') {
+            callback();
+        } else {
+            setTimeout(() => window.waitForApp(callback), 50);
+        }
+    };
+    window.addEventListener('error', function (e) {
+        if (e.message.includes('app is not defined')) {
+            console.warn('Aguardando aplicação carregar...', e.target);
+            setTimeout(() => {
+                if (e.target && e.target.click) {
+                    e.target.click();
+                }
+            }, 100);
+        }
+    });
+</script>
+<script type="module" src="integrated/app.js"></script>
+</body>
+</html>
